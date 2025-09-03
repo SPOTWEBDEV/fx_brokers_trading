@@ -5,8 +5,7 @@
  * Copyright 2006, 2015 Klaus Hartl & Fagner Brack
  * Released under the MIT license
  */
-;
-(function(factory) {
+;(function (factory) {
     var registeredInModuleLoader = false;
     if (typeof define === 'function' && define.amd) {
         define(factory);
@@ -19,17 +18,17 @@
     if (!registeredInModuleLoader) {
         var OldCookies = window.Cookies;
         var api = window.Cookies = factory();
-        api.noConflict = function() {
+        api.noConflict = function () {
             window.Cookies = OldCookies;
             return api;
         };
     }
-}(function() {
-    function extend() {
+}(function () {
+    function extend () {
         var i = 0;
         var result = {};
         for (; i < arguments.length; i++) {
-            var attributes = arguments[i];
+            var attributes = arguments[ i ];
             for (var key in attributes) {
                 result[key] = attributes[key];
             }
@@ -37,8 +36,8 @@
         return result;
     }
 
-    function init(converter) {
-        function api(key, value, attributes) {
+    function init (converter) {
+        function api (key, value, attributes) {
             var result;
             if (typeof document === 'undefined') {
                 return;
@@ -132,17 +131,17 @@
         }
 
         api.set = api;
-        api.get = function(key) {
+        api.get = function (key) {
             return api.call(api, key);
         };
-        api.getJSON = function() {
+        api.getJSON = function () {
             return api.apply({
                 json: true
             }, [].slice.call(arguments));
         };
         api.defaults = {};
 
-        api.remove = function(key, attributes) {
+        api.remove = function (key, attributes) {
             api(key, '', extend(attributes, {
                 expires: -1
             }));
@@ -153,5 +152,5 @@
         return api;
     }
 
-    return init(function() {});
+    return init(function () {});
 }));

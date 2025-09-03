@@ -1,28 +1,28 @@
-(function($) {
+(function ($) {
     "use strict";
 
-    jQuery(document).ready(function($) {
+    jQuery(document).ready(function ($) {
 
 
 
 
-        $('.menu-open , .offcanvas-overlay').click(function() {
+        $('.menu-open , .offcanvas-overlay').click(function () {
 
             $('.offcanvas-area-main , .offcanvas-overlay').addClass('active');
 
         });
-        $('.off-menu-close , .offcanvas-overlay').click(function() {
+        $('.off-menu-close , .offcanvas-overlay').click(function () {
 
             $('.offcanvas-area-main , .offcanvas-overlay').removeClass('active');
 
         });
 
-        $('.secondary__navbar__menu__open , .offcanvas-overlay').click(function() {
+        $('.secondary__navbar__menu__open , .offcanvas-overlay').click(function () {
 
             $('.offcanvas-area , .offcanvas-overlay').addClass('active');
 
         });
-        $('.secondary__navbar__offcanvas__menu__close , .offcanvas-overlay').click(function() {
+        $('.secondary__navbar__offcanvas__menu__close , .offcanvas-overlay').click(function () {
 
             $('.offcanvas-area , .offcanvas-overlay').removeClass('active');
 
@@ -75,7 +75,7 @@
         });
 
 
-
+        
         $(".provider__slider__wrapper").owlCarousel({
             items: 6,
             nav: true,
@@ -131,7 +131,7 @@
 
     });
 
-    jQuery(window).load(function() {
+    jQuery(window).load(function () {
 
 
     });
@@ -140,11 +140,12 @@
 }(jQuery));
 
 // Fixed to TOP Header
-$(window).on('scroll', function() {
+$(window).on('scroll', function () {
     // Header Sticky JS
     if ($(this).scrollTop() > 150) {
         $('.header').addClass("sticky-top");
-    } else {
+    }
+    else {
         $('.header').removeClass("sticky-top");
     };
 

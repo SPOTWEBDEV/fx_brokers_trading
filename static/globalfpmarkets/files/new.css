@@ -1,0 +1,2053 @@
+.panel .card-head:after {
+    font-family: 'Font Awesome 5 Pro';
+    content: "\f00d"!important;
+    float: right;
+    height: 11px;
+    color: #00bdff;
+    font-size: 20px;
+}
+
+.panel-title::after {
+    content: "" !important;
+    color: #00bdff;
+    top: 5px;
+    right: 0px;
+    position: absolute;
+    font-size: 18px;
+    font-family: "Font Awesome 5 Pro";
+}
+
+.panel-heading .card-head.collapsed:after {
+    height: 0px;
+    content: "\f105"!important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*---404 page---*/
+
+.first-section{
+    max-width: 700px;
+    margin: auto;
+}
+
+#msg-text{
+    color:#3e495c;
+    line-height: 40px;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.error-img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+#SearchForm{
+    background-color: #eeeeee!important;
+    margin-bottom: 4px!important;
+    width: 90%!important;
+    float: left!important;
+    display: block;
+    font-size: 14px;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    height: 52px;
+}
+
+.sbm-btn{
+    background-color: #00aeef;
+    padding: 10px;
+    width: 10%;
+    float: left;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    height: 52px;
+}
+
+.search-msg{
+    text-align: left!important;
+    color: #00AEEF!important;
+    font-size: 13px;
+}
+
+input[type="text"]{
+    position: relative;
+    line-height: 47px;
+    border: 2px solid #e3e3e3;
+    padding: 0 16px;
+    color: #7a7a7a;
+    transition: border-color 0.3s ease-in-out;
+}
+
+
+.trade-heading{
+    text-align: center!important;
+    line-height: 42px!important;
+    color: #3e495c!important;
+}
+
+.first-box{
+    padding: 20px;
+    border: 1px solid rgba(62, 72, 86, .6);
+    border-radius: 0px 10px 10px 10px;
+    min-height: 260px;
+    
+}
+
+.box-title{
+    color: #3e495c;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    font-size: 21px;
+}
+
+.start-btn{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.btn-txt{
+    text-align: center;
+    color: #fff;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    background-color: #f82f4a;
+    border: none;
+    font-size: 20px;
+    font-weight: bold!important;
+}
+
+.btn-txt:hover{
+    color: #fff;
+}
+
+/* end of 404 */
+.mob-para{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    text-align: left!important;
+}
+
+.a-mobmenu{
+    font-size: 18px;
+    font-weight: 700;
+    color: #3e495c;
+    font-family: "Titillium Web", sans-serif !important;
+}
+
+.a-mobmenu:focus{
+    color: #3e495c;
+    text-decoration: none;
+}
+
+.collapse.in{
+    display: block;
+}
+
+.footer-links ul > li{
+    padding: 5px 0 0 0;
+}
+
+
+.footer-links ul > li{
+    padding-top: 5px!important;
+}
+
+
+#menu-footer-1, #menu-footer-6, #menu-footer-7, #menu-footer-8, #menu-footer-9{
+    padding-left: 0px !important;
+}
+
+.footermenu .card.card-body {
+    padding-bottom:10px;
+}
+
+.menu li a{
+    color: #3e495c !important;
+}
+
+.fa.fa-angle-right{
+    color:#00bdff;
+    float: right;
+    font-weight: 700;
+}
+
+
+
+ul{
+    list-style: none;
+}
+
+.card.card-body{
+    font-size: 30px!important;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+.mob-contact{
+    font-family: 'Helvetica Neue LT Pro',  sans-serif;
+    font-weight:500;
+    font-size:16px;
+    color:#000;
+}
+
+.mob-contact-info{
+    font-family: 'Helvetica Neue BD Pro', sans-serif!important;
+    font-weight: 600;
+    color: #00beff;
+    font-size: 18px;
+}
+
+.mobile-socials .fab {
+    font-size: 1.33333333em;
+    padding-left:10px;
+    line-height: 0.75em;
+    color: #00beff!important;
+    vertical-align: -15%;
+    border: none;
+    box-shadow: none;
+    width: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#dropdownMenu1{
+    background-color: transparent;
+    color: #2e3642;
+    border: 1px solid rgba(34,50,64,0.8);
+    padding: 2px 7px 2px 7px;
+    
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    border-radius: 0;
+    transition: all 0.2s ease-in-out;
+    backface-visibility: hidden;
+}
+
+.sitemap-text{
+    text-decoration: underline!important;
+    font-weight: bold;
+    color: #00beff;
+}
+
+.col-md-12.last-p{
+    padding-top: 0px;
+    text-align: left;
+    color: #7A7A7A;
+    font-size: 12px;
+    font-family: 'Helvetica Neue LT Pro', sans-serif;
+    
+}
+
+.footermenu ul li a {
+    font-size: 16px;
+}
+
+
+
+
+/* ------------ All Page Paddings Start -------------------- */
+.p__5 {
+	padding: 5px;
+}
+
+.p__10 {
+	padding: 10px;
+}
+
+.p__15 {
+	padding: 10px;
+}
+
+.p__20 {
+	padding: 20px;
+}
+
+.p__25 {
+	padding: 25px;
+}
+
+.p__30 {
+	padding: 30px;
+}
+
+.p__35 {
+	padding: 35px;
+}
+
+.p__40 {
+	padding: 40px;
+}
+
+.p__45 {
+	padding: 45 px;
+}
+
+.p__50 {
+	padding: 50px;
+}
+
+.p__60 {
+	padding: 60px;
+}
+
+.p__70 {
+	padding: 70px;
+}
+
+.p__80 {
+	padding: 80px;
+}
+
+.p__90 {
+	padding: 90px;
+}
+
+.p__100 {
+	padding: 100px;
+}
+
+.p__120 {
+	padding: 120px;
+}
+
+.p__140 {
+	padding: 140px;
+}
+
+.p__150 {
+	padding: 150px;
+}
+
+
+/* ----------------- Padding Top Start --------------------- */
+
+.pt__5 {
+	padding-top: 5px;
+}
+
+.pt__10 {
+	padding-top: 10px;
+}
+
+.pt__15 {
+	padding-top: 10px;
+}
+
+.pt__20 {
+	padding-top: 20px;
+}
+
+.pt__25 {
+	padding-top: 25px;
+}
+
+.pt__30 {
+	padding-top: 30px;
+}
+
+.pt__35 {
+	padding-top: 35px;
+}
+
+.pt__40 {
+	padding-top: 40px;
+}
+
+.pt__45 {
+	padding-top: 45 px;
+}
+
+.pt__50 {
+	padding-top: 50px;
+}
+
+.pt__60 {
+	padding-top: 60px;
+}
+
+.pt__70 {
+	padding-top: 70px;
+}
+
+.pt__80 {
+	padding-top: 80px;
+}
+
+.pt__90 {
+	padding-top: 90px;
+}
+
+.pt__100 {
+	padding-top: 100px;
+}
+
+.pt__120 {
+	padding-top: 120px;
+}
+
+.pt__140 {
+	padding-top: 140px;
+}
+
+.pt__150 {
+	padding-top: 150px;
+}
+
+/* ------------ Padding Bottom Start -------------------- */
+
+
+.pb__5 {
+	padding-bottom: 5px;
+}
+
+.pb__10 {
+	padding-bottom: 10px;
+}
+
+.pb__15 {
+	padding-bottom: 10px;
+}
+
+.pb__20 {
+	padding-bottom: 20px;
+}
+
+.pb__25 {
+	padding-bottom: 25px;
+}
+
+.pb__30 {
+	padding-bottom: 30px;
+}
+
+.pb__35 {
+	padding-bottom: 35px;
+}
+
+.pb__40 {
+	padding-bottom: 40px;
+}
+
+.pb__45 {
+	padding-bottom: 45 px;
+}
+
+.pb__50 {
+	padding-bottom: 50px;
+}
+
+.pb__60 {
+	padding-bottom: 60px;
+}
+
+.pb__70 {
+	padding-bottom: 70px;
+}
+
+.pb__80 {
+	padding-bottom: 80px;
+}
+
+.pb__90 {
+	padding-bottom: 90px;
+}
+
+.pb__100 {
+	padding-bottom: 100px;
+}
+
+.pb__120 {
+	padding-bottom: 120px;
+}
+
+.pb__140 {
+	padding-bottom: 140px;
+}
+
+.pb__150 {
+	padding-bottom: 150px;
+}
+
+
+/* ------------ Padding Right Start -------------------- */
+
+
+.pr__5 {
+	padding-right: 5px;
+}
+
+.pr__10 {
+	padding-right: 10px;
+}
+
+.pr__15 {
+	padding-right: 10px;
+}
+
+.pr__20 {
+	padding-right: 20px;
+}
+
+.pr__25 {
+	padding-right: 25px;
+}
+
+.pr__30 {
+	padding-right: 30px;
+}
+
+.pr__35 {
+	padding-right: 35px;
+}
+
+.pr__40 {
+	padding-right: 40px;
+}
+
+.pr__45 {
+	padding-right: 45 px;
+}
+
+.pr__50 {
+	padding-right: 50px;
+}
+
+.pr__60 {
+	padding-right: 60px;
+}
+
+.pr__70 {
+	padding-right: 70px;
+}
+
+.pr__80 {
+	padding-right: 80px;
+}
+
+.pr__90 {
+	padding-right: 90px;
+}
+
+.pr__100 {
+	padding-right: 100px;
+}
+
+.pr__120 {
+	padding-right: 120px;
+}
+
+.pr__140 {
+	padding-right: 140px;
+}
+
+.pr__150 {
+	padding-right: 150px;
+}
+
+
+/* ------------ All left Paddings Start -------------------- */
+
+
+.pl__5 {
+	padding-left: 5px;
+}
+
+.pl__10 {
+	padding-left: 10px;
+}
+
+.pl__15 {
+	padding-left: 10px;
+}
+
+.pl__20 {
+	padding-left: 20px !important;
+}
+
+.pl__25 {
+	padding-left: 25px;
+}
+
+.pl__30 {
+	padding-left: 30px;
+}
+
+.pl__35 {
+	padding-left: 35px;
+}
+
+.pl__40 {
+	padding-left: 40px;
+}
+
+.pl__45 {
+	padding-left: 45 px;
+}
+
+.pl__50 {
+	padding-left: 50px;
+}
+
+.pl__60 {
+	padding-left: 60px;
+}
+
+.pl__70 {
+	padding-left: 70px;
+}
+
+.pl__80 {
+	padding-left: 80px;
+}
+
+.pl__90 {
+	padding-left: 90px;
+}
+
+.pl__100 {
+	padding-left: 100px;
+}
+
+.pl__120 {
+	padding-left: 120px;
+}
+
+.pl__140 {
+	padding-left: 140px;
+}
+
+.pl__150 {
+	padding-left: 150px;
+}
+
+
+/* ------------ All Page Paddings END ---------------------- */
+
+/* ------------ All line heights -----------------------------*/
+
+.ln-height-1-4 {
+	line-height:1.4;
+}
+
+/* ------------ All Page Alignments START --------------------*/
+
+.text__align__center {
+	text-align: center;
+}
+
+.text__align__left {
+	text-align: left;
+}
+
+.text__align__right {
+	text-align: right;
+}
+
+
+.align__items__center {
+	align-items: center;
+}
+
+/* ------------ All Page Alignments END --------------------*/
+
+
+/* ------------ Font Page Colors START --------------------*/
+.text__dark {
+	color: #0b121c;
+}
+
+.text__white {
+	color: #fff !important;
+}
+
+.text__light__gray {
+	color: #f5f7fa;
+}
+
+.text__dark__gray {
+	color: #3e495c;
+}
+
+.text__brand {
+	color: #00bdff;
+}
+
+/* ------------ Font Page Colors END --------------------*/
+
+
+/* ------------ Background Colors START -----------------*/
+
+.bg__dark {
+	background-color: #0b121c;
+}
+
+.bg__white {
+	background-color: #fff;
+}
+
+.bg__light__gray {
+	background-color: #f5f7fa;
+}
+
+.bg__dark__gray {
+	background-color: #3e495c;
+}
+
+.bg__brand {
+	background-color: #00bdff;
+}
+
+/* ------------ Background Colors END -------------------*/
+
+
+/* ------------ Page Font Sizes START -------------------*/
+.basic__section__xl {
+	font-size: 45px;
+}
+
+.basic__section__title {
+	font-size: 34px;
+}
+
+.basic__section__title {
+	font-size: 34px;
+}
+
+.basic__section__subtitle {
+	font-size: 26px;
+}
+
+.basic__section__paragraph {
+	font-size: 18px;
+}
+
+/* ------------ Page Font Sizes END  -------------------*/
+
+
+/* ------------ Page Font Weight START  ----------------*/
+.fw__boldest {
+	font-weight: 900;
+}
+
+.fw__bold {
+	font-weight: 800;
+}
+
+.fw__normal {
+	font-weight: 500;
+}
+
+.fw__light {
+	font-weight: 300;
+}
+
+/* ------------ Page Font Weight END -------------------- */
+
+
+/* ------------ Sections Area START --------------------- */
+.basic__section__xs {
+	padding: 30px 0 30px 0;
+}
+
+.basic__section__sm {
+	padding: 40px 0 40px 0;
+}
+
+
+.basic__section__norm {
+	padding: 80px 0 80px 0;
+}
+
+.basic__section__lg {
+	padding: 100px 0 100px 0;
+}
+
+.basic__section__xl {
+	padding: 150px 0 150px 0;
+}
+
+/* ------------ Sections Area END -------------------------- */
+
+
+/* ------------ Header Section Start ------------------------------- */
+
+
+/* ------------ Header Section End ------------------------------- */
+
+
+/* ------------ Tables Start ------------------------------- */
+
+.table__p__20 {
+	padding-top: 20px !important;
+	padding-bottom: 20px !important;
+	padding-left: 20px !important;
+}
+
+/* ------------ Tables End ------------------------------- */
+
+
+
+/* ------------ All pages MOBILE version START ------------- */
+
+@media (min-width: 320px) and (max-width: 575px) {
+
+/* ---------------- MOBILE Paddings START ------------------ */
+
+	.pb__10__mob {
+		padding-bottom: 10px;
+	}
+
+	.pb__20__mob {
+		padding-bottom: 20px;
+	}
+
+	.faq__center__elements {
+		margin: auto;
+		width: 50% !important;
+	}
+
+	/* ------------ MOBILE Paddings END --------------------- */
+
+	/* ------------ MOBILE Font Sizes START ----------------- */
+
+	.basic__section__title {
+		font-size: 28px;
+	}
+
+	.basic__section__subtitle {
+		font-size: 20px;
+	}
+
+	.basic__section_paragraph {
+		font-size: 18px;
+	}
+
+	.align__center__mob {
+		text-align: center;
+	}
+
+	/* ------------ MOBILE Font Sizes END ---------------- */
+
+	/* ------------ Sections Area START ------------------ */
+	.basic__section__xs {
+		padding: 15px 0 15px 0;
+	}
+
+	.basic__section__sm {
+		padding: 20px 0 20px 0;
+	}
+
+
+	.basic__section__norm {
+		padding: 40px 0 40px 0;
+	}
+
+	.basic__section__lg {
+		padding: 50px 0 50px 0;
+	}
+
+	.basic__section__xl {
+		padding: 75px 0 75px 0;
+	}
+
+	/* ------------ Sections Area END -------------------- */
+
+
+	/* ------------ MOBILE Displays START ---------------- */
+
+	.mob__display__block {
+		display: block;
+	}
+
+	/* ------------ MOBILE Displays END ----------------- */
+
+}
+
+/* ------------ All pages MOBILE version END ----------- */
+
+
+/* ------------ All pages TABLET version START ---------- */
+
+@media (min-width: 576px) and (max-width: 991px) {
+
+	/* ------------ TABLET Paddings START --------------- */
+	.pb__10__mob {
+		padding-bottom: 10px;
+	}
+
+	.pb__20__mob {
+		padding-bottom: 20px;
+	}
+
+	/* ------------ TABLET Paddings END ----------------- */
+
+
+	/* ------------ TABLET Font Sizes START ------------- */
+
+	.basic__section__title {
+		font-size: 28px;
+	}
+
+	.basic__section__subtitle {
+		font-size: 20px;
+	}
+
+	.basic__section_paragraph {
+		font-size: 18px;
+	}
+
+	.align__center__mob {
+		text-align: center;
+	}
+
+	/* ------------ TABLET Font Sizes END --------------- */
+
+
+	/* ------------ TABLET Sections Area START ---------- */
+	.basic__section__xs {
+		padding: 15px 0 15px 0;
+	}
+
+	.basic__section__sm {
+		padding: 20px 0 20px 0;
+	}
+
+
+	.basic__section__norm {
+		padding: 40px 0 40px 0;
+	}
+
+	.basic__section__lg {
+		padding: 50px 0 50px 0;
+	}
+
+	.basic__section__xl {
+		padding: 75px 0 75px 0;
+	}
+
+	/* ------------ TABLET Sections Area END ------------- */
+
+
+	/* ------------ TABLET Displays START ---------------- */
+
+	.mob__display__block {
+		display: block;
+	}
+
+	/* ------------ TABLET Displays END ------------------ */
+
+}
+
+/* ------------ All pages TABLET version END -------------- */
+
+
+/* ------------ All pages LARGER SCREENS version START ---- */
+
+@media (min-width: 991px) and (max-width: 1199px) {
+/* ---------------- TABLET Paddings START ------------------*/
+
+	.pb__10__mob {
+		padding-bottom: 10px;
+	}
+
+	.pb__20__mob {
+		padding-bottom: 20px;
+	}
+
+	/* ------------ TABLET Paddings END -------------------- */
+
+	/* ------------ TABLET Font Sizes START ---------------- */
+
+	.basic__section__title {
+		font-size: 28px;
+	}
+
+	.basic__section__subtitle {
+		font-size: 20px;
+	}
+
+	.basic__section_paragraph {
+		font-size: 18px;
+	}
+
+	.align__center__mob {
+		text-align: center;
+	}
+
+	/* ------------ TABLET Font Sizes END -------------------- */
+
+
+	/* ------------ TABLET Sections Area START --------------- */
+	.basic__section__xs {
+		padding: 15px 0 15px 0;
+	}
+
+	.basic__section__sm {
+		padding: 20px 0 20px 0;
+	}
+
+
+	.basic__section__norm {
+		padding: 40px 0 40px 0;
+	}
+
+	.basic__section__lg {
+		padding: 50px 0 50px 0;
+	}
+
+	.basic__section__xl {
+		padding: 75px 0 75px 0;
+	}
+
+	/* ------------ TABLET Sections Area END ----------------- */
+
+
+	/* ------------ TABLET Displays START -------------------- */
+
+	.mob__display__block {
+		display: block;
+	}
+
+	/* ------------ TABLET Font Sizes END -------------------- */
+
+}
+
+/* ------------ All pages LARGER SCREENS version END --------- */
+
+
+/* ------------ ShareName Page START ------------------------- */
+
+.share__news__article {
+	max-width: auto;
+}
+
+.share__news__max__length {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+
+.share__news__date {
+	margin-top: 20px;
+	font-size: 14px;
+	font-weight: 300;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.51;
+	letter-spacing: normal;
+	text-align: left;
+	color: #202835;
+}
+
+.share__news__img {
+	border-radius: 0 10px 10px 10px !important;
+	max-width: 100%;
+	height: auto;
+}
+
+.display__block {
+	display: block;
+}
+
+.why__trade__img__block {
+	display: block;
+	padding: 10px 10px 10px 10px;
+}
+
+.why__trade__img {
+	max-height: 74px;
+	width: auto;
+}
+
+.faq__brand__card {
+	border-radius: 15px 15px 15px 15px !important;
+	border: 1px solid #00bdff;
+	max-width: 800px !important;
+}
+
+.faq__center__elements {
+	margin: auto;
+	width: 50%;
+}
+
+.faq__card__title {
+	font-size: 23px;
+}
+
+.table__borderless td {
+	border-bottom: 1px solid transparent;
+}
+
+.custom__panel {
+	border-radius: 0px 20px 0px 0px;
+	background-color: #00bdff;
+}
+
+
+.panel-body {
+    border: none !important;
+}
+
+.panel-heading {
+    cursor: pointer;
+}
+
+
+
+
+/* ------------ ShareName MOBILE PAGE START -------------------- */
+
+@media (min-width: 320px) and (max-width: 575px) {
+	.share__news__sharename {
+		display: block;
+	}
+
+	.faq__center__elements {
+		margin: auto;
+		width: 100% !important;
+	}
+}
+
+/* ------------ ShareName MOBILE PAGE END -------------------- */
+
+/* ------------ ShareName TABLET PAGE START -------------------- */
+
+@media (min-width: 576px) and (max-width: 991px) {
+
+	.share__news__sharename {
+		display: block;
+	}
+
+	.faq__center__elements {
+		margin: auto;
+		width: 100% !important;
+	}
+}
+
+/* ------------ ShareName TABLET PAGE END -------------------- */
+
+/* ------------ ShareName Bigger Screen PAGE START -------------------- */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	.share__news__sharename {
+		display: block;
+	}
+
+	.faq__center__elements {
+		margin: auto;
+		width: 50% !important;
+	}
+}
+
+/* ------------ ShareName Bigger Screen PAGE END -------------------- */
+
+
+/* ------------ ShareName Page END -------------------- */
+
+
+
+/* ------------ Metals Page OLD Start -------------------- */
+
+	#apple-inc-widget-second-section .apple-profile-hd-font-sect {
+        font-size: 28px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.08;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3e495c;
+    }
+
+    .apple-profile-hd-font-sect {
+        font-size: 32px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.08;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3e495c;
+    }
+
+    .norml-par-font {
+        font-size: 18.5px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.51;
+        letter-spacing: normal;
+        text-align: left;
+        color: #2e3642;
+    }
+
+	.apple-profile-semi-head-font {
+		font-size: 21px;
+		font-weight: 300;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.33;
+		letter-spacing: normal;
+		text-align: left;
+		color: #2e3642;
+	}
+	
+    .csf2 {
+        position: relative;
+        background: #fff;
+    }
+
+    #apple-inc-widget-second-section {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+	#apple-inc-widget-second-section .padding-top-20 {
+		padding-top: 20px;
+	}
+	#apple-inc-widget-second-section .padding-top-40 {
+		padding-top: 40px;
+	}
+    /* Table */
+    .table-normal-semi-font {
+        font-size: 18.5px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3e495c;
+    }
+
+    table tr td,
+    table tr th {
+        min-width: 125px;
+    }
+
+    .table-normal-font {
+        font-size: 18.5px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 25px;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3e495c;
+    }
+
+    .nctable table {
+        background: linear-gradient(white, white), linear-gradient(to bottom right, #fff 50%, rgba(0, 189, 255, .48), #26CC68);
+        background-clip: padding-box, border-box;
+        background-origin: padding-box, border-box;
+        border: 1px solid transparent;
+        border-left: 1px solid transparent;
+        border-radius: 0px 15px 15px 15px;
+        border-collapse: collapse;
+        overflow: hidden;
+        position: inherit;
+        white-space: nowrap;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .table-row-head {
+        background-image: linear-gradient(90deg, #152a4a 0%, #0888be 48%, #24c870 85%, #26cc68 100%);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 50px;
+        position: inherit;
+    }
+
+    table tr th {
+        background: transparent;
+    }
+
+    table tr td,
+    table tr th {
+        border-left: none;
+    }
+
+    table tr {
+        border-bottom: none;
+        border-right: none;
+        border-top: none;
+        height: 50px;
+    }
+
+    .header-font-table-rf {
+        padding-left: 30px;
+        font-size: 18.5px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+    }
+
+
+    /* Start Trading Section */
+    .page-bg-darkgray {
+        background-color: #152a4a;
+    }
+
+    .container-fluid {
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #blue-button-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .open-account,
+    .d-flex {
+        justify-content: center;
+    }
+
+    #blue-button-section .d-flex {
+        display: flex;
+    }
+
+
+    .open-account p {
+        margin-bottom: 0px;
+        color: #fff !important;
+        align-self: center;
+        font-size: 32px !important;
+        font-weight: 200 !important;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 40px;
+        letter-spacing: normal;
+    }
+
+    .btn-account {
+        width: 280px;
+        margin-top: 5px;
+        background: #00bdff;
+        text-transform: uppercase;
+        z-index: 1;
+        height: auto;
+        padding: 14px 14px !important;
+        color: #ffffff !important;
+        background-color: #00bdff;
+        position: relative;
+        display: inline-block;
+        font-size: 20.5px !important;
+        font-weight: 700;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: normal;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        #apple-inc-widget-first-section {
+            padding-top: 25px;
+        }
+
+        .btn-account {
+            max-height: 80px;
+        }
+
+        #blue-button-section {
+            text-align: center;
+        }
+
+        #blue-button-section .d-flex {
+            display: block;
+        }
+
+        .wid-for-faq-section {
+            width: auto !important;
+            margin: 0 auto;
+            padding-left: 15px;
+            padding-right: 15px;
+
+        }
+		
+    }
+
+    @media only screen and (min-width: 601px) and (max-width: 767px) {
+        .btn-account {
+            max-height: 80px;
+
+        }
+
+        #blue-button-section {
+            text-align: center;
+        }
+
+        #blue-button-section .d-flex {
+            display: block;
+        }
+
+        .wid-for-faq-section {
+            width: auto !important;
+            margin: 0 auto;
+            padding-left: 15px;
+            padding-right: 15px;
+
+        }
+    }
+
+
+    /* Panels Section */
+    .csf6 {
+        background: #eeeeee;
+    }
+
+    #social-trading-faq-section {
+        padding-top: 80px;
+        padding-bottom: 70px;
+    }
+
+    .h2-cent-font-sect {
+        font-size: 32px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.08;
+        letter-spacing: normal;
+        text-align: center;
+        color: #3e495c;
+    }
+
+    .wid-for-faq-section {
+        width: 650px;
+        margin: 0 auto;
+        padding: 40px 0 0 0;
+    }
+
+    .panel-group .panel {
+        border-radius: 15px 15px 15px 15px;
+    }
+
+    .panel-default>.panel-heading {
+        color: #333;
+        background-color: transparent !important;
+        border-color: #ddd;
+    }
+
+    .panel-heading {
+        padding: 10px 15px 10px 25px;
+    }
+
+    .card-head {
+        font-size: 23px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3e495c !important;
+    }
+
+
+
+    .panel-group .panel-heading+.panel-collapse>.list-group,
+    .panel-group .panel-heading+.panel-collapse>.panel-body {
+        border-top: 1px solid transparent;
+    }
+
+    .padding-for-card-align {
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+    }
+
+    .card-custom {
+        background-color: #fff !important;
+        width: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: linear-gradient(white, white), linear-gradient(to right, #fff 25%, rgba(0, 189, 255, 0.48), #26CC68);
+        background-clip: padding-box, border-box;
+        background-origin: padding-box, border-box;
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+        border-top: 1px solid transparent;
+    }
+
+    .panel {
+        margin-top: 0;
+    }
+
+    .panel-title {
+        position: relative;
+    }
+
+	/*.panel-title::after {
+        content: "\f078";
+        color: #00bdff;
+        top: 5px;
+        right: 0px;
+        position: absolute;
+        font-size: 18px;
+        font-family: "Font Awesome 5 Pro"
+    }
+
+    .panel-heading[aria-expanded="true"] .panel-title::after {
+        content: "\f077";
+        font-size: 18px;
+    }*/
+
+    .h2-cent-font-sect {
+        font-size: 32px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.08;
+        letter-spacing: normal;
+        text-align: center;
+        color: #3e495c;
+    }
+
+/* ------------ Metals Page OLD END ---------------------- */
+
+
+/* SHARES NEWS ARTICLES Section Start --------------------*/
+
+    #Latest-News–Apple-AAPL-section {
+    padding-top: 75px;
+    padding-bottom: 70px;
+    }
+    .h2-center-font-sect {
+    font-size: 32px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.09;
+    letter-spacing: normal;
+    text-align: center;
+    color: #3e495c;
+}
+#Latest-News–Apple-AAPL-section .padding-top-40 {
+    padding-top: 40px;
+}
+
+
+#Latest-News–Apple-AAPL-section .h4-left-font-card-author {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.51;
+    letter-spacing: normal;
+    text-align: left;
+    color: #202835;
+}
+
+
+#Latest-News–Apple-AAPL-section .card-description-font {
+    font-size: 18.5px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.51;
+    letter-spacing: normal;
+    text-align: left;
+    color: #202835;
+    text-decoration: underline;
+}
+
+#Latest-News–Apple-AAPL-section .read-more-a-tag-font {
+    font-size: 18.5px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.51;
+    letter-spacing: normal;
+    text-align: left;
+    color: #00bdff;
+}
+
+
+/* SHARES NEWS ARTICLES Section End --------------------*/
+
+ /* SECONDARY NAVBAR START */
+
+ .secondary__navbar__mob__menu ul.secondary__navbar__canvas li .secondary__navbar__menu__category:hover {
+	color: #00bdff;
+}
+
+.secondary__navbar__mob__menu ul.secondary__navbar__canvas li .secondary__navbar__menu__category.active {
+	color: #00bdff;
+
+}
+
+.secondary__navbar__mob__menu ul li a {
+	font-size: 18px;
+	color: #000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-decoration: none;
+	transition: .3s;
+	padding: 10px 25px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+.secondary__navbar__mob__menu>ul {
+	display: block;
+	padding-top: 20px;
+	padding-left: 0;
+	margin-bottom: 35px;
+	list-style: none;
+}
+
+.secondary__navbar__offcanvas__menu__close {
+	font-size: 24px;
+	color: #c9c9c9;
+	position: absolute;
+	top: 11px;
+	right: 14px;
+	cursor: pointer;
+	transition: .4s;
+	line-height: 1;
+	background-color: rgba(255, 255, 255, .15);
+	backdrop-filter: blur(15px) !important;
+	width: 34px;
+	height: 34px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.secondary__navbar__offcanvas__menu__close:hover .fa-times {
+	font-weight: 500 !important;
+	color: black;
+}
+
+.secondary__navbar__offcanvas__menu .secondary__navbar__canvas li {
+	border-bottom: 1px solid #f3f3f3;
+}
+
+.secondary__navbar__offcanvas__menu .secondary__navbar__canvas li:hover {
+	background-color: white;
+}
+
+
+.general__secondary__navbar__nav>li>a {
+	height: 100%;
+	text-align: center;
+	padding: 0 0px;
+	vertical-align: middle;
+	font-size: 17px;
+	color: #00bdff;
+	text-transform: uppercase;
+
+}
+
+.general__secondary__navbar__nav {
+	display: table;
+	padding: 0;
+	margin: 0;
+}
+
+.general__secondary__navbar__nav>li {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 20px;
+	float: none !important;
+	text-align: center;
+	border-left: 1px solid #e7e7e7;
+}
+
+.general__secondary__navbar__nav>li:first-child {
+	border-left: 1px solid transparent;
+}
+
+.general__secondary__navbar__nav>li a {
+	vertical-align: middle;
+	background-color: transparent;
+}
+
+.general__secondary__navbar__nav li.active {
+	background-color: #00bdff;
+	color: white;
+	border-left: 1px solid transparent;
+}
+
+.general__secondary__navbar__nav li.active a {
+	color: white;
+}
+
+.general__secondary__navbar__nav li:hover {
+	background-color: #00bdff;
+	color: white;
+	cursor: pointer;
+	border-left: 1px solid transparent;
+
+}
+
+.general__secondary__navbar__nav li:hover a {
+	color: white;
+}
+
+.general__secondary__navbar__nav li a:focus {
+	background-color: transparent;
+}
+
+.secondary__navbar__menu__open {
+	font-size: 26px;
+	color: #141514;
+	display: none;
+	cursor: pointer;
+	position: relative;
+	top: 0px;
+	margin-left: 20px;
+	margin-right: 6px;
+	display: block;
+	line-height: 0.5;
+}
+
+.secondary__navbar__menu__icon {
+	text-align: right; 
+	padding-right:5px; 
+	line-height:0;
+}
+.secondary__navbar__mob__header_text {
+	display: block;
+	font-size: 12px;
+	text-align: center;
+	line-height:1; 
+	font-weight:700;
+}
+
+.general__secondary__navbar__nav li a:hover {
+	color: #ffffff !important;
+}
+
+/* ------------ SECONDARY NAVBAR TABLET PAGE START -------------------- */
+
+@media (min-width: 576px) and (max-width: 991px) {
+
+	.secondary__navbar__nav {
+		display: none;
+	}
+}
+
+/* ------------ SECONDARY NAVBAR TABLET PAGE END -------------------- */
+
+/* ------------ SECONDARY NAVBAR Bigger Screen PAGE START -------------------- */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	.general__secondary__navbar__nav>li>a {
+		height: 100%;
+		text-align: center;
+		padding: 0 0px;
+		vertical-align: middle;
+		font-size: 14px;
+		color: #00bdff;
+		text-transform: uppercase;
+
+	}
+
+	.general__secondary__navbar__nav>li {
+		display: table-cell;
+		vertical-align: middle;
+		padding: 15px;
+		float: none !important;
+		text-align: center;
+		border-left: 1px solid #e7e7e7;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.secondary__navbar__mobile__header {
+		display: none;
+	}
+
+}
+
+/* ------------ SECONDARY NAVBAR Bigger Screen PAGE END -------------------- */
+
+
+/* INNER PAGES FIXES */
+
+.p__fixer p {
+    font-size: 18.5px !important;
+    line-height: 28px !important;
+ }
+
+.company-news .col-md-3 {
+    min-height: 400px !important;
+}
+
+
+/*share pages */
+
+.csf2 .pad-right-40 {
+    padding-right: 40px;
+}
+
+.csf2 .pad-left-40 {
+    padding-left: 40px;
+}
+
+
+.common-btn.active a {
+    color: #ffffff;
+}
+ /* INNER PAGES FIXES END */
+
+
+.mob-para a::after{
+    float: right !important;
+    font-family: 'FontAwesome';
+    content: "\f054";
+    padding-right: 5px;
+    color: #00bdff;
+    font-weight: 300;
+    height: 25px;
+}
+
+
+.mob-para a[aria-expanded="true"]::after{
+    float: right !important;
+    content: "\f078";
+    color: #00bdff;
+    font-weight: 300;
+    height: 25px;
+}
+
+
+.max__width__200 {
+    max-width: 200px;
+}
+
+
+.hero__edu__bg {
+    background: url(https://fpmarkets-int.com/wp-content/themes/fptheme/images/course-banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0;
+    background-size: 100% 100%;
+    
+}
+.fp__academy__logo__header {
+    text-align: right;
+    float: right;
+    margin-top: 20px;
+    margin-right: 0px;
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+    .hero__edu__bg {
+    background: url(https://fpmarkets-int.com/wp-content/themes/fptheme/images/academy-banner-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px 0;
+    
+    }
+    
+    .fp__academy__logo__header {
+    text-align: left;
+    float: left;
+    margin-top: 20px;
+    margin-right: 0px;
+    }
+    
+    .academy__logo {
+    max-width: 280px;
+    }
+    
+    .col__pb__20__mob {
+    padding-bottom: 40px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+
+    .hero__edu__bg {
+    background: url(https://fpmarkets-int.com/wp-content/themes/fptheme/images/academy-banner-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px 0;
+    
+    }
+    
+    .fp__academy__logo__header {
+    text-align: left;
+    float: left;
+    margin-top: 20px;
+    margin-right: 0px;
+    }
+    
+    .academy__logo {
+    max-width: 280px;
+    }
+    
+    .col__pb__20__mob {
+    padding-bottom: 20px;
+    }
+}        
+
+
+/* Education Lessons */
+
+.hr__prime {
+    border-top: 2px solid #00bdff !important;
+}
+
+.education__course hr {
+    border-top: 1px solid #cdd5e3 !important;
+}
+.sidebar-menu {
+    background-color: #f5f7fa;
+    border-radius: 0px 10px 10px 10px;
+    padding: 25px 15px;
+}
+
+.fs__16 {
+
+    font-size: 16px;
+}
+
+.course-bttn {
+    background: #00bdff;
+    float: right;
+    padding: 3px 16px;
+    border-radius: 0 10px;
+    text-transform: uppercase;
+    color: #0b121c;
+    font-size: 13px;
+    line-height: 28px;
+    letter-spacing: 0.52px;
+    text-align: center;
+}
+
+.edu__courses__over .sidebar-menu {
+    background-color: #f5f7fa;
+    border-radius: 0px 10px 10px 10px;
+    padding: 25px 15px;
+}
+
+.edu__courses__over .course-bttn {
+    background: #00bdff;
+    float: right;
+    padding: 3px 16px;
+    border-radius: 0 10px;
+    text-transform: uppercase;
+    color: #0b121c;
+    font-size: 13px;
+    line-height: 28px;
+    letter-spacing: 0.52px;
+    text-align: center;
+}
+
+
+/* GLOBAL FIXES */
+
+@media only screen and (min-width: 601px) and (max-width: 1286px ) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
+.page-navi {
+    z-index: 2 !important;
+}
+
+
+/*---------------------- Language Fixes ----------------------*/
+.cta__lang__sm {
+	font-size: 13px !important;
+	text-align: center !important;
+}
+
+.btn__pad__15 {
+	padding: 15px 21px !important;
+}
+.cta__langs__sm {
+    font-size:12px !important;
+    padding:12px 12px !important;
+    text-align:center;
+}
+@media only screen and (max-width:1199px){
+    .cta__langs__sm {
+        font-size:10px !important;
+        padding:10px 10px !important;
+        text-align:center;
+    }
+    
+    .header__nav.header__lang__sm>ul>li>a {
+        margin-left: 25px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width:1200px) and (max-width:1400px){
+    .header__nav.header__lang__xsm>ul>li>a {
+        margin-left: 20px;
+        font-size: 14px;
+    }
+    .cta__langs__sm {
+        font-size:10px !important;
+        padding:10px 10px !important;
+        text-align:center;
+    }
+}
+
+.header__nav.header__lang__xsm__fr>ul>li>a {
+    margin-left: 21px;
+    font-size: 16px;
+}
+.cta__lang__sm__fr {
+font-size: 13px !important;
+text-align: center !important;
+}
+
+@media only screen and (max-width:1200px) {
+    .header__nav.header__lang__xsm__fr>ul>li>a {
+        margin-left: 10px !important;
+        font-size: 14px !important;
+    }
+    .btn__lang__fr {
+        margin-left: 5px !important;
+    }
+    .cta__lang__sm__fr {
+	font-size: 13px !important;
+	text-align: center !important;
+	padding: 10px 15px !important;
+}
+    
+}

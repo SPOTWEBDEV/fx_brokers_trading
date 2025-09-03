@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90" height="90" viewBox="0 0 90 90">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_835" data-name="Rectangle 835" width="57.966" height="45.857" transform="translate(0 0)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Enjoy_Control_" data-name="Enjoy Control &amp;" transform="translate(-678 -5567)">
+    <circle id="Ellipse_31" data-name="Ellipse 31" cx="45" cy="45" r="45" transform="translate(678 5567)" fill="rgba(65,184,234,0.1)"/>
+    <g id="Group_2313" data-name="Group 2313" transform="translate(693.545 5588.272)">
+      <g id="Group_2312" data-name="Group 2312" transform="translate(0 0)" clip-path="url(#clip-path)">
+        <path id="Path_1800" data-name="Path 1800" d="M19.737,29.7a3.278,3.278,0,0,0,2.639-5.227l3.672-4.2a3.274,3.274,0,0,0,4.143-.83l3.428,1.685A3.281,3.281,0,1,0,39.313,19.8l3.6-4.323a3.29,3.29,0,1,0-1.144-.828L38.2,18.944a3.277,3.277,0,0,0-3.953.927l-3.428-1.684a3.281,3.281,0,1,0-5.825,1.166l-3.672,4.2A3.28,3.28,0,1,0,19.737,29.7M44.213,10.6a1.872,1.872,0,1,1-1.872,1.872A1.875,1.875,0,0,1,44.213,10.6m-7.407,9.446a1.872,1.872,0,1,1-1.873,1.872,1.875,1.875,0,0,1,1.873-1.872m-9.178-4.508a1.872,1.872,0,1,1-1.873,1.872,1.874,1.874,0,0,1,1.873-1.872m-7.891,9.017a1.872,1.872,0,1,1-1.872,1.872,1.874,1.874,0,0,1,1.872-1.872" transform="translate(-2.992 -1.67)" fill="#00bdff"/>
+        <path id="Path_1801" data-name="Path 1801" d="M51.789,34.135V3.222A3.225,3.225,0,0,0,48.567,0H8.838A3.226,3.226,0,0,0,5.616,3.222v30.9L0,39.574V42.1a3.759,3.759,0,0,0,3.755,3.755H54.211A3.759,3.759,0,0,0,57.967,42.1V39.553ZM8.838,1.408H48.567a1.816,1.816,0,0,1,1.814,1.814V34.084H7.025V3.222A1.816,1.816,0,0,1,8.838,1.408M56.558,42.1a2.349,2.349,0,0,1-2.347,2.347H3.755A2.349,2.349,0,0,1,1.409,42.1V40.169l4.816-4.677H51.2l5.356,4.7Z" transform="translate(0 0)" fill="#00bdff"/>
+        <rect id="Rectangle_834" data-name="Rectangle 834" width="39.121" height="1.409" transform="translate(9.422 39.168)" fill="#00bdff"/>
+      </g>
+    </g>
+  </g>
+</svg>
