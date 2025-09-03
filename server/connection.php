@@ -26,7 +26,7 @@ $isLocalhost = ($_SERVER['HTTP_HOST'] === 'localhost');
 
 if ($isLocalhost) {
     // Offline (Localhost)
-    $domain = "http://localhost/consignment_websites/";
+    $domain = "http://localhost/fx_brokers_trading/";
 
     define("USER", "root");
     define("PASSWORD", "");

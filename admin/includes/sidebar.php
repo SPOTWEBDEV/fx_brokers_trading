@@ -4,7 +4,7 @@
                             <li class="menu-title">Menu</li>
 
                             <li>
-                                <a href="" class="waves-effect">
+                                <a href="<?php echo $domain  ?>admin/dashboard/" class="waves-effect">
                                     <i class="ri-dashboard-line"></i>
                                     <span>Dashboard</span>
                                 </a>
