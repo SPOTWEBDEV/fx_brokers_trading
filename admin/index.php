@@ -1,3 +1,4 @@
+<?php include('../server/connection.php')  ?>
 <!doctype html>
 <html lang="en">
 
@@ -20,6 +21,11 @@
         <!-- App Css-->
         <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
 
+        <!-- SweetAlert2 CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
     </head>
 
     <body class="auth-body-bg">
@@ -41,17 +47,17 @@
                         <h4 class="text-muted text-center font-size-18"><b>Sign In</b></h4>
     
                         <div class="p-3">
-                            <form class="form-horizontal mt-3" action="">
+                            <form class="form-horizontal mt-3" id="form" method="POST">
     
                                 <div class="form-group mb-3 row">
                                     <div class="col-12">
-                                        <input class="form-control" type="text" required="" placeholder="Username">
+                                        <input class="form-control" type="email" required="" name="email" placeholder="Email">
                                     </div>
                                 </div>
     
                                 <div class="form-group mb-3 row">
                                     <div class="col-12">
-                                        <input class="form-control" type="password" required="" placeholder="Password">
+                                        <input class="form-control" type="password" required="" name="password" placeholder="Password">
                                     </div>
                                 </div>
     
@@ -79,6 +85,75 @@
                                     </div>
                                 </div>
                             </form>
+
+                             <script>
+                                    
+
+
+                                    let form = document.getElementById('form');
+                                    form.addEventListener('submit', (event) => {
+                                        event.preventDefault();
+                                        let formData = new FormData(form);
+
+                                        fetch('<?php echo $domain; ?>server/api/admin/login.php', {
+                                            method: 'POST',
+                                            body: formData
+                                        })
+                                        .then(response => {
+                                            if (!response.ok) {
+                                                throw new Error('Network response was not ok: ' + response.statusText);
+                                            }
+                                            return response.json(); // Or .json() if your API sends JSON
+                                        })
+                                        .then(data => {
+
+                                            console.log(data);
+                                            if (data.status == 'success') {
+
+                                                Swal.fire({
+                                                    icon: 'success',
+                                                    title: 'Login Successful',
+                                                    text: 'Welcome back!',
+                                                    width: '300px',
+                                                    height: '300px'
+                                                });
+
+                                                setTimeout(() => {
+                                                        
+                                                    location.href = '<?php echo $domain; ?>admin/dashboard/';
+                                                }, 3000);
+
+                                            }
+
+                                            if (data.status == 'error') {
+
+                                                Swal.fire({
+                                                    icon: 'error',
+                                                    title: 'Login Failed',
+                                                    text: data.message,
+                                                    width: '300px',
+                                                    height: '300px'
+
+                                                });
+
+
+                                            }
+                                        })
+                                        .catch(error => {
+                                            console.error('Error:', error);
+                                            Swal.fire({
+                                                    icon: 'error',
+                                                    title: 'Login Failed',
+                                                    text: "An error occurred while processing your request.",
+                                                    width: '300px',
+                                                    height: '300px'
+                                            });
+                                        });
+                                    });
+
+
+
+                            </script>
                         </div>
                         <!-- end -->
                     </div>
