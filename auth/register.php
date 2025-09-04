@@ -719,67 +719,67 @@
 
 
                 <script>
-                let form = document.getElementById('form');
-                document.getElementById('url').value = window.location.href;
-                form.addEventListener('submit', (event) => {
-                    event.preventDefault();
-                    let formData = new FormData(form);
+                    let form = document.getElementById('form');
+                    document.getElementById('url').value = window.location.href;
+                    form.addEventListener('submit', (event) => {
+                        event.preventDefault();
+                        let formData = new FormData(form);
 
-                    fetch('<?php echo $domain; ?>server/api/users/register.php', {
-                            method: 'POST',
-                            body: formData
-                        })
-                        .then(response => {
-                            if (!response.ok) {
-                                throw new Error('Network response was not ok: ' + response.statusText);
-                            }
-                            return response.json(); // Or .json() if your API sends JSON
-                        })
-                        .then(data => {
+                        fetch('<?php echo $domain; ?>server/api/users/register.php', {
+                                method: 'POST',
+                                body: formData
+                            })
+                            .then(response => {
+                                if (!response.ok) {
+                                    throw new Error('Network response was not ok: ' + response.statusText);
+                                }
+                                return response.json(); // Or .json() if your API sends JSON
+                            })
+                            .then(data => {
 
-                            console.log(data);
-                            if (data.status == 'success') {
+                                console.log(data);
+                                if (data.status == 'success') {
 
-                                Swal.fire({
-                                    icon: 'success',
-                                    title: 'Login Successful',
-                                    text: 'Welcome back!',
-                                    width: '300px',
-                                    height: '300px'
-                                });
+                                    Swal.fire({
+                                        icon: 'success',
+                                        title: 'Register Successful',
+                                        text: 'Welcome back!',
+                                        width: '300px',
+                                        height: '300px'
+                                    });
 
-                                setTimeout(() => {
+                                    setTimeout(() => {
 
-                                    location.href = '<?php echo $domain; ?>auth/login.php';
-                                }, 3000);
+                                        location.href = '<?php echo $domain; ?>auth/login.php';
+                                    }, 3000);
 
-                            }
+                                }
 
-                            if (data.status == 'error') {
+                                if (data.status == 'error') {
 
+                                    Swal.fire({
+                                        icon: 'error',
+                                        title: 'Login Failed',
+                                        text: data.message,
+                                        width: '300px',
+                                        height: '300px'
+
+                                    });
+
+
+                                }
+                            })
+                            .catch(error => {
+                                console.error('Error:', error);
                                 Swal.fire({
                                     icon: 'error',
                                     title: 'Login Failed',
-                                    text: data.message,
+                                    text: "An error occurred while processing your request.",
                                     width: '300px',
                                     height: '300px'
-
                                 });
-
-
-                            }
-                        })
-                        .catch(error => {
-                            console.error('Error:', error);
-                            Swal.fire({
-                                icon: 'error',
-                                title: 'Login Failed',
-                                text: "An error occurred while processing your request.",
-                                width: '300px',
-                                height: '300px'
                             });
-                        });
-                });
+                    });
                 </script>
 
 

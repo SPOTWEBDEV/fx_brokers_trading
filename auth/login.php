@@ -1,3 +1,4 @@
+<?php  include("../server/connection.php");  ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -63,6 +64,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
     <link rel="icon" href="https://fpmarkets-int.com/static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
+        <!-- SweetAlert2 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Styles -->
     <link rel="stylesheet" href="../static/globalfpmarkets/assets/assets/css/app2d1f.css">
@@ -82,9 +85,8 @@
                         Login
                     </h2>
                 </div>
-                <form method="POST" action="login.html" class="login-form">
-                    <input type="hidden" name="csrfmiddlewaretoken"
-                        value="fdYFRbEobDUW01fRq5F1acZFdljGmd8AdJVSlSDNdpmHbdhh3WTxkShl08merUQd">
+                <form method="POST"  id="form" class="login-form">
+                    <input type="hidden" name="url" id="url">
                     <div class="form-group">
                         <v-label label-for="email">E-mail address</v-label>
 
@@ -128,6 +130,89 @@
                         <button type="submit" class="btn btn-primary">Login</button>
                     </div>
                 </form>
+
+                <script>
+                    let form = document.getElementById('form');
+                    document.getElementById('url').value = window.location.href;
+                    form.addEventListener('submit', (event) => {
+                        event.preventDefault();
+                        let formData = new FormData(form);
+
+                        fetch('<?php echo $domain; ?>server/api/users/login.php', {
+                                method: 'POST',
+                                body: formData
+                            })
+                            .then(response => {
+                                if (!response.ok) {
+                                    throw new Error('Network response was not ok: ' + response.statusText);
+                                }
+                                return response.json(); // Or .json() if your API sends JSON
+                            })
+                            .then(data => {
+
+                                console.log(data);
+                                if (data.status == 'success') {
+
+                                    Swal.fire({
+                                        icon: 'success',
+                                        title: 'Login Successful',
+                                        text: 'Welcome back!',
+                                        width: '300px',
+                                        height: '300px'
+                                    });
+
+                                    setTimeout(() => {
+
+                                        location.href = '<?php echo $domain; ?>auth/login.php';
+                                    }, 3000);
+
+                                }
+
+                                if (data.status == 'error') {
+
+                                    Swal.fire({
+                                        icon: 'error',
+                                        title: 'Login Failed',
+                                        text: data.message,
+                                        width: '300px',
+                                        height: '300px'
+
+                                    });
+
+
+                                }
+
+
+                                
+                                if (data.status == 'warn') {
+
+                                    Swal.fire({
+                                        icon: 'warning',
+                                        title: 'Login Failed',
+                                        text: data.message,
+                                        width: '300px',
+                                        height: '300px'
+
+                                    });
+
+
+                                }
+                            })
+                            .catch(error => {
+                                console.error('Error:', error);
+                                Swal.fire({
+                                    icon: 'error',
+                                    title: 'Login Failed',
+                                    text: "An error occurred while processing your request.",
+                                    width: '300px',
+                                    height: '300px'
+                                });
+                            });
+                    });
+                </script>
+
+
+
 
                 <div class="register-btn-wrapper">
                     <p>
