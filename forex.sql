@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 04, 2025 at 06:35 PM
+-- Generation Time: Sep 04, 2025 at 09:40 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -123,9 +123,25 @@ CREATE TABLE `users` (
   `lastname` varchar(100) NOT NULL,
   `email` varchar(150) NOT NULL,
   `phone` varchar(20) DEFAULT NULL,
-  `status` enum('active','inactive','suspended') DEFAULT 'active',
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `status` enum('active','pending','suspended') DEFAULT 'active',
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `gender` varchar(255) NOT NULL,
+  `security_answer` varchar(255) NOT NULL,
+  `security_question` varchar(255) NOT NULL,
+  `country` varchar(255) NOT NULL,
+  `profile` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `firstname`, `lastname`, `email`, `phone`, `status`, `created_at`, `gender`, `security_answer`, `security_question`, `country`, `profile`, `password`) VALUES
+(1, 'mr', 'mind', 'arumkingsley49@gmail.com', '09017862743', 'pending', '2025-09-05 04:18:18', 'Male', 'coding', 'What is your hobby?', 'AZ', 'normal.jpg', '$2y$10$WyPa4QiAky44o3ENqUx9ruL2NtCWLisVPbSRXGPYXDaJMDw4nSfJe'),
+(2, 'mr', 'mind', 'arumkingsley9@gmail.com', '09017862743', 'pending', '2025-09-05 04:24:02', 'Male', 'coding', 'What is your hobby?', 'AM', 'normal.jpg', '$2y$10$BDQ8p15sMQnQbxbSuH8u6OPL/bPnnl6bS97bzteAWadNrGxG1Sej2'),
+(3, 'mr', 'mind', 'arumkingsley@gmail.com', '09017862743', 'pending', '2025-09-05 04:29:01', 'Male', 'mind', 'What is your hobby?', 'BH', 'normal.jpg', '$2y$10$a./wYPZVDXqTp1d5bzi3SObN1FmQZqxzBDZYPKow9hw6Y8hmYeidK'),
+(4, 'mr', 'mind', 'arumkingsley39@gmail.com', '09017862743', 'pending', '2025-09-05 04:32:13', 'Male', 'coding', 'What is your hobby?', 'BS', 'normal.jpg', '$2y$10$3w.hEC3d/WLxHObDK1.ZaOxGpwx.BDWuTrXhRfqZ9OBKza9o/a5xi');
 
 -- --------------------------------------------------------
 
@@ -253,7 +269,7 @@ ALTER TABLE `useractivity`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `verification`
