@@ -112,12 +112,15 @@
                                         <thead>
                                             <tr>
 
-                                                <th>S/N</th>
-                                                <th>Full Name</th>
-                                                <th>Email </th>
+                                                <th>S/N:</th>
+                                                <th>Full-Name:</th>
+                                                <th>Email:</th>
                                                 <th>Phone</th>
-                                                <th>Register Date</th>
-                                                <th>Status</th>
+                                                <th>Reg-Date:</th>
+                                                <th>Status:</th>
+                                                <th>Action:</th>
+                                                <th>#:</th>
+                                                <th>#:</th>
                                             </tr>
                                         </thead>
 
@@ -131,27 +134,78 @@
                                             $sn = 1;
                                             while ($row = mysqli_fetch_assoc($select_logs)) {
                                                 $id = $row['id'];
-                                                $fullname = $row['name'];
-                                                $email = $row['ref_id'];
-                                                $date = $row['date'];
-                                                $time = $row['time'];
+                                                $fullname = $row['firstname'] . " " . $row['lastname'];
+                                                $email = $row['email'];
+                                                $phone = $row['phone'];
+                                                $date = $row['created_at'];
                                                 $status = $row['status'];
                                                 echo "<tr>";
                                                 echo "<td>$sn</td>";
-                                                echo "<td>$activity_type</td>";
-                                                echo "<td>$referance_ip</td>";
+                                                echo "<td>$fullname</td>";
+                                                echo "<td>$email</td>";
+                                                echo "<td>$phone</td>";
                                                 echo "<td>$date</td>";
-                                                echo "<td>$time</td>";
-                                                if($status == "Failed"){
-                                                    echo "<td style='color: red;'>$status</td>";
-                                                } else {
-                                                    echo "<td style='color: green;'>$status</td>";
+                                                if($status == "suspended"){
+                                                    echo "<td style='color: red;'>Suspended</td>";
+                                                } else if ($status == "pending") {
+                                                    echo "<td style='color: blue;'>Pending</td>";
+                                                }else{
+
+                                                    echo "<td style='color: green;'>Active</td>";
                                                 }
+
+                                                if($status == "suspended"){
+
+                                                    echo "<td><button class='btn btn-primary btn-sm'><a style='color: white;' href='index.php?activate=$id'>Activate</a></button></td>";
+                                                } 
+                                                 
+                                                if ($status == "pending") {
+                                                    echo "<td><button class='btn btn-success btn-sm'><a style='color: white;' href='index.php?approve=$id'>Approve</a></button></td>";
+                                                }
+                                                
+                                                if ($status == "active") {
+                                                    echo "<td><button class='btn btn-danger btn-sm'><a style='color: white;' href='index.php?suspend=$id'>Suspend</a></button></td>";
+                                                }
+
+                                                echo "<td><button class='btn btn-danger btn-sm'><a style='color: white;' href='index.php?delete=$id'>Delete</a></button></td>";
+
+                                                echo "<td><button class='btn btn-primary btn-sm'><a style='color: white;' href='edit.php?id=$id'>Edit</a></button></td>";
+
+
+
                                                 echo "</tr>";
                                                 $sn++;
                                             }
 
 
+                                            if (isset($_GET['delete'])) {
+                                                $the_user_id = $_GET['delete'];
+                                                $query = "DELETE FROM users WHERE id = $the_user_id";
+                                                $delete_query = mysqli_query($connection, $query);
+                                                echo "<script>window.location='index.php'</script>";
+                                            }
+
+
+                                            if (isset($_GET['activate'])) {
+                                                $the_user_id = $_GET['activate'];
+                                                $query = "UPDATE users SET status = 'active' WHERE id = $the_user_id";
+                                                $activate_query = mysqli_query($connection, $query);
+                                                echo "<script>window.location='index.php'</script>";
+                                            }
+
+                                            if (isset($_GET['suspend'])) {
+                                                $the_user_id = $_GET['suspend'];
+                                                $query = "UPDATE users SET status = 'suspended' WHERE id = $the_user_id";
+                                                $suspend_query = mysqli_query($connection, $query);
+                                                echo "<script>window.location='index.php'</script>";
+                                            }
+
+                                                if (isset($_GET['approve'])) {
+                                                    $the_user_id = $_GET['approve'];
+                                                    $query = "UPDATE users SET status = 'active' WHERE id = $the_user_id";
+                                                    $approve_query = mysqli_query($connection, $query);
+                                                    echo "<script>window.location='index.php'</script>";
+                                                }
 
                                             ?>
 
