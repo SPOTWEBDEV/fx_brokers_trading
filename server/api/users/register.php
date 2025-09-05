@@ -32,11 +32,10 @@ if (isset($_POST['url'])) {
                 'status' => 'error'
             ]);
             exit();
+        } else {
 
-        }else{
 
 
-            
             // Check if username already exists
             $stmt = $connection->prepare("SELECT id FROM users WHERE email = ?");
             $stmt->bind_param("s", $email);
@@ -54,7 +53,7 @@ if (isset($_POST['url'])) {
             $stmt->close();
 
 
-                        // Hash the password
+            // Hash the password
             $passwordHash = password_hash($password1, PASSWORD_BCRYPT);
 
             // Insert user into the database
@@ -87,13 +86,21 @@ if (isset($_POST['url'])) {
                 $date
             );
 
+           // make sure session is started at the very top of your script
+
             if ($insert_stmt->execute()) {
+                // Get the newly inserted user ID
+                $newUserId = $connection->insert_id;
+
+                // Store user ID in session
+                $_SESSION['user_id'] = $newUserId;
+
                 echo json_encode([
                     'message' => 'User registered successfully.',
-                    'status' => 'success'
+                    'status' => 'success',
+                    'user_id' => $newUserId
                 ]);
                 $insert_stmt->close();
-
             } else {
                 echo json_encode([
                     'message' => 'Unable to register, please try again later.',
@@ -101,15 +108,9 @@ if (isset($_POST['url'])) {
                 ]);
             }
 
+
             exit();
-
-
-
-
         }
-
-
-
     } else {
         echo json_encode([
             'message' => 'Access Denied! You are not allowed to access this page directly.',
@@ -124,4 +125,3 @@ if (isset($_POST['url'])) {
     ]);
     exit();
 }
-?>

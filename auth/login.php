@@ -163,7 +163,7 @@
 
                                     setTimeout(() => {
 
-                                        location.href = '<?php echo $domain; ?>auth/login.php';
+                                        location.href = '<?php echo $domain; ?>app/dashboard';
                                     }, 3000);
 
                                 }

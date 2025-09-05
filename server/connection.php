@@ -58,3 +58,5 @@ $sitename = 'Forex Hub International Limited';
 $siteemail = 'support@fhil.com';
 
 $money = '&#36;';
+
+ session_start(); 

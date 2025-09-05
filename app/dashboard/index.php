@@ -1,21 +1,21 @@
-<html>
+<?php
+include('../../server/connection.php');
+include('../../server/auth/client.php');
 
-<head>
+?>
+
+<html><head>
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title static-title="FPMarkets">FPMarkets</title>
-    <meta name="description"
-        content="FPMarkets offers low trading fees. You can be up and running quickly as both account opening and deposits are super easy and fast">
+    <meta name="description" content="FPMarkets offers low trading fees. You can be up and running quickly as both account opening and deposits are super easy and fast">
 
-    <link rel="apple-touch-icon" sizes="180x180"
-        href="../../static/account/new/assets/img/icons/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32"
-        href="../../static/account/new/assets/img/icons/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
-    <link rel="manifest"
-        href="{% static 'account/new/assets/img/icons/favicon/site.webmanifest">
-    <link rel="shortcut icon" href="../../static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../static/account/new/assets/img/icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../static/account/new/assets/img/icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
+    <link rel="manifest" href="{% static 'account/new/assets/img/icons/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="/static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="{% static 'account/new/assets/img/icons/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
@@ -93,14 +93,14 @@
   <style type="text/css">/* Chart.js */
 @-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style>
 
-<script type="text/javascript" charset="utf-8" async="" src="https://www.smartsuppchat.com/loader.js?"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script><style type="text/css" id="operaUserStyle"></style>
+<script type="text/javascript" charset="utf-8" async="" src="https://www.smartsuppchat.com/loader.js?"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
 <style type="text/css">/* Chart.js */
 @-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style></head>
 
 
 
-  <body style="overflow-x:scroll;" kr-hm="0" logopath-black="../../static/account/new/public/logo/65763f8f5e0d1-2396-logo89d9.png" logopath="../../static/globalfpmarkets/files/logo-main.4b9c545ea9347660b73dd3b00a629d43.png" hrefapp="" kr-timestamp="1724089351" mbill="false" sintro="1" kr-numformat=".:," class=" " activeabo="1"><svg display="none" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <body style="overflow-x:scroll;" kr-hm="0" logopath-black="../../static/account/new/public/logo/65763f8f5e0d1-2396-logo89d9.png" logopath="/static/globalfpmarkets/files/logo-main.4b9c545ea9347660b73dd3b00a629d43.png" hrefapp="" kr-timestamp="1724089351" mbill="false" sintro="1" kr-numformat=".:," class=" " activeabo="1" cz-shortcut-listen="true"><svg display="none" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
 
 
@@ -2251,8 +2251,8 @@ section.kr-user1 {
         </div>
       </div>
       <div class="kr-user1-infos">
-        <h3>Mr</h3>
-        <span>arumkingsley49@gmail.com</span>
+        <h3>Ezea</h3>
+        <span>spotwebdev.com@gmail.com</span>
       </div>
     </div>
     <section class="kr-user1-pic-s kr-user1-pic-s-u" style="background-image:url('')">
@@ -2278,7 +2278,7 @@ align-items: center; text-decoration:none; list-style-type:none;
 	-webkit-overflow-scrolling: touch;">
     <a href="/update_address/" class="lin"><li class="kr-user1-nav-selected" kr-user1-v="profile">Update Profile</li></a>
     <a href="/update_email/" class="lin"><li kr-user1-v="notifications">Update Email</li></a>
-    <a href="/deposit/" class="lin"><li kr-user1-v="notifications">Deposit</li></a>
+    <a href="<?php  echo $domain ?>app/deposit/" class="lin"><li kr-user1-v="notifications">Deposit</li></a>
     <a href="/withdraw/" class="lin"><li kr-user1-v="security">Withdraw</li></a>
     <a href="/deposit_history/" class="lin"> <li kr-user1-v="widthdraw">Deposit History</li></a>
     <a href="/withdraw_history/" class="lin"><li kr-user1-v="widthdraw">Withdraw History</li></a>
@@ -2291,11 +2291,11 @@ align-items: center; text-decoration:none; list-style-type:none;
     <div class="kr-user1-f-l">
       <div>
         <label>Your name</label>
-        <input type="text" name="kr-user1-name" placeholder="Your name" value="mr" readonly="">
+        <input type="text" name="kr-user1-name" placeholder="Your name" value="<?php echo $firstname . ' ' . $lastname ?>" readonly="">
       </div>
       <div>
         <label>Your e-mail address</label>
-        <input type="text" placeholder="Your e-mail address" name="kr-user1-email" value="arumkingsley49@gmail.com" readonly="">
+        <input type="text" placeholder="Your e-mail address" name="kr-user1-email" value="<?php echo $email ?>" readonly="">
       </div>
     </div>
     <div class="kr-user1-f-l">
@@ -2472,7 +2472,7 @@ align-items: center; text-decoration:none; list-style-type:none;
       <div>
         <div>
           <div class="kr-logo">
-                          <img src="../../static/globalfpmarkets/files/logo-main.4b9c545ea9347660b73dd3b00a629d43.png" alt="">
+                          <img src="/static/globalfpmarkets/files/logo-main.4b9c545ea9347660b73dd3b00a629d43.png" alt="">
                       </div>
           <div class="kr-change-dashboard">
             <img src="../../static/account/new/assets/img/icons/dashboard/4_grid.svg" alt="">
@@ -3017,7 +3017,7 @@ window.onload = setInterval(() => target.style.opacity = '0', 4000)
                <h2 class="modal-title">Order</h2>
                <form class="form-container" method="POST">
               
-                <input type="hidden" name="csrfmiddlewaretoken" value="xGolTrLzeY2p1uiB8hGCKTTlPHGSjbPQsuhqACM2dDxhxzbdpdzy2VTcCBGqlTXK">
+                <input type="hidden" name="csrfmiddlewaretoken" value="Tk8VyCOF0eyX6cTG5W80hEvrHmJ3w6qx0KdOxKPj48N4U9OIHLC2jjijr3BH0WsT">
                    
                   
  
@@ -3028,9 +3028,9 @@ window.onload = setInterval(() => target.style.opacity = '0', 4000)
                   <input type="number" name="volume" maxlength="200" required="" step="any" value="" placeholder="Amount to buy" class="form-input" id="id_volume">
  
 
-                  <input type="hidden" name="email" maxlength="300" autofocus="autofocus" class="form-control" id="example-email-input" value="arumkingsley49@gmail.com">
+                  <input type="hidden" name="email" maxlength="300" autofocus="autofocus" class="form-control" id="example-email-input" value="spotwebdev.com@gmail.com">
 
-                  <input type="hidden" name="order_no" maxlength="200" autofocus="autofocus" class="form-control" id="example-email-input" value="#935219">
+                  <input type="hidden" name="order_no" maxlength="200" autofocus="autofocus" class="form-control" id="example-email-input" value="#310288">
  
                      
      
@@ -3214,7 +3214,7 @@ window.onload = setInterval(() => target.style.opacity = '0', 4000)
 
             <form class="form-container" method="POST">
               
-  <input type="hidden" name="csrfmiddlewaretoken" value="xGolTrLzeY2p1uiB8hGCKTTlPHGSjbPQsuhqACM2dDxhxzbdpdzy2VTcCBGqlTXK">
+  <input type="hidden" name="csrfmiddlewaretoken" value="Tk8VyCOF0eyX6cTG5W80hEvrHmJ3w6qx0KdOxKPj48N4U9OIHLC2jjijr3BH0WsT">
               
              
 
@@ -3225,9 +3225,9 @@ window.onload = setInterval(() => target.style.opacity = '0', 4000)
              <input type="number" name="volume" maxlength="200" required="" step="any" value="" placeholder="Amount to buy" class="form-input" id="id_volume">
  
 
-             <input type="hidden" name="email" maxlength="300" autofocus="autofocus" class="form-control" id="example-email-input" value="arumkingsley49@gmail.com">
+             <input type="hidden" name="email" maxlength="300" autofocus="autofocus" class="form-control" id="example-email-input" value="spotwebdev.com@gmail.com">
 
-             <input type="hidden" name="order_no" maxlength="200" autofocus="autofocus" class="form-control" id="example-email-input" value="#935219">
+             <input type="hidden" name="order_no" maxlength="200" autofocus="autofocus" class="form-control" id="example-email-input" value="#310288">
 
                 
 
@@ -3950,7 +3950,7 @@ justify-content: center;">
 
 
 <div class="tradingview-widget-container" style="height:90%;margin-right:121px;">
-  <div id="tradingview_66c3840ed800e" style="height:100%;"><div id="tradingview_88435-wrapper" style="position: relative; box-sizing: content-box; font-family: -apple-system, BlinkMacSystemFont, &quot;Trebuchet MS&quot;, Roboto, Ubuntu, sans-serif; margin: 0px auto !important; padding: 0px !important; width: 100%; height: 100%;"><iframe title="advanced chart TradingView widget" lang="en" id="tradingview_88435" frameborder="0" allowtransparency="true" scrolling="no" allowfullscreen="true" src="https://s.tradingview.com/widgetembed/?hideideas=1&amp;overrides=%7B%7D&amp;enabled_features=%5B%5D&amp;disabled_features=%5B%5D&amp;locale=en#%7B%22symbol%22%3A%22SOLUSD%22%2C%22frameElementId%22%3A%22tradingview_88435%22%2C%22interval%22%3A%221%22%2C%22range%22%3A%22all%22%2C%22hide_side_toolbar%22%3A%220%22%2C%22allow_symbol_change%22%3A%220%22%2C%22save_image%22%3A%220%22%2C%22watchlist%22%3A%22BINANCE%3ABTCUSDT%5Cu001fBINANCE%3AETHUSDT%22%2C%22details%22%3A%221%22%2C%22calendar%22%3A%221%22%2C%22hotlist%22%3A%221%22%2C%22studies%22%3A%22BB%40tv-basicstudies%5Cu001fMACD%40tv-basicstudies%5Cu001fMF%40tv-basicstudies%22%2C%22theme%22%3A%22Dark%22%2C%22style%22%3A%221%22%2C%22timezone%22%3A%22Etc%2FUTC%22%2C%22withdateranges%22%3A%221%22%2C%22studies_overrides%22%3A%22%7B%7D%22%2C%22utm_source%22%3A%22www.fpmarkets-int.com%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22chart%22%2C%22utm_term%22%3A%22SOLUSD%22%2C%22page-uri%22%3A%22www.fpmarkets-int.com%2Fuser_dashboard%2F%22%7D" style="width: 100%; height: 100%; margin: 0px !important; padding: 0px !important;"></iframe></div></div>
+  <div id="tradingview_66c3840ed800e" style="height:100%;"><div id="tradingview_e88df-wrapper" style="position: relative; box-sizing: content-box; font-family: -apple-system, BlinkMacSystemFont, &quot;Trebuchet MS&quot;, Roboto, Ubuntu, sans-serif; margin: 0px auto !important; padding: 0px !important; width: 100%; height: 100%;"><iframe title="advanced chart TradingView widget" lang="en" id="tradingview_e88df" frameborder="0" allowtransparency="true" scrolling="no" allowfullscreen="true" src="https://s.tradingview.com/widgetembed/?hideideas=1&amp;overrides=%7B%7D&amp;enabled_features=%5B%5D&amp;disabled_features=%5B%5D&amp;locale=en#%7B%22symbol%22%3A%22SOLUSD%22%2C%22frameElementId%22%3A%22tradingview_e88df%22%2C%22interval%22%3A%221%22%2C%22range%22%3A%22all%22%2C%22hide_side_toolbar%22%3A%220%22%2C%22allow_symbol_change%22%3A%220%22%2C%22save_image%22%3A%220%22%2C%22watchlist%22%3A%22BINANCE%3ABTCUSDT%5Cu001fBINANCE%3AETHUSDT%22%2C%22details%22%3A%221%22%2C%22calendar%22%3A%221%22%2C%22hotlist%22%3A%221%22%2C%22studies%22%3A%22BB%40tv-basicstudies%5Cu001fMACD%40tv-basicstudies%5Cu001fMF%40tv-basicstudies%22%2C%22theme%22%3A%22Dark%22%2C%22style%22%3A%221%22%2C%22timezone%22%3A%22Etc%2FUTC%22%2C%22withdateranges%22%3A%221%22%2C%22studies_overrides%22%3A%22%7B%7D%22%2C%22utm_source%22%3A%22fpmarkets-int.com%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22chart%22%2C%22utm_term%22%3A%22SOLUSD%22%2C%22page-uri%22%3A%22fpmarkets-int.com%2Fuser_dashboard%2F%22%7D" style="width: 100%; height: 100%; margin: 0px !important; padding: 0px !important;"></iframe></div></div>
   <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
  
   <script type="text/javascript">
@@ -4259,4 +4259,4 @@ justify-content: center;">
     
 
 
-<iframe id="chat-application-iframe" title="Smartsupp" aria-hidden="true" style="display: block; position: fixed; top: 0px; left: 0px; width: 1px; height: 1px; opacity: 0; border: none; z-index: -1; pointer-events: none;"></iframe><div id="smartsupp-widget-container"><!----><!----><!----> <!----><!----> <!----><div data-testid="widgetButtonFrame" style="border-radius: 9999px; box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 2px 32px; color-scheme: normal; height: 56px; position: fixed; bottom: 24px; left: initial; right: 12px; z-index: 10000000; width: 56px;"><iframe allowfullscreen="" scrolling="no" id="widgetButtonFrame" title="Smartsupp widget button" style="position: absolute; width: 100%; height: 100%; border: none; display: block; text-align: left; margin: 0px; padding: 0px; top: 0px; left: 0px; opacity: 1;"></iframe><!----></div><!----> <!----><!----> <!----><!----><!----></div></body></html>
+<div state="voice" class="placeholder-icon" id="tts-placeholder-icon" title="Click to show TTS button" style="background-image: url(&quot;chrome-extension://cpnomhnclohkhnikegipapofcjihldck/data/content_script/icons/voice.png&quot;);"><canvas width="36" height="36" class="loading-circle" id="text-to-speech-loader" style="display: none;"></canvas></div><iframe id="chat-application-iframe" title="Smartsupp" aria-hidden="true" style="display: block; position: fixed; top: 0px; left: 0px; width: 1px; height: 1px; opacity: 0; border: none; z-index: -1; pointer-events: none;"></iframe><div id="smartsupp-widget-container"><!----><!----><!----> <!----><!----> <!----><div data-testid="widgetButtonFrame" style="border-radius: 9999px; box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 2px 32px; color-scheme: normal; height: 56px; position: fixed; bottom: 24px; left: initial; right: 12px; z-index: 10000000; width: 56px;"><iframe allowfullscreen="" scrolling="no" id="widgetButtonFrame" title="Smartsupp widget button" style="position: absolute; width: 100%; height: 100%; border: none; display: block; text-align: left; margin: 0px; padding: 0px; top: 0px; left: 0px; opacity: 1;"></iframe><!----></div><!----> <!----><!----> <!----><!----><!----></div></body></html>
