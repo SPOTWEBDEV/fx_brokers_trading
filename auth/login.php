@@ -13,7 +13,7 @@
 <meta property="”og:image”" content="”/static/globalfpmarkets/wp-content/themes/vt/favicon-new.png”">
 <meta property="”og:title”" content="FPMarkets">
 
-<link rel="manifest" href="../static/globalfpmarkets/assets/images/pwa/manifest.json">
+<link rel="manifest" href="https://fpmarkets-int.com/static/globalfpmarkets/assets/images/pwa/manifest.json">
 <link rel="shortcut icon" href="https://fpmarkets-int.com/static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
 
 <head>

@@ -84,152 +84,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0">Dashboard</h4>
+                                <h4>Users List</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Upcube</a></li>
-                                        <li class="breadcrumb-item active">Dashboard</li>
-                                    </ol>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end page title -->
-
-                    <div class="row">
-                        <div class="col-xl-3 col-md-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex">
-                                        <div class="flex-grow-1">
-                                            <?php
-
-                                                $sql = mysqli_query($connection,"SELECT * FROM deposit WHERE status = 'Pending'");
-                                                $count = mysqli_num_rows($sql);
-
-                                            ?>
-
-                                            <p class="text-truncate font-size-14 mb-2">Pending Deposit</p>
-                                            <h4 class="mb-2"><?php echo $count ?></h4>
-                                            <p class="text-muted mb-0">
-                                                <span class="text-success fw-bold font-size-12 me-2">
-                                                    <i class="ri-arrow-right-up-line me-1 align-middle"></i>
-                                                    9.23%
-                                                </span>
-                                                
-                                            </p>
-                                        </div>
-                                        <div class="avatar-sm">
-                                            <span class="avatar-title bg-light text-primary rounded-3">
-                                                <!-- <i class="ri-shopping-cart-2-line font-size-24"></i> -->
-                                                <i class="dripicons-wallet font-size-24" ></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div><!-- end cardbody -->
-                            </div><!-- end card -->
-                        </div><!-- end col -->
-                        <div class="col-xl-3 col-md-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex">
-                                        <div class="flex-grow-1">
-
-                                            <?php
-
-                                                $sql = mysqli_query($connection,"SELECT * FROM withdrawal WHERE status = 'Pending'");
-                                                $count = mysqli_num_rows($sql);
-
-                                            ?>
-
-                                            <p class="text-truncate font-size-14 mb-2">Pending Withdrawal</p>
-                                            <h4 class="mb-2"><?php echo $count ?></h4>
-                                            <p class="text-muted mb-0"><span
-                                                    class="text-danger fw-bold font-size-12 me-2"><i
-                                                        class="ri-arrow-right-down-line me-1 align-middle"></i>1.09%</span></p>
-                                        </div>
-                                        <div class="avatar-sm">
-                                            <span class="avatar-title bg-light text-success rounded-3">
-                                                <i class="mdi mdi-currency-usd font-size-24"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div><!-- end cardbody -->
-                            </div><!-- end card -->
-                        </div><!-- end col -->
-                        <div class="col-xl-3 col-md-6">
-                            <div class="card">
-                                <div class="card-body">
-
-                                    
-                                            <?php
-
-                                                $sql = mysqli_query($connection,"SELECT * FROM users ");
-                                                $count = mysqli_num_rows($sql);
-
-                                            ?>
-
-                                    <div class="d-flex">
-                                        <div class="flex-grow-1">
-                                            <p class="text-truncate font-size-14 mb-2">Total Users</p>
-                                            <h4 class="mb-2"><?php echo $count ?></h4>
-                                            <p class="text-muted mb-0"><span
-                                                    class="text-success fw-bold font-size-12 me-2"><i
-                                                        class="ri-arrow-right-up-line me-1 align-middle"></i>16.2%</span></p>
-                                        </div>
-                                        <div class="avatar-sm">
-                                            <span class="avatar-title bg-light text-primary rounded-3">
-                                                <i class="ri-user-3-line font-size-24"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div><!-- end cardbody -->
-                            </div><!-- end card -->
-                        </div><!-- end col -->
-                        <div class="col-xl-3 col-md-6">
-                            <div class="card">
-                                <div class="card-body">
-                                            <?php
-
-                                                $sql = mysqli_query($connection,"SELECT * FROM users WHERE status = 'Pending'");
-                                                $count = mysqli_num_rows($sql);
-
-                                            ?>
-
-
-
-
-                                    <div class="d-flex">
-                                        <div class="flex-grow-1">
-                                            <p class="text-truncate font-size-14 mb-2">Pending  Users Approval </p>
-                                            <h4 class="mb-2"><?php echo $count ?></h4>
-                                            <p class="text-muted mb-0"><span
-                                                    class="text-success fw-bold font-size-12 me-2"><i
-                                                        class="ri-arrow-right-up-line me-1 align-middle"></i>11.7%</span></p>
-                                        </div>
-                                        <div class="avatar-sm">
-                                            <span class="avatar-title bg-light text-success rounded-3">
-                                                <i class="ri-user-3-line font-size-24"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div><!-- end cardbody -->
-                            </div><!-- end card -->
-                        </div><!-- end col -->
-                    </div>
-
-                    <!-- start page title -->
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4>Activity Logs</h4>
-
-                                <div class="page-title-right">
-                                    <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Tables</a></li>
-                                        <li class="breadcrumb-item active">Data Tables</li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">dashboard</a></li>
+                                        <li class="breadcrumb-item active">users</li>
                                     </ol>
                                 </div>
 
@@ -253,34 +113,26 @@
                                             <tr>
 
                                                 <th>S/N</th>
-                                                <th>Activity Type</th>
-                                                <th>Referance IP</th>
-                                                <th>Date</th>
-                                                <th>Time</th>
+                                                <th>Full Name</th>
+                                                <th>Email </th>
+                                                <th>Phone</th>
+                                                <th>Register Date</th>
                                                 <th>Status</th>
                                             </tr>
                                         </thead>
 
 
                                         <tbody>
-                                            <!-- <tr>
-                                                <td>Tiger Nixon</td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
-                                                <td>2011/04/25</td>
-                                                <td>$320,800</td>
-                                            </tr> -->
 
                                             <?php
 
-                                            $query = "SELECT * FROM adminactivity ORDER BY id DESC";
+                                            $query = "SELECT * FROM users ORDER BY id DESC";
                                             $select_logs = mysqli_query($connection, $query);
                                             $sn = 1;
                                             while ($row = mysqli_fetch_assoc($select_logs)) {
                                                 $id = $row['id'];
-                                                $activity_type = $row['name'];
-                                                $referance_ip = $row['ref_id'];
+                                                $fullname = $row['name'];
+                                                $email = $row['ref_id'];
                                                 $date = $row['date'];
                                                 $time = $row['time'];
                                                 $status = $row['status'];

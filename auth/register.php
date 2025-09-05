@@ -10,7 +10,7 @@
 
 <meta property="og:description"
     content="FPMarkets is a Financial Organization set up to Provide Source of Passive income for investors on Real Estate Management and Natural Oil & Gas">
-<meta property="”og:image”" content="”/static/globalfpmarkets/wp-content/themes/vt/favicon-new.png”">
+<meta property="”og:image”" content="../static/globalfpmarkets/wp-content/themes/vt/favicon-new.png”">
 <meta property="”og:title”" content="FPMarkets">
 
 <link rel="manifest" href="../static/globalfpmarkets/assets/images/pwa/manifest.json">
@@ -62,7 +62,7 @@
     <link rel="manifest" href="https://fpmarkets-int.com/static/globalfpmarkets/Content/ico/manifest.json">
     <meta name="facebook-domain-verification" content="yr09tc1ug4r9h5lcpyh59lg5kawf4k" />
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
+    <meta name="msapplication-TileImage" content="../static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com/">
@@ -70,8 +70,8 @@
     <link rel="icon" href="https://fpmarkets-int.com/static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="../static/globalfpmarkets/assets/assets/css/app2d1f.css">
-    <link rel="stylesheet" href="../static/globalfpmarkets/assets/assets/sass/app2a6f.css">
+    <link rel="stylesheet" href="https://fpmarkets-int.com/static/globalfpmarkets/assets/css/app2d1f.css">
+    <link rel="stylesheet" href="https://fpmarkets-int.com/static/globalfpmarkets/assets/assets/sass/app2a6f.css">
 </head>
 
 <body>
