@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 04, 2025 at 09:40 PM
+-- Generation Time: Sep 05, 2025 at 01:34 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -74,11 +74,50 @@ INSERT INTO `adminactivity` (`id`, `name`, `ref_id`, `date`, `time`, `status`) V
 CREATE TABLE `deposit` (
   `id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
+  `uuid` varchar(255) NOT NULL,
   `amount` decimal(12,2) NOT NULL,
+  `account_type` varchar(255) NOT NULL,
   `method` varchar(50) DEFAULT NULL,
   `status` enum('pending','successful','failed') DEFAULT 'pending',
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `deposit`
+--
+
+INSERT INTO `deposit` (`id`, `user_id`, `uuid`, `amount`, `account_type`, `method`, `status`, `created_at`) VALUES
+(5, 5, '430f4eafab7213306e1d3a0155668b1a', 400.00, 'ethereum_balance', 'bitcoin', 'pending', '2025-09-05 10:27:44');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `payment_methods`
+--
+
+CREATE TABLE `payment_methods` (
+  `id` int(11) NOT NULL,
+  `method_key` varchar(50) NOT NULL,
+  `method_name` varchar(100) NOT NULL,
+  `details` text DEFAULT NULL,
+  `status` enum('active','inactive') DEFAULT 'active',
+  `wallet_address` varchar(255) DEFAULT NULL,
+  `uuid` char(36) NOT NULL DEFAULT 'uuid()'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `payment_methods`
+--
+
+INSERT INTO `payment_methods` (`id`, `method_key`, `method_name`, `details`, `status`, `wallet_address`, `uuid`) VALUES
+(1, 'bitcoin', 'BITCOIN', NULL, 'active', 'bc1q6yy32dclff6m8wauv65r6ffar5dhhea37z0va3', 'fc2af488-8a43-11f0-a593-5065f3b89ebb'),
+(2, 'solana', 'SOLANA', NULL, 'active', '6Kz2YkjA94jh9Fb57Q3vX8Wwe1g8E6eQGkTmv4oFzzd9', 'fc2b0161-8a43-11f0-a593-5065f3b89ebb'),
+(3, 'ethereum', 'ETHEREUM (ETH)', NULL, 'active', '0xAbCdEf1234567890abcdef1234567890AbCdEf12', 'fc2b01f9-8a43-11f0-a593-5065f3b89ebb'),
+(4, 'bnb', 'BNB ( BNB SMARTCHAIN)', NULL, 'active', 'bnb1q6yy32dclff6m8wauv65r6ffar5dhhea37z0va3', 'fc2b0251-8a43-11f0-a593-5065f3b89ebb'),
+(5, 'usdt_trc20', 'USDT (TRC20)', NULL, 'active', 'TDYf67DH6M8w8Vty6bV8WqfXo2z8HhXkWZ', 'fc2b029b-8a43-11f0-a593-5065f3b89ebb'),
+(6, 'usdt_erc20', 'USDT (ERC20)', NULL, 'active', '0x9dE5F93A67b9F1c7cE9b3aF12F34567890AbCdEf', 'fc2b0318-8a43-11f0-a593-5065f3b89ebb'),
+(7, 'usdc_erc20', 'USDC (ERC20)', NULL, 'active', '0x111222333444555666777888999000AaBbCcDdEe', 'fc2b039a-8a43-11f0-a593-5065f3b89ebb'),
+(8, 'litecoin', 'LITECOIN (LTC)', NULL, 'active', 'ltc1q6yy32dclff6m8wauv65r6ffar5dhhea37z0va3', 'fc2b03e4-8a43-11f0-a593-5065f3b89ebb');
 
 -- --------------------------------------------------------
 
@@ -130,18 +169,28 @@ CREATE TABLE `users` (
   `security_question` varchar(255) NOT NULL,
   `country` varchar(255) NOT NULL,
   `profile` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL
+  `password` varchar(255) NOT NULL,
+  `trading_balance` decimal(18,2) DEFAULT 0.00,
+  `bitcoin_balance` decimal(18,2) DEFAULT 0.00,
+  `ethereum_balance` decimal(18,2) DEFAULT 0.00,
+  `dogecoin_balance` decimal(18,2) DEFAULT 0.00,
+  `binance_coin_balance` decimal(18,2) DEFAULT 0.00,
+  `cosmos_atom_balance` decimal(18,2) DEFAULT 0.00,
+  `stablecoin_balance` decimal(18,2) DEFAULT 0.00,
+  `usdt_balance` decimal(18,2) DEFAULT 0.00,
+  `solana_balance` decimal(18,2) DEFAULT 0.00,
+  `cardano_ada_balance` decimal(18,2) DEFAULT 0.00
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `firstname`, `lastname`, `email`, `phone`, `status`, `created_at`, `gender`, `security_answer`, `security_question`, `country`, `profile`, `password`) VALUES
-(1, 'mr', 'mind', 'arumkingsley49@gmail.com', '09017862743', 'pending', '2025-09-05 04:18:18', 'Male', 'coding', 'What is your hobby?', 'AZ', 'normal.jpg', '$2y$10$WyPa4QiAky44o3ENqUx9ruL2NtCWLisVPbSRXGPYXDaJMDw4nSfJe'),
-(2, 'mr', 'mind', 'arumkingsley9@gmail.com', '09017862743', 'pending', '2025-09-05 04:24:02', 'Male', 'coding', 'What is your hobby?', 'AM', 'normal.jpg', '$2y$10$BDQ8p15sMQnQbxbSuH8u6OPL/bPnnl6bS97bzteAWadNrGxG1Sej2'),
-(3, 'mr', 'mind', 'arumkingsley@gmail.com', '09017862743', 'pending', '2025-09-05 04:29:01', 'Male', 'mind', 'What is your hobby?', 'BH', 'normal.jpg', '$2y$10$a./wYPZVDXqTp1d5bzi3SObN1FmQZqxzBDZYPKow9hw6Y8hmYeidK'),
-(4, 'mr', 'mind', 'arumkingsley39@gmail.com', '09017862743', 'pending', '2025-09-05 04:32:13', 'Male', 'coding', 'What is your hobby?', 'BS', 'normal.jpg', '$2y$10$3w.hEC3d/WLxHObDK1.ZaOxGpwx.BDWuTrXhRfqZ9OBKza9o/a5xi');
+INSERT INTO `users` (`id`, `firstname`, `lastname`, `email`, `phone`, `status`, `created_at`, `gender`, `security_answer`, `security_question`, `country`, `profile`, `password`, `trading_balance`, `bitcoin_balance`, `ethereum_balance`, `dogecoin_balance`, `binance_coin_balance`, `cosmos_atom_balance`, `stablecoin_balance`, `usdt_balance`, `solana_balance`, `cardano_ada_balance`) VALUES
+(1, 'mr', 'mind', 'arumkingsley49@gmail.com', '09017862743', 'pending', '2025-09-05 04:18:18', 'Male', 'coding', 'What is your hobby?', 'AZ', 'normal.jpg', '$2y$10$WyPa4QiAky44o3ENqUx9ruL2NtCWLisVPbSRXGPYXDaJMDw4nSfJe', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00),
+(2, 'mr', 'mind', 'arumkingsley9@gmail.com', '09017862743', 'pending', '2025-09-05 04:24:02', 'Male', 'coding', 'What is your hobby?', 'AM', 'normal.jpg', '$2y$10$BDQ8p15sMQnQbxbSuH8u6OPL/bPnnl6bS97bzteAWadNrGxG1Sej2', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00),
+(3, 'mr', 'mind', 'arumkingsley@gmail.com', '09017862743', 'pending', '2025-09-05 04:29:01', 'Male', 'mind', 'What is your hobby?', 'BH', 'normal.jpg', '$2y$10$a./wYPZVDXqTp1d5bzi3SObN1FmQZqxzBDZYPKow9hw6Y8hmYeidK', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00),
+(5, 'thebest', 'firstclass', 'spotwebdev.com@gmail.com', '09017862743', 'active', '2025-09-05 04:32:13', 'Male', 'coding', 'What is your hobby?', 'BS', 'normal.jpg', '$2y$10$3w.hEC3d/WLxHObDK1.ZaOxGpwx.BDWuTrXhRfqZ9OBKza9o/a5xi', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
 
 -- --------------------------------------------------------
 
@@ -195,6 +244,14 @@ ALTER TABLE `adminactivity`
 ALTER TABLE `deposit`
   ADD PRIMARY KEY (`id`),
   ADD KEY `user_id` (`user_id`);
+
+--
+-- Indexes for table `payment_methods`
+--
+ALTER TABLE `payment_methods`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `method_key` (`method_key`),
+  ADD UNIQUE KEY `UUID` (`uuid`);
 
 --
 -- Indexes for table `trading`
@@ -251,7 +308,13 @@ ALTER TABLE `adminactivity`
 -- AUTO_INCREMENT for table `deposit`
 --
 ALTER TABLE `deposit`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `payment_methods`
+--
+ALTER TABLE `payment_methods`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `trading`
@@ -269,7 +332,7 @@ ALTER TABLE `useractivity`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `verification`
