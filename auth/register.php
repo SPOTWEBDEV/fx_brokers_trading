@@ -14,7 +14,7 @@
 <meta property="”og:title”" content="FPMarkets">
 
 <link rel="manifest" href="../static/globalfpmarkets/assets/images/pwa/manifest.json">
-<link rel="shortcut icon" href="https://fpmarkets-int.com/static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
+<link rel="shortcut icon" href="./static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
 
 <!-- SweetAlert2 CDN -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -58,8 +58,8 @@
 
 
     <link rel="icon" type="image/png" sizes="16x16"
-        href="https://fpmarkets-int.com/static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
-    <link rel="manifest" href="https://fpmarkets-int.com/static/globalfpmarkets/Content/ico/manifest.json">
+        href="./static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
+    <link rel="manifest" href="./static/globalfpmarkets/Content/ico/manifest.json">
     <meta name="facebook-domain-verification" content="yr09tc1ug4r9h5lcpyh59lg5kawf4k" />
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="../static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
@@ -67,11 +67,10 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com/">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
-    <link rel="icon" href="https://fpmarkets-int.com/static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
+    <link rel="icon" href="./static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="https://fpmarkets-int.com/static/globalfpmarkets/assets/css/app2d1f.css">
-    <link rel="stylesheet" href="https://fpmarkets-int.com/static/globalfpmarkets/assets/assets/sass/app2a6f.css">
+    <link rel="stylesheet" href="../static/globalfpmarkets/assets/assets/css/app2d1f.css">
+    <link rel="stylesheet" href="../static/globalfpmarkets/assets/assets/sass/app2a6f.css">
 </head>
 
 <body>
@@ -808,9 +807,9 @@
 
     <!-- Scripts -->
     <div id="scripts">
-        <script src="https://fpmarkets-int.com/static/globalfpmarkets/assets/assets/js/manifestf3c5.js" defer></script>
-        <script src="https://fpmarkets-int.com/static/globalfpmarkets/assets/assets/js/vendor313f.js" defer></script>
-        <script src="https://fpmarkets-int.com/static/globalfpmarkets/assets/assets/js/appc73e.js" defer></script>
+        <script src="./static/globalfpmarkets/assets/assets/js/manifestf3c5.js" defer></script>
+        <script src="./static/globalfpmarkets/assets/assets/js/vendor313f.js" defer></script>
+        <script src="./static/globalfpmarkets/assets/assets/js/appc73e.js" defer></script>
     </div>
 
 
