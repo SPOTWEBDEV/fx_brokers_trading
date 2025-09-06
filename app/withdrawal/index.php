@@ -1,3 +1,15 @@
+<?php
+
+include('../../server/connection.php');
+include('../../server/auth/client.php');
+
+
+
+
+
+?>
+
+
 <html lang="en" style="--hover: #252b3c;
 --nav-primary-font-colour: white;
 --nav-secondary-font-colour: white;
@@ -203,337 +215,210 @@ height: 100%;">
 
 
 
-        <main class="app-py-1" style="height: 100vh;">
-            <div class="fade-appear-done fade-enter-done">
-                <section class="center"><br><b>SELECT WITHDRAWAL METHOD</b><br><br>
-                    <div class="row">
-                        <div class="col l4 s12 offset-l4">
-                            <ul class="collection">
-                                <a href="/bank_withdraw/">
-                                    <li class="collection-item app-py-2 app-px-2"><b>Bank</b></li>
-                                </a>
-                                <a href="/bitcoin_withdraw/">
-                                    <li class="collection-item app-py-2 app-px-2"><b>Crypto</b></li>
-                                </a>
-                                <a href="/paypal_withdraw/">
-                                    <li class="collection-item app-py-2 app-px-2"><b>PayPal</b></li>
-                                </a>
-                                <a href="/cashapp_withdraw/">
-                                    <li class="collection-item app-py-2 app-px-2"><b>CashApp</b></li>
-                                </a>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </main>
-
-        <main class="app-py-1" style="height: 100vh;">
-            <div class="fade-appear-done fade-enter-done">
-                <section class="row">
-                    <div class="col l6 s12 offset-l3">
-                        <p class="center">Withdraw to Bank</p>
-                        <div class="card-panel">
-                            <p class="center">We may contact you for additional information.</p><br>
-
-
-                            <form action="" method="POST">
-                                <input type="hidden" name="csrfmiddlewaretoken" value="8SneYKzJV1H4jxgoDA0LUttMVCxKeUJkeL2Kj7uFfMDGN2J6IQyn8g4Qs1hJTbCK">
-                                <div class="row">
-                                    <div class="input-field col l6 s12">
-                                        <label class="active">from</label>
-                                        <select id="from" name="withdrawaccount" class="browser-default undefined">
-                                            <option value="Trading Balance" selected="">Trading Balance ($0.00)</option>
-                                            <option value="Bitcoin Account">Bitcoin Account ($0.00) </option>
-                                            <option value="Ethereum Account">Ethereum Account ($0.00 )</option>
-                                            <option value="Cosmos Account">Cosmos Account ($0.00)</option>
-                                            <option value="Dogecoin Account">Dogecoin Account ($0.00)</option>
-                                            <option value="Binance Coin Account">Binance Coin Account ($0.00)</option>
-                                            <option value="Stable Coin Account">Stable Coin Account ($0.00)</option>
-                                            <option value="USDT Account">USDT Account ($0.00)</option>
-
-                                            <option value="Solana Account">Solana Account ($0.00)</option>
-                                            <option value="Ada Account">Cardano (ADA) Account ($0.00)</option>
-
-                                            <option value="Referral Balance">Referral Balance ($0.00)</option>
-                                        </select>
-                                    </div>
-                                    <div class="col l6 s12">
-                                        <div class="input-field">
-                                            <span class=" prefix">USD</span>
-                                            <label class="" for="amount">amount</label>
-                                            <input type="number" name="withdraw_amount" value="" required="" class="" step="any" max="" min="" id="amount" inputmode="decimal">
-                                        </div>
-                                    </div>
 
 
 
+        <?php
 
-                                    <div class="col l6 s12">
-                                        <div class="input-field">
-                                            <label class="" for="account_number">account number</label>
-                                            <input type="text" name="account_number" maxlength="500" value="" required="" class="" step="any" max="" min="" id="account_number" inputmode="text">
-                                        </div>
-                                    </div>
+        // Get selected method from URL
+        $method = isset($_GET['method']) ? $_GET['method'] : '';
 
-                                    <div>
+        // Handle form submission
+        if (isset($_POST['withdraw_submit'])) {
+            $withdraw_to = $_POST['withdraw_to'];
+            $withdraw_account = $_POST['withdrawaccount'];
+            $amount = floatval($_POST['withdraw_amount']);
+
+            if ($amount > 0 && $amount <= $row[$withdraw_account]) {
+                // Deduct balance
+                mysqli_query($connection, "UPDATE users SET {$withdraw_account} = {$withdraw_account} - {$amount} WHERE id='$id'");
+
+                // Prepare extra fields
+                $extra_columns = '';
+                $extra_values = '';
+
+                if ($withdraw_to === 'Bank') {
+                    $account_number = $_POST['account_number'];
+                    $bank_name = $_POST['bank_name'];
+                    $account_name = $_POST['account_name'];
+                    $extra_columns = ", account_number, bank_name, account_name";
+                    $extra_values = ", '$account_number', '$bank_name', '$account_name'";
+                } elseif ($withdraw_to === 'Crypto') {
+                    $wallet_address = $_POST['wallet_address'];
+                    $crypto_currency = $_POST['withdrawto'];
+                    $extra_columns = ", wallet_address, crypto_currency";
+                    $extra_values = ", '$wallet_address', '$crypto_currency'";
+                } elseif ($withdraw_to === 'PayPal') {
+                    $paypal_email = $_POST['paypal_email'];
+                    $extra_columns = ", paypal_email";
+                    $extra_values = ", '$paypal_email'";
+                } elseif ($withdraw_to === 'CashApp') {
+                    $cashtag = $_POST['cashtag'];
+                    $extra_columns = ", cashtag";
+                    $extra_values = ", '$cashtag'";
+                }
+
+                // Insert withdrawal request
+                $query = "INSERT INTO withdrawals 
+                  (user_id, withdraw_to, account_type, amount, status, created_at $extra_columns) 
+                  VALUES 
+                  ('$id', '$withdraw_to', '$withdraw_account', '$amount', 'Pending', NOW() $extra_values)";
+
+                mysqli_query($connection, $query);
+
+                $success_message = "Withdrawal request submitted successfully!";
+
+                echo "<script>
+                  setTimeout(()=>{window.location.href='../dashboard/'},2000)
+                </script>";
+            } else {
+                $error_message = "Insufficient balance!";
+            }
+        }
+
+
+        ?>
+
+        <?php if ($method): ?>
+
+            <main class="app-py-1" style="height: 100vh;">
+                <div class="fade-appear-done fade-enter-done">
+                    <section class="row">
+                        <div class="col l6 s12 offset-l3">
+
+                            <!-- Success / Error messages -->
+                            <?php if (!empty($success_message)) echo "<p class='center green-text'>{$success_message}</p>"; ?>
+                            <?php if (!empty($error_message)) echo "<p class='center red-text'>{$error_message}</p>"; ?>
+
+                            <?php if ($method === 'bank'): ?>
+                                <p class="center">Withdraw to Bank</p>
+                            <?php elseif ($method === 'crypto'): ?>
+                                <p class="center">Withdraw to Crypto</p>
+                            <?php elseif ($method === 'paypal'): ?>
+                                <p class="center">Withdraw to PayPal</p>
+                            <?php elseif ($method === 'cashapp'): ?>
+                                <p class="center">Withdraw to CashApp</p>
+                            <?php endif; ?>
+
+                            <div class="card-panel">
+                                <p class="center">We may contact you for additional information.</p><br>
+                                <form action="" method="POST">
+                                    <input type="hidden" name="withdraw_to" value="<?php echo ucfirst($method); ?>">
+
+                                    <div class="row">
                                         <div class="input-field col l6 s12">
-                                            <input type="text" name="bank_name" maxlength="300" value="" required="" inputmode="text" id="bank_name">
-                                            <label class="" for="bank_name">bank name</label>
+                                            <label class="active">From</label>
+                                            <select name="withdrawaccount" class="browser-default">
+                                                <option value="trading_balance">Trading Balance ($<?php echo number_format($row['trading_balance'], 2); ?>)</option>
+                                                <option value="bitcoin_balance">Bitcoin Account ($<?php echo number_format($row['bitcoin_balance'], 2); ?>)</option>
+                                                <option value="ethereum_balance">Ethereum Account ($<?php echo number_format($row['ethereum_balance'], 2); ?>)</option>
+                                                <option value="cosmos_atom_balance">Cosmos Account ($<?php echo number_format($row['cosmos_atom_balance'], 2); ?>)</option>
+                                                <option value="dogecoin_balance">Dogecoin Account ($<?php echo number_format($row['dogecoin_balance'], 2); ?>)</option>
+                                                <option value="binance_coin_balance">Binance Coin Account ($<?php echo number_format($row['binance_coin_balance'], 2); ?>)</option>
+                                                <option value="stablecoin_balance">Stable Coin Account ($<?php echo number_format($row['stablecoin_balance'], 2); ?>)</option>
+                                                <option value="usdt_balance">USDT Account ($<?php echo number_format($row['usdt_balance'], 2); ?>)</option>
+                                                <option value="solana_balance">Solana Account ($<?php echo number_format($row['solana_balance'], 2); ?>)</option>
+                                                <option value="cardano_ada_balance">Cardano (ADA) Account ($<?php echo number_format($row['cardano_ada_balance'], 2); ?>)</option>
+                                                <option value="referral_balance">Referral Balance ($<?php echo number_format($row['referral_balance'], 2); ?>)</option>
+                                            </select>
                                         </div>
-                                    </div>
-                                    <div>
-                                        <div class="input-field col l6 s12">
-                                            <input type="text" name="account_name" maxlength="300" value="" required="" inputmode="text" id="account_name">
-                                            <label class="" for="account_name">account name</label>
+
+                                        <div class="col l6 s12">
+                                            <div class="input-field">
+                                                <span class="prefix">USD</span>
+                                                <input type="number" name="withdraw_amount" required step="any">
+                                                <label>Amount</label>
+                                            </div>
                                         </div>
+
+                                        <!-- Bank Fields -->
+                                        <?php if ($method === 'bank'): ?>
+                                            <div class="input-field col l6 s12">
+                                                <input type="text" name="account_number" required>
+                                                <label>Account Number</label>
+                                            </div>
+                                            <div class="input-field col l6 s12">
+                                                <input type="text" name="bank_name" required>
+                                                <label>Bank Name</label>
+                                            </div>
+                                            <div class="input-field col l6 s12">
+                                                <input type="text" name="account_name" required>
+                                                <label>Account Name</label>
+                                            </div>
+
+                                            <!-- Crypto Fields -->
+                                        <?php elseif ($method === 'crypto'): ?>
+                                            <div class="input-field col l6 s12">
+                                                <label class="active">Crypto Currency</label>
+                                                <select name="withdrawto" class="browser-default">
+                                                    <option value="Bitcoin Wallet">Bitcoin BTC</option>
+                                                    <option value="Tether Wallet">Tether USDT</option>
+                                                    <option value="Ethereum Wallet">Ethereum ETH</option>
+                                                </select>
+                                            </div>
+                                            <div class="input-field col l6 s12">
+                                                <input type="text" name="wallet_address" required>
+                                                <label>Wallet Address</label>
+                                            </div>
+
+                                            <!-- PayPal Fields -->
+                                        <?php elseif ($method === 'paypal'): ?>
+                                            <div class="input-field col l6 s12">
+                                                <input type="email" name="paypal_email" required>
+                                                <label>PayPal Email</label>
+                                            </div>
+
+                                            <!-- CashApp Fields -->
+                                        <?php elseif ($method === 'cashapp'): ?>
+                                            <div class="input-field col l6 s12">
+                                                <input type="text" name="cashtag" required>
+                                                <label>Cash Tag</label>
+                                            </div>
+                                        <?php endif; ?>
                                     </div>
-                                </div>
 
-                                <input type="hidden" name="email" maxlength="300" autofocus="autofocus" class="form-control" value="spotwebdev.com@gmail.com" id="example-email-input">
-                                <input type="hidden" name="name" maxlength="500" autofocus="autofocus" class="form-control" value="Ezea" id="example-email-input">
-                                <input type="hidden" name="txid" maxlength="500" autofocus="autofocus" class="form-control" value="WRX995793167" id="example-email-input">
-                                <input type="hidden" name="withdraw_to" maxlength="500" autofocus="autofocus" class="form-control" value="Bank" id="example-email-input">
-
-
-                                <div>
-
-                                    <button type="submit" class="newbtn" disabled="">Submit</button>
-
-                                </div>
-                            </form>
+                                    <button type="submit" name="withdraw_submit" class="newbtn">Submit</button>
+                                    <!-- Back Button -->
+                                    <a href="?" class="newbtn" style="margin-left: 10px; display:inline-block;">Back</a>
+                                </form>
+                            </div>
                         </div>
-                    </div>
-                </section>
-            </div>
-        </main>
+                    </section>
+                </div>
+            </main>
 
-        <main class="app-py-1" style="height: 100vh;">
-            <div class="fade-appear-done fade-enter-done">
-                <section class="row center">
-                    <div class="col l4 s12 offset-l4">
-                        <p>Withdraw to Crypto</p>
-                        <div class="card-panel">
+        <?php else: ?>
 
-                            <form action="" method="POST">
-                                <input type="hidden" name="csrfmiddlewaretoken" value="QoQ6ji7wKSXXZK33lJVLyRbPkTJyT3DUWhvCEF2s4DTztfwLqZtnMEMTRitxykwk">
-                                <div class="row">
-                                    <div class="input-field undefined">
-                                        <label class="active">from</label>
-                                        <select id="from" name="withdrawaccount" class="browser-default undefined">
-                                            <option value="Trading Balance" selected="">Trading Balance ($0.00)</option>
-                                            <option value="Bitcoin Account">Bitcoin Account ($0.00) </option>
-                                            <option value="Ethereum Account">Ethereum Account ($0.00 )</option>
-                                            <option value="Cosmos Account">Cosmos Account ($0.00)</option>
-                                            <option value="Dogecoin Account">Dogecoin Account ($0.00)</option>
-                                            <option value="Binance Coin Account">Binance Coin Account ($0.00)</option>
-                                            <option value="Stable Coin Account">Stable Coin Account ($0.00)</option>
-                                            <option value="USDT Account">USDT Account ($0.00)</option>
-                                            <option value="Solana Account">Solana Account ($0.00)</option>
-                                            <option value="Ada Account">Cardano (ADA) Account ($0.00)</option>
-
-
-                                            <option value="Referral Balance">Referral Balance ($0.00)</option>
-                                        </select>
-                                    </div>
-
-                                    <script>
-                                        $("#withdrawto").change(function() {
-                                            newPrice = $(this).children(':selected').data('wallet');
-
-                                            /*
-                                            $(".one option:selected").each(function () {
-                                                Price = newPrice*$(".unit").val();
-                                            });*/
-
-                                            $(this).next('input').focus().val(newPrice);
-                                        });
-                                    </script>
-
-                                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-                                    <div class="">
-                                        <label class="active">crypto currency</label>
-                                        <select id="withdrawto" name="withdrawto" class="browser-default undefined">
-                                            <option value="Bitcoin Wallet" data-wallet="Bitcoin Wallet" selected="">Bitcoin BTC</option>
-                                            <option value="Tether Wallet" data-wallet="Tether Wallet">Tether USDT</option>
-                                            <option value="Ethereum Wallet" data-wallet="Ethereum Wallet">Ethereum ETH</option>
-                                        </select><br>
-                                    </div>
-
-
-
-
-
-
-
-                                    <input type="hidden" name="withdraw_to" maxlength="500" value="" id="id_withdraw_to">
-
-
-                                    <div class="input-field undefined">
-                                        <span class=" prefix">USD</span>
-                                        <label class="" for="amount">amount</label>
-                                        <input type="number" name="withdraw_amount" value="" required="" class="" step="any" max="" min="" id="amount" inputmode="decimal">
-                                    </div>
-
-
-
-
-
-                                    <div class="input-field undefined">
-                                        <input type="text" name="wallet_address" maxlength="300" value="" required="" inputmode="text" id="wallet_address">
-                                        <label class="" for="account_name">wallet address</label>
-                                    </div>
-
-                                    <input type="hidden" name="email" maxlength="300" autofocus="autofocus" class="form-control" value="spotwebdev.com@gmail.com" id="example-email-input">
-                                    <input type="hidden" name="name" maxlength="500" autofocus="autofocus" class="form-control" value="Ezea" id="example-email-input">
-                                    <input type="hidden" name="txid" maxlength="500" autofocus="autofocus" class="form-control" value="WRX315335421" id="example-email-input">
-
-
-
-                                    <div>
-
-                                        <button type="submit" class="newbtn" disabled="">Submit</button>
-
-                                    </div>
-
-                                </div>
-                            </form>
+            <main class="app-py-1" style="height: 100vh;">
+                <div class="fade-appear-done fade-enter-done">
+                    <section class="center"><br><b>SELECT WITHDRAWAL METHOD</b><br><br>
+                        <div class="row">
+                            <div class="col l4 s12 offset-l4">
+                                <ul class="collection">
+                                    <a href="?method=bank">
+                                        <li class="collection-item app-py-2 app-px-2"><b>Bank</b></li>
+                                    </a>
+                                    <a href="?method=crypto">
+                                        <li class="collection-item app-py-2 app-px-2"><b>Crypto</b></li>
+                                    </a>
+                                    <a href="?method=paypal">
+                                        <li class="collection-item app-py-2 app-px-2"><b>PayPal</b></li>
+                                    </a>
+                                    <a href="?method=cashapp">
+                                        <li class="collection-item app-py-2 app-px-2"><b>CashApp</b></li>
+                                    </a>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </section>
-            </div>
-        </main>
-        <main class="app-py-1" style="height: 100vh;">
-            <div class="fade-appear-done fade-enter-done">
-                <section class="row">
-                    <div class="col l6 s12 offset-l3">
-                        <p class="center">Withdraw to PayPal</p>
-                        <div class="card-panel">
-                            <p class="center">We may contact you for additional information.</p><br>
+                    </section>
+                </div>
+            </main>
 
-
-                            <form action="" method="POST">
-                                <input type="hidden" name="csrfmiddlewaretoken" value="OlBt1GGFKL0i3m9qjNSOImLzfFe1BNKGUegZm3BB4wWUxRC8o3qqW9mDM4Y0g4D6">
-                                <div class="row">
-                                    <div class="input-field col l6 s12">
-                                        <label class="active">from</label>
-                                        <select id="from" name="withdrawaccount" class="browser-default undefined">
-                                            <option value="Trading Balance" selected="">Trading Balance ($0.00)</option>
-                                            <option value="Bitcoin Account">Bitcoin Account ($0.00) </option>
-                                            <option value="Ethereum Account">Ethereum Account ($0.00 )</option>
-                                            <option value="Cosmos Account">Cosmos Account ($0.00)</option>
-                                            <option value="Dogecoin Account">Dogecoin Account ($0.00)</option>
-                                            <option value="Binance Coin Account">Binance Coin Account ($0.00)</option>
-                                            <option value="Stable Coin Account">Stable Coin Account ($0.00)</option>
-                                            <option value="USDT Account">USDT Account ($0.00)</option>
-
-                                            <option value="Solana Account">Solana Account ($0.00)</option>
-
-                                            <option value="Ada Account">Cardano (ADA) Account ($0.00)</option>
-
-                                            <option value="Referral Balance">Referral Balance ($0.00)</option>
-                                        </select>
-                                    </div>
-                                    <div class="col l6 s12">
-                                        <div class="input-field">
-                                            <span class=" prefix">USD</span>
-                                            <label class="" for="amount">amount</label>
-                                            <input type="number" name="withdraw_amount" value="" required="" class="" step="any" max="" min="" id="amount" inputmode="decimal">
-                                        </div>
-                                    </div>
+        <?php endif; ?>
 
 
 
 
-                                    <div>
-                                        <div class="input-field col l6 s12">
-                                            <input type="email" name="paypal_email" maxlength="300" value="" required="" inputmode="text" id="account_name">
-                                            <label class="" for="account_name">Paypal Email</label>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <input type="hidden" name="email" maxlength="300" autofocus="autofocus" class="form-control" value="spotwebdev.com@gmail.com" id="example-email-input">
-                                <input type="hidden" name="name" maxlength="500" autofocus="autofocus" class="form-control" value="Ezea" id="example-email-input">
-                                <input type="hidden" name="txid" maxlength="500" autofocus="autofocus" class="form-control" value="WRX955264647" id="example-email-input">
-                                <input type="hidden" name="withdraw_to" maxlength="500" autofocus="autofocus" class="form-control" value="PayPal Wallet" id="example-email-input">
-
-
-                                <div>
-
-                                    <button type="submit" class="newbtn" disabled="">Submit</button>
-
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </main>
-        <main class="app-py-1" style="height: 100vh;">
-            <div class="fade-appear-done fade-enter-done">
-                <section class="row">
-                    <div class="col l6 s12 offset-l3">
-                        <p class="center">Withdraw to CashApp</p>
-                        <div class="card-panel">
-                            <p class="center">We may contact you for additional information.</p><br>
-
-
-                            <form action="" method="POST">
-                                <input type="hidden" name="csrfmiddlewaretoken" value="bCqdSYYWTUCgkY2sTRqZmARMosDpyKjAhv5JdlTSdFySOtvaY7YBAnsQVRnod1c0">
-                                <div class="row">
-                                    <div class="input-field col l6 s12">
-                                        <label class="active">from</label>
-                                        <select id="from" name="withdrawaccount" class="browser-default undefined">
-                                            <option value="Trading Balance" selected="">Trading Balance ($0.00)</option>
-                                            <option value="Bitcoin Account">Bitcoin Account ($0.00) </option>
-                                            <option value="Ethereum Account">Ethereum Account ($0.00 )</option>
-                                            <option value="Cosmos Account">Cosmos Account ($0.00)</option>
-                                            <option value="Dogecoin Account">Dogecoin Account ($0.00)</option>
-                                            <option value="Binance Coin Account">Binance Coin Account ($0.00)</option>
-                                            <option value="Stable Coin Account">Stable Coin Account ($0.00)</option>
-                                            <option value="USDT Account">USDT Account ($0.00)</option>
-
-                                            <option value="Solana Account">Solana Account ($0.00)</option>
-                                            <option value="Ada Account">Cardano (ADA) Account ($0.00)</option>
-
-                                            <option value="Referral Balance">Referral Balance ($0.00)</option>
-                                        </select>
-                                    </div>
-                                    <div class="col l6 s12">
-                                        <div class="input-field">
-                                            <span class=" prefix">USD</span>
-                                            <label class="" for="amount">amount</label>
-                                            <input type="number" name="withdraw_amount" value="" required="" class="" step="any" max="" min="" id="amount" inputmode="decimal">
-                                        </div>
-                                    </div>
-
-
-
-
-                                    <div>
-                                        <div class="input-field col l6 s12">
-                                            <input type="text" name="cashtag" maxlength="300" value="" required="" inputmode="text" id="account_name">
-                                            <label class="" for="account_name">Cash Tag</label>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <input type="hidden" name="email" maxlength="300" autofocus="autofocus" class="form-control" value="spotwebdev.com@gmail.com" id="example-email-input">
-                                <input type="hidden" name="name" maxlength="500" autofocus="autofocus" class="form-control" value="Ezea" id="example-email-input">
-                                <input type="hidden" name="txid" maxlength="500" autofocus="autofocus" class="form-control" value="WRX995793167" id="example-email-input">
-                                <input type="hidden" name="withdraw_to" maxlength="500" autofocus="autofocus" class="form-control" value="CashApp Wallet" id="example-email-input">
-
-
-                                <div>
-                                    <button type="submit" class="newbtn" disabled="">Submit</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </main>
     </div>
 
     <!--include footer script-->

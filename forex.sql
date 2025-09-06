@@ -213,14 +213,30 @@ CREATE TABLE `verification` (
 -- Table structure for table `withdrawal`
 --
 
-CREATE TABLE `withdrawal` (
-  `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `amount` decimal(12,2) NOT NULL,
-  `method` varchar(50) DEFAULT NULL,
-  `status` enum('pending','successful','failed') DEFAULT 'pending',
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+CREATE TABLE `withdrawals` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `user_id` INT(11) NOT NULL,
+  `withdraw_to` ENUM('Bank','Crypto','PayPal','CashApp') NOT NULL,
+  `account_type` VARCHAR(255) NOT NULL,
+  `amount` DECIMAL(20,2) NOT NULL DEFAULT 0.00,
+  `status` ENUM('Pending','Approved','Rejected') NOT NULL DEFAULT 'Pending',
+  `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` DATETIME DEFAULT NULL,
+  -- Bank Fields
+  `account_number` VARCHAR(100) DEFAULT NULL,
+  `bank_name` VARCHAR(255) DEFAULT NULL,
+  `account_name` VARCHAR(255) DEFAULT NULL,
+  -- Crypto Fields
+  `wallet_address` VARCHAR(255) DEFAULT NULL,
+  `crypto_currency` VARCHAR(50) DEFAULT NULL,
+  -- PayPal Fields
+  `paypal_email` VARCHAR(255) DEFAULT NULL,
+  -- CashApp Fields
+  `cashtag` VARCHAR(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 
 --
 -- Indexes for dumped tables
