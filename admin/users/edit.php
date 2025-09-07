@@ -98,7 +98,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- end page title -->
+
 
                     <div class="card">
 
@@ -141,58 +141,101 @@
                             <div class="card-body">
 
                                 <div class="row mb-3">
+                                    <label for="trading_balance" class="col-sm-2 col-form-label">first name </label>
+                                    <div class="col-sm-10">
+                                        <input class="form-control" type="text" name="firstname"
+                                            id="trading_balance" value="<?php echo $user['firstname']; ?>">
+                                    </div>
+                                </div>
+
+                               <div class="row mb-3">
+                                    <label for="trading_balance" class="col-sm-2 col-form-label">second name </label>
+                                    <div class="col-sm-10">
+                                        <input class="form-control" type="text" name="lastname"
+                                            id="trading_balance" value="<?php echo $user['lastname']; ?>">
+                                    </div>
+                                </div>
+
+                                                               <div class="row mb-3">
+                                    <label for="trading_balance" class="col-sm-2 col-form-label">email </label>
+                                    <div class="col-sm-10">
+                                        <input class="form-control" type="email" name="email"
+                                            id="trading_balance" value="<?php echo $user['email']; ?>">
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label for="trading_balance" class="col-sm-2 col-form-label">phone </label>
+                                    <div class="col-sm-10">
+                                        <input class="form-control" type="text" name="phone"
+                                            id="trading_balance" value="<?php echo $user['phone']; ?>">
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="row mb-3">
                                     <label for="trading_balance" class="col-sm-2 col-form-label">trading_balance</label>
                                     <div class="col-sm-10">
-                                        <input class="form-control" type="number" name="trading_balance" id="trading_balance"
-                                            value="<?php echo $user['trading_balance']; ?>">
+                                        <input class="form-control" type="number" name="trading_balance"
+                                            id="trading_balance" value="<?php echo $user['trading_balance']; ?>">
                                     </div>
                                 </div>
 
                                 <div class="row mb-3">
                                     <label for="bitcoin_balance" class="col-sm-2 col-form-label">bitcoin_balance</label>
                                     <div class="col-sm-10">
-                                        <input class="form-control" type="number" name="bitcoin_balance" id="bitcoin_balance"
-                                            value="<?php echo $user['bitcoin_balance']; ?>">
+                                        <input class="form-control" type="number" name="bitcoin_balance"
+                                            id="bitcoin_balance" value="<?php echo $user['bitcoin_balance']; ?>">
                                     </div>
                                 </div>
 
                                 <div class="row mb-3">
-                                    <label for="ethereum_balance" class="col-sm-2 col-form-label">ethereum_balance</label>
+                                    <label for="ethereum_balance"
+                                        class="col-sm-2 col-form-label">ethereum_balance</label>
                                     <div class="col-sm-10">
-                                        <input class="form-control" type="number" name="ethereum_balance" id="ethereum_balance"
-                                            value="<?php echo $user['ethereum_balance']; ?>">
+                                        <input class="form-control" type="number" name="ethereum_balance"
+                                            id="ethereum_balance" value="<?php echo $user['ethereum_balance']; ?>">
                                     </div>
                                 </div>
 
                                 <div class="row mb-3">
-                                    <label for="dogecoin_balance" class="col-sm-2 col-form-label">dogecoin_balance</label>
+                                    <label for="dogecoin_balance"
+                                        class="col-sm-2 col-form-label">dogecoin_balance</label>
                                     <div class="col-sm-10">
-                                        <input class="form-control" type="number" name="dogecoin_balance" id="dogecoin_balance"
-                                            value="<?php echo $user['dogecoin_balance']; ?>">
+                                        <input class="form-control" type="number" name="dogecoin_balance"
+                                            id="dogecoin_balance" value="<?php echo $user['dogecoin_balance']; ?>">
                                     </div>
                                 </div>
 
                                 <div class="row mb-3">
-                                    <label for="binance_coin_balance" class="col-sm-2 col-form-label">binance_coin_balance</label>
+                                    <label for="binance_coin_balance"
+                                        class="col-sm-2 col-form-label">binance_coin_balance</label>
                                     <div class="col-sm-10">
-                                        <input class="form-control" type="number" name="binance_coin_balance" id="binance_coin_balance"
+                                        <input class="form-control" type="number" name="binance_coin_balance"
+                                            id="binance_coin_balance"
                                             value="<?php echo $user['binance_coin_balance']; ?>">
                                     </div>
                                 </div>
 
                                 <div class="row mb-3">
-                                    <label for="cosmos_atom_balance" class="col-sm-2 col-form-label">cosmos_atom_balance</label>
+                                    <label for="cosmos_atom_balance"
+                                        class="col-sm-2 col-form-label">cosmos_atom_balance</label>
                                     <div class="col-sm-10">
-                                        <input class="form-control" type="number" name="cosmos_atom_balance" id="cosmos_atom_balance"
+                                        <input class="form-control" type="number" name="cosmos_atom_balance"
+                                            id="cosmos_atom_balance"
                                             value="<?php echo $user['cosmos_atom_balance']; ?>">
                                     </div>
                                 </div>
 
                                 <div class="row mb-3">
-                                    <label for="stablecoin_balance" class="col-sm-2 col-form-label">stablecoin_balance</label>
+                                    <label for="stablecoin_balance"
+                                        class="col-sm-2 col-form-label">stablecoin_balance</label>
                                     <div class="col-sm-10">
-                                        <input class="form-control" type="number" name="stablecoin_balance" id="stablecoin_balance"
-                                            value="<?php echo $user['stablecoin_balance']; ?>">
+                                        <input class="form-control" type="number" name="stablecoin_balance"
+                                            id="stablecoin_balance" value="<?php echo $user['stablecoin_balance']; ?>">
                                     </div>
                                 </div>
 
@@ -207,20 +250,23 @@
                                 <div class="row mb-3">
                                     <label for="solana_balance" class="col-sm-2 col-form-label">solana_balance</label>
                                     <div class="col-sm-10">
-                                        <input class="form-control" type="number" name="solana_balance" id="solana_balance"
-                                            value="<?php echo $user['solana_balance']; ?>">
+                                        <input class="form-control" type="number" name="solana_balance"
+                                            id="solana_balance" value="<?php echo $user['solana_balance']; ?>">
                                     </div>
                                 </div>
 
                                 <div class="row mb-3">
-                                    <label for="cardano_ada_balance" class="col-sm-2 col-form-label">cardano_ada_balance</label>
+                                    <label for="cardano_ada_balance"
+                                        class="col-sm-2 col-form-label">cardano_ada_balance</label>
                                     <div class="col-sm-10">
-                                        <input class="form-control" type="number" name="cardano_ada_balance" id="cardano_ada_balance"
+                                        <input class="form-control" type="number" name="cardano_ada_balance"
+                                            id="cardano_ada_balance"
                                             value="<?php echo $user['cardano_ada_balance']; ?>">
                                     </div>
                                 </div>
 
-                                <button type="submit" class="btn btn-primary btn-block mb-4" name="edit">Update User</button>
+                                <button type="submit" class="btn btn-primary btn-block mb-4" name="edit">Update
+                                    User</button>
                             </div>
                         </form>
 
@@ -237,8 +283,13 @@
                                     $usdt_balance = $_POST['usdt_balance'];
                                     $solana_balance = $_POST['solana_balance'];
                                     $cardano_ada_balance = $_POST['cardano_ada_balance'];
+                                    $firstname = $_POST['firstname'];
+                                    $lastname = $_POST['lastname'];
+                                    $email = $_POST['email'];
+                                    $phone = $_POST['phone'];
 
-                                    $query = "UPDATE users SET trading_balance='$trading_balance', bitcoin_balance='$bitcoin_balance', ethereum_balance='$ethereum_balance', dogecoin_balance='$dogecoin_balance', binance_coin_balance='$binance_coin_balance', cosmos_atom_balance='$cosmos_atom_balance', stablecoin_balance='$stablecoin_balance', usdt_balance='$usdt_balance', solana_balance='$solana_balance', cardano_ada_balance='$cardano_ada_balance' WHERE id='$id' ";
+
+                                    $query = "UPDATE users SET firstname='$firstname', lastname='$lastname', email='$email', phone='$phone', trading_balance='$trading_balance', bitcoin_balance='$bitcoin_balance', ethereum_balance='$ethereum_balance', dogecoin_balance='$dogecoin_balance', binance_coin_balance='$binance_coin_balance', cosmos_atom_balance='$cosmos_atom_balance', stablecoin_balance='$stablecoin_balance', usdt_balance='$usdt_balance', solana_balance='$solana_balance', cardano_ada_balance='$cardano_ada_balance' WHERE id='$id' ";
                                     $query_run = mysqli_query($connection, $query);
 
                                     if ($query_run) {
