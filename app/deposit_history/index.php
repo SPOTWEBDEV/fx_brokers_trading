@@ -1,43 +1,13 @@
 <?php
-include('../../../server/connection.php');
-include('../../../server/auth/client.php');
 
+include('../../server/connection.php');
+include('../../server/auth/client.php');
 
-// Ensure a UUID was provided
-if (!isset($_GET['deposit_id'])) {
-    die("Invalid request. No deposit ID provided.");
-}
-
-$uuid = $_GET['deposit_id'];
-
-// Fetch deposit with uuid and user_id
-$sql = "SELECT id, user_id, uuid, amount, account_type, method, status, created_at 
-        FROM deposit 
-        WHERE uuid = ? AND user_id = ?
-        LIMIT 1";
-
-$stmt = $connection->prepare($sql);
-$stmt->bind_param("si", $uuid, $id);
-$stmt->execute();
-$result = $stmt->get_result();
-
-
-
-$deposit = $result->fetch_assoc();
-
-
-$methods = $connection->query("SELECT * FROM payment_methods WHERE status='active'");
 
 
 
 
 ?>
-
-
-
-
-
-
 
 <html lang="en" style="--hover: #252b3c;
 --nav-primary-font-colour: white;
@@ -58,7 +28,7 @@ height: 100%;">
 
 <head>
     <meta charset="UTF-8">
-    <title>Fund Account</title>
+    <title>Deposits</title>
 
     <!--Include Header snippet-->
 
@@ -71,21 +41,21 @@ height: 100%;">
     <meta name="viewport" content="width=device-width, user-scalable=no">
 
     <meta property="og:description" content="Forex, Stocks, ETFs &amp; Options | FPMarkets - Online Trading Platform">
-    <meta property="”og:image”" content="../../../static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
+    <meta property="”og:image”" content="../../static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
     <meta property="”og:title”" content="FPMarkets">
 
-    <link rel="manifest" href="../../../static/globalfpmarkets/assets/images/pwa/manifest.json">
-    <link rel="shortcut icon" href="../../../static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
+    <link rel="manifest" href="../../static/globalfpmarkets/assets/images/pwa/manifest.json">
+    <link rel="shortcut icon" href="../../static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="../../../static/globalfpmarkets/assets/css/site/reactapp-modules.css">
-    <link rel="stylesheet" href="../../../static/globalfpmarkets/assets/css/libs/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="../../static/globalfpmarkets/assets/css/site/reactapp-modules.css">
+    <link rel="stylesheet" href="../../static/globalfpmarkets/assets/css/libs/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <link rel="apple-touch-icon" sizes="57x57" href="../../../static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="../../static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link href="../../../static/account/assets/global-cfd-market.css" rel="stylesheet">
+    <link href="../../static/account/assets/global-cfd-market.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.69JJaQ5G5xA.L.W.O/d=0/rs=AN8SPfpC36MIoWPngdVwZ4RUzeJYZaC7rg/m=el_main_css">
     <script type="text/javascript" charset="utf-8" async="" src="https://www.smartsuppchat.com/loader.js?"></script>
     <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.en_GB.c_zC7qUnTFY.O/d=1/exm=el_conf/ed=1/rs=AN8SPfoBlmfmYftMKBfrazMTdGZqwlOJOw/m=el_main"></script>
@@ -250,64 +220,79 @@ height: 100%;">
 
 
 
-        <main class="app-py-1" style="height: 100vh;">
-            <div class="fade-appear-done fade-enter-done">
-
-                <section class="center"><br><b>
-                        <h2>Fund Account</h2>
-                    </b><br><br>
-                    <div class="row">
-                        <p>You are about to deposit <b><span style="color:green;">$<?php echo $deposit['amount'] ?></span></b> to your Dogecoin Account</p>
-                        <p>Please select your payment method</p><br><br>
 
 
-                        <div class="col l4 s12 offset-l4">
-                            <ul class="collection">
-                                <?php while ($row = $methods->fetch_assoc()): ?>
-                                    <a href="../transfer/?method_uuid=<?php echo $row['uuid']; ?>&deposit_uuid=<?php echo $deposit['uuid'] ?>">
-                                        <li class="collection-item app-py-2 app-px-2">
-                                            <b><?php echo $row['method_name']; ?></b>
-                                        </li>
-                                    </a>
-                                <?php endwhile; ?>
-                            </ul>
-                        </div>
-                    </div>
 
 
-                    <!-- Modal Structure -->
-                    <div id="modal1" class="modal">
-                        <div class="modal-content">
-                            <h4>Fund Your Account via
-                                Western Union Transfer</h4>
-                            <p>If you wish to fund your account via Western Union transfer, please contact our support team via Email or Live Chat to receive the appropriate payment details. </p>
-                        </div>
-                        <div class="modal-footer">
-                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-                        </div>
-                    </div>
 
-                    <div id="modal2" class="modal">
-                        <div class="modal-content">
-                            <h4>Fund Your Account via
-                                Wire Transfer</h4>
-                            <p>If you wish to fund your account via Bank deposit, please contact our support team via Email or Live Chat to receive the appropriate payment details. </p>
-                        </div>
-                        <div class="modal-footer">
-                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-                        </div>
-                    </div>
-                </section>
+        <main class="container" style="height: 100vh;">
+            <div class="fade-appear-done fade-enter-done"><br>
+                <center><a href="/user_dashboard/" class="btn btn-large">BACK</a><br></center>
+                <div class="container">
+                    <ul class="collection">
+                        <li class="collection-item app-py-2">
+
+
+
+                            <table class="responsive-table striped">
+                                <thead>
+                                    <tr>
+                                        <th>Description</th>
+                                        <th>Date</th>
+                                        <th>Amount</th>
+                                        <th>Deposited To</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+                                    // Query deposits
+                                    $query = mysqli_query($connection, "SELECT `id`, `user_id`, `uuid`, `amount`, `account_type`, `method`, `status`, `created_at` FROM `deposit` WHERE user_id='$id' ORDER BY `created_at` DESC");
+
+                                    if (mysqli_num_rows($query)) {
+                                        while ($deposit = mysqli_fetch_assoc($query)) { ?>
+                                            <tr>
+                                                <td><?= htmlspecialchars(isset($deposit['method']) ? $deposit['method'] : 'Null') ?></td>
+                                                <td>
+                                                    <time datetime="<?= htmlspecialchars($deposit['created_at']) ?>" title="<?= htmlspecialchars($deposit['created_at']) ?>">
+                                                        <?= date('M d, Y H:i', strtotime($deposit['created_at'])) ?>
+                                                    </time>
+                                                </td>
+                                                <td>$<?= number_format($deposit['amount'], 2) ?></td>
+                                                <td><?= htmlspecialchars($deposit['account_type']) ?></td>
+                                                <td>
+                                                    <?php
+                                                    $statusColor = 'text-warning';
+                                                    if (strtolower($deposit['status']) === 'pending') {
+                                                        $statusColor = 'text-warning'; // orange/yellow
+                                                        $color = 'red';
+                                                    } elseif (strtolower($deposit['status']) === 'completed' || strtolower($deposit['status']) === 'success') {
+                                                        $statusColor = 'text-success'; // green
+                                                    } elseif (strtolower($deposit['status']) === 'failed') {
+                                                        $statusColor = 'text-danger'; // red
+                                                    }
+                                                    ?>
+                                                    <span style="color:<?= $color ?>" class="<?= $statusColor ?>"><?= htmlspecialchars($deposit['status']) ?></span>
+                                                </td>
+                                            </tr>
+                                        <?php }
+                                    } else { ?>
+                                        <tr>
+                                            <td colspan="5">No deposits found</td>
+                                        </tr>
+                                    <?php } ?>
+                                </tbody>
+
+                            </table>
+
+
+                        </li>
+                    </ul>
+                </div>
             </div>
-
-
-
 
         </main>
     </div>
-
-
-
 
 
     <!--include footer script-->
@@ -352,13 +337,15 @@ height: 100%;">
 
 
 
-
-
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Smartsupp Live Chat script -->
 
 
 
     <div state="voice" class="placeholder-icon" id="tts-placeholder-icon" title="Click to show TTS button" style="background-image: url(&quot;chrome-extension://cpnomhnclohkhnikegipapofcjihldck/data/content_script/icons/voice.png&quot;);"><canvas width="36" height="36" class="loading-circle" id="text-to-speech-loader" style="display: none;"></canvas></div><iframe id="chat-application-iframe" title="Smartsupp" aria-hidden="true" style="display: block; position: fixed; top: 0px; left: 0px; width: 1px; height: 1px; opacity: 0; border: none; z-index: -1; pointer-events: none;"></iframe>
-    <div id="smartsupp-widget-container"><!----><!----><!----> <!----><!----> <!---->
+    <div id="smartsupp-widget-container"><!----><!----><!----> <!---->
+        <div data-testid="widgetPopupFrame" style="height: calc(100% - 40px); border-radius: 12px; transition: max-height 250ms ease-in-out; width: 300px; overflow: hidden; box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 16px; position: fixed; bottom: 96px; left: initial; right: 12px; z-index: 10000000; max-height: 190px;"><iframe allowfullscreen="" scrolling="no" id="widgetPopupFrame" title="Smartsupp widget popup" style="position: absolute; width: 100%; height: 100%; border: none; display: block; text-align: left; margin: 0px; padding: 0px; top: 0px; left: 0px; opacity: 1;"></iframe><!----></div><!----> <!---->
         <div data-testid="widgetButtonFrame" style="border-radius: 9999px; box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 2px 32px; color-scheme: normal; height: 56px; position: fixed; bottom: 24px; left: initial; right: 12px; z-index: 10000000; width: 56px;"><iframe allowfullscreen="" scrolling="no" id="widgetButtonFrame" title="Smartsupp widget button" style="position: absolute; width: 100%; height: 100%; border: none; display: block; text-align: left; margin: 0px; padding: 0px; top: 0px; left: 0px; opacity: 1;"></iframe><!----></div><!----> <!----><!----> <!----><!----><!---->
     </div>
 </body>
