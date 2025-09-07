@@ -219,15 +219,9 @@ height: 100%;">
 
 
 
-
-
-
-
-
-
         <main class="container" style="height: 100vh;">
             <div class="fade-appear-done fade-enter-done"><br>
-                <center><a href="/user_dashboard/" class="btn btn-large">BACK</a><br></center>
+                <center><a href="<?php  echo $domain ?>app/dashboard/" class="btn btn-large">BACK</a><br></center>
                 <div class="container">
                     <ul class="collection">
                         <li class="collection-item app-py-2">

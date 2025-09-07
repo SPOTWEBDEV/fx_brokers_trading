@@ -4,17 +4,19 @@ include('../../server/auth/client.php');
 
 ?>
 
-<html><head>
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title static-title="FPMarkets">FPMarkets</title>
-    <meta name="description" content="FPMarkets offers low trading fees. You can be up and running quickly as both account opening and deposits are super easy and fast">
+<html>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="../../static/account/new/assets/img/icons/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../static/account/new/assets/img/icons/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
-    <link rel="manifest" href="{% static 'account/new/assets/img/icons/favicon/site.webmanifest">
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title static-title="FPMarkets">FPMarkets</title>
+  <meta name="description" content="FPMarkets offers low trading fees. You can be up and running quickly as both account opening and deposits are super easy and fast">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="../../static/account/new/assets/img/icons/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../static/account/new/assets/img/icons/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
+  <link rel="manifest" href="{% static 'account/new/assets/img/icons/favicon/site.webmanifest">
     <link rel="shortcut icon" href="/static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="{% static 'account/new/assets/img/icons/favicon/browserconfig.xml">
@@ -2278,7 +2280,7 @@ align-items: center; text-decoration:none; list-style-type:none;
 	-webkit-overflow-scrolling: touch;">
     <a href="/update_address/" class="lin"><li class="kr-user1-nav-selected" kr-user1-v="profile">Update Profile</li></a>
     <a href="/update_email/" class="lin"><li kr-user1-v="notifications">Update Email</li></a>
-    <a href="<?php  echo $domain ?>app/deposit/" class="lin"><li kr-user1-v="notifications">Deposit</li></a>
+    <a href="<?php echo $domain ?>app/deposit/" class="lin"><li kr-user1-v="notifications">Deposit</li></a>
     <a href="/withdraw/" class="lin"><li kr-user1-v="security">Withdraw</li></a>
     <a href="/deposit_history/" class="lin"> <li kr-user1-v="widthdraw">Deposit History</li></a>
     <a href="/withdraw_history/" class="lin"><li kr-user1-v="widthdraw">Withdraw History</li></a>
