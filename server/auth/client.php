@@ -1,4 +1,5 @@
 <?php
+$out = $domain . 'auth/login.php';
 if (isset($_SESSION['user_id'])) {
     $id = $_SESSION['user_id'];
 
@@ -32,6 +33,11 @@ if (isset($_SESSION['user_id'])) {
         $usdt_balance = $row['usdt_balance'];
         $solana_balance = $row['solana_balance'];
         $cardano_ada_balance = $row['cardano_ada_balance'];
+    }else{
+
+        echo "<script>window.location.href='$out'</script>";
     }
+}else{
+    echo "<script>window.location.href='$out'</script>";
 }
 ?>

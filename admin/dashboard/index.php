@@ -139,7 +139,7 @@
 
                                             <?php
 
-                                                $sql = mysqli_query($connection,"SELECT * FROM withdrawal WHERE status = 'Pending'");
+                                                $sql = mysqli_query($connection,"SELECT * FROM withdrawals WHERE status = 'Pending'");
                                                 $count = mysqli_num_rows($sql);
 
                                             ?>
