@@ -35,6 +35,7 @@ if (isset($_SESSION['user_id'])) {
         $cardano_ada_balance = $row['cardano_ada_balance'];
         $street_address = $row['street_address'];
         $zip_code = $row['zip_code'];
+        $verification = $row['verification'];
     }else{
 
         echo "<script>window.location.href='$out'</script>";

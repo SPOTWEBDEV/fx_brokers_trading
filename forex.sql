@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 09, 2025 at 04:33 PM
+-- Generation Time: Sep 09, 2025 at 10:05 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -133,9 +133,9 @@ CREATE TABLE `trading` (
   `order_type` enum('buy','sell') NOT NULL,
   `type` enum('Market Execution','Pending Order') NOT NULL,
   `symbol` varchar(20) NOT NULL,
-  `volume` decimal(18,8) NOT NULL,
-  `stop_loss` decimal(18,8) DEFAULT 0.00000000,
-  `take_profit` decimal(18,8) DEFAULT 0.00000000,
+  `volume` varchar(255) NOT NULL,
+  `stop_loss` varchar(255) DEFAULT NULL,
+  `take_profit` varchar(1255) DEFAULT NULL,
   `leverage` varchar(10) DEFAULT '1:1',
   `comment` varchar(255) DEFAULT NULL,
   `entry_price` decimal(18,8) DEFAULT NULL,
@@ -143,6 +143,17 @@ CREATE TABLE `trading` (
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `trading`
+--
+
+INSERT INTO `trading` (`id`, `user_id`, `order_no`, `order_type`, `type`, `symbol`, `volume`, `stop_loss`, `take_profit`, `leverage`, `comment`, `entry_price`, `status`, `created_at`, `updated_at`) VALUES
+(1, 7, '#310288', 'buy', 'Market Execution', 'USDTUSD', '889.00000000', '49943.00000000', '44894.00000000', '1:1', 'hi', NULL, 'open', '2025-09-09 14:44:10', '2025-09-09 14:44:10'),
+(4, 7, '#461537', 'sell', 'Pending Order', 'BTCUSD', '2.00000000', '478848.00000000', '4889484.00000000', '1:2', 'fnffjfjfjfjfjjfjfj', 98483.00000000, 'pending', '2025-09-09 14:49:25', '2025-09-09 14:49:25'),
+(5, 7, '#625296', 'buy', 'Market Execution', 'BTCUSD', '2.00000000', '58864.00000000', '58684.00000000', '1:1', 'fbfbfbfbf', NULL, 'open', '2025-09-09 19:56:31', '2025-09-09 19:56:31'),
+(6, 7, '#739102', 'sell', 'Market Execution', 'BTCUSD', '3', '59694', '58585', '1:1', 'hfhfhfh', NULL, 'open', '2025-09-09 20:00:00', '2025-09-09 20:00:00'),
+(7, 7, '#165607', 'sell', 'Market Execution', 'BTCUSD', '3', '59694', '58585', '1:1', 'hfhfhfh', NULL, 'open', '2025-09-09 20:00:16', '2025-09-09 20:00:16');
 
 -- --------------------------------------------------------
 
@@ -189,18 +200,19 @@ CREATE TABLE `users` (
   `stablecoin_balance` decimal(18,2) DEFAULT 0.00,
   `usdt_balance` decimal(18,2) DEFAULT 0.00,
   `solana_balance` decimal(18,2) DEFAULT 0.00,
-  `cardano_ada_balance` decimal(18,2) DEFAULT 0.00
+  `cardano_ada_balance` decimal(18,2) DEFAULT 0.00,
+  `verification` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `firstname`, `lastname`, `email`, `phone`, `street_address`, `zip_code`, `status`, `created_at`, `gender`, `security_answer`, `security_question`, `country`, `profile`, `password`, `trading_balance`, `bitcoin_balance`, `ethereum_balance`, `dogecoin_balance`, `binance_coin_balance`, `cosmos_atom_balance`, `stablecoin_balance`, `usdt_balance`, `solana_balance`, `cardano_ada_balance`) VALUES
-(1, 'mr', 'mind', 'arumkingsley49@gmail.com', '09017862743', NULL, NULL, 'pending', '2025-09-05 04:18:18', 'Male', 'coding', 'What is your hobby?', 'AZ', 'normal.jpg', '$2y$10$WyPa4QiAky44o3ENqUx9ruL2NtCWLisVPbSRXGPYXDaJMDw4nSfJe', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00),
-(2, 'mr', 'mind', 'arumkingsley9@gmail.com', '09017862743', NULL, NULL, 'pending', '2025-09-05 04:24:02', 'Male', 'coding', 'What is your hobby?', 'AM', 'normal.jpg', '$2y$10$BDQ8p15sMQnQbxbSuH8u6OPL/bPnnl6bS97bzteAWadNrGxG1Sej2', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00),
-(3, 'mr', 'mind', 'arumkingsley@gmail.com', '09017862743', NULL, NULL, 'pending', '2025-09-05 04:29:01', 'Male', 'mind', 'What is your hobby?', 'BH', 'normal.jpg', '$2y$10$a./wYPZVDXqTp1d5bzi3SObN1FmQZqxzBDZYPKow9hw6Y8hmYeidK', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00),
-(7, 'Ezea', 'Ugochukwu', 'spotwebdev.com@gmail.com', '08108833188', 'mtd gariki', '884848', 'active', '2025-09-07 06:10:02', 'Male', 'none', 'What is your pet name?', 'NG', 'default', '$2y$10$pmskL5JBNqD0b76ECe82JuWXhWDfNflzUjgVfRBTNkFxsn2pu0s16', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `users` (`id`, `firstname`, `lastname`, `email`, `phone`, `street_address`, `zip_code`, `status`, `created_at`, `gender`, `security_answer`, `security_question`, `country`, `profile`, `password`, `trading_balance`, `bitcoin_balance`, `ethereum_balance`, `dogecoin_balance`, `binance_coin_balance`, `cosmos_atom_balance`, `stablecoin_balance`, `usdt_balance`, `solana_balance`, `cardano_ada_balance`, `verification`) VALUES
+(1, 'mr', 'mind', 'arumkingsley49@gmail.com', '09017862743', NULL, NULL, 'pending', '2025-09-05 04:18:18', 'Male', 'coding', 'What is your hobby?', 'AZ', 'normal.jpg', '$2y$10$WyPa4QiAky44o3ENqUx9ruL2NtCWLisVPbSRXGPYXDaJMDw4nSfJe', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0),
+(2, 'mr', 'mind', 'arumkingsley9@gmail.com', '09017862743', NULL, NULL, 'pending', '2025-09-05 04:24:02', 'Male', 'coding', 'What is your hobby?', 'AM', 'normal.jpg', '$2y$10$BDQ8p15sMQnQbxbSuH8u6OPL/bPnnl6bS97bzteAWadNrGxG1Sej2', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0),
+(3, 'mr', 'mind', 'arumkingsley@gmail.com', '09017862743', NULL, NULL, 'pending', '2025-09-05 04:29:01', 'Male', 'mind', 'What is your hobby?', 'BH', 'normal.jpg', '$2y$10$a./wYPZVDXqTp1d5bzi3SObN1FmQZqxzBDZYPKow9hw6Y8hmYeidK', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0),
+(7, 'Ezea', 'Ugochukwu', 'spotwebdev.com@gmail.com', '08108833188', 'mtd gariki', '884848', 'active', '2025-09-07 06:10:02', 'Male', 'none', 'What is your pet name?', 'NG', 'default', '$2y$10$pmskL5JBNqD0b76ECe82JuWXhWDfNflzUjgVfRBTNkFxsn2pu0s16', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0);
 
 -- --------------------------------------------------------
 
@@ -210,12 +222,21 @@ INSERT INTO `users` (`id`, `firstname`, `lastname`, `email`, `phone`, `street_ad
 
 CREATE TABLE `verification` (
   `id` int(11) NOT NULL,
+  `uuid` varchar(36) NOT NULL,
   `user_id` int(11) NOT NULL,
-  `document_type` varchar(50) DEFAULT NULL,
-  `document_number` varchar(100) DEFAULT NULL,
-  `status` enum('pending','verified','rejected') DEFAULT 'pending',
+  `front_image` varchar(255) NOT NULL,
+  `back_image` varchar(255) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `verification`
+--
+
+INSERT INTO `verification` (`id`, `uuid`, `user_id`, `front_image`, `back_image`, `created_at`) VALUES
+(1, '7eafd979-8c7e-4f9b-93bf-5d97087e94ec', 7, '../../uploads/verifications/front_68c0813730e8d.png', '../../uploads/verifications/back_68c0813730ea9.png', '2025-09-09 19:34:15'),
+(2, 'a309a3e5-618a-4ef0-952e-9612dc30cd19', 7, 'front_68c081e66c0e8.jpg', 'back_68c081e66c0f2.jpg', '2025-09-09 19:37:10'),
+(3, '1983d09c-d576-4b44-80a3-98007e638505', 7, 'front_68c083680baaa.jpg', 'back_68c083680bab3.jpg', '2025-09-09 19:43:36');
 
 -- --------------------------------------------------------
 
@@ -349,7 +370,7 @@ ALTER TABLE `payment_methods`
 -- AUTO_INCREMENT for table `trading`
 --
 ALTER TABLE `trading`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `useractivity`
@@ -367,7 +388,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `verification`
 --
 ALTER TABLE `verification`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `withdrawals`

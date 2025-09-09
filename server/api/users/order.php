@@ -53,6 +53,6 @@ if ($stmt->execute()) {
 }
 
 $stmt->close();
-$connection->close();
+
 
 }
