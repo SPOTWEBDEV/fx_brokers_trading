@@ -215,6 +215,7 @@ CREATE TABLE `verification` (
 
 CREATE TABLE `withdrawals` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `uuid` char(36) NOT NULL DEFAULT 'uuid()'
   `user_id` INT(11) NOT NULL,
   `withdraw_to` ENUM('Bank','Crypto','PayPal','CashApp') NOT NULL,
   `account_type` VARCHAR(255) NOT NULL,
@@ -303,6 +304,7 @@ ALTER TABLE `verification`
 ALTER TABLE `withdrawal`
   ADD PRIMARY KEY (`id`),
   ADD KEY `user_id` (`user_id`);
+  ADD UNIQUE KEY `UUID` (`uuid`);
 
 --
 -- AUTO_INCREMENT for dumped tables
