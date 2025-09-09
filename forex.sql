@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 05, 2025 at 01:34 PM
+-- Generation Time: Sep 09, 2025 at 04:33 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -87,7 +87,8 @@ CREATE TABLE `deposit` (
 --
 
 INSERT INTO `deposit` (`id`, `user_id`, `uuid`, `amount`, `account_type`, `method`, `status`, `created_at`) VALUES
-(5, 5, '430f4eafab7213306e1d3a0155668b1a', 400.00, 'ethereum_balance', 'bitcoin', 'pending', '2025-09-05 10:27:44');
+(6, 7, 'c13fa10a915b4998e7b6bc64a6927dd9', 100.00, 'trading_balance', NULL, 'pending', '2025-09-07 05:11:05'),
+(7, 7, 'ee7073ce0be14a8af0cdcc06190f2fba', 100.00, 'bitcoin_balance', 'bitcoin', 'pending', '2025-09-07 05:11:12');
 
 -- --------------------------------------------------------
 
@@ -128,12 +129,19 @@ INSERT INTO `payment_methods` (`id`, `method_key`, `method_name`, `details`, `st
 CREATE TABLE `trading` (
   `id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
-  `trade_type` enum('buy','sell') DEFAULT NULL,
-  `asset` varchar(50) DEFAULT NULL,
-  `amount` decimal(12,2) NOT NULL,
-  `price` decimal(12,2) NOT NULL,
-  `status` enum('open','closed','cancelled') DEFAULT 'open',
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `order_no` varchar(50) NOT NULL,
+  `order_type` enum('buy','sell') NOT NULL,
+  `type` enum('Market Execution','Pending Order') NOT NULL,
+  `symbol` varchar(20) NOT NULL,
+  `volume` decimal(18,8) NOT NULL,
+  `stop_loss` decimal(18,8) DEFAULT 0.00000000,
+  `take_profit` decimal(18,8) DEFAULT 0.00000000,
+  `leverage` varchar(10) DEFAULT '1:1',
+  `comment` varchar(255) DEFAULT NULL,
+  `entry_price` decimal(18,8) DEFAULT NULL,
+  `status` enum('pending','open','executed','cancelled') DEFAULT 'pending',
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -162,6 +170,8 @@ CREATE TABLE `users` (
   `lastname` varchar(100) NOT NULL,
   `email` varchar(150) NOT NULL,
   `phone` varchar(20) DEFAULT NULL,
+  `street_address` varchar(255) DEFAULT NULL,
+  `zip_code` varchar(20) DEFAULT NULL,
   `status` enum('active','pending','suspended') DEFAULT 'active',
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `gender` varchar(255) NOT NULL,
@@ -186,11 +196,11 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `firstname`, `lastname`, `email`, `phone`, `status`, `created_at`, `gender`, `security_answer`, `security_question`, `country`, `profile`, `password`, `trading_balance`, `bitcoin_balance`, `ethereum_balance`, `dogecoin_balance`, `binance_coin_balance`, `cosmos_atom_balance`, `stablecoin_balance`, `usdt_balance`, `solana_balance`, `cardano_ada_balance`) VALUES
-(1, 'mr', 'mind', 'arumkingsley49@gmail.com', '09017862743', 'pending', '2025-09-05 04:18:18', 'Male', 'coding', 'What is your hobby?', 'AZ', 'normal.jpg', '$2y$10$WyPa4QiAky44o3ENqUx9ruL2NtCWLisVPbSRXGPYXDaJMDw4nSfJe', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00),
-(2, 'mr', 'mind', 'arumkingsley9@gmail.com', '09017862743', 'pending', '2025-09-05 04:24:02', 'Male', 'coding', 'What is your hobby?', 'AM', 'normal.jpg', '$2y$10$BDQ8p15sMQnQbxbSuH8u6OPL/bPnnl6bS97bzteAWadNrGxG1Sej2', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00),
-(3, 'mr', 'mind', 'arumkingsley@gmail.com', '09017862743', 'pending', '2025-09-05 04:29:01', 'Male', 'mind', 'What is your hobby?', 'BH', 'normal.jpg', '$2y$10$a./wYPZVDXqTp1d5bzi3SObN1FmQZqxzBDZYPKow9hw6Y8hmYeidK', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00),
-(5, 'thebest', 'firstclass', 'spotwebdev.com@gmail.com', '09017862743', 'active', '2025-09-05 04:32:13', 'Male', 'coding', 'What is your hobby?', 'BS', 'normal.jpg', '$2y$10$3w.hEC3d/WLxHObDK1.ZaOxGpwx.BDWuTrXhRfqZ9OBKza9o/a5xi', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
+INSERT INTO `users` (`id`, `firstname`, `lastname`, `email`, `phone`, `street_address`, `zip_code`, `status`, `created_at`, `gender`, `security_answer`, `security_question`, `country`, `profile`, `password`, `trading_balance`, `bitcoin_balance`, `ethereum_balance`, `dogecoin_balance`, `binance_coin_balance`, `cosmos_atom_balance`, `stablecoin_balance`, `usdt_balance`, `solana_balance`, `cardano_ada_balance`) VALUES
+(1, 'mr', 'mind', 'arumkingsley49@gmail.com', '09017862743', NULL, NULL, 'pending', '2025-09-05 04:18:18', 'Male', 'coding', 'What is your hobby?', 'AZ', 'normal.jpg', '$2y$10$WyPa4QiAky44o3ENqUx9ruL2NtCWLisVPbSRXGPYXDaJMDw4nSfJe', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00),
+(2, 'mr', 'mind', 'arumkingsley9@gmail.com', '09017862743', NULL, NULL, 'pending', '2025-09-05 04:24:02', 'Male', 'coding', 'What is your hobby?', 'AM', 'normal.jpg', '$2y$10$BDQ8p15sMQnQbxbSuH8u6OPL/bPnnl6bS97bzteAWadNrGxG1Sej2', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00),
+(3, 'mr', 'mind', 'arumkingsley@gmail.com', '09017862743', NULL, NULL, 'pending', '2025-09-05 04:29:01', 'Male', 'mind', 'What is your hobby?', 'BH', 'normal.jpg', '$2y$10$a./wYPZVDXqTp1d5bzi3SObN1FmQZqxzBDZYPKow9hw6Y8hmYeidK', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00),
+(7, 'Ezea', 'Ugochukwu', 'spotwebdev.com@gmail.com', '08108833188', 'mtd gariki', '884848', 'active', '2025-09-07 06:10:02', 'Male', 'none', 'What is your pet name?', 'NG', 'default', '$2y$10$pmskL5JBNqD0b76ECe82JuWXhWDfNflzUjgVfRBTNkFxsn2pu0s16', 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00);
 
 -- --------------------------------------------------------
 
@@ -210,34 +220,35 @@ CREATE TABLE `verification` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `withdrawal`
+-- Table structure for table `withdrawals`
 --
 
 CREATE TABLE `withdrawals` (
-  `id` INT(11) NOT NULL AUTO_INCREMENT,
-  `uuid` char(36) NOT NULL DEFAULT 'uuid()'
-  `user_id` INT(11) NOT NULL,
-  `withdraw_to` ENUM('Bank','Crypto','PayPal','CashApp') NOT NULL,
-  `account_type` VARCHAR(255) NOT NULL,
-  `amount` DECIMAL(20,2) NOT NULL DEFAULT 0.00,
-  `status` ENUM('Pending','Approved','Rejected') NOT NULL DEFAULT 'Pending',
-  `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `updated_at` DATETIME DEFAULT NULL,
-  -- Bank Fields
-  `account_number` VARCHAR(100) DEFAULT NULL,
-  `bank_name` VARCHAR(255) DEFAULT NULL,
-  `account_name` VARCHAR(255) DEFAULT NULL,
-  -- Crypto Fields
-  `wallet_address` VARCHAR(255) DEFAULT NULL,
-  `crypto_currency` VARCHAR(50) DEFAULT NULL,
-  -- PayPal Fields
-  `paypal_email` VARCHAR(255) DEFAULT NULL,
-  -- CashApp Fields
-  `cashtag` VARCHAR(255) DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  INDEX (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `id` int(11) NOT NULL,
+  `uuid` varchar(255) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `withdraw_to` varchar(255) NOT NULL,
+  `account_type` varchar(255) NOT NULL,
+  `amount` decimal(20,2) NOT NULL DEFAULT 0.00,
+  `status` enum('pending','approved','rejected') NOT NULL DEFAULT 'pending',
+  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `updated_at` datetime DEFAULT NULL,
+  `account_number` varchar(100) DEFAULT NULL,
+  `bank_name` varchar(255) DEFAULT NULL,
+  `account_name` varchar(255) DEFAULT NULL,
+  `wallet_address` varchar(255) DEFAULT NULL,
+  `crypto_currency` varchar(50) DEFAULT NULL,
+  `paypal_email` varchar(255) DEFAULT NULL,
+  `cashtag` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `withdrawals`
+--
+
+INSERT INTO `withdrawals` (`id`, `uuid`, `user_id`, `withdraw_to`, `account_type`, `amount`, `status`, `created_at`, `updated_at`, `account_number`, `bank_name`, `account_name`, `wallet_address`, `crypto_currency`, `paypal_email`, `cashtag`) VALUES
+(1, 'uuid()', 7, 'Bank', 'trading_balance', 100.00, 'pending', '2025-09-06 07:09:39', NULL, '22669056778', 'Growth Bank', 'ugochukwu micheal', NULL, NULL, NULL, NULL),
+(2, 'uuid()', 7, 'Crypto', 'trading_balance', 20.00, 'pending', '2025-09-06 07:13:03', NULL, NULL, NULL, NULL, 'nfnfnnfjmfmf', 'Tether Wallet', NULL, NULL);
 
 --
 -- Indexes for dumped tables
@@ -275,6 +286,7 @@ ALTER TABLE `payment_methods`
 --
 ALTER TABLE `trading`
   ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `order_no` (`order_no`),
   ADD KEY `user_id` (`user_id`);
 
 --
@@ -299,12 +311,11 @@ ALTER TABLE `verification`
   ADD KEY `user_id` (`user_id`);
 
 --
--- Indexes for table `withdrawal`
+-- Indexes for table `withdrawals`
 --
-ALTER TABLE `withdrawal`
+ALTER TABLE `withdrawals`
   ADD PRIMARY KEY (`id`),
   ADD KEY `user_id` (`user_id`);
-  ADD UNIQUE KEY `UUID` (`uuid`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -326,7 +337,7 @@ ALTER TABLE `adminactivity`
 -- AUTO_INCREMENT for table `deposit`
 --
 ALTER TABLE `deposit`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `payment_methods`
@@ -350,7 +361,7 @@ ALTER TABLE `useractivity`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `verification`
@@ -359,10 +370,10 @@ ALTER TABLE `verification`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `withdrawal`
+-- AUTO_INCREMENT for table `withdrawals`
 --
-ALTER TABLE `withdrawal`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `withdrawals`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Constraints for dumped tables
@@ -391,12 +402,6 @@ ALTER TABLE `useractivity`
 --
 ALTER TABLE `verification`
   ADD CONSTRAINT `verification_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
-
---
--- Constraints for table `withdrawal`
---
-ALTER TABLE `withdrawal`
-  ADD CONSTRAINT `withdrawal_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
