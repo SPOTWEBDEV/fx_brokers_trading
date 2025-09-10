@@ -2264,7 +2264,7 @@ align-items: center; text-decoration:none; list-style-type:none;
 	-webkit-overflow-scrolling: touch;">
     <a href="<?php echo $domain ?>app/update" class="lin"><li class="kr-user1-nav-selected" kr-user1-v="profile">Update Profile</li></a>
     <a href="<?php echo $domain ?>app/deposit/" class="lin"><li kr-user1-v="notifications">Deposit</li></a>
-    <a href="<?php echo $domain ?>app/withdraw/" class="lin"><li kr-user1-v="security">Withdraw</li></a>
+    <a href="<?php echo $domain ?>app/withdrawal/" class="lin"><li kr-user1-v="security">Withdraw</li></a>
     <a href="<?php echo $domain ?>app/deposit_history/" class="lin"> <li kr-user1-v="widthdraw">Deposit History</li></a>
     <a href="<?php echo $domain ?>app/withdraw_history/" class="lin"><li kr-user1-v="widthdraw">Withdraw History</li></a>
     <a href="<?php echo $domain ?>app/logout" class="lin"><li kr-user1-v="logout">Logout</li></a>
@@ -3061,8 +3061,8 @@ window.onload = setInterval(() => target.style.opacity = '0', 4000)
                       <div class="kr-heeader-btn kr-heeader-btn-identity" style="">
                         
                         
-<a style="text-decoration: none;" href="/id_verification/">
-  <input type="button" onclick="_showIdentityWizard();" class="btn btn-big btn-orange btn-autowidth" name="" value="Verify your identiy"></a>
+<a style="text-decoration: none;" href="<?php echo $domain ?>app/id_verification/">
+  <input type="button"  class="btn btn-big btn-orange btn-autowidth" name="" value="<?php echo ($verification == 0)?  'Verify your identiy':'Verified' ?>"></a>
 
   
 
@@ -3642,21 +3642,69 @@ justify-content: center;">
       <li class="kr-dash-orderlistpassed-optshow" onclick="_toggleOrderGraphList();"><svg class="lnr lnr-chevron-up"><use xlink:href="#lnr-chevron-up"></use></svg></li>
     </ul>
   </header>
-  <nav>
-    <ul>
-      <li>ORDER</li>
-      <li>TIME</li>
-      <li>TYPE</li>
-              <li>SYMBOL</li>
-            <li>VOLUME</li>
-      <li>STOP LOSS</li>
-      <li>TAKE PROFIT</li>
-      <li>STATUS</li>
-      
-      <li></li>
-    </ul>
-  </nav>
-  <ul class="kr-dash-orderlistpassed-lst"></ul>
+   <table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse:collapse;">
+  <thead>
+    <tr>
+      <th>Order No</th>
+      <th>Time</th>
+      <th>Type</th>
+      <th>Order Type</th>
+      <th>Symbol</th>
+      <th>Volume</th>
+      <th>Stop Loss</th>
+      <th>Take Profit</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody style="color:white !important">
+    <?php
+    
+        
+        $query = "SELECT id, user_id, order_no, order_type, type, symbol, volume, stop_loss, take_profit, leverage, comment, entry_price, status, created_at, updated_at 
+                  FROM trading 
+                  WHERE user_id = ? 
+                  ORDER BY created_at DESC";
+
+        $stmt = $connection->prepare($query);
+        $stmt->bind_param("i", $id);
+        $stmt->execute();
+        $result = $stmt->get_result();
+
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                echo "<tr>";
+                echo "<td>" . htmlspecialchars($row['order_no']) . "</td>";
+                echo "<td>" . htmlspecialchars($row['created_at']) . "</td>";
+                echo "<td>" . htmlspecialchars($row['type']) . "</td>";
+                $orderType = htmlspecialchars($row['order_type']);
+
+                if (strtolower($orderType) === "sell") {
+                    echo "<td style='color:red; '>$orderType</td>";
+                } elseif (strtolower($orderType) === "buy") {
+                    echo "<td style='color:green;'>$orderType</td>";
+                } else {
+                    echo "<td>$orderType</td>";
+                }
+                
+                echo "<td>" . htmlspecialchars($row['symbol']) . "</td>";
+                echo "<td>" . htmlspecialchars($row['volume']) . "</td>";
+                echo "<td>" . htmlspecialchars($row['stop_loss']) . "</td>";
+                echo "<td>" . htmlspecialchars($row['take_profit']) . "</td>";
+                echo "<td>" . htmlspecialchars($row['status']) . "</td>";
+                echo "</tr>";
+            }
+        } else {
+            echo "<tr><td colspan='8'>No orders found.</td></tr>";
+        }
+
+        $stmt->close();
+    
+
+  
+    ?>
+  </tbody>
+</table>
+
 
 </section>
 <style media="screen">

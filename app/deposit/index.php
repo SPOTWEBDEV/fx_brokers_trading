@@ -1,13 +1,14 @@
 <?php
 include('../../server/connection.php');
 include('../../server/auth/client.php');
+include('../../utils/uuid.php');
 
 if (isset($_POST['deposit'])) {
     $account_type = $_POST['account_type']; // e.g., Bitcoin, Ethereum, USDT, Bank
     $amount = $_POST['amount'];
 
     // Generate UUID
-    $uuid = bin2hex(random_bytes(16));
+    $uuid = generate_uuid_v4();
 
     echo $id;
 

@@ -1,22 +1,62 @@
 <?php
-
 include('../../server/connection.php');
 include('../../server/auth/client.php');
+include('../../utils/uuid.php');
 
 
-$query = "SELECT * FROM withdrawals WHERE user_id = ? ORDER BY created_at DESC";
-$stmt = $connection->prepare($query);
-$stmt->bind_param("i", $id);
-$stmt->execute();
-$result = $stmt->get_result();
 
-$withdrawals = [];
-while ($row = $result->fetch_assoc()) {
-    $withdrawals[] = $row;
+if (isset($_POST['verification_btn'])) {
+
+
+
+    $uuid = generate_uuid_v4();
+
+    // File upload handling
+    $uploadDir = "../../uploads/verifications/"; // make sure this folder exists & writable
+    if (!is_dir($uploadDir)) {
+        mkdir($uploadDir, 0777, true);
+    }
+
+    $front = $_FILES['id_front_image'];
+    $back = $_FILES['id_back_image'];
+
+    $allowed_types = ['image/jpeg', 'image/png', 'image/jpg'];
+
+    if (!in_array($front['type'], $allowed_types) || !in_array($back['type'], $allowed_types)) {
+        die("❌ Only JPG and PNG files are allowed.");
+    }
+
+    $front_name = uniqid("front_") . "." . pathinfo($front['name'], PATHINFO_EXTENSION);
+    $back_name  = uniqid("back_") . "." . pathinfo($back['name'], PATHINFO_EXTENSION);
+
+    $front_path = $uploadDir . $front_name;
+    $back_path  = $uploadDir . $back_name;
+
+    // Move files
+    if (!move_uploaded_file($front['tmp_name'], $front_path)) {
+        die("❌ Error uploading front image.");
+    }
+    if (!move_uploaded_file($back['tmp_name'], $back_path)) {
+        die("❌ Error uploading back image.");
+    }
+
+    // Save record in DB
+    $query = "INSERT INTO verification (uuid, user_id, front_image, back_image) VALUES (?, ?, ?, ?)";
+    $stmt = $connection->prepare($query);
+    $stmt->bind_param("siss", $uuid, $id, $front_name, $back_name);
+
+    if ($stmt->execute()) {
+        echo "✅ Verification submitted successfully!";
+    } else {
+        echo "❌ DB Error: " . $stmt->error;
+    }
+
+    $stmt->close();
+    $connection->close();
 }
 
-
 ?>
+
 
 <html lang="en" style="--hover: #252b3c;
 --nav-primary-font-colour: white;
@@ -37,7 +77,8 @@ height: 100%;">
 
 <head>
     <meta charset="UTF-8">
-    <title>withdraws</title>
+    <title>Verifications</title>
+
 
     <!--Include Header snippet-->
 
@@ -66,7 +107,7 @@ height: 100%;">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="../../static/account/assets/global-cfd-market.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.69JJaQ5G5xA.L.W.O/d=0/rs=AN8SPfpC36MIoWPngdVwZ4RUzeJYZaC7rg/m=el_main_css">
-    <script type="text/javascript" charset="utf-8" async="" src="https://www.smartsuppchat.com/loader.js?"></script>
+    
     <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.en_GB.c_zC7qUnTFY.O/d=1/exm=el_conf/ed=1/rs=AN8SPfoBlmfmYftMKBfrazMTdGZqwlOJOw/m=el_main"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <style>
@@ -230,60 +271,49 @@ height: 100%;">
 
 
 
+        <div style="min-height: 100vh;"><br><br>
+            <div class="row">
+                <div class="col l4 s12 offset-l4">
+                    <div class="card-panel">
+                        <h3 class="btn-color center">Verify Your Identity</h3>
+                        <p style="text-align: justify;">Please verify your identity by uploading a valid government issued identification card. You may experience difficulties when uploading from an ios device. Make sure your browser has camera access in your ios settings.</p>
+                        <center><br>
+                            <form method="POST" enctype="multipart/form-data">
+
+                                <div>
+                                    <div class="file-field input-field">
+                                        <div class="btn btn-secondary"><span>select front</span>
+
+                                            <input type="file" name="id_front_image" accept=".jpg,.png,.jpeg" required="" id="front">
+
+                                        </div>
+                                        <div class="file-path-wrapper">
+                                            <input class="file-path validate" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="file-field input-field">
+                                        <div class="btn btn-secondary"><span>select back</span>
 
 
+                                            <input type="file" name="id_back_image" accept=".jpg,.png,.jpeg" required="" id="back">
 
-
-        <main class="container" style="height: 100vh;">
-            <div class="fade-appear-done fade-enter-done"><br>
-                <center><a href="<?php echo $domain ?>app/dashboard/" class="btn btn-large">BACK</a><br>
-                    <p class="center"> Withdraw History</p>
-                </center>
-                <div class="container">
-                    <ul class="collection">
-                        <li class="collection-item app-py-2">
-                            <table class="responsive-table striped">
-                                <thead>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>Description</th>
-                                        <th>Date</th>
-                                        <th>Amount</th>
-                                        <th>Status</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php if (count($withdrawals) > 0): ?>
-                                        <?php foreach ($withdrawals as $withdrawal): ?>
-                                            <tr>
-                                                <td><?= count($withdrawals) ?></td>
-                                                <td>Withdrawal to <?= htmlspecialchars($withdrawal['withdraw_to']) ?></td>
-                                                <td><?= htmlspecialchars($withdrawal['created_at']) ?></td>
-                                                <td>$<?= htmlspecialchars($withdrawal['amount']) ?></td>
-                                                <td><?= htmlspecialchars($withdrawal['status']) ?></td>
-                                                <td>
-                                                    <button class="btn-small modal-trigger" data-target="modal<?= $withdrawal['id'] ?>">See More</button>
-                                                </td>
-                                            </tr>
-                                        <?php endforeach; ?>
-                                    <?php else: ?>
-                                        <tr>
-                                            <td colspan="6">
-                                                <center>No records found!</center>
-                                            </td>
-                                        </tr>
-                                    <?php endif; ?>
-                                </tbody>
-                            </table>
-
-                        </li>
-                    </ul>
+                                        </div>
+                                        <div class="file-path-wrapper">
+                                            <input class="file-path validate" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button type="submit" name="verification_btn" class="newbtn">Upload</button>
+                                </div>
+                            </form><br>
+                        </center>
+                    </div><br><br>
                 </div>
             </div>
-
-           
-        </main>
+        </div>
     </div>
 
 
@@ -329,6 +359,8 @@ height: 100%;">
 
 
 
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 
 

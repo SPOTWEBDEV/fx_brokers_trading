@@ -116,6 +116,7 @@
                                                 <th>Full-Name:</th>
                                                 <th>Amount:</th>
                                                 <th>Payment-Method:</th>
+                                                <th>From:</th>
                                                 <th>Date:</th>
                                                 <th>status:</th>
                                                 <th>#</th>
@@ -139,7 +140,8 @@
                                                 $user = $row['user_id'];
                                                 $fullname = $row['firstname'] . " " . $row['lastname'];
                                                 $amount = $row['amount'];
-                                                $method = $row['method'];
+                                                $method = $row['withdraw_to'];
+                                                $from = $row['account_type'];
                                                 $date = $row['created_at'];
                                                 $status = $row['status'];
                                                 echo "<tr>";
@@ -147,6 +149,7 @@
                                                 echo "<td>$fullname</td>";
                                                 echo "<td>$amount</td>";
                                                 echo "<td>$method</td>";
+                                                echo "<td>$from</td>";
                                                 echo "<td>$date</td>";
                                                 if($status == "suspended"){
                                                     echo "<td style='color: red;'>Suspended</td>";
@@ -160,7 +163,7 @@
                                                  
                                                 if ($status == "pending") {
 
-                                                    echo "<td><button class='btn btn-success btn-sm'><a style='color: white;' href='index.php?approve=$id&user_id=$user&amount=$amount&account=$method'>Approve</a></button></td>";
+                                                    echo "<td><button class='btn btn-success btn-sm'><a style='color: white;' href='index.php?approve=$id&user_id=$user&amount=$amount&account=$from'>Approve</a></button></td>";
                                                     echo "<td><button class='btn btn-danger btn-sm'><a style='color: white;' href='index.php?decline=$id'>Decline</a></button></td>";
 
                                                 }
