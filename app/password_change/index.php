@@ -4,19 +4,45 @@ include('../../server/connection.php');
 include('../../server/auth/client.php');
 
 
-$query = "SELECT * FROM withdrawals WHERE user_id = ? ORDER BY created_at DESC";
-$stmt = $connection->prepare($query);
-$stmt->bind_param("i", $id);
-$stmt->execute();
-$result = $stmt->get_result();
+$error = ""; // default no error
 
-$withdrawals = [];
-while ($row = $result->fetch_assoc()) {
-    $withdrawals[] = $row;
+if (isset($_SESSION['user_id'])) {
+    $id = $_SESSION['user_id'];
+
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $old_password = mysqli_real_escape_string($connection, $_POST['old_password']);
+        $new_password1 = mysqli_real_escape_string($connection, $_POST['new_password1']);
+        $new_password2 = mysqli_real_escape_string($connection, $_POST['new_password2']);
+
+        if ($new_password1 !== $new_password2) {
+            $error = "New passwords do not match!";
+        } else {
+            $query = mysqli_query($connection, "SELECT `password` FROM `users` WHERE `id` = '$id'");
+            $row = mysqli_fetch_assoc($query);
+
+            if ($row && password_verify($old_password, $row['password'])) {
+                $hashed_password = password_hash($new_password1, PASSWORD_DEFAULT);
+                $update = mysqli_query($connection, "UPDATE `users` SET `password`='$hashed_password' WHERE `id`='$id'");
+
+                if ($update) {
+                    echo "<script>alert('Password updated successfully!'); window.location.href='../dashboard';</script>";
+                    exit;
+                } else {
+                    $error = "Error updating password. Try again!";
+                }
+            } else {
+                $error = "Your old password was entered incorrectly. Please enter it again.";
+            }
+        }
+    }
 }
 
 
+
 ?>
+
+
+
 
 <html lang="en" style="--hover: #252b3c;
 --nav-primary-font-colour: white;
@@ -37,8 +63,7 @@ height: 100%;">
 
 <head>
     <meta charset="UTF-8">
-    <title>withdraws</title>
-
+    <title>Update Password</title>
     <!--Include Header snippet-->
 
 
@@ -66,7 +91,6 @@ height: 100%;">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="../../static/account/assets/global-cfd-market.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.69JJaQ5G5xA.L.W.O/d=0/rs=AN8SPfpC36MIoWPngdVwZ4RUzeJYZaC7rg/m=el_main_css">
-    <script type="text/javascript" charset="utf-8" async="" src="https://www.smartsuppchat.com/loader.js?"></script>
     <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.en_GB.c_zC7qUnTFY.O/d=1/exm=el_conf/ed=1/rs=AN8SPfoBlmfmYftMKBfrazMTdGZqwlOJOw/m=el_main"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <style>
@@ -227,115 +251,75 @@ height: 100%;">
 
 
 
-
-
-
-
-
-
-
         <main class="container" style="height: 100vh;">
-            <div class="fade-appear-done fade-enter-done"><br>
-                <center><a href="/user_dashboard/" class="btn btn-large">BACK</a><br>
-                    <p class="center"> Withdraw History</p>
-                </center>
-                <div class="container">
-                    <ul class="collection">
-                        <li class="collection-item app-py-2">
-                            <table class="responsive-table striped">
-                                <thead>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>Description</th>
-                                        <th>Date</th>
-                                        <th>Amount</th>
-                                        <th>Status</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php if (count($withdrawals) > 0): ?>
-                                        <?php foreach ($withdrawals as $withdrawal): ?>
-                                            <tr>
-                                                <td><?= count($withdrawals) ?></td>
-                                                <td>Withdrawal to <?= htmlspecialchars($withdrawal['withdraw_to']) ?></td>
-                                                <td><?= htmlspecialchars($withdrawal['created_at']) ?></td>
-                                                <td>$<?= htmlspecialchars($withdrawal['amount']) ?></td>
-                                                <td><?= htmlspecialchars($withdrawal['status']) ?></td>
-                                                <td>
-                                                    <button class="btn-small modal-trigger" data-target="modal<?= $withdrawal['id'] ?>">See More</button>
-                                                </td>
-                                            </tr>
-                                        <?php endforeach; ?>
-                                    <?php else: ?>
-                                        <tr>
-                                            <td colspan="6">
-                                                <center>No records found!</center>
-                                            </td>
-                                        </tr>
-                                    <?php endif; ?>
-                                </tbody>
-                            </table>
+            <div class="fade-appear-done fade-enter-done">
+                <div class="row">
+                    <div class="col l6 offset-l3 s12">
+                        <div class="card-panel">
+                            <center>
+                                <form method="post">
+                                    <div class="row">
+                                        <div class="input-field undefined">
+                                            <input type="password" name="old_password" required id="old_password">
+                                            <label class="active" for="old_password">Old password</label>
+                                        </div>
 
-                        </li>
-                    </ul>
+                                        <div class="input-field undefined">
+                                            <input type="password" name="new_password1" required id="new_password1">
+                                            <label class="active" for="new_password1">New password</label>
+                                        </div>
+
+                                        <div class="input-field undefined">
+                                            <input type="password" name="new_password2" required id="new_password2">
+                                            <label class="active" for="new_password2">Confirm new password</label>
+                                        </div>
+                                    </div>
+
+                                    <?php if (!empty($error)): ?>
+                                        <div class="input-field undefined" style="color:red; margin-top:10px;">
+                                            <p><span class="material-icons notranslate">report_problem</span> <?= $error ?></p>
+                                        </div>
+                                    <?php endif; ?>
+
+                                    <div><button type="submit" class="newbtn">Update</button></div>
+                                </form>
+                            </center>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-           
         </main>
     </div>
 
+    <!--include footer navbar snipet-->
+    <!--
 
-    <!--include footer script-->
-
-
-
-
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.sidenav');
-            var instances = M.Sidenav.init(elems, options);
-        });
-
-        // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
-        // var collapsibleElem = document.querySelector('.collapsible');
-        // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
-
-        // Or with jQuery
-
-        $(document).ready(function() {
-            $('.sidenav').sidenav();
-        });
-    </script>
+-->
 
 
-    <script>
-        $(document).ready(function() {
-            $('.tab').click(function() {
-                var tabID = $(this).data('tabid');
+    <!--<section>
+      
+    <div class="fixed-footer bgc" style="z-index: 1;">
+        <ul class="tabs"><li class="tab col s4">
+            <a class="active" href="/user_dashboard/">
+                <span class="material-icons notranslate">home</span><span class="hide-on-med-and-down" style="padding-left: 6px;">Home</span></a></li>
+                <li class="tab col s4"><a class="" href="/account/"><span class="material-icons notranslate">token</span>
+                    <span class="hide-on-med-and-down" style="padding-left: 6px;">Wallet</span></a></li>
+   
+                        <li class="tab col s4">
+                            <a class="" href="/trade/"><span class="material-icons notranslate">browse_gallery</span>
+                                <span class="hide-on-med-and-down" style="padding-left: 6px;">Trade</span></a></li>
+                                <li class="tab col s4">
+                                    <a class="" href="/trades/"><span class="material-icons notranslate">history_edu</span>
+                                        <span class="hide-on-med-and-down" style="padding-left: 6px;">Trades</span></a></li>-->
+    <!--- <li class="tab col s4"><a class="" href="/user_profile/"><span class="material-icons notranslate">wallet</span>
+                                            <span class="hide-on-med-and-down" style="padding-left: 6px;">Profile</span></a></li>-->
 
-                $('.buttons').children().removeClass('current');
-
-                $(this).addClass('current');
-
-                $('.wrapper').children().hide();
-                $('.wrapper').find("[data-blockid=" + tabID + "]").show();
-            });
-        });
-    </script>
+    <!--</ul></div></section>-->
 
 
 
-
-
-
-
-    <div state="voice" class="placeholder-icon" id="tts-placeholder-icon" title="Click to show TTS button" style="background-image: url(&quot;chrome-extension://cpnomhnclohkhnikegipapofcjihldck/data/content_script/icons/voice.png&quot;);"><canvas width="36" height="36" class="loading-circle" id="text-to-speech-loader" style="display: none;"></canvas></div><iframe id="chat-application-iframe" title="Smartsupp" aria-hidden="true" style="display: block; position: fixed; top: 0px; left: 0px; width: 1px; height: 1px; opacity: 0; border: none; z-index: -1; pointer-events: none;"></iframe>
-    <div id="smartsupp-widget-container"><!----><!----><!----> <!----><!----> <!---->
-        <div data-testid="widgetButtonFrame" style="border-radius: 9999px; box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 2px 32px; color-scheme: normal; height: 56px; position: fixed; bottom: 24px; left: initial; right: 12px; z-index: 10000000; width: 56px;"><iframe allowfullscreen="" scrolling="no" id="widgetButtonFrame" title="Smartsupp widget button" style="position: absolute; width: 100%; height: 100%; border: none; display: block; text-align: left; margin: 0px; padding: 0px; top: 0px; left: 0px; opacity: 1;"></iframe><!----></div><!----> <!----><!----> <!----><!----><!---->
-    </div>
+    <div state="voice" class="placeholder-icon" id="tts-placeholder-icon" title="Click to show TTS button" style="background-image: url(&quot;chrome-extension://cpnomhnclohkhnikegipapofcjihldck/data/content_script/icons/voice.png&quot;);"><canvas width="36" height="36" class="loading-circle" id="text-to-speech-loader" style="display: none;"></canvas></div>
 </body>
 
 </html>
