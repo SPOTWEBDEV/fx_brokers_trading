@@ -31,6 +31,26 @@
             </a>
         </li>
 
+        <li>
+            <a href="<?php echo $domain  ?>admin/methods/" >
+                <i class="ri-wallet-3-line"></i>
+                <span>Deposit Methods </span>
+            </a>
+        </li>
+        <li>
+            <a href="<?php echo $domain  ?>admin/kyc/" >
+                <i class="ri-user-2-line"></i>
+                <span>kyc</span>
+            </a>
+        </li>
+
+                <li>
+            <a href="<?php echo $domain  ?>admin/trades/" >
+                <i class="ri-wallet-3-line"></i>
+                <span>Trades</span>
+            </a>
+        </li>
+
 
 
 
