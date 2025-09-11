@@ -3,6 +3,11 @@ include('../../server/connection.php');
 include('../../server/auth/client.php');
 include('../../server/api/users/order.php');
 
+
+$total_balance = $trading_balance + $bitcoin_balance + $ethereum_balance + $dogecoin_balance + $binance_coin_balance + $cosmos_atom_balance + $stablecoin_balance + $usdt_balance + $solana_balance + $cardano_ada_balance;
+
+
+
 ?>
 
 <html>
@@ -2237,7 +2242,7 @@ section.kr-user1 {
         </div>
       </div>
       <div class="kr-user1-infos">
-        <h3><?php  echo $firstname  . ' ' . $lastname ?></h3>
+        <h3><?php echo $firstname  . ' ' . $lastname ?></h3>
         <span><?php echo $email  ?></span>
       </div>
     </div>
@@ -3058,80 +3063,101 @@ window.onload = setInterval(() => target.style.opacity = '0', 4000)
 
 
           
-                      <div class="kr-heeader-btn kr-heeader-btn-identity" style="">
-                        
-                        
-<a style="text-decoration: none;" href="<?php echo $domain ?>app/id_verification/">
-  <input type="button"  class="btn btn-big btn-orange btn-autowidth" name="" value="<?php echo ($verification == 0)?  'Verify your identiy':'Verified' ?>"></a>
+                      <div class="kr-heeader-btn kr-heeader-btn-identity" style="">                         
+                        <a style="text-decoration: none;" href="<?php echo $domain ?>app/id_verification/">
+                          <input type="button"  class="btn btn-big btn-orange btn-autowidth" name="" value="<?php echo ($verification == 0) ?  'Verify your identiy' : 'Verified' ?>"></a>
 
-  
+                       </div>
+                      <div class="kr-wallet-top">
+                          <div class="kr-wallet-top-real">
+                            <div>
+                              <span>real account</span>
+                              <span kr-balance-id="M1RsQUxpb2pmd095TnkwRXR6TUNWQT09" class="kr-wallet-top-ammount"><i><?php echo number_format($total_balance, 2) ?></i> $</span>
+                              <label>Estimate balance</label>
+                            </div>
+                            <svg class="lnr lnr-chevron-down"><use xlink:href="#lnr-chevron-down"></use></svg>
+                          </div>
+                          <section style="display: none;">
+                            <div class="kr-wallet-top-resum">
+                              <h3>real account</h3>
+                              <ul>
+                                <li kr-wallet-symbol="TRADING">
+                                  <span>Trading Balance</span><div></div>
+                                  <span><i><?php echo number_format($trading_balance, 2); ?></i> </span>
+                                </li>
 
+                                <li kr-wallet-symbol="BTC">
+                                    <span>Bitcoin Balance</span><div></div>
+                                    <span><i><?php echo number_format($bitcoin_balance, 2); ?></i> </span>
+                                  </li>
+                                  <li kr-wallet-symbol="ETH">
+                                    <span>Ethereum Balance</span><div></div>
+                                    <span><i><?php echo number_format($ethereum_balance, 2); ?></i> </span>
+                                  </li>
 
-            </div>
-                                        <div class="kr-wallet-top">
-            <div class="kr-wallet-top-real">
-              <div>
-                <span>real account</span>
-                                  <span kr-balance-id="M1RsQUxpb2pmd095TnkwRXR6TUNWQT09" class="kr-wallet-top-ammount"><i>0.0</i> $</span>
-                                                  <label>Estimate balance</label>
-                              </div>
-              <svg class="lnr lnr-chevron-down"><use xlink:href="#lnr-chevron-down"></use></svg>
-            </div>
-            <section style="display: none;">
-              <div class="kr-wallet-top-resum">
-                <!--<h3>real account</h3>
-                <ul>
-                                  
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                  <li kr-wallet-symbol="ETH"><span>ETH</span><div></div><span><i>0 </i> </span></li>
-                                  <li kr-wallet-symbol="BTC"><span>BTC</span><div></div><span><i>0</i> </span></li>
-                                  <li kr-wallet-symbol="DOGE"><span>DOGE</span><div></div><span><i>0</i> </span></li>
-                                  <li kr-wallet-symbol="BINANCE COIN"><span>BINANCE COIN</span><div></div><span><i>0</i> </span></li>
-                                  <li kr-wallet-symbol="ATOM"><span>ATOM</span><div></div><span><i>0</i> </span></li>
-                                  <li kr-wallet-symbol="STABLE COIN"><span>STABLE COIN</span><div></div><span><i>0</i> </span></li>
-                                  <li kr-wallet-symbol="USDT"><span>USDT</span><div></div><span><i>0</i> </span></li>
-                                  
-                                  <li kr-wallet-symbol="USDT"><span>Solana</span><div></div><span><i>0</i> </span></li>
-                                  
-                                  <li kr-wallet-symbol="USDT"><span>Cardano (ADA)</span><div></div><span><i>0</i> </span></li>
                                   
 
-                                </ul>-->
-                
-              </div>
-              <div class="kr-wallet-top-change">
-                <h3>
-                  <span>List accounts</span>
-                  <a href="/deposit_history/" kr-balance-transaction-history="trshp" class="btn btn-autowidth btn-small btn-grey">Deposit History</a>
-                </h3>
-                <ul>
-                                    <li kr-wallet-change="M1RsQUxpb2pmd095TnkwRXR6TUNWQT09" class="kr-wallet-top-change-real">
-                    <div>
-                      <svg xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16 32C7.163 32 0 24.837 0 16S7.163 0 16 0s16 7.163 16 16-7.163 16-16 16zm7.189-17.98c.314-2.096-1.283-3.223-3.465-3.975l.708-2.84-1.728-.43-.69 2.765c-.454-.114-.92-.22-1.385-.326l.695-2.783L15.596 6l-.708 2.839c-.376-.086-.746-.17-1.104-.26l.002-.009-2.384-.595-.46 1.846s1.283.294 1.256.312c.7.175.826.638.805 1.006l-.806 3.235c.048.012.11.03.18.057l-.183-.045-1.13 4.532c-.086.212-.303.531-.793.41.018.025-1.256-.313-1.256-.313l-.858 1.978 2.25.561c.418.105.828.215 1.231.318l-.715 2.872 1.727.43.708-2.84c.472.127.93.245 1.378.357l-.706 2.828 1.728.43.715-2.866c2.948.558 5.164.333 6.097-2.333.752-2.146-.037-3.385-1.588-4.192 1.13-.26 1.98-1.003 2.207-2.538zm-3.95 5.538c-.533 2.147-4.148.986-5.32.695l.95-3.805c1.172.293 4.929.872 4.37 3.11zm.535-5.569c-.487 1.953-3.495.96-4.47.717l.86-3.45c.975.243 4.118.696 3.61 2.733z"></path></svg>                      <div>
-                        <span>real account</span>
-                                                  <label kr-balance-id="M1RsQUxpb2pmd095TnkwRXR6TUNWQT09"><i>0.0</i> $</label>
-                                                                        <label class="kr-wallet-change-estimated">Estimate balance</label>
-                                              </div>
-                    </div>
-                    <section>
-                                                                                                                                  <a href="/withdraw/" class="btn btn-grey btn-autowidth btn-small">Withdraw</a>
-                                                                                                                          <a href="/deposit/" class="btn btn-green btn-autowidth btn-small">Credit</a>
-                    </section>
-                  </li>
-                                  </ul>
-              </div>
-            </section>
-          </div>
+                                  <li kr-wallet-symbol="DOGE">
+                                    <span>Dogecoin Balance</span><div></div>
+                                    <span><i><?php echo number_format($dogecoin_balance, 2); ?></i> </span>
+                                  </li>
+
+                                  <li kr-wallet-symbol="BINANCE COIN">
+                                    <span>Binance Coin Balance</span><div></div>
+                                    <span><i><?php echo number_format($binance_coin_balance, 2); ?></i> </span>
+                                  </li>
+
+                                  <li kr-wallet-symbol="ATOM">
+                                    <span>Cosmos (ATOM) Balance</span><div></div>
+                                    <span><i><?php echo number_format($cosmos_atom_balance, 2); ?></i> </span>
+                                  </li>
+
+                                  <li kr-wallet-symbol="STABLE COIN">
+                                    <span>Stablecoin Balance</span><div></div>
+                                    <span><i><?php echo number_format($stablecoin_balance, 2); ?></i> </span>
+                                  </li>
+
+                                  <li kr-wallet-symbol="USDT">
+                                    <span>USDT Balance</span><div></div>
+                                    <span><i><?php echo number_format($usdt_balance, 2); ?></i> </span>
+                                  </li>
+
+                                  <li kr-wallet-symbol="SOL">
+                                    <span>Solana Balance</span><div></div>
+                                    <span><i><?php echo number_format($solana_balance, 2); ?></i> </span>
+                                  </li>
+
+                                  <li kr-wallet-symbol="ADA">
+                                    <span>Cardano (ADA) Balance</span><div></div>
+                                    <span><i><?php echo number_format($cardano_ada_balance, 2); ?></i> </span>
+                                  </li>
+
+                              </ul>
+                              
+                            </div>
+                            <div class="kr-wallet-top-change">
+                              <h3>
+                                <span>List accounts</span>
+                                <a href="<?php echo $domain ?>app/deposit_history/" kr-balance-transaction-history="trshp" class="btn btn-autowidth btn-small btn-grey">Deposit History</a>
+                              </h3>
+                              <ul>
+                                                  <li kr-wallet-change="M1RsQUxpb2pmd095TnkwRXR6TUNWQT09" class="kr-wallet-top-change-real">
+                                  <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16 32C7.163 32 0 24.837 0 16S7.163 0 16 0s16 7.163 16 16-7.163 16-16 16zm7.189-17.98c.314-2.096-1.283-3.223-3.465-3.975l.708-2.84-1.728-.43-.69 2.765c-.454-.114-.92-.22-1.385-.326l.695-2.783L15.596 6l-.708 2.839c-.376-.086-.746-.17-1.104-.26l.002-.009-2.384-.595-.46 1.846s1.283.294 1.256.312c.7.175.826.638.805 1.006l-.806 3.235c.048.012.11.03.18.057l-.183-.045-1.13 4.532c-.086.212-.303.531-.793.41.018.025-1.256-.313-1.256-.313l-.858 1.978 2.25.561c.418.105.828.215 1.231.318l-.715 2.872 1.727.43.708-2.84c.472.127.93.245 1.378.357l-.706 2.828 1.728.43.715-2.866c2.948.558 5.164.333 6.097-2.333.752-2.146-.037-3.385-1.588-4.192 1.13-.26 1.98-1.003 2.207-2.538zm-3.95 5.538c-.533 2.147-4.148.986-5.32.695l.95-3.805c1.172.293 4.929.872 4.37 3.11zm.535-5.569c-.487 1.953-3.495.96-4.47.717l.86-3.45c.975.243 4.118.696 3.61 2.733z"></path></svg>                      <div>
+                                      <span>real account</span>
+                                                                <label kr-balance-id="M1RsQUxpb2pmd095TnkwRXR6TUNWQT09"><i><?php echo number_format($total_balance ,2) ?></i> $</label>
+                                                                                      <label class="kr-wallet-change-estimated">Estimate balance</label>
+                                                            </div>
+                                  </div>
+                                  <section>
+                                                                                                                                                <a href="<?php echo $domain ?>app/withdraw/" class="btn btn-grey btn-autowidth btn-small">Withdraw</a>
+                                                                                                                                        <a href="<?php echo $domain ?>app/deposit/" class="btn btn-green btn-autowidth btn-small">Credit</a>
+                                  </section>
+                                </li>
+                                                </ul>
+                            </div>
+                          </section>
+                      </div>
                              
 
 
@@ -3658,49 +3684,49 @@ justify-content: center;">
   </thead>
   <tbody style="color:white !important">
     <?php
-    
-        
-        $query = "SELECT id, user_id, order_no, order_type, type, symbol, volume, stop_loss, take_profit, leverage, comment, entry_price, status, created_at, updated_at 
+
+
+    $query = "SELECT id, user_id, order_no, order_type, type, symbol, volume, stop_loss, take_profit, leverage, comment, entry_price, status, created_at, updated_at 
                   FROM trading 
                   WHERE user_id = ? 
                   ORDER BY created_at DESC";
 
-        $stmt = $connection->prepare($query);
-        $stmt->bind_param("i", $id);
-        $stmt->execute();
-        $result = $stmt->get_result();
+    $stmt = $connection->prepare($query);
+    $stmt->bind_param("i", $id);
+    $stmt->execute();
+    $result = $stmt->get_result();
 
-        if ($result->num_rows > 0) {
-            while ($row = $result->fetch_assoc()) {
-                echo "<tr>";
-                echo "<td>" . htmlspecialchars($row['order_no']) . "</td>";
-                echo "<td>" . htmlspecialchars($row['created_at']) . "</td>";
-                echo "<td>" . htmlspecialchars($row['type']) . "</td>";
-                $orderType = htmlspecialchars($row['order_type']);
+    if ($result->num_rows > 0) {
+      while ($row = $result->fetch_assoc()) {
+        echo "<tr>";
+        echo "<td>" . htmlspecialchars($row['order_no']) . "</td>";
+        echo "<td>" . htmlspecialchars($row['created_at']) . "</td>";
+        echo "<td>" . htmlspecialchars($row['type']) . "</td>";
+        $orderType = htmlspecialchars($row['order_type']);
 
-                if (strtolower($orderType) === "sell") {
-                    echo "<td style='color:red; '>$orderType</td>";
-                } elseif (strtolower($orderType) === "buy") {
-                    echo "<td style='color:green;'>$orderType</td>";
-                } else {
-                    echo "<td>$orderType</td>";
-                }
-                
-                echo "<td>" . htmlspecialchars($row['symbol']) . "</td>";
-                echo "<td>" . htmlspecialchars($row['volume']) . "</td>";
-                echo "<td>" . htmlspecialchars($row['stop_loss']) . "</td>";
-                echo "<td>" . htmlspecialchars($row['take_profit']) . "</td>";
-                echo "<td>" . htmlspecialchars($row['status']) . "</td>";
-                echo "</tr>";
-            }
+        if (strtolower($orderType) === "sell") {
+          echo "<td style='color:red; '>$orderType</td>";
+        } elseif (strtolower($orderType) === "buy") {
+          echo "<td style='color:green;'>$orderType</td>";
         } else {
-            echo "<tr><td colspan='8'>No orders found.</td></tr>";
+          echo "<td>$orderType</td>";
         }
 
-        $stmt->close();
-    
+        echo "<td>" . htmlspecialchars($row['symbol']) . "</td>";
+        echo "<td>" . htmlspecialchars($row['volume']) . "</td>";
+        echo "<td>" . htmlspecialchars($row['stop_loss']) . "</td>";
+        echo "<td>" . htmlspecialchars($row['take_profit']) . "</td>";
+        echo "<td>" . htmlspecialchars($row['status']) . "</td>";
+        echo "</tr>";
+      }
+    } else {
+      echo "<tr><td colspan='8'>No orders found.</td></tr>";
+    }
 
-  
+    $stmt->close();
+
+
+
     ?>
   </tbody>
 </table>
