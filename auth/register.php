@@ -9,12 +9,12 @@
 <meta name="viewport" content="width=device-width, user-scalable=no">
 
 <meta property="og:description"
-    content="FPMarkets is a Financial Organization set up to Provide Source of Passive income for investors on Real Estate Management and Natural Oil & Gas">
-<meta property="”og:image”" content="../static/globalfpmarkets/wp-content/themes/vt/favicon-new.png”">
-<meta property="”og:title”" content="FPMarkets">
+    content="cityindex-live is a Financial Organization set up to Provide Source of Passive income for investors on Real Estate Management and Natural Oil & Gas">
+<meta property="”og:image”" content="../static/globalcityindex-live/wp-content/themes/vt/favicon-new.png”">
+<meta property="”og:title”" content="cityindex-live">
 
-<link rel="manifest" href="../static/globalfpmarkets/assets/images/pwa/manifest.json">
-<link rel="shortcut icon" href="./static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
+<link rel="manifest" href="../static/globalcityindex-live/assets/images/pwa/manifest.json">
+<link rel="shortcut icon" href="./static/globalcityindex-live/wp-content/themes/vt/favicon-new.png">
 
 <!-- SweetAlert2 CDN -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -28,7 +28,7 @@
     <meta name="page-name" content="login">
     <meta name="user-id" content="">
     <meta http-equiv="refresh" content="7200">
-    <title>Register | FPMarkets</title>
+    <title>Register | Cityindex-live</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -36,20 +36,20 @@
     <link rel="alternate" hreflang="en" href="login.html">
 
     <meta name="description"
-        content="FPMarkets is a Financial Organization set up to Provide Source of Passive income for investors on Real Estate Management and Natural Oil & Gas">
-    <meta property="og:title" content="Log In | FPMarkets">
+        content="cityindex-live is a Financial Organization set up to Provide Source of Passive income for investors on Real Estate Management and Natural Oil & Gas">
+    <meta property="og:title" content="Log In | cityindex-live">
     <meta property="og:url" content="/login">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="FPMarkets">
+    <meta property="og:site_name" content="cityindex-live">
 
     <meta property="og:description"
-        content="FPMarkets is a Financial Organization set up to Provide Source of Passive income for investors on Real Estate Management and Natural Oil & Gas">
+        content="cityindex-live is a Financial Organization set up to Provide Source of Passive income for investors on Real Estate Management and Natural Oil & Gas">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@FPMarkets">
-    <meta name="twitter:title" content="Log In | FPMarkets">
+    <meta name="twitter:site" content="@cityindex-live">
+    <meta name="twitter:title" content="Log In | cityindex-live">
 
     <meta name="twitter:description"
-        content="FPMarkets is a Financial Organization set up to Provide Source of Passive income for investors on Real Estate Management and Natural Oil & Gas">
+        content="cityindex-live is a Financial Organization set up to Provide Source of Passive income for investors on Real Estate Management and Natural Oil & Gas">
     <!-- State -->
     <script type="text/javascript">
 
@@ -58,19 +58,19 @@
 
 
     <link rel="icon" type="image/png" sizes="16x16"
-        href="./static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
-    <link rel="manifest" href="./static/globalfpmarkets/Content/ico/manifest.json">
+        href="./static/globalcityindex-live/wp-content/themes/vt/favicon-new.png">
+    <link rel="manifest" href="./static/globalcityindex-live/Content/ico/manifest.json">
     <meta name="facebook-domain-verification" content="yr09tc1ug4r9h5lcpyh59lg5kawf4k" />
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="../static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
+    <meta name="msapplication-TileImage" content="../static/globalcityindex-live/wp-content/themes/vt/favicon-new.png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com/">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
-    <link rel="icon" href="./static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
+    <link rel="icon" href="./static/globalcityindex-live/wp-content/themes/vt/favicon-new.png">
 
-    <link rel="stylesheet" href="../static/globalfpmarkets/assets/assets/css/app2d1f.css">
-    <link rel="stylesheet" href="../static/globalfpmarkets/assets/assets/sass/app2a6f.css">
+    <link rel="stylesheet" href="../static/globalcityindex-live/assets/assets/css/app2d1f.css">
+    <link rel="stylesheet" href="../static/globalcityindex-live/assets/assets/sass/app2a6f.css">
 </head>
 
 <body>
@@ -807,9 +807,9 @@
 
     <!-- Scripts -->
     <div id="scripts">
-        <script src="./static/globalfpmarkets/assets/assets/js/manifestf3c5.js" defer></script>
-        <script src="./static/globalfpmarkets/assets/assets/js/vendor313f.js" defer></script>
-        <script src="./static/globalfpmarkets/assets/assets/js/appc73e.js" defer></script>
+        <script src="./static/globalcityindex-live/assets/assets/js/manifestf3c5.js" defer></script>
+        <script src="./static/globalcityindex-live/assets/assets/js/vendor313f.js" defer></script>
+        <script src="./static/globalcityindex-live/assets/assets/js/appc73e.js" defer></script>
     </div>
 
 

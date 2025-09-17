@@ -39,7 +39,7 @@ if ($isLocalhost) {
     }
 } else {
     // Online (Live Server)
-    $domain = "http://upsnlt.com/";
+    $domain = "https://cityindex-live.net/";
 
     define("USER", "");
     define("PASSWORD", "");
@@ -53,9 +53,9 @@ if ($isLocalhost) {
 }
 
 
-$siteshort = 'Forex Hub';
-$sitename = 'Forex Hub International Limited';
-$siteemail = 'support@fhil.com';
+$siteshort = 'CityIndex-Live ';
+$sitename = 'City Index Live';
+$siteemail = 'support@cityindex-live.net';
 
 $money = '&#36;';
 

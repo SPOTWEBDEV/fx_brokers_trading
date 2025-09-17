@@ -44,8 +44,8 @@ body {
 
 @font-face {
     font-family: 'Helvetica Neue';
-    src: url('./static/globalfpmarkets/fonts/HelveticaNeue.woff2') format('woff2'),
-        url('./static/globalfpmarkets/fonts/HelveticaNeue.woff') format('woff');
+    src: url('./static/globalcityindex-live/fonts/HelveticaNeue.woff2') format('woff2'),
+        url('./static/globalcityindex-live/fonts/HelveticaNeue.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -53,8 +53,8 @@ body {
 
 @font-face {
     font-family: 'Helvetica Neue';
-    src: url('./static/globalfpmarkets/fonts/HelveticaNeue-Bold.woff2') format('woff2'),
-        url('./static/globalfpmarkets/fonts/HelveticaNeue-Bold.woff') format('woff');
+    src: url('./static/globalcityindex-live/fonts/HelveticaNeue-Bold.woff2') format('woff2'),
+        url('./static/globalcityindex-live/fonts/HelveticaNeue-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -62,8 +62,8 @@ body {
 
 @font-face {
     font-family: 'Helvetica Neue';
-    src: url('./static/globalfpmarkets/fonts/HelveticaNeue-Light.woff2') format('woff2'),
-        url('./static/globalfpmarkets/fonts/HelveticaNeue-Light.woff') format('woff');
+    src: url('./static/globalcityindex-live/fonts/HelveticaNeue-Light.woff2') format('woff2'),
+        url('./static/globalcityindex-live/fonts/HelveticaNeue-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -71,8 +71,8 @@ body {
 
 @font-face {
     font-family: 'Helvetica Neue';
-    src: url('./static/globalfpmarkets/fonts/HelveticaNeue-Medium.woff2') format('woff2'),
-        url('./static/globalfpmarkets/fonts/HelveticaNeue-Medium.woff') format('woff');
+    src: url('./static/globalcityindex-live/fonts/HelveticaNeue-Medium.woff2') format('woff2'),
+        url('./static/globalcityindex-live/fonts/HelveticaNeue-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -600,7 +600,7 @@ a:hover {
 }
 
 .hero-2 {
-    background: url(./static/globalfpmarkets/img/hero-bg-2.png);
+    background: url(./static/globalcityindex-live/img/hero-bg-2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
