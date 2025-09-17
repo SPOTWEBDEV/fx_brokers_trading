@@ -879,8 +879,8 @@ div.kr-dash-pan-cry>div.kr-dash-pan-lb>ul.kr-dash-pan-comvote>li.kr-dash-pan-com
 
 div.kr-dash-pan-cry>div.kr-dash-pan-action {
     position: absolute;
-    right: 0px;
-    top: 0px;
+    left: 0px;
+    /* top: 100%; */
     bottom: 0px;
     width: 125px;
     padding: 10px;

@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 header('Content-Type: application/json');
 require_once '../../connection.php';
-require_once '../../../mailer/email_template.php';
+require_once '../../../mailer/email_template_user.php';
 require_once '../../../mailer/mailer.php';
 
 
@@ -15,8 +15,6 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
     $url = $_POST['url'];
 
     if ($url == $domain . "auth/login.php") {
-
-
         $stmt = $connection->prepare("SELECT * FROM users WHERE email = ?");
         $stmt->bind_param("s", $email);
         $stmt->execute();

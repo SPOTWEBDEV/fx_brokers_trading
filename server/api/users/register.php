@@ -3,7 +3,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 header('Content-Type: application/json');
 include("../../connection.php");
-require_once '../../../mailer/email_template.php';
+require_once '../../../mailer/email_template_user.php';
 require_once '../../../mailer/mailer.php';
 
 if (isset($_POST['url'])) {

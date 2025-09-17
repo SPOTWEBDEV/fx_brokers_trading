@@ -1,7 +1,7 @@
 <?php
 include('../../../server/connection.php');
 include('../../../server/auth/client.php');
-require_once '../../../mailer/email_template.php';
+require_once '../../../mailer/email_template_user.php';
 require_once '../../../mailer/mailer.php';
 
 

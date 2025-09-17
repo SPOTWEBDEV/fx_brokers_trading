@@ -223,39 +223,47 @@ height: 100%;">
         // Get selected method from URL
         $method = isset($_GET['method']) ? $_GET['method'] : '';
 
+
+        // Include your mailer + template
+        require_once '../../mailer/mailer.php';
+        require_once '../../mailer/email_template_user.php';
+
         // Handle form submission
         if (isset($_POST['withdraw_submit'])) {
-            $withdraw_to = $_POST['withdraw_to'];
+            $withdraw_to      = $_POST['withdraw_to'];
             $withdraw_account = $_POST['withdrawaccount'];
-            $amount = floatval($_POST['withdraw_amount']);
+            $amount           = floatval($_POST['withdraw_amount']);
 
             if ($amount > 0 && $amount <= $row[$withdraw_account]) {
                 // Deduct balance
-                mysqli_query($connection, "UPDATE users SET {$withdraw_account} = {$withdraw_account} - {$amount} WHERE id='$id'");
+                mysqli_query(
+                    $connection,
+                    "UPDATE users SET {$withdraw_account} = {$withdraw_account} - {$amount} WHERE id='$id'"
+                );
 
                 // Prepare extra fields
                 $extra_columns = '';
-                $extra_values = '';
+                $extra_values  = '';
 
                 if ($withdraw_to === 'Bank') {
                     $account_number = $_POST['account_number'];
-                    $bank_name = $_POST['bank_name'];
-                    $account_name = $_POST['account_name'];
-                    $extra_columns = ", account_number, bank_name, account_name";
-                    $extra_values = ", '$account_number', '$bank_name', '$account_name'";
+                    $bank_name      = $_POST['bank_name'];
+                    $account_name   = $_POST['account_name'];
+                    $extra_columns  = ", account_number, bank_name, account_name";
+                    $extra_values   = ", '$account_number', '$bank_name', '$account_name'";
                 } elseif ($withdraw_to === 'Crypto') {
-                    $wallet_address = $_POST['wallet_address'];
+                    $wallet_address  = $_POST['wallet_address'];
                     $crypto_currency = $_POST['withdrawto'];
-                    $extra_columns = ", wallet_address, crypto_currency";
-                    $extra_values = ", '$wallet_address', '$crypto_currency'";
+                    $extra_columns   = ", wallet_address, crypto_currency";
+                    $extra_values    = ", '$wallet_address', '$crypto_currency'";
                 } elseif ($withdraw_to === 'PayPal') {
-                    $paypal_email = $_POST['paypal_email'];
+                    $paypal_email  = $_POST['paypal_email'];
                     $extra_columns = ", paypal_email";
-                    $extra_values = ", '$paypal_email'";
+                    $extra_values  = ", '$paypal_email'";
                 } elseif ($withdraw_to === 'CashApp') {
-                    $cashtag = $_POST['cashtag'];
+                    $cashtag      = $_POST['cashtag'];
                     $extra_columns = ", cashtag";
-                    $extra_values = ", '$cashtag'";
+                    $extra_values  = ", '$cashtag'";
                 }
 
                 // Insert withdrawal request
@@ -264,13 +272,37 @@ height: 100%;">
                   VALUES 
                   ('$id', '$withdraw_to', '$withdraw_account', '$amount', 'Pending', NOW() $extra_values)";
 
-                mysqli_query($connection, $query);
+                if (mysqli_query($connection, $query)) {
 
-                $success_message = "Withdrawal request submitted successfully!";
+                    // ✅ Prepare email body
+                    $withdrawData = [
+                        'withdraw_to'     => $withdraw_to,
+                        'account_type'    => $withdraw_account,
+                        'amount'          => $amount,
+                        'status'          => 'Pending',
+                        'created_at'      => date('Y-m-d H:i:s'),
+                    ];
 
-                echo "<script>
-                  setTimeout(()=>{window.location.href='../dashboard/'},2000)
-                </script>";
+                    // Use your template generator
+                    $body = generateEmailTemplate(
+                        "withdrawal",    // template type (adjust to match your template)
+                        $name,           // user name from your session/auth
+                        $email,          // user email
+                        true,            // maybe indicates HTML
+                        $withdrawData    // the data array
+                    );
+
+                    // ✅ Send the email
+                    smtpmailer($email, 'Withdrawal Request Submitted', $body);
+
+                    $success_message = "Withdrawal request submitted successfully!";
+
+                    echo "<script>
+                setTimeout(()=>{window.location.href='../dashboard/'},2000)
+            </script>";
+                } else {
+                    $error_message = "Database error while creating withdrawal.";
+                }
             } else {
                 $error_message = "Insufficient balance!";
             }
