@@ -44,7 +44,7 @@ function generateEmailTemplate($type, $name, $email, $table = false, $tableData 
 
     ob_start();
     ?>
-    <div style="font-family: Arial, sans-serif; max-width:600px; margin:auto; border:1px solid #eee; padding:20px;">
+    <div style="font-family: Arial, sans-serif; max-width:100%; margin:auto; border:1px solid #eee; padding:20px;">
         <div style="text-align:center; margin-bottom:20px;">
             <img src="<?php echo $domain ?>/static/globalfpmarkets/files/logo-main.4b9c545ea9347660b73dd3b00a629d43.png" alt="Site Logo" style="height:40px;">
         </div>
@@ -89,7 +89,7 @@ function generateEmailTemplate($type, $name, $email, $table = false, $tableData 
                 <?php foreach ($tableData as $key => $value) { ?>
                     <tr>
                         <td style="border:1px solid #ddd; padding:8px; font-weight:bold; text-transform:capitalize;"><?= str_replace("_", " ", $key) ?></td>
-                        <td style="border:1px solid #ddd; padding:8px;"><?= htmlspecialchars($value) ?></td>
+                        <td style="border:1px solid #ddd; padding:8px;text-transform:capitalize;"><?= htmlspecialchars($value) ?></td>
                     </tr>
                 <?php } ?>
             </table>

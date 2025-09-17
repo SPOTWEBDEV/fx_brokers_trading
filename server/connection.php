@@ -53,17 +53,11 @@ if ($isLocalhost) {
 }
 
 
-<<<<<<< HEAD
-$siteshort = 'CityIndex-Live ';
-$sitename = 'City Index Live';
-$siteemail = 'support@cityindex-live.net';
-=======
 
 $sitename = 'City Index Live';
 $siteemail = 'support@cityindex-live.net';
 $siteemailpassword = 'support@cityindex-live.net';
 $siteemailhost = 'mail.cityindex-live.net';
->>>>>>> 10e1a98ea95b7c4ed0b2b0635f65c9a86a5cd697
 
 $money = '&#36;';
 

@@ -3072,11 +3072,7 @@ window.onload = setInterval(() => target.style.opacity = '0', 4000)
                           <div class="kr-wallet-top-real">
                             <div>
                               <span>real account</span>
-<<<<<<< HEAD
-                              <span kr-balance-id="M1RsQUxpb2pmd095TnkwRXR6TUNWQT09" class="kr-wallet-top-ammount"><i>$<?php echo number_format($total_balance, 2) ?></i></span>
-=======
                               <span kr-balance-id="M1RsQUxpb2pmd095TnkwRXR6TUNWQT09" class="kr-wallet-top-ammount"><i>$<?php echo number_format($total_balance, 2) ?></i> </span>
->>>>>>> 10e1a98ea95b7c4ed0b2b0635f65c9a86a5cd697
                               <label>Estimate balance</label>
                             </div>
                             <svg class="lnr lnr-chevron-down"><use xlink:href="#lnr-chevron-down"></use></svg>

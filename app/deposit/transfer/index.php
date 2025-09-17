@@ -53,9 +53,17 @@ if (isset($_POST['update_deposit'])) {
 
 
 
-    $body =  generateEmailTemplate("deposit", $name, $email, true, $deposit);
+    $emailData = [
+        'Deposit ID' => $deposit['uuid'],
+        'Amount'       => $deposit['amount'],
+        'Method'       => $method['method_key'],   // add chosen method
+        'Status'       => $deposit['status'],
+        'Date'   => $deposit['created_at']
+    ];
 
-    $result = smtpmailer($email,'Deposit Request',$body);
+    $body = generateEmailTemplate("deposit", $name, $email, true, $emailData);
+
+    $result = smtpmailer($email, 'Deposit Request', $body);
 
 
     if ($update->execute()) {
@@ -131,47 +139,6 @@ height: 100%;">
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <style>
-    .newbtn {
-        background-color: #ff7700;
-        border-color: #122b40;
-        font-size: 16px;
-        font-weight: bold;
-        border-radius: 30px;
-        border-width: 0;
-        margin-top: 15px;
-        padding: 10px 72px;
-        color: white;
-
-    }
-
-
-    .tabs {
-        position: relative;
-        overflow-x: auto;
-        overflow-y: hidden;
-        height: 48px;
-        width: 70%;
-
-        margin: 0 auto;
-        white-space: nowrap;
-    }
-    </style>
-</head>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="../../../static/globalcityindex-live/assets/css/site/reactapp-modules.css">
-    <link rel="stylesheet" href="../../../static/globalcityindex-live/assets/css/libs/flag-icon-css/css/flag-icon.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-    <link rel="apple-touch-icon" sizes="57x57" href="../../../static/globalcityindex-live/wp-content/themes/vt/favicon-new.png">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link href="../../../static/account/assets/global-cfd-market.css" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.69JJaQ5G5xA.L.W.O/d=0/rs=AN8SPfpC36MIoWPngdVwZ4RUzeJYZaC7rg/m=el_main_css">
-    <script type="text/javascript" charset="utf-8" async="" src="https://www.smartsuppchat.com/loader.js?"></script>
-    <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.en_GB.c_zC7qUnTFY.O/d=1/exm=el_conf/ed=1/rs=AN8SPfoBlmfmYftMKBfrazMTdGZqwlOJOw/m=el_main"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <style>
         .newbtn {
             background-color: #ff7700;
             border-color: #122b40;
@@ -197,6 +164,47 @@ height: 100%;">
             white-space: nowrap;
         }
     </style>
+</head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="../../../static/globalcityindex-live/assets/css/site/reactapp-modules.css">
+<link rel="stylesheet" href="../../../static/globalcityindex-live/assets/css/libs/flag-icon-css/css/flag-icon.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<link rel="apple-touch-icon" sizes="57x57" href="../../../static/globalcityindex-live/wp-content/themes/vt/favicon-new.png">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link href="../../../static/account/assets/global-cfd-market.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.69JJaQ5G5xA.L.W.O/d=0/rs=AN8SPfpC36MIoWPngdVwZ4RUzeJYZaC7rg/m=el_main_css">
+<script type="text/javascript" charset="utf-8" async="" src="https://www.smartsuppchat.com/loader.js?"></script>
+<script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.en_GB.c_zC7qUnTFY.O/d=1/exm=el_conf/ed=1/rs=AN8SPfoBlmfmYftMKBfrazMTdGZqwlOJOw/m=el_main"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<style>
+    .newbtn {
+        background-color: #ff7700;
+        border-color: #122b40;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 30px;
+        border-width: 0;
+        margin-top: 15px;
+        padding: 10px 72px;
+        color: white;
+
+    }
+
+
+    .tabs {
+        position: relative;
+        overflow-x: auto;
+        overflow-y: hidden;
+        height: 48px;
+        width: 70%;
+
+        margin: 0 auto;
+        white-space: nowrap;
+    }
+</style>
 </head>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
