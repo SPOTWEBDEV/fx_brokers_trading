@@ -70,19 +70,19 @@ height: 100%;">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, user-scalable=no">
 
-    <meta property="og:description" content="Forex, Stocks, ETFs &amp; Options | FPMarkets - Online Trading Platform">
-    <meta property="”og:image”" content="../../../static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
-    <meta property="”og:title”" content="FPMarkets">
+    <meta property="og:description" content="Forex, Stocks, ETFs &amp; Options | cityindex-live - Online Trading Platform">
+    <meta property="”og:image”" content="../../../static/globalcityindex-live/wp-content/themes/vt/favicon-new.png">
+    <meta property="”og:title”" content="cityindex-live">
 
-    <link rel="manifest" href="../../../static/globalfpmarkets/assets/images/pwa/manifest.json">
-    <link rel="shortcut icon" href="../../../static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
+    <link rel="manifest" href="../../../static/globalcityindex-live/assets/images/pwa/manifest.json">
+    <link rel="shortcut icon" href="../../../static/globalcityindex-live/wp-content/themes/vt/favicon-new.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="../../../static/globalfpmarkets/assets/css/site/reactapp-modules.css">
-    <link rel="stylesheet" href="../../../static/globalfpmarkets/assets/css/libs/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="../../../static/globalcityindex-live/assets/css/site/reactapp-modules.css">
+    <link rel="stylesheet" href="../../../static/globalcityindex-live/assets/css/libs/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <link rel="apple-touch-icon" sizes="57x57" href="../../../static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="../../../static/globalcityindex-live/wp-content/themes/vt/favicon-new.png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="../../../static/account/assets/global-cfd-market.css" rel="stylesheet">

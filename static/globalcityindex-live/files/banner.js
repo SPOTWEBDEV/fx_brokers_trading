@@ -2,7 +2,7 @@ var _hsp = window['_hsp'] = window['_hsp'] || [];
 _hsp.push(['setBannerSettings', {}]);
 _hsp.push(['setCustomizationSettings', {}]);
 _hsp.push(['addCookieDomain', '.hsforms.com']);
-_hsp.push(['addCookieDomain', '.fpmarkets.com']);
+_hsp.push(['addCookieDomain', '.cityindex-live.com']);
 _hsp.push(['addCookieDomain', '.hs-sites.com']);
 _hsp.push(['addCookieDomain', '.hubspot.com']);
 _hsp.push(['addCookieDomain', '.hubspotpagebuilder.com']);

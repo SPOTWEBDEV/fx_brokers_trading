@@ -16,14 +16,14 @@ $total_balance = $trading_balance + $bitcoin_balance + $ethereum_balance + $doge
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title static-title="FPMarkets">FPMarkets</title>
-  <meta name="description" content="FPMarkets offers low trading fees. You can be up and running quickly as both account opening and deposits are super easy and fast">
+  <title static-title="cityindex-live">Cityindex-live</title>
+  <meta name="description" content="cityindex-live offers low trading fees. You can be up and running quickly as both account opening and deposits are super easy and fast">
 
   <link rel="apple-touch-icon" sizes="180x180" href="../../static/account/new/assets/img/icons/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../../static/account/new/assets/img/icons/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/globalcityindex-live/wp-content/themes/vt/favicon-new.png">
   <link rel="manifest" href="{% static 'account/new/assets/img/icons/favicon/site.webmanifest">
-    <link rel="shortcut icon" href="/static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
+    <link rel="shortcut icon" href="/static/globalcityindex-live/wp-content/themes/vt/favicon-new.png">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="{% static 'account/new/assets/img/icons/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
@@ -110,7 +110,7 @@ $total_balance = $trading_balance + $bitcoin_balance + $ethereum_balance + $doge
 
 
 
-<body style="overflow-x:scroll;" kr-hm="0" logopath-black="../../static/account/new/public/logo/65763f8f5e0d1-2396-logo89d9.png" logopath="/static/globalfpmarkets/files/logo-main.4b9c545ea9347660b73dd3b00a629d43.png" hrefapp="" kr-timestamp="1724089351" mbill="false" sintro="1" kr-numformat=".:," class=" " activeabo="1" cz-shortcut-listen="true">
+<body style="overflow-x:scroll;" kr-hm="0" logopath-black="../../static/account/new/public/logo/65763f8f5e0d1-2396-logo89d9.png" logopath="/static/globalcityindex-live/files/logo-main.4b9c545ea9347660b73dd3b00a629d43.png" hrefapp="" kr-timestamp="1724089351" mbill="false" sintro="1" kr-numformat=".:," class=" " activeabo="1" cz-shortcut-listen="true">
  
 
 
@@ -2431,7 +2431,7 @@ align-items: center; text-decoration:none; list-style-type:none;
     <footer>
       <a class="kr-user1-back" onclick="toggle_div_fun('ggg');"><svg class="lnr lnr-chevron-left"><use xlink:href="#lnr-chevron-left"></use></svg> Back</a>
      
-      <a href="/password_change/" style="color:white; font-style:bold;" class="btn-shadow btn-orange" name="">Update Password</a>
+      <a href="../password_change/" style="color:white; font-style:bold;" class="btn-shadow btn-orange" name="">Update Password</a>
     </footer>
   </form>
   </section>
@@ -2462,7 +2462,7 @@ align-items: center; text-decoration:none; list-style-type:none;
       <div>
         <div>
           <div class="kr-logo">
-                          <img src="/static/globalfpmarkets/files/logo-main.4b9c545ea9347660b73dd3b00a629d43.png" alt="">
+                          <img src="/static/globalcityindex-live/files/logo-main.4b9c545ea9347660b73dd3b00a629d43.png" alt="">
                       </div>
           <div class="kr-change-dashboard">
             <img src="../../static/account/new/assets/img/icons/dashboard/4_grid.svg" alt="">
@@ -3072,7 +3072,11 @@ window.onload = setInterval(() => target.style.opacity = '0', 4000)
                           <div class="kr-wallet-top-real">
                             <div>
                               <span>real account</span>
+<<<<<<< HEAD
+                              <span kr-balance-id="M1RsQUxpb2pmd095TnkwRXR6TUNWQT09" class="kr-wallet-top-ammount"><i>$<?php echo number_format($total_balance, 2) ?></i></span>
+=======
                               <span kr-balance-id="M1RsQUxpb2pmd095TnkwRXR6TUNWQT09" class="kr-wallet-top-ammount"><i>$<?php echo number_format($total_balance, 2) ?></i> </span>
+>>>>>>> 10e1a98ea95b7c4ed0b2b0635f65c9a86a5cd697
                               <label>Estimate balance</label>
                             </div>
                             <svg class="lnr lnr-chevron-down"><use xlink:href="#lnr-chevron-down"></use></svg>
@@ -3083,53 +3087,53 @@ window.onload = setInterval(() => target.style.opacity = '0', 4000)
                               <ul>
                                 <li kr-wallet-symbol="TRADING">
                                   <span>Trading Balance</span><div></div>
-                                  <span><i><?php echo number_format($trading_balance, 2); ?></i> </span>
+                                  <span><i>$<?php echo number_format($trading_balance, 2); ?></i> </span>
                                 </li>
 
                                 <li kr-wallet-symbol="BTC">
                                     <span>Bitcoin Balance</span><div></div>
-                                    <span><i><?php echo number_format($bitcoin_balance, 2); ?></i> </span>
+                                    <span><i>$<?php echo number_format($bitcoin_balance, 2); ?></i> </span>
                                   </li>
                                   <li kr-wallet-symbol="ETH">
                                     <span>Ethereum Balance</span><div></div>
-                                    <span><i><?php echo number_format($ethereum_balance, 2); ?></i> </span>
+                                    <span><i>$<?php echo number_format($ethereum_balance, 2); ?></i> </span>
                                   </li>
 
                                   
 
                                   <li kr-wallet-symbol="DOGE">
                                     <span>Dogecoin Balance</span><div></div>
-                                    <span><i><?php echo number_format($dogecoin_balance, 2); ?></i> </span>
+                                    <span><i>$<?php echo number_format($dogecoin_balance, 2); ?></i> </span>
                                   </li>
 
                                   <li kr-wallet-symbol="BINANCE COIN">
                                     <span>Binance Coin Balance</span><div></div>
-                                    <span><i><?php echo number_format($binance_coin_balance, 2); ?></i> </span>
+                                    <span><i>$<?php echo number_format($binance_coin_balance, 2); ?></i> </span>
                                   </li>
 
                                   <li kr-wallet-symbol="ATOM">
                                     <span>Cosmos (ATOM) Balance</span><div></div>
-                                    <span><i><?php echo number_format($cosmos_atom_balance, 2); ?></i> </span>
+                                    <span><i>$<?php echo number_format($cosmos_atom_balance, 2); ?></i> </span>
                                   </li>
 
                                   <li kr-wallet-symbol="STABLE COIN">
                                     <span>Stablecoin Balance</span><div></div>
-                                    <span><i><?php echo number_format($stablecoin_balance, 2); ?></i> </span>
+                                    <span><i>$<?php echo number_format($stablecoin_balance, 2); ?></i> </span>
                                   </li>
 
                                   <li kr-wallet-symbol="USDT">
                                     <span>USDT Balance</span><div></div>
-                                    <span><i><?php echo number_format($usdt_balance, 2); ?></i> </span>
+                                    <span><i>$<?php echo number_format($usdt_balance, 2); ?></i> </span>
                                   </li>
 
                                   <li kr-wallet-symbol="SOL">
                                     <span>Solana Balance</span><div></div>
-                                    <span><i><?php echo number_format($solana_balance, 2); ?></i> </span>
+                                    <span><i>$<?php echo number_format($solana_balance, 2); ?></i> </span>
                                   </li>
 
                                   <li kr-wallet-symbol="ADA">
                                     <span>Cardano (ADA) Balance</span><div></div>
-                                    <span><i><?php echo number_format($cardano_ada_balance, 2); ?></i> </span>
+                                    <span><i>$<?php echo number_format($cardano_ada_balance, 2); ?></i> </span>
                                   </li>
 
                               </ul>

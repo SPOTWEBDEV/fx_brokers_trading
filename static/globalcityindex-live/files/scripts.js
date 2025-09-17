@@ -29,8 +29,8 @@
             case (1):
                 document.getElementById("username").getAttributeNode("name").value = 'u';
                 document.getElementById("password").getAttributeNode("name").value = 'p';
-                if (objForm.u.value.toUpperCase().indexOf("@FPMARKETS") == -1) {
-                    objForm.u.value += "@fpmarkets";
+                if (objForm.u.value.toUpperCase().indexOf("@cityindex-live") == -1) {
+                    objForm.u.value += "@cityindex-live";
                 }
                 formaction = webIRESSLogin;
                 // objForm.product.value = 'webiress';
@@ -40,8 +40,8 @@
             case (2):
                document.getElementById("username").getAttributeNode("name").value = 'u';
                 document.getElementById("password").getAttributeNode("name").value = 'p';
-                if (objForm.u.value.toUpperCase().indexOf("@FPMARKETS") == -1) {
-                    objForm.u.value += "@fpmarkets";
+                if (objForm.u.value.toUpperCase().indexOf("@cityindex-live") == -1) {
+                    objForm.u.value += "@cityindex-live";
                 }
                 formaction = webIRESSLogin;
                 // objForm.product.value = 'webiress';
@@ -52,8 +52,8 @@
 			 /*
                  document.getElementById("username").getAttributeNode("name").value = 'u';
                 document.getElementById("password").getAttributeNode("name").value = 'p';
-                if (objForm.u.value.toUpperCase().indexOf("@FPMARKETS") == -1) {
-                    objForm.u.value += "@fpmarkets";
+                if (objForm.u.value.toUpperCase().indexOf("@cityindex-live") == -1) {
+                    objForm.u.value += "@cityindex-live";
                 }
                 formaction = webIRESSLoginfp;
                 objForm.product.value = 'html';
@@ -122,8 +122,8 @@
             forms.p.focus();
             return false;
         }
-        if (!forms.u.value.toUpperCase().match("@FPMARKETS")) {
-            forms.u.value += "@fpmarkets";
+        if (!forms.u.value.toUpperCase().match("@cityindex-live")) {
+            forms.u.value += "@cityindex-live";
         }
 
         forms.submit();
