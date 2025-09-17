@@ -1,22 +1,23 @@
 <?php
 include('PHPMailer/PHPMailer/PHPMailerAutoload.php');
-function smtpmailer($to, $from, $from_name, $subject, $body)
+function smtpmailer($to, $subject, $body)
 {
+   global $siteemail , $siteemailpassword , $siteemailhost , $sitename;
     $mail = new PHPMailer();
     $mail->IsSMTP();
     $mail->SMTPAuth = true;
 
     $mail->SMTPSecure = 'ssl';                    
-    $mail->Host = "mail.vgsbo.com";               
+    $mail->Host = $siteemailhost;               
     $mail->Port = 465;                             
-    $mail->Username = "support@vgsbo.com";      
-    $mail->Password = "support@vgsbo.com";        
+    $mail->Username = $siteemail;      
+    $mail->Password = $siteemailpassword;        
 
     $mail->IsHTML(true);
-    $mail->From = $from;                           
-    $mail->FromName = $from_name;
-    $mail->Sender = $from;
-    $mail->AddReplyTo($from, $from_name);
+    $mail->From = $siteemail;                           
+    $mail->FromName = $sitename;
+    $mail->Sender = $siteemail;
+    $mail->AddReplyTo($siteemail, $sitename);
     $mail->Subject = $subject;
     $mail->Body = $body;
     $mail->AddAddress($to);

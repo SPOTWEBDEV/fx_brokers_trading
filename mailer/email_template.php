@@ -1,5 +1,6 @@
 <?php
 function generateEmailTemplate($type, $name, $email, $table = false, $tableData = []) {
+    global $domain;
     // Detect system info (for login template)
     $ip = $_SERVER['REMOTE_ADDR'] ?? 'Unknown';
     $userAgent = $_SERVER['HTTP_USER_AGENT'] ?? 'Unknown';
@@ -45,7 +46,7 @@ function generateEmailTemplate($type, $name, $email, $table = false, $tableData 
     ?>
     <div style="font-family: Arial, sans-serif; max-width:600px; margin:auto; border:1px solid #eee; padding:20px;">
         <div style="text-align:center; margin-bottom:20px;">
-            <img src="https://your-logo-link.com/logo.png" alt="Logo" style="height:40px;">
+            <img src="<?php echo $domain ?>/static/globalfpmarkets/files/logo-main.4b9c545ea9347660b73dd3b00a629d43.png" alt="Site Logo" style="height:40px;">
         </div>
         <h2 style="color:#222;"><?= ucfirst($type) ?> Notification</h2>
         <p>Hey <?= htmlspecialchars($name) ?>,</p>
@@ -106,4 +107,6 @@ function generateEmailTemplate($type, $name, $email, $table = false, $tableData 
 //     ["method" => "USDT (TRC20)", "account" => "Dogecoin Account", "amount" => "$5003", "transaction_id" => "WRX214459573", "status" => "Pending"]
 // ]);
 
-echo generateEmailTemplate("login", "Ezea", "ezea@example.com", true);
+$body =  generateEmailTemplate("login", "Ezea", "ezea@example.com", true);
+
+echo $body;
