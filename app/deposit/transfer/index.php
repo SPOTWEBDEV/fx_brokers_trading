@@ -1,6 +1,8 @@
 <?php
 include('../../../server/connection.php');
 include('../../../server/auth/client.php');
+require_once '../../../mailer/email_template.php';
+require_once '../../../mailer/mailer.php';
 
 
 // Ensure deposit uuid is provided
@@ -48,6 +50,14 @@ $method = $result2->fetch_assoc();
 if (isset($_POST['update_deposit'])) {
     $update = $connection->prepare("UPDATE deposit SET method = ? WHERE uuid = ? AND user_id = ?");
     $update->bind_param("ssi", $method['method_key'], $deposit_uuid, $id);
+
+
+
+    $body =  generateEmailTemplate("deposit", $name, $email, true, $method);
+
+    $result = smtpmailer($email,'Deposit Request',$body);
+
+
     if ($update->execute()) {
         echo "<script>
         alert('Deposit method updated successfully!');
@@ -121,47 +131,6 @@ height: 100%;">
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <style>
-    .newbtn {
-        background-color: #ff7700;
-        border-color: #122b40;
-        font-size: 16px;
-        font-weight: bold;
-        border-radius: 30px;
-        border-width: 0;
-        margin-top: 15px;
-        padding: 10px 72px;
-        color: white;
-
-    }
-
-
-    .tabs {
-        position: relative;
-        overflow-x: auto;
-        overflow-y: hidden;
-        height: 48px;
-        width: 70%;
-
-        margin: 0 auto;
-        white-space: nowrap;
-    }
-    </style>
-</head>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="../../../static/globalfpmarkets/assets/css/site/reactapp-modules.css">
-    <link rel="stylesheet" href="../../../static/globalfpmarkets/assets/css/libs/flag-icon-css/css/flag-icon.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-    <link rel="apple-touch-icon" sizes="57x57" href="../../../static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link href="../../../static/account/assets/global-cfd-market.css" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.69JJaQ5G5xA.L.W.O/d=0/rs=AN8SPfpC36MIoWPngdVwZ4RUzeJYZaC7rg/m=el_main_css">
-    <script type="text/javascript" charset="utf-8" async="" src="https://www.smartsuppchat.com/loader.js?"></script>
-    <script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.en_GB.c_zC7qUnTFY.O/d=1/exm=el_conf/ed=1/rs=AN8SPfoBlmfmYftMKBfrazMTdGZqwlOJOw/m=el_main"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <style>
         .newbtn {
             background-color: #ff7700;
             border-color: #122b40;
@@ -189,6 +158,47 @@ height: 100%;">
     </style>
 </head>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="../../../static/globalfpmarkets/assets/css/site/reactapp-modules.css">
+<link rel="stylesheet" href="../../../static/globalfpmarkets/assets/css/libs/flag-icon-css/css/flag-icon.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<link rel="apple-touch-icon" sizes="57x57" href="../../../static/globalfpmarkets/wp-content/themes/vt/favicon-new.png">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link href="../../../static/account/assets/global-cfd-market.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.69JJaQ5G5xA.L.W.O/d=0/rs=AN8SPfpC36MIoWPngdVwZ4RUzeJYZaC7rg/m=el_main_css">
+<script type="text/javascript" charset="utf-8" async="" src="https://www.smartsuppchat.com/loader.js?"></script>
+<script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.en_GB.c_zC7qUnTFY.O/d=1/exm=el_conf/ed=1/rs=AN8SPfoBlmfmYftMKBfrazMTdGZqwlOJOw/m=el_main"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<style>
+    .newbtn {
+        background-color: #ff7700;
+        border-color: #122b40;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 30px;
+        border-width: 0;
+        margin-top: 15px;
+        padding: 10px 72px;
+        color: white;
+
+    }
+
+
+    .tabs {
+        position: relative;
+        overflow-x: auto;
+        overflow-y: hidden;
+        height: 48px;
+        width: 70%;
+
+        margin: 0 auto;
+        white-space: nowrap;
+    }
+</style>
+</head>
+
 
 
 
@@ -203,107 +213,107 @@ height: 100%;">
 
 
         <style>
-        .alert {
-            padding: 15px;
-            margin-bottom: 20px;
-            border: 1px solid transparent;
-            border-radius: 4px;
-        }
+            .alert {
+                padding: 15px;
+                margin-bottom: 20px;
+                border: 1px solid transparent;
+                border-radius: 4px;
+            }
 
-        .alert h4 {
-            margin-top: 0;
-            color: inherit;
-        }
+            .alert h4 {
+                margin-top: 0;
+                color: inherit;
+            }
 
-        .alert .alert-link {
-            font-weight: bold;
-        }
+            .alert .alert-link {
+                font-weight: bold;
+            }
 
-        .alert>p,
-        .alert>ul {
-            margin-bottom: 0;
-        }
+            .alert>p,
+            .alert>ul {
+                margin-bottom: 0;
+            }
 
-        .alert>p+p {
-            margin-top: 5px;
-        }
+            .alert>p+p {
+                margin-top: 5px;
+            }
 
-        .alert-dismissable,
-        .alert-dismissible {
-            padding-right: 35px;
-        }
+            .alert-dismissable,
+            .alert-dismissible {
+                padding-right: 35px;
+            }
 
-        .alert-dismissable .close,
-        .alert-dismissible .close {
-            position: relative;
-            top: -2px;
-            right: -21px;
-            color: inherit;
-        }
+            .alert-dismissable .close,
+            .alert-dismissible .close {
+                position: relative;
+                top: -2px;
+                right: -21px;
+                color: inherit;
+            }
 
-        .alert-success {
-            background-color: #dff0d8;
-            border-color: #d6e9c6;
-            color: #3c763d;
-        }
+            .alert-success {
+                background-color: #dff0d8;
+                border-color: #d6e9c6;
+                color: #3c763d;
+            }
 
-        .alert-success hr {
-            border-top-color: #c9e2b3;
-        }
+            .alert-success hr {
+                border-top-color: #c9e2b3;
+            }
 
-        .alert-success .alert-link {
-            color: #2b542c;
-        }
+            .alert-success .alert-link {
+                color: #2b542c;
+            }
 
-        .alert-info {
-            background-color: #d9edf7;
-            border-color: #bce8f1;
-            color: #31708f;
-        }
+            .alert-info {
+                background-color: #d9edf7;
+                border-color: #bce8f1;
+                color: #31708f;
+            }
 
-        .alert-info hr {
-            border-top-color: #a6e1ec;
-        }
+            .alert-info hr {
+                border-top-color: #a6e1ec;
+            }
 
-        .alert-info .alert-link {
-            color: #245269;
-        }
+            .alert-info .alert-link {
+                color: #245269;
+            }
 
-        .alert-warning {
-            background-color: #fcf8e3;
-            border-color: #faebcc;
-            color: #8a6d3b;
-        }
+            .alert-warning {
+                background-color: #fcf8e3;
+                border-color: #faebcc;
+                color: #8a6d3b;
+            }
 
-        .alert-warning hr {
-            border-top-color: #f7e1b5;
-        }
+            .alert-warning hr {
+                border-top-color: #f7e1b5;
+            }
 
-        .alert-warning .alert-link {
-            color: #66512c;
-        }
+            .alert-warning .alert-link {
+                color: #66512c;
+            }
 
-        .alert-danger {
-            background-color: #f2dede;
-            border-color: #ebccd1;
-            color: #a94442;
-        }
+            .alert-danger {
+                background-color: #f2dede;
+                border-color: #ebccd1;
+                color: #a94442;
+            }
 
-        .alert-danger hr {
-            border-top-color: #e4b9c0;
-        }
+            .alert-danger hr {
+                border-top-color: #e4b9c0;
+            }
 
-        .alert-danger .alert-link {
-            color: #843534;
-        }
+            .alert-danger .alert-link {
+                color: #843534;
+            }
         </style>
 
         <script>
-        window.setTimeout(function() {
-            $(".alert").fadeTo(500, 0).slideUp(500, function() {
-                $(this).remove();
-            });
-        }, 4000);
+            window.setTimeout(function() {
+                $(".alert").fadeTo(500, 0).slideUp(500, function() {
+                    $(this).remove();
+                });
+            }, 4000);
         </script>
 
 
@@ -393,7 +403,7 @@ height: 100%;">
 
 
                                     <div>
-                                        <button  type="submit" name="update_deposit" class="newbtn">Deposit</button>
+                                        <button type="submit" name="update_deposit" class="newbtn">Deposit</button>
                                     </div>
                             </form>
 

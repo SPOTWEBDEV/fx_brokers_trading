@@ -13,6 +13,7 @@ if (isset($_SESSION['user_id'])) {
         $id = $row['id'];
         $firstname = $row['firstname'];
         $lastname = $row['lastname'];
+        $name = $firstname . ' ' . $lastname;
         $email = $row['email'];
         $phone = $row['phone'];
         $status = $row['status'];

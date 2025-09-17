@@ -107,6 +107,6 @@ function generateEmailTemplate($type, $name, $email, $table = false, $tableData 
 //     ["method" => "USDT (TRC20)", "account" => "Dogecoin Account", "amount" => "$5003", "transaction_id" => "WRX214459573", "status" => "Pending"]
 // ]);
 
-$body =  generateEmailTemplate("login", "Ezea", "ezea@example.com", true);
+// $body =  generateEmailTemplate("login", "Ezea", "ezea@example.com", true);
 
-echo $body;
+// echo $body;

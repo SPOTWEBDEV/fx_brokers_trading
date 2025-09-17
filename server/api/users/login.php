@@ -47,16 +47,11 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
                         $body                            // HTML content
                     );
 
-                    if ($result === true) {
+               
                         // success
                         echo json_encode(['status' => 'success', 'message' => 'Login successful']);
                         exit();
-                    } else {
-                        // log the error
-                        echo json_encode(['status' => 'success', 'message' => 'email not send']);
-                        exit();
-                        error_log($result);
-                    }
+                    
 
 
                     echo json_encode(['status' => 'success', 'message' => 'Login successful']);

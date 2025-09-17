@@ -3,6 +3,8 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 header('Content-Type: application/json');
 include("../../connection.php");
+require_once '../../../mailer/email_template.php';
+require_once '../../../mailer/mailer.php';
 
 if (isset($_POST['url'])) {
 
@@ -86,7 +88,7 @@ if (isset($_POST['url'])) {
                 $date
             );
 
-           // make sure session is started at the very top of your script
+            // make sure session is started at the very top of your script
 
             if ($insert_stmt->execute()) {
                 // Get the newly inserted user ID
@@ -94,6 +96,21 @@ if (isset($_POST['url'])) {
 
                 // Store user ID in session
                 $_SESSION['user_id'] = $newUserId;
+                $userName = $firstname . ' ' . $lastname;
+
+                $body = generateEmailTemplate(
+                    "register",
+                    $userName, 
+                    $email,
+                );
+
+                $subject = $sitename . "Registered Successfully";
+
+                $result = smtpmailer(
+                    $email,
+                    $subject,
+                    $body
+                );
 
                 echo json_encode([
                     'message' => 'User registered successfully.',
