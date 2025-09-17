@@ -1,5 +1,11 @@
 <?php  include("../../server/connection.php") ?>
 <?php  include("../../server/auth/admin.php") ?>
+<?php
+
+    require_once '../../mailer/email_template.php';
+    require_once '../../mailer/mailer.php';
+
+?>
 <!doctype html>
 <html lang="en">
 
@@ -114,6 +120,7 @@
 
                                                 <th>S/N:</th>
                                                 <th>Full-Name:</th>
+                                                <th>Email:</th>
                                                 <th>Amount:</th>
                                                 <th>Account</th>
                                                 <th>Payment-Method:</th>
@@ -132,7 +139,7 @@
 
                                             <?php
 
-                                            $query = "SELECT deposit.*, users.firstname, users.lastname FROM deposit JOIN users ON deposit.user_id = users.id WHERE deposit.status = 'pending' ORDER BY deposit.created_at DESC";
+                                            $query = "SELECT deposit.*, users.firstname, users.lastname,users.email FROM deposit JOIN users ON deposit.user_id = users.id WHERE deposit.status = 'pending' ORDER BY deposit.created_at DESC";
                                             $select_logs = mysqli_query($connection, $query);
                                             $sn = 1;
                                             while ($row = mysqli_fetch_assoc($select_logs)) {
@@ -142,12 +149,14 @@
                                                 $amount = $row['amount'];
                                                 $account_type = $row['account_type'];
                                                 $method = $row['method'];
+                                                $email = $row['email'];
                                                 $date = $row['created_at'];
                                                 $status = $row['status'];
                                                 echo "<tr>";
                                                 echo "<td>$sn</td>";
                                                 echo "<td>$fullname</td>";
                                                 echo "<td>$amount</td>";
+                                                echo "<td>$email</td>";
                                                 echo "<td>$account_type</td>";
                                                 echo "<td>$method</td>";
                                                 echo "<td>$date</td>";
@@ -163,7 +172,7 @@
                                                  
                                                 if ($status == "pending") {
                                                     echo "<td><button class='btn btn-success btn-sm'><a style='color: white;' href='index.php?approve=$id&account=$account_type&user_id=$user&amount=$amount'>Approve</a></button></td>";
-                                                    echo "<td><button class='btn btn-danger btn-sm'><a style='color: white;' href='index.php?decline=$id'>Decline</a></button></td>";
+                                                    echo "<td><button class='btn btn-danger btn-sm'><a style='color: white;' href='index.php?decline=$id&user=$user&amount=$amount&date=$date&type=$account_type'>Decline</a></button></td>";
                                                 }
 
                                                 
@@ -185,9 +194,15 @@
                                                     $user = $_GET['user_id'];
                                                     
                                                     $statment = mysqli_query($connection,"SELECT *  FROM `users` WHERE `id` = $user");
-                                                    $previous_balance  = mysqli_fetch_assoc($statment);
-                                                    $to_update = $previous_balance[$account] + $amount;
+                                                    $user_data  = mysqli_fetch_assoc($statment);
+                                                    $to_update = $user_data[$account] + $amount;
+                                                    $userEmail = $user_data['email'] ;
+                                                    $userName = $user_data['firstname'] . " " . $user_data['lastname'];
+                                                    
+                                                    
+                                                    
                                                     $query = mysqli_query($connection, "UPDATE `users` SET $account =  $to_update WHERE `id` = '$user' ");
+                                                    
 
                                                     
                                                     if ($query){
@@ -209,6 +224,25 @@
                                                                             window.location.href = 'index.php';
                                                                         });
                                                                     </script>";
+                                                                    
+                                                                        $body = generateEmailTemplate(
+                                                                            "approve_deposit",          // type
+                                                                            $userName,             // user's name
+                                                                            $userEmail,            // user's email
+                                                                            true,                  // include table
+                                                                            [
+                                                                                "amount" => $amount,
+                                                                                "date" => date("Y-m-d"),
+                                                                                "status" => "Approved",
+                                                                                "account" => $account
+                                                                            ]
+                                                                        );
+                                                    
+                                                                        $result = smtpmailer(
+                                                                            $userEmail,                      // recipient
+                                                                            "Deposit Approved",     // subject
+                                                                            $body                            // HTML content
+                                                                        );
 
 
                                                             }else{
@@ -236,10 +270,18 @@
 
                                                 if (isset($_GET['decline'])) {
                                                     $id = $_GET['decline'];
+                                                    $user = $_GET['user'];
                                                     $query = "UPDATE deposit SET status = 'failed' WHERE id = $id";
                                                     $approve_query = mysqli_query($connection, $query);
                                                     
                                                     if ($approve_query){
+                                                        
+                                                            $statment = mysqli_query($connection,"SELECT *  FROM `users` WHERE `id` = $user");
+                                                            $user_data  = mysqli_fetch_assoc($statment);
+                                                            $userEmail = $user_data['email'] ;
+                                                            $userName = $user_data['firstname'] . " " . $user_data['lastname'];
+                                                        
+                                                         
 
                                                                  echo "<script>
                                                                         Swal.fire({
@@ -251,6 +293,25 @@
                                                                             window.location.href = 'index.php';
                                                                         });
                                                                     </script>";
+                                                                    
+                                                                        $body = generateEmailTemplate(
+                                                                            "deposit_declined",          // type
+                                                                            $userName,             // user's name
+                                                                            $userEmail,            // user's email
+                                                                            true,                  // include table
+                                                                            [
+                                                                                "amount" => $_GET['amount'],
+                                                                                "date" => date("Y-m-d"),
+                                                                                "status" => "Rejected",
+                                                                                "account" => $_GET['type']
+                                                                            ]
+                                                                        );
+                                                    
+                                                                        $result = smtpmailer(
+                                                                            $userEmail,                      // recipient
+                                                                            "Deposit Declined",     // subject
+                                                                            $body                            // HTML content
+                                                                        );
                                                     }
                                                 }
 

@@ -10,17 +10,21 @@
 
             $username = $row['username'];
 
+        }else{
+            
+            
+             echo "<script> window.location.href = '../../admin/' </script>";
         }
 
     }else{
 
-        echo "<script> window.location.href = '../../admin' </script>";
+        echo "<script> window.location.href = '../../admin/' </script>";
     }
 
 
     if (isset($_GET['logout'])) {
         session_destroy();
-        echo "<script> window.location.href = '../../admin' </script>";
+        echo "<script> window.location.href = '../../admin/' </script>";
     }
 
 

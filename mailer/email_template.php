@@ -86,7 +86,7 @@ function generateEmailTemplate($type, $name, $email, $table = false, $tableData 
             <p>Your deposit request was received. Details below:</p>
             <?php if ($table) { ?>
                 <table style="width:100%; border-collapse:collapse; margin-top:15px;">
-                    <tr><td style="border:1px solid #ddd; padding:8px; font-weight:bold;">Amount</td><td style="border:1px solid #ddd; padding:8px;">$<?= htmlspecialchars($tableData['amount'] ?? 'N/A') ?></td></tr>
+                    <tr><td style="border:1px solid #ddd; padding:8px; font-weight:bold;">Amount</td><td style="border:1px solid #ddd; padding:8px;"><?= htmlspecialchars($tableData['amount'] ?? 'N/A') ?></td></tr>
                     <tr><td style="border:1px solid #ddd; padding:8px; font-weight:bold;">Date</td><td style="border:1px solid #ddd; padding:8px;"><?= htmlspecialchars($tableData['date'] ?? date("Y-m-d")) ?></td></tr>
                     <tr><td style="border:1px solid #ddd; padding:8px; font-weight:bold;">Status</td><td style="border:1px solid #ddd; padding:8px;"><?= htmlspecialchars($tableData['status'] ?? 'Pending') ?></td></tr>
                     <tr><td style="border:1px solid #ddd; padding:8px; font-weight:bold;">Account</td><td style="border:1px solid #ddd; padding:8px;"><?= htmlspecialchars($tableData['account'] ?? 'N/A') ?></td></tr>
