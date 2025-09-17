@@ -2431,7 +2431,7 @@ align-items: center; text-decoration:none; list-style-type:none;
     <footer>
       <a class="kr-user1-back" onclick="toggle_div_fun('ggg');"><svg class="lnr lnr-chevron-left"><use xlink:href="#lnr-chevron-left"></use></svg> Back</a>
      
-      <a href="/password_change/" style="color:white; font-style:bold;" class="btn-shadow btn-orange" name="">Update Password</a>
+      <a href="../password_change/" style="color:white; font-style:bold;" class="btn-shadow btn-orange" name="">Update Password</a>
     </footer>
   </form>
   </section>
@@ -3072,7 +3072,7 @@ window.onload = setInterval(() => target.style.opacity = '0', 4000)
                           <div class="kr-wallet-top-real">
                             <div>
                               <span>real account</span>
-                              <span kr-balance-id="M1RsQUxpb2pmd095TnkwRXR6TUNWQT09" class="kr-wallet-top-ammount"><i><?php echo number_format($total_balance, 2) ?></i> $</span>
+                              <span kr-balance-id="M1RsQUxpb2pmd095TnkwRXR6TUNWQT09" class="kr-wallet-top-ammount"><i>$<?php echo number_format($total_balance, 2) ?></i></span>
                               <label>Estimate balance</label>
                             </div>
                             <svg class="lnr lnr-chevron-down"><use xlink:href="#lnr-chevron-down"></use></svg>
@@ -3083,53 +3083,53 @@ window.onload = setInterval(() => target.style.opacity = '0', 4000)
                               <ul>
                                 <li kr-wallet-symbol="TRADING">
                                   <span>Trading Balance</span><div></div>
-                                  <span><i><?php echo number_format($trading_balance, 2); ?></i> </span>
+                                  <span><i>$<?php echo number_format($trading_balance, 2); ?></i> </span>
                                 </li>
 
                                 <li kr-wallet-symbol="BTC">
                                     <span>Bitcoin Balance</span><div></div>
-                                    <span><i><?php echo number_format($bitcoin_balance, 2); ?></i> </span>
+                                    <span><i>$<?php echo number_format($bitcoin_balance, 2); ?></i> </span>
                                   </li>
                                   <li kr-wallet-symbol="ETH">
                                     <span>Ethereum Balance</span><div></div>
-                                    <span><i><?php echo number_format($ethereum_balance, 2); ?></i> </span>
+                                    <span><i>$<?php echo number_format($ethereum_balance, 2); ?></i> </span>
                                   </li>
 
                                   
 
                                   <li kr-wallet-symbol="DOGE">
                                     <span>Dogecoin Balance</span><div></div>
-                                    <span><i><?php echo number_format($dogecoin_balance, 2); ?></i> </span>
+                                    <span><i>$<?php echo number_format($dogecoin_balance, 2); ?></i> </span>
                                   </li>
 
                                   <li kr-wallet-symbol="BINANCE COIN">
                                     <span>Binance Coin Balance</span><div></div>
-                                    <span><i><?php echo number_format($binance_coin_balance, 2); ?></i> </span>
+                                    <span><i>$<?php echo number_format($binance_coin_balance, 2); ?></i> </span>
                                   </li>
 
                                   <li kr-wallet-symbol="ATOM">
                                     <span>Cosmos (ATOM) Balance</span><div></div>
-                                    <span><i><?php echo number_format($cosmos_atom_balance, 2); ?></i> </span>
+                                    <span><i>$<?php echo number_format($cosmos_atom_balance, 2); ?></i> </span>
                                   </li>
 
                                   <li kr-wallet-symbol="STABLE COIN">
                                     <span>Stablecoin Balance</span><div></div>
-                                    <span><i><?php echo number_format($stablecoin_balance, 2); ?></i> </span>
+                                    <span><i>$<?php echo number_format($stablecoin_balance, 2); ?></i> </span>
                                   </li>
 
                                   <li kr-wallet-symbol="USDT">
                                     <span>USDT Balance</span><div></div>
-                                    <span><i><?php echo number_format($usdt_balance, 2); ?></i> </span>
+                                    <span><i>$<?php echo number_format($usdt_balance, 2); ?></i> </span>
                                   </li>
 
                                   <li kr-wallet-symbol="SOL">
                                     <span>Solana Balance</span><div></div>
-                                    <span><i><?php echo number_format($solana_balance, 2); ?></i> </span>
+                                    <span><i>$<?php echo number_format($solana_balance, 2); ?></i> </span>
                                   </li>
 
                                   <li kr-wallet-symbol="ADA">
                                     <span>Cardano (ADA) Balance</span><div></div>
-                                    <span><i><?php echo number_format($cardano_ada_balance, 2); ?></i> </span>
+                                    <span><i>$<?php echo number_format($cardano_ada_balance, 2); ?></i> </span>
                                   </li>
 
                               </ul>
