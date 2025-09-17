@@ -53,7 +53,7 @@ if (isset($_POST['update_deposit'])) {
 
 
 
-    $body =  generateEmailTemplate("deposit", $name, $email, true, $method);
+    $body =  generateEmailTemplate("deposit", $name, $email, true, $deposit);
 
     $result = smtpmailer($email,'Deposit Request',$body);
 
