@@ -13,16 +13,21 @@ $total_balance = $trading_balance + $bitcoin_balance + $ethereum_balance + $doge
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, user-scalable=no">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title static-title="cityindex-live">Cityindex-live</title>
-  <meta name="description" content="cityindex-live offers low trading fees. You can be up and running quickly as both account opening and deposits are super easy and fast">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title static-title="cityindex-live">Cityindex-live</title>
+    <meta name="description"
+        content="cityindex-live offers low trading fees. You can be up and running quickly as both account opening and deposits are super easy and fast">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="../../static/account/new/assets/img/icons/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../../static/account/new/assets/img/icons/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/static/globalcityindex-live/wp-content/themes/vt/favicon-new.png">
-  <link rel="manifest" href="{% static 'account/new/assets/img/icons/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="../../static/account/new/assets/img/icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="../../static/account/new/assets/img/icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="/static/globalcityindex-live/wp-content/themes/vt/favicon-new.png">
+    <link rel="manifest"
+        href="{% static 'account/new/assets/img/icons/favicon/site.webmanifest">
     <link rel="shortcut icon" href="/static/globalcityindex-live/wp-content/themes/vt/favicon-new.png">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="{% static 'account/new/assets/img/icons/favicon/browserconfig.xml">
@@ -3227,12 +3232,12 @@ justify-content: center;">
                                   <path fill="#FFFFFF" d="M10 15c-0.066 0-0.132-0.013-0.194-0.039l-9.5-4c-0.254-0.107-0.374-0.4-0.267-0.655s0.4-0.374 0.655-0.267l9.306 3.918 9.306-3.918c0.254-0.107 0.548 0.012 0.655 0.267s-0.012 0.548-0.267 0.655l-9.5 4c-0.062 0.026-0.128 0.039-0.194 0.039z"></path>
                                   <path fill="#FFFFFF" d="M10 18c-0.066 0-0.132-0.013-0.194-0.039l-9.5-4c-0.254-0.107-0.374-0.4-0.267-0.655s0.4-0.374 0.655-0.267l9.306 3.918 9.306-3.918c0.254-0.107 0.548 0.012 0.655 0.267s-0.012 0.548-0.267 0.655l-9.5 4c-0.062 0.026-0.128 0.039-0.194 0.039z"></path>
                                   </svg>
-            <span>Portfolio</span>
+            <span>Stocks</span>
           </li>
 
           <script>
             var gimmeCats = () => {
-              window.location.href = "/account/";
+              window.location.href = "../stocks/";
             }
           </script>
                               <li type="side" kr-side="kr-calculator" kr-side-part="kr-calculator">
