@@ -10898,7 +10898,7 @@
                                         </span>
 
                                         <span class="off_menu__item__link">
-                                            <a href="Social_Trading/index.php"> Social Trading </a>
+                                            <a href="<?php echo  $domain  ?>pages/Social_Trading.php"> Social Trading </a>
                                         </span>
                                     </div>
                                 </div>
@@ -11031,7 +11031,7 @@
                                     <div class="off__menu__item">
                                         <span class="off__menu__category">Copy Trading</span>
                                         <span class="off_menu__item__link">
-                                            <a href="Social_Trading/index.php"> Social Trading </a>
+                                            <a href="<?php echo  $domain  ?>pages/Social_Trading.php"> Social Trading </a>
                                         </span>
 
                                     </div>
@@ -13240,7 +13240,7 @@
 
                                 <li><a href="<?php   echo  $domain ?>pages/MAM_PAMM.php">MAM/PAMM</a></li>
 
-                                <li><a href="Social_Trading/index.php">Social Trading</a></li>
+                                <li><a href="<?php echo  $domain  ?>pages/Social_Trading.php">Social Trading</a></li>
                                 <li><a href="<?php   echo  $domain ?>pages/Trading_Central.php">
                                         Trading Central
                                     </a>

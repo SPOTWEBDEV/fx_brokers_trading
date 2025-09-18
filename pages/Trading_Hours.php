@@ -125,7 +125,7 @@
                                         <a href="Funding.php"> Deposit Funds </a>
                                     </span>
                                     <span class="off_menu__item__link">
-                                        <a href="https://cityindex-live-int.com/Withdraw_Funds/"> Withdraw Funds </a>
+                                        <a href="<?php echo  $domain  ?>pages/Withdraw_Funds.php"> Withdraw Funds </a>
                                     </span>
                                 </div>
                             </div>
@@ -172,7 +172,7 @@
                                         <a href="Funding.php"> Account Funding </a>
                                     </span>
                                     <span class="off_menu__item__link">
-                                        <a href="https://cityindex-live-int.com/Withdraw_Funds/"> Funds Withdrawal </a>
+                                        <a href="<?php echo  $domain  ?>pages/Withdraw_Funds.php"> Funds Withdrawal </a>
                                     </span>
                                 </div>
                             </div>
@@ -2097,7 +2097,7 @@ available 24 hours a day, 5 days a week to help ensure a seamless trading day ex
             <ul id="menu-footer-7" class="menu">
                 <li><a href="Forex_Account_Types.php">MT4/5 Account Types</a></li>
                 <li><a href="Funding.php">Deposit Funds</a></li>
-                <li><a href="https://cityindex-live-int.com/Withdraw_Funds/">Withdraw Funds</a></li>
+                <li><a href="<?php echo  $domain  ?>pages/Withdraw_Funds.php">Withdraw Funds</a></li>
                  
                 <li><a href="Forex_Spreads.php">Forex Spreads</a></li>
                 <li><a href="Swap_Rates.php">Forex Swap Rates</a></li>

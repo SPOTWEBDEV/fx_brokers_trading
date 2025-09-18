@@ -56,9 +56,9 @@
                             <li><a href="<?php echo $domain; ?>Margin_Table.php">Margin Table</a></li>
                             <li><a href="<?php echo $domain; ?>pages/Forex_Spreads.php">Forex Spreads</a></li>
                             <li><a href="<?php echo $domain; ?>pages/Swap_Rates.php">Forex Swap Rates</a></li>
-                            <li><a href="<?php echo $domain; ?>Leverage.php">Leverage</a></li>
-                            <li><a href="<?php echo $domain; ?>MT4_5_Fees.php">MT4/5 Fees &amp; Charges</a></li>
-                            <li><a href="<?php echo $domain; ?>cTrader_Fees.php">cTrader Fees &amp; Charges</a></li>
+                            <li><a href="<?php echo $domain; ?>pages/Leverage.php">Leverage</a></li>
+                            <li><a href="<?php echo $domain; ?>pages/MT4_5_Fees.php">MT4/5 Fees &amp; Charges</a></li>
+                            <li><a href="<?php echo $domain; ?>pages/cTrader_Fees.php">cTrader Fees &amp; Charges</a></li>
                             <li><a href="<?php echo $domain; ?>pages/Trading_Hours.php">Trading Hours</a></li>
                         </ul>
                     </div>

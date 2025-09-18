@@ -37,7 +37,7 @@
                           <h5>Your Account</h5>
                           <span class="menu__item_link"><a href="<?php echo $domain ?>auth/register.php">Try A Demo</a></span>
                           <span class="menu__item_link"><a href="<?php echo $domain ?>pages/Funding.php">Deposit Funds</a></span>
-                          <span class="menu__item_link"><a href="https://cityindex-live-int.com/Withdraw_Funds/">Withdraw Funds</a></span>
+                          <span class="menu__item_link"><a href="<?php echo  $domain  ?>pages/Withdraw_Funds.php">Withdraw Funds</a></span>
                         </div>
                       </div>
                       <div class="col-md-3 col-xl-3">
@@ -79,7 +79,7 @@
                           <span class="menu__item_link"><a href="<?php echo $domain ?>pages/Forex_Account_Types.php">Forex Account Types</a></span>
                           <span class="menu__item_link"><a href="<?php echo $domain ?>pages/Islamic_Trading_Accounts.php">Islamic Trading Accounts</a></span>
                           <span class="menu__item_link"><a href="<?php echo $domain ?>pages/Funding.php">Account Funding</a></span>
-                          <span class="menu__item_link"><a href="https://cityindex-live-int.com/Withdraw_Funds/">Funds Withdrawal</a></span>
+                          <span class="menu__item_link"><a href="<?php echo  $domain  ?>pages/Withdraw_Funds.php">Funds Withdrawal</a></span>
                         </div>
                       </div>
                       <div class="col-md-3 col-xl-3">

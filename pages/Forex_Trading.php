@@ -149,7 +149,7 @@
                                         <a href="Funding.php"> Deposit Funds </a>
                                     </span>
                                     <span class="off_menu__item__link">
-                                        <a href="https://cityindex-live-int.com/Withdraw_Funds/"> Withdraw Funds </a>
+                                        <a href="<?php echo  $domain  ?>pages/Withdraw_Funds.php"> Withdraw Funds </a>
                                     </span>
                                 </div>
                             </div>
@@ -196,7 +196,7 @@
                                         <a href="Funding.php"> Account Funding </a>
                                     </span>
                                     <span class="off_menu__item__link">
-                                        <a href="https://cityindex-live-int.com/Withdraw_Funds/"> Funds Withdrawal </a>
+                                        <a href="<?php echo  $domain  ?>pages/Withdraw_Funds.php"> Funds Withdrawal </a>
                                     </span>
                                 </div>
                             </div>
@@ -1791,7 +1791,7 @@ market with the goal of making a profit.
                                     rules to execute market orders such as stop-loss orders. Expert Advisors (EAs) and
                                     copy trading software such as <a class="custom-link-for-a" href="index.php" target="_blank"><b>AutoTrade</b></a> are examples of
                                     algorithmic trading.</p>
-                                <p class="normal-para-font" style="margin-bottom:10px;">Learn more about <a class="custom-link-for-a" href="https://cityindex-live-int.com/Forex_Trading/target="_blank"><b>Algorithmic Trading</b></a>.</p>
+                                <p class="normal-para-font" style="margin-bottom:10px;">Learn more about <a class="custom-link-for-a" href="<?php echo  $domain  ?>Forex_Trading/target="_blank"><b>Algorithmic Trading</b></a>.</p>
                             </div>
                         </div>
                     </div>
@@ -4551,7 +4551,7 @@ market with the goal of making a profit.
             <ul id="menu-footer-7" class="menu">
                 <li><a href="Forex_Account_Types.php">MT4/5 Account Types</a></li>
                 <li><a href="Funding.php">Deposit Funds</a></li>
-                <li><a href="https://cityindex-live-int.com/Withdraw_Funds/">Withdraw Funds</a></li>
+                <li><a href="<?php echo  $domain  ?>pages/Withdraw_Funds.php">Withdraw Funds</a></li>
                  
                 <li><a href="Forex_Spreads.php">Forex Spreads</a></li>
                 <li><a href="Swap_Rates.php">Forex Swap Rates</a></li>
