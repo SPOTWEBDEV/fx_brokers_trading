@@ -1,6 +1,7 @@
 <?php
-function generateEmailTemplate($type, $name, $email, $table = false, $tableData = []) {
-    global $domain;
+function generateEmailTemplate($type, $name, $email, $table = false, $tableData = [])
+{
+    global $domain, $sitename;
     // Detect system info (for login template)
     $ip = $_SERVER['REMOTE_ADDR'] ?? 'Unknown';
     $userAgent = $_SERVER['HTTP_USER_AGENT'] ?? 'Unknown';
@@ -43,7 +44,7 @@ function generateEmailTemplate($type, $name, $email, $table = false, $tableData 
     }
 
     ob_start();
-    ?>
+?>
     <div style="font-family: Arial, sans-serif; max-width:100%; margin:auto; border:1px solid #eee; padding:20px;">
         <div style="text-align:center; margin-bottom:20px;">
             <img src="<?php echo $domain ?>/static/globalfpmarkets/files/logo-main.4b9c545ea9347660b73dd3b00a629d43.png" alt="Site Logo" style="height:40px;">
@@ -52,19 +53,57 @@ function generateEmailTemplate($type, $name, $email, $table = false, $tableData 
         <p>Hey <?= htmlspecialchars($name) ?>,</p>
 
         <?php if ($type === "register") { ?>
-            <p>Welcome! Your account has been successfully created with <b><?= htmlspecialchars($email) ?></b>.</p>
+            <p>
+                Welcome to <b><?= htmlspecialchars($sitename) ?></b>!
+                Your trading account has been successfully created with
+                <b><?= htmlspecialchars($email) ?></b>.
+            </p>
+
+            <p>
+                Please note: your account is currently <strong>under review for verification</strong>.
+                Our team will notify you once the review is complete so you can start trading
+                confidently on our platform.
+            </p>
+
+            <p>
+                <b><?= htmlspecialchars($sitename) ?></b> provides a secure, user-friendly
+                environment for cryptocurrency and forex trading, giving you the tools to grow
+                and manage your investments with ease.
+            </p>
+
 
         <?php } elseif ($type === "login") { ?>
             <p>We noticed a recent login to your account.</p>
             <?php if ($table) { ?>
                 <table style="width:100%; border-collapse:collapse; margin-top:15px;">
-                    <tr><td style="border:1px solid #ddd; padding:8px; font-weight:bold;">Time</td><td style="border:1px solid #ddd; padding:8px;"><?= date("Y-m-d H:i:s") ?></td></tr>
-                    <tr><td style="border:1px solid #ddd; padding:8px; font-weight:bold;">IP Address</td><td style="border:1px solid #ddd; padding:8px;"><?= $ip ?></td></tr>
-                    <tr><td style="border:1px solid #ddd; padding:8px; font-weight:bold;">Device Type</td><td style="border:1px solid #ddd; padding:8px;"><?= $deviceType ?></td></tr>
-                    <tr><td style="border:1px solid #ddd; padding:8px; font-weight:bold;">Browser Type</td><td style="border:1px solid #ddd; padding:8px;"><?= $browserType ?></td></tr>
-                    <tr><td style="border:1px solid #ddd; padding:8px; font-weight:bold;">Browser Version</td><td style="border:1px solid #ddd; padding:8px;"><?= $browserVersion ?></td></tr>
-                    <tr><td style="border:1px solid #ddd; padding:8px; font-weight:bold;">OS Type</td><td style="border:1px solid #ddd; padding:8px;"><?= $osType ?></td></tr>
-                    <tr><td style="border:1px solid #ddd; padding:8px; font-weight:bold;">OS Version</td><td style="border:1px solid #ddd; padding:8px;"><?= $osVersion ?></td></tr>
+                    <tr>
+                        <td style="border:1px solid #ddd; padding:8px; font-weight:bold;">Time</td>
+                        <td style="border:1px solid #ddd; padding:8px;"><?= date("Y-m-d H:i:s") ?></td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid #ddd; padding:8px; font-weight:bold;">IP Address</td>
+                        <td style="border:1px solid #ddd; padding:8px;"><?= $ip ?></td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid #ddd; padding:8px; font-weight:bold;">Device Type</td>
+                        <td style="border:1px solid #ddd; padding:8px;"><?= $deviceType ?></td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid #ddd; padding:8px; font-weight:bold;">Browser Type</td>
+                        <td style="border:1px solid #ddd; padding:8px;"><?= $browserType ?></td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid #ddd; padding:8px; font-weight:bold;">Browser Version</td>
+                        <td style="border:1px solid #ddd; padding:8px;"><?= $browserVersion ?></td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid #ddd; padding:8px; font-weight:bold;">OS Type</td>
+                        <td style="border:1px solid #ddd; padding:8px;"><?= $osType ?></td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid #ddd; padding:8px; font-weight:bold;">OS Version</td>
+                        <td style="border:1px solid #ddd; padding:8px;"><?= $osVersion ?></td>
+                    </tr>
                 </table>
             <?php } ?>
 
@@ -97,7 +136,7 @@ function generateEmailTemplate($type, $name, $email, $table = false, $tableData 
 
         <p style="margin-top:20px;">Thank you,<br> The Team</p>
     </div>
-    <?php
+<?php
     return ob_get_clean();
 }
 
