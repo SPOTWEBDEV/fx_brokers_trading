@@ -19,7 +19,7 @@ function _changeIdentityStep(step) {
     $.get($('body').attr('hrefapp') + '/app/modules/kr-identity/views/identityWizardStep.php', {
         step: step
     }).done(function(data) {
-        $.when($('section.identity_wizard_content').html(data)).then(function() {
+        $.when($('section.identity_wizard_content').php(data)).then(function() {
             $('.identity_wizard_content').attr('class', 'identity_wizard_content identity_wizard_content-stepvs');
             _initIdentityWizard(step);
         });
@@ -106,7 +106,7 @@ function startTakePhotoCmpt(cmp, video, step, context, canvas) {
         return false;
     }
 
-    $('.kr-identity-document-camera-gabarit > span').html(cmp);
+    $('.kr-identity-document-camera-gabarit > span').php(cmp);
 
     setTimeout(function() {
         startTakePhotoCmpt(cmp - 1, video, step, context, canvas);

@@ -108,7 +108,7 @@ function initTradingChartControllers() {
         $(this).parent().hide();
 
         $(this).parent().parent().parent().parent().find('[kr-confirm-v="unit_price"]').attr('kr-confirm-v-up', nPrice);
-        $(this).parent().parent().parent().parent().find('[kr-confirm-v="unit_price"]').find('i').html(KRformatNumber(nPrice, 2));
+        $(this).parent().parent().parent().parent().find('[kr-confirm-v="unit_price"]').find('i').php(KRformatNumber(nPrice, 2));
 
         updatePriceAmountTrading();
 
@@ -163,10 +163,10 @@ function _setOrderByLimit(container, limit) {
     $('.kr-dash-pan-action[container="' + container + '"]').find('.kr-dash-pan-action-btn-img-b').attr('src', $('body').attr('hrefapp') + '/app/modules/kr-dashboard/statics/img/icons/buy_limit.svg');
     $('.kr-dash-pan-action[container="' + container + '"]').find('.kr-dash-pan-action-btn-img-s').attr('src', $('body').attr('hrefapp') + '/app/modules/kr-dashboard/statics/img/icons/sell_limit.svg');
 
-    $('.kr-dash-pan-action[container="' + container + '"]').find('.kr-dash-pan-action-limitprice-infos').find('span').html(KRformatNumber(limit, 6));
+    $('.kr-dash-pan-action[container="' + container + '"]').find('.kr-dash-pan-action-limitprice-infos').find('span').php(KRformatNumber(limit, 6));
     $('.kr-dash-pan-action[container="' + container + '"]').find('[kr-order-lmi-h="true"]').hide();
     $('.kr-dash-pan-action[container="' + container + '"]').find('[kr-order-lmi-s="true"]').css('display', 'flex');
-    $('.kr-dash-pan-action[container="' + container + '"]').find('[kr-confirm-v="purchase_price"]').find('i').html(KRformatNumber(limit, 6));
+    $('.kr-dash-pan-action[container="' + container + '"]').find('[kr-confirm-v="purchase_price"]').find('i').php(KRformatNumber(limit, 6));
     $('.kr-dash-pan-action[container="' + container + '"]').find('[kr-limitprice-buy-ac]').attr('kr-limitprice-buy-ac', 'true');
 }
 
@@ -186,10 +186,10 @@ function _setOrderByMarket(container) {
     $('.kr-dash-pan-action[container="' + container + '"]').find('.kr-dash-pan-action-btn-img-s').attr('src', $('body').attr('hrefapp') + '/app/modules/kr-dashboard/statics/img/icons/sell_market.svg');
 
 
-    $('.kr-dash-pan-action[container="' + container + '"]').find('.kr-dash-pan-action-limitprice-infos').find('span').html('-');
+    $('.kr-dash-pan-action[container="' + container + '"]').find('.kr-dash-pan-action-limitprice-infos').find('span').php('-');
     $('.kr-dash-pan-action[container="' + container + '"]').find('[kr-order-lmi-h="true"]').css('display', 'flex');
     $('.kr-dash-pan-action[container="' + container + '"]').find('[kr-order-lmi-s="true"]').hide();
-    $('.kr-dash-pan-action[container="' + container + '"]').find('[kr-confirm-v="purchase_price"]').find('i').html('-');
+    $('.kr-dash-pan-action[container="' + container + '"]').find('[kr-confirm-v="purchase_price"]').find('i').php('-');
     $('.kr-dash-pan-action[container="' + container + '"]').find('[kr-limitprice-buy-ac]').attr('kr-limitprice-buy-ac', 'false');
     $('.kr-dash-pan-action[container="' + container + '"]').find('.kr-limitprice-buy').val('');
     _hideLimitOrder(container);
@@ -198,7 +198,7 @@ function _setOrderByMarket(container) {
 function showConfirmationPlaceOrder(elementAction, container, type, sparent) {
     let confirmationBox = $(elementAction).parent().parent().find('.kr-dash-pan-action-confirm');
     confirmationBox.show();
-    confirmationBox.find('.btn-kr-action-placetrade').html('Confirm ' + type + 'ing');
+    confirmationBox.find('.btn-kr-action-placetrade').php('Confirm ' + type + 'ing');
     if (type == "sell") {
         confirmationBox.find('.btn-kr-action-placetrade').removeClass('btn-green');
         confirmationBox.find('.btn-kr-action-placetrade').addClass('btn-lightred');
@@ -236,21 +236,21 @@ function updatePriceAmountTrading() {
         if (calculatedAmmount > 10000) nDeci = 2;
         if (calculatedAmmount > 100000) nDeci = 1;
         if (calculatedAmmount > 1000000) nDeci = 0;
-        $(this).find('.kr-dash-pan-action-qtd').find('span').html(KRformatNumber(calculatedAmmount, nDeci));
+        $(this).find('.kr-dash-pan-action-qtd').find('span').php(KRformatNumber(calculatedAmmount, nDeci));
 
-        $(this).find('[kr-confirm-v="investment"]').find('i').html(KRformatNumber(amount, 6));
+        $(this).find('[kr-confirm-v="investment"]').find('i').php(KRformatNumber(amount, 6));
         let uprice = 1 / parseFloat($(this).find('[kr-confirm-v="unit_price"]').attr('kr-confirm-v-up'));
 
-        $(this).find('[kr-confirm-v="amount"]').find('i').html(KRformatNumber(calculatedAmmount, nDeci));
+        $(this).find('[kr-confirm-v="amount"]').find('i').php(KRformatNumber(calculatedAmmount, nDeci));
 
 
         if ($(this).find('[kr-confirm-v="fees"]').length > 0) {
             let fees = parseFloat($(this).find('[kr-confirm-v="fees"]').attr('kr-confirm-v-up')) / 100;
-            $(this).find('[kr-confirm-v="fees"]').find('i:last-child').html(KRformatNumber(calculatedAmmount * fees, 6));
+            $(this).find('[kr-confirm-v="fees"]').find('i:last-child').php(KRformatNumber(calculatedAmmount * fees, 6));
 
-            $(this).find('[kr-confirm-v="total"]').find('i').html(KRformatNumber((parseFloat(calculatedAmmount) - parseFloat(calculatedAmmount * fees)), 6));
+            $(this).find('[kr-confirm-v="total"]').find('i').php(KRformatNumber((parseFloat(calculatedAmmount) - parseFloat(calculatedAmmount * fees)), 6));
         } else {
-            $(this).find('[kr-confirm-v="total"]').find('i').html(KRformatNumber(calculatedAmmount, 6));
+            $(this).find('[kr-confirm-v="total"]').find('i').php(KRformatNumber(calculatedAmmount, 6));
         }
 
 
@@ -271,7 +271,7 @@ function placerOrder(container, side, market) {
 
     let orderLimitPrice = tradingActionContainer.find('[kr-limitprice-buy-ac]').val();
     // if(side == "sell"){
-    //   amount = tradingActionContainer.find('.kr-dash-pan-action-qtd').find('span').html();
+    //   amount = tradingActionContainer.find('.kr-dash-pan-action-qtd').find('span').php();
     // }
     //
 
@@ -293,7 +293,7 @@ function placerOrder(container, side, market) {
         tradeData['date'] = dateList[dateList.length - 1];
     }
 
-    $('.kr-dash-pan-action[symbol="' + symbol + '"]').find('.kr-dash-pan-action-btn-' + side + ' > span').html('~ ~ ~');
+    $('.kr-dash-pan-action[symbol="' + symbol + '"]').find('.kr-dash-pan-action-btn-' + side + ' > span').php('~ ~ ~');
 
     $.post($('body').attr('hrefapp') + '/app/modules/kr-trade/src/actions/placeTrade.php', tradeData).done(function(data) {
 
@@ -302,7 +302,7 @@ function placerOrder(container, side, market) {
         _updateBalanceData();
 
         if (response.error == 0) {
-            $('.kr-dash-pan-action[symbol="' + symbol + '"]').find('.kr-dash-pan-action-btn-' + side + ' > span').html('Success');
+            $('.kr-dash-pan-action[symbol="' + symbol + '"]').find('.kr-dash-pan-action-btn-' + side + ' > span').php('Success');
             showCryptoAlert(symbol, amount, 'buy', null, currency);
 
             if ($('#graph-' + container).length > 0) {
@@ -312,18 +312,18 @@ function placerOrder(container, side, market) {
             }
 
             tradeGraph = setTimeout(function() {
-                $('.kr-dash-pan-action[symbol="' + symbol + '"]').find('.kr-dash-pan-action-btn-' + side + ' > span').html(side);
+                $('.kr-dash-pan-action[symbol="' + symbol + '"]').find('.kr-dash-pan-action-btn-' + side + ' > span').php(side);
             }, 1500);
         } else {
             if (response.error == 9) {
                 _showIdentityWizard();
-                $('.kr-dash-pan-action[symbol="' + symbol + '"]').find('.kr-dash-pan-action-btn-' + side + ' > span').html(side);
+                $('.kr-dash-pan-action[symbol="' + symbol + '"]').find('.kr-dash-pan-action-btn-' + side + ' > span').php(side);
             } else {
                 if (response.error == 3) {
                     _showThirdpartySetup(response.thirdparty);
                 } else {
                     showAlert('Oops', response.msg, 'error');
-                    $('.kr-dash-pan-action[symbol="' + symbol + '"]').find('.kr-dash-pan-action-btn-' + side + ' > span').html(side);
+                    $('.kr-dash-pan-action[symbol="' + symbol + '"]').find('.kr-dash-pan-action-btn-' + side + ' > span').php(side);
                 }
             }
 

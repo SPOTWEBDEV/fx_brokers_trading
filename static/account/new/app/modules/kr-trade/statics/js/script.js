@@ -146,17 +146,17 @@ function showOrderInfos(order_id) {
     $('.kr-bookorder-native-select').removeClass('kr-bookorder-native-select');
     $('[kr-bookorder-if="' + order_id + '"]').addClass('kr-bookorder-native-select');
     checkGraphResize();
-    $('.kr-orderinfoside').html('<div class="spinner"></div>');
+    $('.kr-orderinfoside').php('<div class="spinner"></div>');
     $.post($('body').attr('hrefapp') + '/app/modules/kr-trade/views/orderInfos.php', {
         order_id: order_id
     }).done(function(data) {
-        $('.kr-orderinfoside').html(data);
+        $('.kr-orderinfoside').php(data);
     });
 }
 
 function closeOrderInfos() {
     $('.kr-orderinfoside').removeClass('kr-orderinfoside-show');
-    $('.kr-orderinfoside').html('<div class="spinner"></div>');
+    $('.kr-orderinfoside').php('<div class="spinner"></div>');
     checkGraphResize();
 }
 

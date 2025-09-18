@@ -19,10 +19,10 @@ $(document).ready(function() {
 function initNewsSideControllers() {
 
     $('.kr-newsside > header').find('[kr-news-tab]').off('hover').hover(function() {
-        $('.kr-newsside > header > div > span').html($(this).attr('kr-news-tab-n'));
+        $('.kr-newsside > header > div > span').php($(this).attr('kr-news-tab-n'));
     });
     $('.kr-newsside > header').find('[kr-news-tab]').off('mouseleave').mouseleave(function() {
-        $('.kr-newsside > header > div > span').html($('.kr-newsside > header').find('[kr-news-tab].kr-newsinfos-selected').attr('kr-news-tab-n'));
+        $('.kr-newsside > header > div > span').php($('.kr-newsside > header').find('[kr-news-tab].kr-newsinfos-selected').attr('kr-news-tab-n'));
     });
 
     $('.kr-newsside > header').find('.lnr-cross').off('click').click(function() {
@@ -41,9 +41,9 @@ let loadNewsSideContentRequest = null;
 
 function loadNewsSideContent(content) {
     if (loadNewsSideContentRequest != null) loadNewsSideContentRequest.abort();
-    $('.kr-newsinfos-content').html('<div class="spinner"></div>');
+    $('.kr-newsinfos-content').php('<div class="spinner"></div>');
     loadNewsSideContentRequest = $.get($('body').attr('hrefapp') + '/app/modules/kr-news/src/actions/loadSide' + content + '.php').done(function(data) {
-        $('.kr-newsinfos-content').html(data);
+        $('.kr-newsinfos-content').php(data);
         initNewsControllers();
     }).fail(function() {
         //showAlert('Oops', 'Fail to load : ' + content + ' news content', 'error');
@@ -95,7 +95,7 @@ function loadNews(uniq) {
             let response = jQuery.parseJSON(data);
             showAlert('Oops', response.msg, 'error');
         } catch (e) {
-            $('.kr-news-detailed').html(data);
+            $('.kr-news-detailed').php(data);
         }
     }).fail(function() {
         showAlert('Ooops', 'Fail to load news', 'error');
@@ -182,12 +182,12 @@ function loadCalendarItem(item) {
     if (loadCalendarItemOut != null) loadCalendarItemOut.abort();
     $('.kr-calendar-item-opened').removeClass('kr-calendar-item-opened');
     $('.kr-calendar-item[kr-calendar-item="' + item + '"]').addClass('kr-calendar-item-opened');
-    $('.kr-calendareventitem').html('<div class="spinner"></div>');
+    $('.kr-calendareventitem').php('<div class="spinner"></div>');
     $('.kr-calendareventitem').css('display', 'flex');
     loadCalendarItemOut = $.post($('body').attr('hrefapp') + '/app/modules/kr-news/src/actions/loadSideCalendarItem.php', {
         itemid: item
     }).done(function(data) {
-        $('.kr-calendareventitem').html(data);
+        $('.kr-calendareventitem').php(data);
     }).fail(function() {
         //showAlert('Oops', 'Fail to load calendar item view', 'error');
     });

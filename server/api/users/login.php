@@ -10,6 +10,7 @@ require_once '../../../mailer/mailer.php';
 
 
 if (isset($_POST['email']) && isset($_POST['password'])) {
+    
     $email = trim($_POST['email']);
     $password = $_POST['password'];
     $url = $_POST['url'];

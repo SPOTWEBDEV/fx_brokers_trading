@@ -24,7 +24,7 @@ function showAccountView(args = {}, pageview = 'profile') {
 
     // Get account view
     $.get($('body').attr('hrefapp') + '/app/modules/kr-user/views/account.php', args).done(function(data) {
-        $.when($('.kr-user').html(data)).then(function() {
+        $.when($('.kr-user').php(data)).then(function() {
             // Change profile view content
             changeUserProfileView(pageview);
         });
@@ -71,7 +71,7 @@ function changeUserProfileView(newview, callback = null) {
     // Get new view content
     $.get($('body').attr('hrefapp') + '/app/modules/kr-user/views/' + newview + '.php').done(function(data) {
         // Show new view
-        $.when($('.kr-user-content').html(data)).then(function() {
+        $.when($('.kr-user-content').php(data)).then(function() {
             // Init user controllers
 
             initUsercontrollers();
@@ -157,7 +157,7 @@ function initUsercontrollers() {
         $.post($(this).attr('action'), $(this).serialize()).done(function(data) {
             let result = jQuery.parseJSON(data);
             if (result.error != 0) {
-                $('.kr-gogoletfs-check').find('span').html(result.msg).show();
+                $('.kr-gogoletfs-check').find('span').php(result.msg).show();
             } else {
                 changeUserProfileView('security');
             }
@@ -256,7 +256,7 @@ function initUsercontrollers() {
  * Show user loading
  */
 function showUserloading() {
-    $('.kr-user-content').html('<div class="kr-user-loading"><div class="sk-folding-cube sk-folding-cube-orange"> <div class="sk-cube1 sk-cube"></div> <div class="sk-cube2 sk-cube"></div> <div class="sk-cube4 sk-cube"></div> <div class="sk-cube3 sk-cube"></div> </div></div>');
+    $('.kr-user-content').php('<div class="kr-user-loading"><div class="sk-folding-cube sk-folding-cube-orange"> <div class="sk-cube1 sk-cube"></div> <div class="sk-cube2 sk-cube"></div> <div class="sk-cube4 sk-cube"></div> <div class="sk-cube3 sk-cube"></div> </div></div>');
 }
 
 /**
@@ -276,7 +276,7 @@ function initPushbullet(data) {
             changeUserProfileView('notifications');
         } else { // Error detected
             changeUserProfileView('notifications', function() {
-                $('.kr-user-content').find('.kr-msg').html(result.msg).show();
+                $('.kr-user-content').find('.kr-msg').php(result.msg).show();
             });
         }
     }).fail(function() {
@@ -299,11 +299,11 @@ function removePushbullet(data) {
         if (result.error == 0) { // No error detected
             // Reload notification view
             changeUserProfileView('notifications', function() {
-                $('.kr-user-content').find('.kr-msg').removeClass('kr-msg-error').html(result.msg).show();
+                $('.kr-user-content').find('.kr-msg').removeClass('kr-msg-error').php(result.msg).show();
             });
         } else { // Error detected
             changeUserProfileView('notifications', function() {
-                $('.kr-user-content').find('.kr-msg').addClass('kr-msg-error').html(result.msg).show();
+                $('.kr-user-content').find('.kr-msg').addClass('kr-msg-error').php(result.msg).show();
             });
         }
     }).fail(function() {

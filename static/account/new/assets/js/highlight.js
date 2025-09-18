@@ -10,12 +10,12 @@ function _highlightNumber(new_value, element, oldvalue = null, nf = 2) {
         className: 'kr-hg-down'
     });
 
-    let currentNumber = element.html();
+    let currentNumber = element.php();
     if (oldvalue != null) {
         currentNumber = KRformatNumber(oldvalue, nf);
     }
 
-    element.html(new_value);
+    element.php(new_value);
     let changeStart = false;
     let highlightText = "";
     JsDiff.diffChars(currentNumber, new_value).forEach(function(part) {

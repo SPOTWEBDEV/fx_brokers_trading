@@ -56,7 +56,7 @@ function initTopmovers() {
 //       // Update top mover element
 //       let item = $('.r-marketmover-lst').find('[symbol="' + dataCoin.FROMSYMBOL + '"]');
 //       item.attr('pos', dataCoin.CHANGE24HOURPCT);
-//       item.find('.r-marketmover-lst-dt-evl').html(dataCoin.CHANGE24HOURPCT + '%');
+//       item.find('.r-marketmover-lst-dt-evl').php(dataCoin.CHANGE24HOURPCT + '%');
 //       item.find('.r-marketmover-lst-dt').find('div').css('width', (Math.abs(Math.ceil(dataCoin.CHANGE24HOURPCT)) * 2) + '%');
 //       if(dataCoin.CHANGE24HOURPCT > 0){ item.find('.r-marketmover-lst-dt').find('div').removeClass('r-marketmover-lst-dt-neg'); }
 //       else item.find('.r-marketmover-lst-dt').find('div').addClass('r-marketmover-lst-dt-neg');

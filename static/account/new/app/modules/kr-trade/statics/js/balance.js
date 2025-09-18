@@ -51,7 +51,7 @@ $(document).ready(function() {
             if (jsonRes.error == 1) {
                 showAlert('Oops', jsonRes.msg, 'error');
             } else {
-                $('.kr-wallet-top-resum > ul').html('');
+                $('.kr-wallet-top-resum > ul').php('');
                 _updateBalanceData();
             }
         }).fail(function() {
@@ -86,7 +86,7 @@ function _loadCreditForm(form, args = {}, title = 'Make a deposit') {
             '</section>');
         $('body').addClass('kr-nblr');
     } else {
-        $('.kr-balance-credit > section > header > span').html(title);
+        $('.kr-balance-credit > section > header > span').php(title);
     }
 
     $('.kr-balance-credit').attr('kr-balance-credit-view', form);
@@ -106,12 +106,12 @@ function _reloadWithdrawInfos(val) {
     let precision = parseInt($("#kr-credit-chosamount").attr('kr-chosamount-decimal'));
     $('[name="kr_widthdraw_amount"]').val(val);
     $('.kr-balance-range-inp').val(val);
-    $('[kr-widthdraw-amount="true"] > i').html(KRformatNumber(val, $('[kr-widthdraw-amount-decimal]').attr('kr-widthdraw-amount-decimal'), precision));
+    $('[kr-widthdraw-amount="true"] > i').php(KRformatNumber(val, $('[kr-widthdraw-amount-decimal]').attr('kr-widthdraw-amount-decimal'), precision));
     let nFees = parseFloat($('[kr-widthdraw-amount-fees]').attr('kr-widthdraw-amount-fees')) / 100;
     let totalWF = val - (val * nFees);
-    $('[kr-widthdraw-fees="true"] > i').html(KRformatNumber(val * nFees, $('[kr-widthdraw-amount-decimal]').attr('kr-widthdraw-amount-decimal'), precision));
-    $('[kr-widthdraw-total="true"] > i').html(KRformatNumber(totalWF, $('[kr-widthdraw-amount-decimal]').attr('kr-widthdraw-amount-decimal'), precision));
-    $('[kr-widthdraw-convert="true"] > i').html(KRformatNumber(val * parseFloat($('.kr-balance-range-preview-convert').attr('kr-widthdraw-convert-t')), 2));
+    $('[kr-widthdraw-fees="true"] > i').php(KRformatNumber(val * nFees, $('[kr-widthdraw-amount-decimal]').attr('kr-widthdraw-amount-decimal'), precision));
+    $('[kr-widthdraw-total="true"] > i').php(KRformatNumber(totalWF, $('[kr-widthdraw-amount-decimal]').attr('kr-widthdraw-amount-decimal'), precision));
+    $('[kr-widthdraw-convert="true"] > i').php(KRformatNumber(val * parseFloat($('.kr-balance-range-preview-convert').attr('kr-widthdraw-convert-t')), 2));
 }
 
 function _initWidthdrawPopup() {
@@ -342,10 +342,10 @@ function _recalCreditAmount(amount) {
     let precision = parseFloat($('.kr-balance-range').attr('kr-chosamount-precision'));
     let fees = parseFloat($('[kr-credit-calcfees="fees"]').attr('kr-credit-calcfees-am')) / 100;
     $('[kr-charges-payment-vamdepo]').val(amount);
-    $('[kr-credit-calcfees="amount"]').find('i').html(KRformatNumber(amount, precision).toString());
+    $('[kr-credit-calcfees="amount"]').find('i').php(KRformatNumber(amount, precision).toString());
     let feesTotal = amount * fees;
-    $('[kr-credit-calcfees="fees"]').find('i').html(KRformatNumber(feesTotal, precision).toString());
-    $('[kr-credit-calcfees="total"]').find('i').html(KRformatNumber(parseFloat(feesTotal) + parseFloat(amount), precision).toString());
+    $('[kr-credit-calcfees="fees"]').find('i').php(KRformatNumber(feesTotal, precision).toString());
+    $('[kr-credit-calcfees="total"]').find('i').php(KRformatNumber(parseFloat(feesTotal) + parseFloat(amount), precision).toString());
 }
 
 function _closeCreditForm() {
@@ -362,7 +362,7 @@ function _changeWalletBalance(bid) {
             showAlert('Oops', jsonRes.msg, 'error');
         } else {
             $('.kr-wallet-top > div').attr('class', 'kr-wallet-top-' + jsonRes.balance.type_balance);
-            $('.kr-wallet-top > div > div > span:first-child').html(jsonRes.balance.title);
+            $('.kr-wallet-top > div > div > span:first-child').php(jsonRes.balance.title);
             $('.kr-wallet-top > div > div').find('[kr-balance-id]').attr('kr-balance-id', jsonRes.balance.enc_id_balance);
             _updateBalanceData();
             $('.kr-wallet-top > section').css('display', 'none');
@@ -390,11 +390,11 @@ function _updateBalanceData() {
         } else {
 
             if (jsonRes.type == "native") {
-                $('.kr-wallet-top-resum > h3').html(jsonRes.current_balance.title);
+                $('.kr-wallet-top-resum > h3').php(jsonRes.current_balance.title);
                 $('.kr-wallet-top-resum').find('[kr-wallet-resum-profit]').attr('class', jsonRes.current_balance.profit_class);
                 $.each(jsonRes.current_balance, function(k, v) {
                     if ($('[kr-wallet-resum="' + k + '"]').length == 0) return true;
-                    let actualValue = parseFloat(KRunformatNumber($('[kr-wallet-resum="' + k + '"]').html())) * 100;
+                    let actualValue = parseFloat(KRunformatNumber($('[kr-wallet-resum="' + k + '"]').php())) * 100;
                     $('[kr-wallet-resum="' + k + '"]').prop('number', actualValue)
                         .animateNumber({
                                 number: v,
@@ -410,7 +410,7 @@ function _updateBalanceData() {
                     if ($('.kr-wallet-top-resum > ul > li[kr-wallet-symbol="' + symbol + '"]').length > 0) {
                         let balanceWalletItem = $('.kr-wallet-top-resum > ul > li[kr-wallet-symbol="' + symbol + '"]');
                         let currentBalance = balanceWalletItem.find('span:last-child > i:first-child');
-                        currentBalanceValue = parseFloat(KRunformatNumber(currentBalance.html())) * 100;
+                        currentBalanceValue = parseFloat(KRunformatNumber(currentBalance.php())) * 100;
                         currentBalance.prop('number', currentBalanceValue)
                             .animateNumber({
                                     number: amount * 100,
@@ -418,8 +418,8 @@ function _updateBalanceData() {
                                 },
                                 1000
                             );
-                        balanceWalletItem.find('span:last-child > i:last-child').html(symbol);
-                        balanceWalletItem.find('span:first-child').html(symbol);
+                        balanceWalletItem.find('span:last-child > i:last-child').php(symbol);
+                        balanceWalletItem.find('span:first-child').php(symbol);
                     } else {
                         $('.kr-wallet-top-resum > ul').append('<li kr-wallet-symbol="' + symbol + '">' +
                             '<span>' + symbol + '</span>' +
@@ -431,7 +431,7 @@ function _updateBalanceData() {
 
                 $.each(jsonRes.balance, function(k, v) {
                     if ($('[kr-balance-id="' + v.enc_id + '"]').length == 0) return true;
-                    let actualBalance = parseFloat(KRunformatNumber($('[kr-balance-id="' + v.enc_id + '"]').find('i').html())) * 100;
+                    let actualBalance = parseFloat(KRunformatNumber($('[kr-balance-id="' + v.enc_id + '"]').find('i').php())) * 100;
                     $('[kr-balance-id="' + v.enc_id + '"]').find('i')
                         .prop('number', actualBalance)
                         .animateNumber({
@@ -443,9 +443,9 @@ function _updateBalanceData() {
                 });
             } else if (jsonRes.type == "external") {
 
-                $('.kr-wallet-top-thirdparty > div > span:first-child').html(jsonRes.exchange_title);
+                $('.kr-wallet-top-thirdparty > div > span:first-child').php(jsonRes.exchange_title);
 
-                let actualValue = parseFloat(KRunformatNumber($('.kr-wallet-top-thirdparty > div > span:last-child > i:first-child').html())) * 100;
+                let actualValue = parseFloat(KRunformatNumber($('.kr-wallet-top-thirdparty > div > span:last-child > i:first-child').php())) * 100;
                 $('.kr-wallet-top-thirdparty > div > span:last-child > i:first-child').prop('number', actualValue)
                     .animateNumber({
                             number: jsonRes.first_balance * 100,
@@ -454,13 +454,13 @@ function _updateBalanceData() {
                         1000
                     );
 
-                $('.kr-wallet-top-thirdparty > div > span:last-child > i:last-child').html(jsonRes.first_balance_symbol);
+                $('.kr-wallet-top-thirdparty > div > span:last-child > i:last-child').php(jsonRes.first_balance_symbol);
 
                 $.each(jsonRes.balances, function(k, v) {
                     if ($('.kr-wallet-top-resum > ul > li[kr-wallet-exchange="' + jsonRes.exchange_name + '"][kr-wallet-symbol="' + v.symbol + '"]').length > 0) {
                         let balanceWalletItem = $('.kr-wallet-top-resum > ul > li[kr-wallet-exchange="' + jsonRes.exchange_name + '"][kr-wallet-symbol="' + v.symbol + '"]');
                         let currentBalance = balanceWalletItem.find('span:last-child > i:first-child');
-                        currentBalanceValue = parseFloat(KRunformatNumber(currentBalance.html())) * 100;
+                        currentBalanceValue = parseFloat(KRunformatNumber(currentBalance.php())) * 100;
                         currentBalance.prop('number', currentBalanceValue)
                             .animateNumber({
                                     number: v.amount * 100,
@@ -468,8 +468,8 @@ function _updateBalanceData() {
                                 },
                                 1000
                             );
-                        balanceWalletItem.find('span:last-child > i:last-child').html(v.symbol);
-                        balanceWalletItem.find('span:first-child').html(v.symbol);
+                        balanceWalletItem.find('span:last-child > i:last-child').php(v.symbol);
+                        balanceWalletItem.find('span:first-child').php(v.symbol);
                     } else {
                         $('.kr-wallet-top-resum > ul').append('<li kr-wallet-exchange="' + jsonRes.exchange_name + '" kr-wallet-symbol="' + v.symbol + '">' +
                             '<span>' + v.symbol + '</span>' +

@@ -10,7 +10,7 @@
 <html lang="en">
 
 
-<!-- Mirrored from themesdesign.in/upcube/layouts/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Apr 2025 19:11:57 GMT -->
+<!-- Mirrored from themesdesign.in/upcube/layouts/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Apr 2025 19:11:57 GMT -->
 
 <head>
 
@@ -392,7 +392,7 @@
     <script src="../assets/libs/jszip/jszip.min.js"></script>
     <script src="../assets/libs/pdfmake/build/pdfmake.min.js"></script>
     <script src="../assets/libs/pdfmake/build/vfs_fonts.js"></script>
-    <script src="../assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="../assets/libs/datatables.net-buttons/js/buttons.php5.min.js"></script>
     <script src="../assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
     <script src="../assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
 
@@ -410,6 +410,6 @@
 </body>
 
 
-<!-- Mirrored from themesdesign.in/upcube/layouts/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Apr 2025 19:15:04 GMT -->
+<!-- Mirrored from themesdesign.in/upcube/layouts/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Apr 2025 19:15:04 GMT -->
 
 </html>

@@ -57,21 +57,21 @@ function initBlockFolioControllers() {
     subscribeStreamerCallback(function(dataCoin) {
         if (dataCoin.PRICE != undefined) {
             $('.kr-port').find('[symbol="' + dataCoin.FROMSYMBOL + '"][currency="' + dataCoin.TOSYMBOL + '"]').each(function() {
-                $(this).find('[kr-port-d="PRICE"]').html(KRformatNumber(dataCoin.PRICE, 8) + ' ' + dataCoin.TOSYMBOL);
+                $(this).find('[kr-port-d="PRICE"]').php(KRformatNumber(dataCoin.PRICE, 8) + ' ' + dataCoin.TOSYMBOL);
 
                 let currencySymbol = $(this).find('.kr-port-holding').attr('kr-holding-cur');
 
                 let holdingSize = $(this).find('.kr-port-holding').attr('kr-holding-size');
-                $(this).find('[kr-holding-market-value]').html(KRformatNumber(holdingSize * dataCoin.PRICE, 8) + ' ' + currencySymbol);
+                $(this).find('[kr-holding-market-value]').php(KRformatNumber(holdingSize * dataCoin.PRICE, 8) + ' ' + currencySymbol);
 
                 let diffProfLoss = (holdingSize * dataCoin.PRICE) - parseFloat($(this).find('.kr-port-holding').attr('kr-holding-buy-value'));
-                $(this).find('[kr-holding-profit-loss]').html(KRformatNumber(diffProfLoss, 8) + ' ' + currencySymbol);
+                $(this).find('[kr-holding-profit-loss]').php(KRformatNumber(diffProfLoss, 8) + ' ' + currencySymbol);
                 if (diffProfLoss < 0) $(this).find('[kr-holding-profit-loss]').attr('class', 'kr-mono kr-block-profit-nav');
                 else if (diffProfLoss > 0) $(this).find('[kr-holding-profit-loss]').attr('class', 'kr-mono kr-block-profit-pos');
                 else $(this).find('[kr-holding-profit-loss]').attr('class', 'kr-mono kr-block-profit-neutral');
 
 
-                $(this).find('[kr-port-d="CHANGE24HOURPCT"]').html(KRformatNumber(dataCoin.CHANGE24HOURPCT) + '%');
+                $(this).find('[kr-port-d="CHANGE24HOURPCT"]').php(KRformatNumber(dataCoin.CHANGE24HOURPCT) + '%');
                 if (dataCoin.CHANGE24HOURPCT < 0) {
                     $(this).find('[kr-port-d="CHANGE24HOURPCT"]').removeClass('kr-blockfolio-iact-positiv').addClass('kr-blockfolio-iact-negativ');
                     $(this).removeClass('kr-port-positiv').addClass('kr-port-negativ');
@@ -281,9 +281,9 @@ function calculateTotalValueAdded() {
         let quantityTr = parseFloat($('#kr-hld-qt').val());
 
         let ammount = priceTr * quantityTr;
-        $('#kr-hld-tv').html(ammount);
+        $('#kr-hld-tv').php(ammount);
     } catch (e) {
-        $('#kr-hld-tv').html('Wrong format');
+        $('#kr-hld-tv').php('Wrong format');
     }
 
 }

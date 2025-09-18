@@ -42,10 +42,10 @@ function initCoinView() {
                     //
                     // v = v.replace('.', ',');
                     //
-                    // $('.kr-cinf-item').find('i[kr-cinf-v="' + k + '"]').html(v);
+                    // $('.kr-cinf-item').find('i[kr-cinf-v="' + k + '"]').php(v);
                     //
                     // if(k == "PRICE"){
-                    //   $('[kr-coin-v-data="PRICE"]').find('i').html(v);
+                    //   $('[kr-coin-v-data="PRICE"]').find('i').php(v);
                     // }
 
 
@@ -214,7 +214,7 @@ function initTradingAction() {
         $('[kr-trade-inpt-enabled="1"]').each(function() {
             let nameInpt = $(this).find('input[type="text"]').attr('name');
             let valueInpt = $(this).find('input[type="text"]').val();
-            let currency = $(this).parent().find('[kr-trade-dynamic-symbol]').html();
+            let currency = $(this).parent().find('[kr-trade-dynamic-symbol]').php();
             tradeData[nameInpt] = valueInpt;
         });
 
@@ -255,7 +255,7 @@ function initTradingAction() {
             if (response.error == 1) {
                 showAlert('Oops', response.msg, 'error');
             } else if (response.error == 2) {
-                $('.kr-cinf-trade-err').find('div').html(response.msg);
+                $('.kr-cinf-trade-err').find('div').php(response.msg);
                 $('.kr-cinf-trade-err').fadeIn();
             } else if (response.error == 9) {
                 _showIdentityWizard();
@@ -299,9 +299,9 @@ function getFormatedAmount(amount) {
 }
 
 function changeTradeSymbol(symbol, convert_symbol) {
-    $('.kr-cinf-trade-total').find('span').find('i').html('(' + convert_symbol + ')');
+    $('.kr-cinf-trade-total').find('span').find('i').php('(' + convert_symbol + ')');
     $('.kr-cinf-trade-total').attr('convsymbol', convert_symbol);
-    $('[kr-trade-dynamic-symbol="1"]').html(symbol);
+    $('[kr-trade-dynamic-symbol="1"]').php(symbol);
     $('[kr-trade-dynamic-symbol="1"]').parent().find('input[type="text"]').val('');
 
     reloadTotalAmount();
@@ -351,11 +351,11 @@ function reloadTotalAmount() {
         }
     }
 
-    $('.kr-cinf-trade-commission-total').find('.kr-cinf-trade-commission-value').find('b').html(KRformatNumber(comissionAmount, 4));
-    $('.kr-cinf-trade-amount-total').find('.kr-cinf-trade-total-value-wc').find('b').html(KRformatNumber(totalWCommission, 4));
+    $('.kr-cinf-trade-commission-total').find('.kr-cinf-trade-commission-value').find('b').php(KRformatNumber(comissionAmount, 4));
+    $('.kr-cinf-trade-amount-total').find('.kr-cinf-trade-total-value-wc').find('b').php(KRformatNumber(totalWCommission, 4));
 
 
-    $('.kr-cinf-trade-total-value').html(KRformatNumber(total, 4));
+    $('.kr-cinf-trade-total-value').php(KRformatNumber(total, 4));
 }
 
 function reloadTradesList(symbol, to, market, type = 'load') {

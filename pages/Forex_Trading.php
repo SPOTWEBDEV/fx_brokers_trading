@@ -1,0 +1,6090 @@
+
+
+
+
+<?php  include("../server/connection.php") ?>
+<!DOCTYPE html>
+<html class="gecko win js fa-events-icons-ready" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="../static/globalcityindex-live/files/insight.min.js"></script><script type="text/javascript" async="" src="https://cityindex-live-int.com/Forex_Trading/{%&#32;static&#32;'globalcityindex-live/files/destination"></script><script type="text/javascript" async="" src="https://cityindex-live-int.com/Forex_Trading/{%&#32;static&#32;'globalcityindex-live/files/destination_002"></script>
+    
+    <title>Forex Trading | Cityindex-live</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap CSS -->
+<!-- Latest compiled and minified CSS -->
+<link href="../static/globalcityindex-live/files/bootstrap.min.css" rel="stylesheet">
+<link href="../static/globalcityindex-live/files/all.min.css" rel="stylesheet">
+<link href="../static/globalcityindex-live/files/owl.carousel.min.css" rel="stylesheet">
+<link href="../static/globalcityindex-live/files/simplyScroll.css" rel="stylesheet">
+<link href="../static/globalcityindex-live/files/style_002.css" rel="stylesheet">
+<link href="../static/globalcityindex-live/files/style_v3_002.css" rel="stylesheet">
+<link href="../static/globalcityindex-live/files/responsive.css" rel="stylesheet">
+<link href="../static/globalcityindex-live/files/new.css" rel="stylesheet">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="./static/globalcityindex-live/wp-content/themes/vt/favicon-new.png" sizes="16x16">
+<script src="../static/globalcityindex-live/files/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+<!-- Marketing tag 13-Feb -->
+<script type="text/javascript" src="../static/globalcityindex-live/files/evergage.min.js"></script>
+
+<script>
+        // Define dataLayer and the gtag function.
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        // Set default consent to 'denied' as a placeholder
+        // Determine actual values based on your own requirements
+        gtag('consent', 'default', {
+          'ad_storage': 'granted',
+          'ad_user_data': 'granted',
+          'ad_personalization': 'granted',
+          'analytics_storage': 'granted'
+        });
+        console.log('Default gtag');
+      </script><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TJQ6RQ');
+</script>
+<!-- End Google Tag Manager -->
+
+
+<body>
+
+    <style>
+    @media  only screen and (max-width: 768px) {
+        .mob-app-container {
+            top: 0px; 
+            background: white;
+            height: auto;
+            z-index: 99999;
+            width: 100%;
+        }
+    }
+</style>
+<div style="position:relative;">
+    <div class="mob-app-container" id="mob-app-installer" style="display:none;">
+        <div style="display:flex; flex-direction: row; margin:10px; justify-content: space-between;">
+
+            <div style="display: flex;flex-direction: row;">
+                <div style="align-self: center; color:black; padding-right:10px;" id="app-close-btn">
+                    <img src="../static/globalcityindex-live/files/close-icon-app.svg" width="20px">
+                </div>
+                <div style="padding: 8px; align-self:center; background:#00bdff; border-radius:7px;">
+                    <img src="../static/globalcityindex-live/files/fp-icon-blue.svg" width="25px">
+                </div>
+                <div style="align-self:center; padding-left:5px; color:black; font-size: 15px;">
+                    Experience Trading <br> on the Go
+                </div>
+            </div>
+
+            <div style="align-self: center;">
+                <a id="app-url" href="index.php#" style="background:#0b121c; color:#fff; font-size:14px; padding: 10px 15px 10px 15px; border-radius:5px; font-weight:600">Install</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------- Offcanvas area start --------->
+<!-- start: HEADER -->
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.1/css/all.css">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<div class="offcanvas-area bg__brand__blue offcanvas-area-main">
+    <div class="off-menu-close">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+
+    <div class="offcanvas-menu">
+        <div class="main-menu">
+            <ul class="d-block">
+                <li><a data-bs-toggle="collapse" href="index.php#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="tradingCollapse" class="collapsed menu-category bd-top-white">QUICK START <i class="text-white-cus fa fa-chevron-down" aria-hidden="true"></i></a>
+                    <ul class="collapse multi-collapse m-0 p-0 list-unstyled" id="multiCollapseExample1">
+                        <div class="row">
+                            <div class="col-md-12 col-xl-3 off_menu__bg">
+                                <div class="off__menu__item">
+                                    <span class="off__menu__category">Introduction</span>
+                                    <span class="off_menu__item__link">
+                                        <a href="Why_FP_Markets.php"> Why cityindex-live? </a>
+                                    </span>
+                                   
+                                    <span class="off_menu__item__link">
+                                        <a href="index.php"> What is Forex Trading? </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="index.php"> What is CFD Trading? </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="ECN_Pricing.php"> ECN Pricing </a>
+                                    </span>
+                                    <!--<span class="off_menu__item__link">
+                                        <a href="what-is-dma-pricing"> DMA Pricing </a>
+                                    </span>-->
+
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-xl-3 off_menu__bg">
+                                <div class="off__menu__item">
+                                    <span class="off__menu__category">Your Account</span>
+                                    <span class="off_menu__item__link">
+                                        <a href="<?php echo $domain ?>auth/register.php"> Try A Demo </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="Funding.php"> Deposit Funds </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="<?php echo  $domain  ?>pages/Withdraw_Funds.php"> Withdraw Funds </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-xl-3 off_menu__bg">
+                                <div class="off__menu__item">
+                                    <span class="off__menu__category">Trading Platforms</span>
+                                    <span class="off_menu__item__link">
+                                        <a href="MetaTrader_4.php"> Metatrader 4 (MT4) </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="MetaTrader_5.php"> Metatrader 5 (MT5) </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a class="new-item" href="TradingView.php"> TradingView </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="ctrader.php"> cTrader </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="WebTrader.php"> WebTrader </a>
+                                    </span>
+                                     
+                                    <span class="off_menu__item__link">
+                                        <a href="Social_Trading.php"> Social Trading </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                <li><a data-bs-toggle="collapse" href="index.php#tradingCollapse" role="button" aria-expanded="false" aria-controls="tradingCollapse" class="collapsed menu-category">Trading <i class="text-white-cus fa fa-chevron-down" aria-hidden="true"></i></a>
+                    <ul class=" collapse multi-collapse m-0 p-0 list-unstyled" id="tradingCollapse">
+                        <div class="row">
+                            <div class="col-md-12 col-xl-3 off_menu__bg">
+                                <div class="off__menu__item">
+                                    <span class="off__menu__category">Trading Accounts</span>
+                                    <span class="off_menu__item__link">
+                                        <a href="Forex_Account_Types.php"> Forex Account Types </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="Islamic_Trading_Accounts.php"> Islamic Trading Accounts </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="Funding.php"> Account Funding </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="<?php echo  $domain  ?>pages/Withdraw_Funds.php"> Funds Withdrawal </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-xl-3 off_menu__bg">
+                                <div class="off__menu__item">
+                                    <span class="off__menu__category">Markets</span>
+                                    <span class="off_menu__item__link">
+                                        <a href="Forex.php"> Forex </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="Share_CFDs.php"> Shares </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="Metals.php"> Metals </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="commodities.php"> Commodities </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="Indices.php"> Indices </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="cryptocurrency.php"> Digital Currencies </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="bonds.php"> Bonds </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="ETF_Trading.php"> ETFs </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-xl-3 off_menu__bg">
+                                <div class="off__menu__item">
+                                    <span class="off__menu__category">Pricing</span>
+                                    <span class="off_menu__item__link">
+                                        <a href="Forex_Spreads.php"> Spreads </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="Swap_Rates.php"> Swap Rates </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="Trading_Hours.php"> Trading Hours </a>
+                                    </span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                <li><a data-bs-toggle="collapse" href="index.php#platformsCollapse" role="button" aria-expanded="false" aria-controls="platformsCollapse" class="collapsed menu-category">Platforms <i class="text-white-cus fa fa-chevron-down" aria-hidden="true"></i></a>
+                    <ul class="collapse multi-collapse m-0 p-0 list-unstyled" id="platformsCollapse">
+                        <div class="row">
+                            <div class="col-md-12 col-xl-3 off_menu__bg">
+                                <div class="off__menu__item">
+                                    <span class="off__menu__category">Platforms</span>
+                                    <span class="off_menu__item__link">
+                                        <a href="MetaTrader_4.php"> Metatrader 4 (MT4) </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="MetaTrader_5.php"> Metatrader 5 (MT5) </a>
+                                    </span>  
+                                    <span class="off_menu__item__link">
+                                        <a class="new-item" href="TradingView.php"> TradingView </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="ctrader.php"> <span>cTrader</span></a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="WebTrader.php"> WebTrader </a>
+                                    </span>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 col-xl-3 off_menu__bg">
+                                <div class="off__menu__item">
+                                    <span class="off__menu__category">Fees &amp; Charges</span>
+                                    <span class="off_menu__item__link">
+                                        <a href="ctrader_fees.php"> cTrader Fees &amp; Charges </a>
+                                    </span>
+                                     
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 col-xl-3 off_menu__bg">
+                                <div class="off__menu__item">
+                                    <span class="off__menu__category">Trading Tools</span>
+                                     
+                                    <span class="off_menu__item__link">
+                                        <a href="MAM_PAMM.php"> MAM/PAMM </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="Virtual_Private_Server.php"> VPS </a>
+                                    </span>
+                                     
+                                     
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-xl-3 off_menu__bg">
+                                <div class="off__menu__item">
+                                    <span class="off__menu__category">Copy Trading</span>
+                                    <span class="off_menu__item__link">
+                                        <a href="Social_Trading.php"> Social Trading </a>
+                                    </span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+
+                <li><a class="menu-category" href="FP_Markets_Partners.php">PARTNERS </a></li>
+                <li><a data-bs-toggle="collapse" href="index.php#resourcesCollapse" role="button" aria-expanded="false" aria-controls="resourcesCollapse" class="collapsed menu-category">Resources <i class="text-white-cus fa fa-chevron-down" aria-hidden="true"></i></a>
+                    <ul class="collapse multi-collapse m-0 p-0 list-unstyled" id="resourcesCollapse">
+                        <div class="row">
+                            <div class="col-md-12 col-xl-3 off_menu__bg">
+                                <div class="off__menu__item">
+                                    <span class="off__menu__category">Company</span>
+                                    <span class="off_menu__item__link">
+                                        <a href="about.php"> About cityindex-live </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="Regulation.php"> Regulation </a>
+                                    </span>
+                                    
+                                  
+                                </div>
+                            </div>
+                           
+                             
+                            <div class="col-md-12 col-xl-3 off_menu__bg">
+                                <div class="off__menu__item">
+                                    <span class="off__menu__category">Help</span>
+                                    <span class="off_menu__item__link">
+                                        <a href=""> FAQ </a>
+                                    </span>
+                                     
+                                    
+                                    <span class="off_menu__item__link">
+                                        <a href="contact.php"> Contact Us </a>
+                                     
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+
+            </ul>
+            <div class="foot">
+                <div class="offcanvas-btn text-center">
+                    <a href="<?php echo $domain ?>auth/register.php" class="offcanvas-btn-white">Open Live </a> <br><br>
+                    <a href="../auth/login.php" class="offcanvas-btn-white"> Client Portal </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="offcanvas-overlay"></div>
+<!--------- Offcanvas area end --------->
+
+
+
+<!--------- Page Header area start --------->
+<section class="page__header">
+    <div class="container d-flex align-items-center justify-content-between">
+        <div class="page__header__menu">
+            <ul class="m-0 p-0 list-unstyled d-flex align-items-center">
+                <li><a href="contact.php">Contact </a></li>
+                <li><a href="index.php">Webtrader </a></li>
+                <li><a href="Funding.php">Funding </a></li>
+                <li><a href="FP_Markets_Group.php">Group </a></li>
+            </ul>
+        </div>
+        <div class="page__header__right">
+
+            <div class="page__header__right__link">
+
+               
+                <a href="../auth/login.php"><b>Client Portal</b></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--------- Page Header area end --------->
+
+<!--------- Header area start --------->
+<?php   include("../includes/nav.php")  ?>
+<!--------- Header area end --------->
+    <!--------- Main area start --------->
+    <main class="main">
+        <!--------- Hero area start --------->
+        <section class="hero__area hero-2 lazy" loading="lazy" style="background-image: url(../static/globalcityindex-live/files/hero-bg-2.webp)">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="common__content text-center">
+                            <h1>
+                                <span class="text-white basic__section__xl fw__boldest">
+                                    Forex Trading - A Beginner's Guide
+                                </span>
+                            </h1>
+                            
+                            <div class="hidden-xs universal__header__description">
+                                Forex (FX or Foreign Exchange) trading 
+is when you buy and sell foreign currencies on the foreign exchange 
+market with the goal of making a profit.
+                            </div>
+                            
+                                                            <div class="common__content__btn pt-4">
+                                    <div class="common-btn active ms-3 fw__boldest text__white">
+                                        <a class="text__white" id="7" href="<?php echo $domain ?>auth/register.php">Start Trading</a>
+                                    </div>
+                                </div>
+
+                                                        
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------- Hero area end --------->
+
+         
+<!------------- SECONDARY NAVBAR Desktop END -------------->
+
+<div class="container"><div class="row"><div class="page-navi"><div class="container" id="breadcrumb"><li><a href="index.php">Home</a></li><li><a href="index.php">Forex trading</a></li></div></div></div></div>
+
+
+<div class="container-fluid c5 bottom-line-divid">
+    <div id="what-is-forex-trading-section" class="container">
+        <div class="text-center visible-xs">
+            
+        </div>
+        <div class="row">
+            <div class="col-sm-6 padding-left-30-for-mobile">
+                <div>
+                    <p class="h2-left-font padding-top-40">What is Forex (FX) <span class="helvetica-th-font" style="font-weight: 100;">and</span> How does Forex Trading Work?</p>
+                    <p class="normal-para-font padding-top-10">Trading forex involves buying one currency and selling
+                        another simultaneously. Through careful analysis, traders predict the potential direction of
+                        currency prices and attempt to capture gains based on price fluctuations. There is no
+                        centralised exchange for forex trading. Rather, it takes place electronically or online, between
+                        networks of global computers. The market is open 24 hours a day, 5 days a week.</p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="text-center hidden-xs" style="margin-left:30px;">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid ct5">
+    <div id="forex-trading-work-section" class="container">
+        <div class="wid-for-forex-sect">
+            <p class="normal-para-font " style="color:#fff!important;">Forex trading involves simultaneously buying and
+                selling two currencies. For example, if you are buying the EUR/JPY, it means you’re buying EUR by
+                selling JPY and if you’re selling the pair, you’re buying JPY by selling EUR.</p>
+            <p class="normal-para-font padding-top-10" style="color:#fff!important;">
+                Advancements in technology now allow investors to access the foreign exchange market via online brokers. 
+                This is done using forex trading platforms such as MetaTrader 4, MetaTrader 5, Iress, cTrader and TradingView. 
+                Read more on 
+                <a class="custom-link-for-a" href="index.php" target="_blank"><b>How Do I Trade
+                    Forex?</b></a>
+            </p>
+            <p class="normal-para-font padding-top-10" style="color:#fff!important;">The rise in online trading has
+                paved the way for using CFD trading. These are leveraged products which allow traders to open a position
+                with an initial investments that is only a fraction of the value of the full trade.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid ct2 bottom-divider">
+    <div id="how-do-forex-markets-section" class="container">
+        <div class="wid-for-forex-sect">
+            <p class="h2-cent-font hidden-xs">How Do <span class="helvetica-th-font" style="font-weight: 100;">Forex
+                    Markets Work?</span></p>
+            <p class="h2-cent-font visible-xs" style="margin-bottom:0px;"><span class="helvetica-th-font" style="font-weight: 100;">How Do</span> Forex Markets<br> Work?</p>
+            <p class="normal-para-font padding-top-30">Forex is the most popular over-the-counter (OTC) market. In
+                forex, currencies are bought and sold through a network of banks. As there is no exchange, forex trading
+                is decentralised and trading can take place 24 hours per day. There are 4 main trading sessions, namely
+                Sydney, London, New York and Tokyo.</p>
+            <p class="normal-para-font padding-top-10">The most popular forex market type is the spot forex market. In
+                forex, spot trades involve the exchange of currency pairs electronically using an online trading
+                platform. Other market types include the forward forex market and futures forex market. </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid c6 bottom-divider">
+    <div id="major-trading-section" class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="text-center">
+                    <p class="normal-para-font visible-xs" style="text-align: center;z-index: 9;position: relative;background: #ffffff;padding-bottom: 25px;">
+                        There are 4 major trading sessions.</p>
+                    <span>
+                        <img class="hidden-xs" src="../static/globalcityindex-live/files/trading-sessions.png" style="max-width: 100%;margin-top:25px;">
+                        <img class="visible-xs" src="../static/globalcityindex-live/files/trading-sessions.png" style="max-width: 90%;margin-top: -35px;margin-bottom: 30px;margin-left: 15px;">
+                    </span>
+                </div>
+            </div>
+            <div class="col-sm-6 pad-left-60">
+                <div>
+                    <p class="normal-para-font">Keep in mind that timings in some countries, like Australia, the US and
+                        UK, shift to/from daylight savings time in October/November and March/April. So, plan your
+                        trades accordingly. Market liquidity for currency pairs depends on the forex trading sessions.
+                        For instance, the EUR/USD pair shows a lot of movement and liquidity during the confluence of
+                        the London and New York sessions. The AUD/USD pair shows maximum movement in the Tokyo and
+                        London sessions. Once you know when to trade, the next step is to learn the jargon. So, here are
+                        some terms and concepts you will come across in the market.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid ct3">
+    <div id="base-quote-currency-section" class="container">
+        <div>
+            <p class="h2-cent-font hidden-xs"><span class="helvetica-th-font" style="font-weight: 100;">What is a</span>
+                Base and Quote Currency in Forex?</p>
+            <p class="h2-cent-font visible-xs" style="margin-bottom:-30px;"><span class="helvetica-th-font" style="font-weight: 100;">What is a</span> Base<br> and Quote Currency in Forex?</p>
+        </div>
+        <div class="row padding-top-60">
+            <div class="col-sm-6">
+                <div class="pad-for-mobile">
+                    <p class="normal-para-font">Currencies are denoted in 3lettered ISO codes. Examples of how major
+                        currencies are denoted are USD (US dollar), AUD (Australian dollar), EUR (Euro), JPY (yen) and
+                        GPB (British Pound).</p>
+                    <p class="normal-para-font padding-top-10">In foreign currency trading, currencies are quoted in
+                        pairs. When you see a currency pair, the first currency is called the base currency and the
+                        second currency is the quote currency or counter currency. For instance, say the EUR/AUD is
+                        trading at 1.6163. This means to buy 1 unit of Euro, you will need $1.6163 Australian dollars.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="text-center">
+                    <span>
+                        <img class="hidden-xs" src="../static/globalcityindex-live/files/forex-new.png" style="max-width:100%;margin-top: -25px;">
+                        <img class="visible-xs" src="../static/globalcityindex-live/files/forex-new.png" style="max-width: 100%;margin-top: 25px;padding: 15px;">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid ct4">
+    <div id="forex-market-participants-section" class="container">
+        <div class="pad-for-mobile" style="margin: 0 auto;display: table;">
+            <p class="h2-cent-font hidden-xs"><span class="helvetica-th-font" style="font-weight: 100;">What Moves
+                    the</span> Forex Market?</p>
+            <p class="h2-cent-font visible-xs" style="margin-bottom: -10px;"><span class="helvetica-th-font" style="font-weight: 100;">What</span> Moves<br><span class="helvetica-th-font" style="font-weight: 100;">the Forex</span> Market?</p>
+            <p class="normal-para-font padding-top-30 hidden-xs">There are a number of factors that have an impact on
+                the forex market. They can split<br> into two categories; market participants and macroeconomic factors.
+            </p>
+            <p class="normal-para-font padding-top-30 visible-xs" style="text-align:center;margin-bottom:-5px;">There
+                are a number of factors that have an impact on the forex market. They can split<br> into two categories;
+                market participants and macroeconomic factors. </p>
+        </div>
+        <div class="row padding-top-40">
+            <div class="col-sm-6 pad-right-40">
+                <div>
+                    <p class="normal-para-font hidden-xs" style="font-size: 23px;font-weight: normal;">Market
+                        Participants</p>
+                    <p class="normal-para-font visible-xs" style="font-size: 22px;font-weight: normal;text-align:center;">Market Participants</p>
+                    <p class="normal-para-font padding-top-10"><span style=" font-weight: 600;">Super Banks:</span> As
+                        it is decentralised, it is the world's largest banks that determine the exchange rate. Global
+                        banks such as Barclays, HSBC, Citi, JPMorgan and Deutsche Bank are among the biggest traders of
+                        forex. </p>
+                    <p class="normal-para-font padding-top-10"><span style=" font-weight: 600;">International
+                            Companies:</span> Large global corporations are involved in the foreign exchange market for
+                        the purpose of doing business. If an Australian-based company is selling products in the United
+                        States they will have to trade USD to AUD in order to return their income back home.</p>
+                    <p class="normal-para-font padding-top-10"><span style=" font-weight: 600;">Retail Traders:</span>
+                        Refers to individuals who trade their own money in order to make a profit. Easier access to the
+                        forex market through online brokers and advanced trading platforms has resulted in retail
+                        traders accounting for a growing proportion of the forex market.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 pad-left-40">
+                <div>
+                    <p class="normal-para-font hidden-xs" style="font-size: 23px;font-weight: normal;">Economic &amp;
+                        Macroeconomic Factors</p>
+                    <p class="normal-para-font visible-xs" style="font-size: 22px;font-weight: normal;text-align:center;margin-top: 40px;">Economic &amp;
+                        Macroeconomic Factors</p>
+                    <p class="normal-para-font padding-top-10"><span style=" font-weight: 600;">Central Banks:</span>
+                        Macroeconomic statistics such as inflation have a significant impact on forex markets.
+                        Governments and central banks such as the Federal Reserve meet on a regular basis to evaluate
+                        the status of their respective economies, set interest rates and monetary policy - all of which
+                        have a direct impact on forex markets. </p>
+                    <p class="normal-para-font padding-top-10"><span style=" font-weight: 600;">Capital Markets:</span>
+                        The prices of stock, bond and commodity futures also have an influence on foreign exchange
+                        markets.</p>
+                    <p class="normal-para-font padding-top-10"><span style=" font-weight: 600;">International
+                            Trade:</span> Figures relating to the trade numbers of a country have an impact on the value
+                        of currency. Trade deficits and surpluses will be reflected by price movements in the forex
+                        market.</p>
+                    <p class="normal-para-font padding-top-10"><span style=" font-weight: 600;">Politics:</span> This is
+                        particularly the case around key political events such as elections and results in high levels
+                        of volatility in the forex market. This is evident by historical events such as Brexit in the
+                        United Kingdom and numerous presidential election campaigns in the United States.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid c21 bottom-divider">
+    <div id="step-one-educate-section" class="container default-wd">
+        <div>
+            <p class="last-semi-head-font-sec"><span class="helvetica-th-font" style="font-weight: 100;">How to Get
+                    Started with</span> Forex Trading?</p>
+            <p class="last-semi-h2-font-sec">Take a look at these 4 steps to start trading Forex:</p>
+        </div>
+        <div class="text-center" style="padding-top:10px;">
+            <span>
+                <img class="hidden-xs" src="../static/globalcityindex-live/files/vertical-image.png" style="max-width:100%;width: 25%;">
+                <img class="visible-xs" src="../static/globalcityindex-live/files/vertical-image.png" style="max-width:100%;width: 60%;margin: auto;">
+            </span>
+        </div>
+        <div class="row padding-top-60">
+            <div class="col-sm-6 padding-left-30-for-mobile">
+                <div class="padding-top-40">
+                    <p class="steps-head-font hidden-xs"><span style="font-style: italic;">Step 1</span> | Educate
+                        yourself</p>
+                    <p class="steps-head-font visible-xs" style="text-align:center;margin-bottom: 10px;margin-top:-55px;"><span style="font-style: italic;">Step 1</span> | <br>Educate yourself</p>
+                    <p class="normal-para-font padding-top-10">Learn all you can about the market. Understand how forex
+                        trading can benefit you and ascertain what time you can dedicate to it. Learn how to decipher
+                        market fundamentals and how to study charts.</p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="text-center">
+                    <span>
+                        <img class="hidden-xs" src="../static/globalcityindex-live/files/start-trading-cfd-image2-334x244.png" style="max-width:100%;">
+                        <img class="visible-xs" src="../static/globalcityindex-live/files/start-trading-cfd-image2-334x244.png" style="max-width:100%;margin: auto;margin-top: 30px;">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid c22 bottom-line-divid">
+    <div id="step-two-regulated-broker-section" class="container default-wd">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="text-center hidden-xs">
+                    <span>
+                        <img src="../static/globalcityindex-live/files/regulated-broker-new.png" style="max-width:100%;">
+                    </span>
+                </div>
+            </div>
+            <div class="col-sm-6 padding-left-30-for-mobile">
+                <div class="padding-top-40">
+                    <p class="steps-head-font hidden-xs"><span style="font-style: italic;">Step 2</span> | Find a
+                        Regulated Broker</p>
+                    <p class="steps-head-font visible-xs" style="text-align:center;margin-bottom: 10px;"><span style="font-style: italic;">Step 2</span> | <br>Find a Regulated Broker</p>
+                    <p class="normal-para-font padding-top-10">A regulated or licensed broker will provide a certain
+                        level of protection and provide you the necessary tools to trade efficiently. 
+                        <a class="custom-link-for-a" href="<?php echo $domain ?>auth/register.php">Open an cityindex-live
+                        demo account</a> and access our <a class="custom-link-for-a" href="index.php">educational materials</a> 
+                        and you can practice strategies in live market pricing, without risking capital.</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center visible-xs">
+            <span>
+                <img src="../static/globalcityindex-live/files/regulated-broker-new.png" style="max-width:100%;margin-left: -70px;margin-top: 10px;">
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid c23 bottom-divider">
+    <div id="step-three-margin-account-section" class="container default-wd">
+        <div class="row">
+            <div class="col-sm-6 padding-left-30-for-mobile">
+                <div class="padding-top-30">
+                    <p class="steps-head-font hidden-xs"><span style="font-style: italic;">Step 3</span> | Open a Margin
+                        Account</p>
+                    <p class="steps-head-font visible-xs" style="text-align:center;margin-bottom: 10px;"><span style="font-style: italic;">Step 3</span> | <br>Open a Margin Account</p>
+                    <p class="normal-para-font padding-top-10">Decide on your risk/reward profile. How much of your
+                        capital can you afford to lose while trading? Based on that, choose your leverage. When you are
+                        a beginner, it is a good idea to start low.</p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="text-center">
+                    <span>
+                        <img class="hidden-xs" src="../static/globalcityindex-live/files/margin-account.png" style="max-width:100%;margin-top: -95px;">
+                        <img class="visible-xs" src="../static/globalcityindex-live/files/margin-account.png" style="max-width:100%;margin-top: -10px;">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid c24">
+    <div id="step-four-trading-platform-section" class="container default-wd">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="text-center hidden-xs">
+                    <span>
+                        <img src="../static/globalcityindex-live/files/trading-platform.png" style="max-width:100%;">
+                    </span>
+                </div>
+            </div>
+            <div class="col-sm-6 padding-left-30-for-mobile">
+                <div class="padding-top-20">
+                    <p class="steps-head-font hidden-xs"><span style="font-style: italic;">Step 4</span> | Choose Your
+                        Trading Platform</p>
+                    <p class="steps-head-font visible-xs" style="text-align:center;margin-bottom: 10px;"><span style="font-style: italic;">Step 4</span> | Choose Your Trading <br>Platform</p>
+                    <p class="normal-para-font padding-top-10">Australian licensed brokers offer some of the best forex
+                        technologies. Your long-term trading success will depend on swift trade execution, minimum
+                        slippage, fund security and efficient technical analysis. Choose a platform like <a class="custom-link-for-a" href="MetaTrader_4.php">MT4</a> or <a class="custom-link-for-a" href="MetaTrader_5.php">MT5</a> that offers all these, while also allowing you to trade on
+                        mobile devices.</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center visible-xs">
+            <span>
+                <img src="../static/globalcityindex-live/files/trading-platform.png" style="max-width:90%;margin-top:25px;">
+            </span>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="container-fluid cfa3">
+    <div id="history-forex-section" class="container default-wd">
+        <div class="wid-ali-for-cent">
+            <p class="head-white-font-sec hidden-xs">A Brief History <span class="helvetica-th-font" style="font-weight: 100;">of Forex</span></p>
+            <p class="head-white-font-sec visible-xs">A <span class="helvetica-th-font" style="font-weight: 100;">Brief
+                    History</span><br> of Forex</p>
+            <p class="card-para-lef-font hidden-xs" style="padding-top:30px;text-align:center">The exchange of
+                currencies dates back to 600BC when the first official currency was created. Fast forward to today and
+                the forex market has become the largest financial market in the world. The timeline below highlights key
+                moments in the journey of forex.</p>
+            <p class="card-para-lef-font visible-xs" style="padding-top:20px;text-align:left">The exchange of currencies
+                dates back to 600BC when the first official currency was created. Fast forward to today and the forex
+                market has become the largest financial market in the world. The timeline below highlights key moments
+                in the journey of forex.</p>
+        </div>
+        <div class="row padding-top-50 hidden-xs">
+
+            <div class="col-sm-12">
+                <div class="col-sm-6 bord-rig line-rig padding-bottom-20 padding-bottom-19-fr">
+                    <div class="padding-top-40">
+                        <p class="card-cc-para-font">600</p>
+                        <p class="card-para-font">BC</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 right-bord right-bord-change8">
+                    <div class="padding-top-55">
+                        <p class="card-para-lef-font">Kingdom of Lydia introduces coins made of gold and silver.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12">
+                <div class="col-sm-6 bord-rig lef-bord" style="padding-bottom: 35px;background-position: 120% 66%;">
+                    <div class="padding-top-91">
+                        <p class="card-para-lef-font" style="text-align: right;padding-right: 20px;">Tang dynasty in
+                            China created the paper note.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 right-bord-2 right-bord-7-change">
+                    <div class="padding-top-50 padding-change">
+                        <p class="card-cc-para-font">618</p>
+                        <p class="card-para-font">AD</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12">
+                <div class="col-sm-6 bord-rig line-rig padding-bottom-20" style="background-position: 120% 55%;padding-top: 55px;background-size: 260px;">
+                    <div>
+                        <p class="card-cc-para-font">1661</p>
+                        <p class="card-para-font">AD</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 right-bord right-bord-change" style="background-position: 0% 90%;padding-top: 75px;">
+                    <div>
+                        <p class="card-para-lef-font">The first banknote ever printed in Europe is produced in Sweden.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12">
+                <div class="col-sm-6 bord-rig lef-bord" style="background-position: 120% 45%;padding-top: 65px;padding-bottom: 85px;">
+                    <div style="width: 550px;">
+                        <p class="card-para-lef-font" style="text-align: right;padding-right: 20px;">Amsterdam becomes
+                            home to the first forex market ever created.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 right-bord-2 right-bord-2-change" style="padding-top: 35px;">
+                    <div>
+                        <p class="card-cc-para-font">17th</p>
+                        <p class="card-para-font">century</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 ">
+                <div class="col-sm-6 bord-rig line-rig padding-bottom-40" style="background-position: 120% 30%;background-size: 260px;">
+                    <div class="padding-top-64">
+                        <p class="card-cc-para-font">1819</p>
+                        <p class="card-para-font">AD</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 right-bord" style="background-position: 0% 41%;">
+                    <div class="padding-top-111">
+                        <p class="card-para-lef-font">England adopts the gold standard with the government guaranteeing
+                            to redeem any amount of paper money for its value in gold. The United States followed suit
+                            in 1834 before other major countries (France, Germany and others) in 1870.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12">
+                <div class="col-sm-6 bord-rig lef-bord " style="background-position: 120% 42%;padding-top: 54px;padding-bottom: 85px;">
+                    <div>
+                        <p class="card-para-lef-font" style="text-align: right;padding-right: 20px;">Following multiple
+                            World Wars, the gold standard system breaks down. It is replaced by the Bretton Woods
+                            System. The US Dollar is established as the world’s reserve currency.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 right-bord-2 right-bord-6-change">
+                    <div class="padding-top-50">
+                        <p class="card-cc-para-font">1946</p>
+                        <p class="card-para-font">AD</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12">
+                <div class="col-sm-6 bord-rig line-rig padding-bottom-20" style="background-position: 120% 18%;background-size: 260px;padding-bottom: 60px;">
+                    <div class="padding-top-42">
+                        <p class="card-cc-para-font">1973</p>
+                        <p class="card-para-font">AD</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 right-bord right-bord-change8" style="background-position: 0% 70%;padding-top: 15px;">
+                    <div>
+                        <p class="card-para-lef-font">Official switch to the free floating system.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12">
+                <div class="col-sm-6 bord-rig lef-bord" style="background-position: 120% 20%;padding-top: 10px;padding-bottom: 80px;">
+                    <div class="padding-top-90">
+                        <p class="card-para-lef-font" style="text-align: right;padding-right: 20px;">Birth of online
+                            brokers.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 right-bord-2 right-bord-3-change" style="margin-top:-15px;background-position: 0% 45%;">
+                    <div>
+                        <p class="card-cc-para-font">1996</p>
+                        <p class="card-para-font">AD</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12">
+                <div class="col-sm-6 bord-rig line-rig padding-bottom-20" style="background-position: 120% 31%;background-size: 260px;">
+                    <div>
+                        <p class="card-cc-para-font">2005</p>
+                        <p class="card-para-font">AD</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 right-bord right-bord-5-change" style="background-position: 0% 37%;padding-top: 20px;">
+                    <div class="padding-top-100">
+                        <p class="card-para-lef-font">MetaTrader 4, a revolutionary trading platform is released. It is
+                            specifically designed for forex traders and features real-time pricing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12">
+                <div class="col-sm-6 bord-rig lef-bord" style="background-position: 120% 53%;padding-top: 75px;padding-bottom: 70px;">
+                    <div>
+                        <p class="card-para-lef-font" style="text-align: right;padding-right: 20px;">Daily forex
+                            turnover figures exceed more than $5 trillion per day. </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 right-bord-2 right-bord-4-change" style="background-size: 180px;">
+                    <div class="padding-top-50">
+                        <p class="card-cc-para-font" style="line-height: 85px;">Today</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row padding-top-50 visible-xs">
+            <div class="col-sm-12 dis-fle">
+                <div class="bord-rig-mob col-sm-6 left-ll-mob" style=" background-position: 120% 47%;background-size: 32px;">
+                    <div class="padding-top-20">
+                        <p class="card-cc-para-font">600</p>
+                        <p class="card-para-font">BC</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 right-ll-mob" style="background-position: 0% 47%;background-size: 10px;">
+                    <div style="padding-top: 23px;">
+                        <p class="card-para-lef-font">Kingdom of Lydia introduces<br> coins made of gold and silver.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 dis-fle">
+                <div class="bord-rig-mob col-sm-6 left-ll-mob-df sep-19-lf-align" style="padding-top: 15px;">
+                    <div class="padding-top-20">
+                        <p class="card-cc-para-font">618</p>
+                        <p class="card-para-font">AD</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 right-ll-mob-df sep-19-rg-align">
+                    <div style="padding-top: 35px;">
+                        <p class="card-para-lef-font">Tang dynasty in China created <br>the paper note.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 dis-fle">
+                <div class="bord-rig-mob col-sm-6 left-ll-mob-df sep-29-lf-align" style="margin-left: -8px;padding-right: 15px;padding-top: 10px;">
+                    <div class="padding-top-20">
+                        <p class="card-cc-para-font">1661</p>
+                        <p class="card-para-font">AD</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 right-ll-mob-df sep-29-rg-align">
+                    <div style="padding-top: 30px;">
+                        <p class="card-para-lef-font">The first banknote ever printed<br> in Europe is produced in<br>
+                            Sweden.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 dis-fle">
+                <div class="bord-rig-mob col-sm-6 left-ll-mob-df sep-30-lf-align" style="margin-left: -10px;padding-right: 14px;padding-top: 0px;">
+                    <div class="padding-top-20">
+                        <p class="card-cc-para-font">17th</p>
+                        <p class="card-para-font">CENTURY</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 right-ll-mob-df sep-30-rg-align">
+                    <div style="padding-top: 30px;">
+                        <p class="card-para-lef-font">Amsterdam becomes home to<br> the first forex market ever<br>
+                            created.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 dis-fle">
+                <div class="bord-rig-mob col-sm-6 left-ll-mob-df oct-7-lf-align" style="margin-left: -10px;padding-right: 17px;padding-top: 0px;">
+                    <div class="padding-top-20">
+                        <p class="card-cc-para-font">1819</p>
+                        <p class="card-para-font">AD</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 right-ll-mob-df oct-7-rg-align">
+                    <div style="padding-top: 25px;">
+                        <p class="card-para-lef-font">England adopts the gold<br> standard with the government<br>
+                            guaranteeing to redeem any<br> amount of paper money for its<br> value in gold. The United
+                            States<br> followed suit in 1834 before<br> other major countries (France,<br> Germany and
+                            others) in 1870.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 dis-fle">
+                <div class="bord-rig-mob col-sm-6 left-ll-mob-df oct-15-lf-align" style="margin-left: -10px;padding-right: 17px;padding-top: 0px;">
+                    <div class="padding-top-20">
+                        <p class="card-cc-para-font">1946</p>
+                        <p class="card-para-font">AD</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 right-ll-mob-df oct-15-rg-align">
+                    <div style="padding-top: 25px;">
+                        <p class="card-para-lef-font">Following multiple World Wars,<br> the gold standard system<br>
+                            breaks down. It is replaced by<br> the Bretton Woods System.<br> The US Dollar is
+                            established as<br> the world’s reserve currency.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 dis-fle">
+                <div class="bord-rig-mob col-sm-6 left-ll-mob-df oct-22-lf-align" style="margin-left: -10px;padding-right: 17px;padding-top: 10px;">
+                    <div class="padding-top-20">
+                        <p class="card-cc-para-font">1973</p>
+                        <p class="card-para-font">AD</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 right-ll-mob-df oct-22-rg-align">
+                    <div style="padding-top: 30px;">
+                        <p class="card-para-lef-font">Official switch to the free<br> floating system.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 dis-fle">
+                <div class="bord-rig-mob col-sm-6 left-ll-mob-df nov-3-lf-align" style="margin-left: -10px;padding-right: 17px;padding-top: 10px;">
+                    <div class="padding-top-20">
+                        <p class="card-cc-para-font">1996</p>
+                        <p class="card-para-font">AD</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 right-ll-mob-df nov-3-rg-align">
+                    <div style="padding-top: 32px;">
+                        <p class="card-para-lef-font">Birth of online brokers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 dis-fle">
+                <div class="bord-rig-mob col-sm-6 left-ll-mob-df nov-4-lf-align" style="margin-left: -10px;padding-right: 17px;padding-top: 10px;">
+                    <div class="padding-top-20">
+                        <p class="card-cc-para-font">2005</p>
+                        <p class="card-para-font">AD</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 right-ll-mob-df nov-4-rg-align">
+                    <div style="padding-top: 32px;">
+                        <p class="card-para-lef-font">MetaTrader 4, a revolutionary<br> trading platform is released.
+                            It<br> is specifically designed for forex<br> traders and features real-time<br> pricing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 dis-fle">
+                <div class="bord-rig-mob col-sm-6 left-ll-mob-df dec-14-lf-align" style="margin-left: -10px;padding-right: 8px;padding-top: 10px;">
+                    <div class="padding-top-20">
+                        <p class="card-cc-para-font" style="line-height: 44px;">Today</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 right-ll-mob-df dec-14-rg-align">
+                    <div style="padding-top: 45px;">
+                        <p class="card-para-lef-font">Daily forex turnover figures<br> exceed more than $5 trillion per
+                            day. </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<div class="container-fluid c12">
+    <div id="forex-quotes-exchange-rates-spread-section" class="container default-wd">
+        <div class="row">
+            <div class="col-sm-6 pad-rig-40">
+                <div>
+                    <p class="h2-left-font-for-bg hidden-xs">Forex Quotes / <span class="helvetica-th-font" style="font-weight: 100;">Exchange Rates</span></p>
+                    <p class="h2-left-font-for-bg visible-xs"><span class="helvetica-th-font" style="font-weight: 100;">Forex</span> Quotes / <br> Exchange <span class="helvetica-th-font" style="font-weight: 100;">Rates</span></p>
+                    <p class="normal-white-bullet-para-font padding-top-40 pad-top-20-imp-for-mob">Currencies are traded
+                        in pairs, like the Euro/US Dollar (EUR/USD) or Australian Dollar/US Dollar (AUD/USD). Currencies
+                        are denoted in 3-lettered ISO codes, such as EUR (Euro), GBP (Great British Pound) and USD (US
+                        Dollar). When you see a currency quote, the first currency is called the base currency and the
+                        second currency is the quote currency or counter currency. For instance, say the EUR/USD is
+                        trading at 1.1086. This means to buy 1 unit of Euro, you will need $1.1086. USD</p>
+                    <p class="normal-white-bullet-para-font padding-top-20">The higher price $1.1087 is the ask rate,
+                        while $1.1086 is the bid rate. The bid price is the maximum price a buyer is willing to pay for
+                        the currency. Ask price is the minimum price a seller is willing to accept for the same
+                        currency. These rates fluctuate constantly, depending on supply and demand, market sentiment and
+                        external events.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 pad-lef-40 padding-top-40-for-mobile">
+                <div>
+                    <p class="h2-left-font-for-bg">Spread</p>
+                    <p class="normal-white-bullet-para-font padding-top-40 pad-top-20-imp-for-mob">The difference
+                        between these two rates is known as the spread. This includes the broker’s charges. The spread
+                        depends on your choice of currency pair and the forex broker. Licensed forex brokers who provide
+                        ECN (Electronic Communications Network) pricing can source price quotes from multiple liquidity
+                        providers in the market. This means they can offer the tightest spreads.</p>
+                </div>
+                <div class="text-center">
+                    <span>
+                        <img src="../static/globalcityindex-live/files/graph2.png" style="max-width:100%;margin-top: 25px;">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid bt1">
+    <div id="blue-button-section" class="container default-wd open-account">
+        <div class="d-flex">
+            <p class="hidden-xs font-al-region-de">Start Forex Trading with a Multi-Regulated Brand</p>
+            <p class="visible-xs" style="line-height: 37px!important;margin-top: -5px;font-size: 28px !important;text-align: center;margin-bottom: 20px;">
+                Start Forex Trading with a <br>Multi-Regulated Brand</p>
+            <a href="<?php echo $domain ?>auth/register.php" class="btn-account btn-ble-al-region-de">Open a live account</a>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid c7 bottom-line-divid">
+    <div id="example-of-leverage-cfd-section" class="container">
+        <div class="row">
+            <div class="col-sm-6 padding-left-30-for-mobile">
+                <div>
+                    <p class="h2-left-font hidden-xs">An Example <span class="helvetica-th-font" style="font-weight: 100;">of</span> <br> Leverage CFD<span class="helvetica-th-font" style="font-weight: 100;"> Trading</span></p>
+                    <p class="h2-left-font visible-xs" style="text-align:center;"><span class="helvetica-th-font" style="font-weight: 100;">An Example</span> of<br><span class="helvetica-th-font" style="font-weight: 100;">Leverage CFD</span><span class="helvetica-th-font" style="font-weight: 100;"> Trading</span></p>
+                    <p class="normal-para-font padding-top-10">Suppose you want to trade CFDs, where the underlying
+                        asset is the AUD/USD currency pair, also known as the “Aussie.” Let us suppose that the AUD/USD
+                        pair is trading at:</p>
+                </div>
+            </div>
+            <div class="col-sm-6 padding-left-30-for-mobile">
+                <div class="text-center hidden-xs" style="margin-left:30px;">
+                    <span>
+                        <img src="../static/globalcityindex-live/files/leverage-cfd.png" style="max-width: 100%;margin-top:10px;">
+                    </span>
+                </div>
+                <div class="text-center visible-xs">
+                    <span>
+                        <img src="../static/globalcityindex-live/files/leverage-cfd.png" style="max-width: 100%;margin-top:30px;">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid c8">
+    <div id="bid-ask-spread-section" class="container cs-11569-es-regn-algn">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="text-center hidden-xs">
+                    <span>
+                        <img src="../static/globalcityindex-live/files/bid-ask-spread-583x525.png" style="max-width: 95%;margin-top: -145px;">
+                    </span>
+                </div>
+            </div>
+            <div class="col-sm-6 padding-left-right-30-mob padding-left-30-for-mobile">
+                <div>
+                    <p class="h2-left-font hidden-xs">Bid/Ask <span class="helvetica-th-font" style="font-weight: 100;">Spread</span></p>
+                    <p class="h2-left-font visible-xs" style="text-align:center;">Bid/Ask <span class="helvetica-th-font" style="font-weight: 100;">Spread</span></p>
+                    <div class="text-center visible-xs">
+                        <span>
+                            <img src="../static/globalcityindex-live/files/bid-ask-spread-583x525.png" style="max-width: 90%;margin-top: 30px;margin-bottom:0px;">
+                        </span>
+                    </div>
+                    <p class="normal-para-font padding-top-20">Now, “bid” is the selling price. This is what you sell
+                        the asset at. The higher of the two is the “ask price” or buy price; the rate at which you buy
+                        the asset. The difference between these two prices is the “spread.” This is your cost of
+                        trading. Depending on how liquid your asset is and your choice of broker, the spread can be
+                        tight or wide. For instance, a broker can source quotes from a large pool of liquidity providers
+                        to offer you the tightest bid/ask spreads.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid c9">
+    <div id="red-green-section" class="container default-wd">
+        <div class="padding-left-right-15-mob">
+            <div class="col-sm-12 bg-align-desktop">
+                <div class="row">
+                    <div class="col-sm-6 bord-right-des bottom-divier pad-right-30">
+                        <div>
+                            <p class="normal-para-font">You decide to buy AUD 20,000 worth of USD because you think that
+                                the AUD/USD price will rise in the future. Your account leverage is set to 100:1. This
+                                means that you need to deposit 1% of the total position value into your margin account.
+                            </p>
+                        </div>
+                        <div class="text-center padding-top-40 pading-top-for-red-green">
+                            <span>
+                                <img class="mob-img-align-1" src="../static/globalcityindex-live/files/red-new2.png" alt="" title="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 padding-left-55">
+                        <div>
+                            <p class="normal-para-font">Now, in the next hour, if the price moves to 0.6880/0.6882, you
+                                have a winning trade. You could close your position by selling at the current price of
+                                USD 0.6880.</p>
+                        </div>
+                        <div class="pading-top-for-red-green" style="text-align: center;padding-top: 68px;">
+                            <span>
+                                <img class="mob-img-align-2" src="../static/globalcityindex-live/files/green-new.png" alt="" title="">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid c10">
+    <div id="notice-how-small-section" class="container default-wd">
+        <div class="row">
+            <div class="col-sm-6 padding-left-30-for-mobile">
+                <div>
+                    <p class="normal-para-font">In this case, the price moved in your favour. But, had the price
+                        declined instead, moving against your prediction, you could have made a loss. If that loss
+                        resulted in your account equity falling below your margin requirements, your broker may issue a
+                        margin call.</p>
+                    <p class="normal-para-font padding-top-10">Notice how a small difference in price can offer
+                        opportunities to trade? This small difference is known as “pip” or “percentage in point.” In the
+                        forex market, like in the above example, it is used to denote the smallest price increment in
+                        the price of a currency. For assets like the AUD/USD, which include the US Dollar, a pip is
+                        represented up to the 4th decimal place. But, in case of pairs that include the Japanese Yen,
+                        like the AUD/JPY, the quote is usually up to 3 decimal places.</p>
+                    <p class="normal-para-font padding-top-10">This continuous evaluation of price movements and
+                        resultant profit/loss happens daily. Accordingly, it leads to a net return (positive/negative)
+                        on your initial margin. In case your initial margin is lower, the broker will issue a margin
+                        call. If you fail to deposit the money, the contract will be closed at the current market price.
+                        This process is known as “marking to market.”</p>
+                </div>
+            </div>
+            <div class="col-sm-6 padding-left-30-for-mobile">
+                <div class="text-center">
+                    <span>
+                        <img class="hidden-xs" src="../static/globalcityindex-live/files/graph-1.png" style="max-width:100%;margin-top: 60px;margin-left: 40px;">
+                        <img class="visible-xs" src="../static/globalcityindex-live/files/graph-1.png" style="max-width:100%;margin-top: 30px;margin-left: 0px;">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid c11">
+    <div id="price-table-align-section" class="container default-wd">
+        <div class="col-md-12 padding-30 padding-left-15-for-table" style="padding-left: 0px;padding-right: 0px;">
+            <div class="pad-for-table-align">
+                <div class="nctable scroll-bar-for-table" style="width:100%;">
+                    <table class="table" style="border-left: none!important;">
+                        <tbody>
+                            <tr class="active0 first-row-linear-grd">
+                                <td class="tbe-hd first-row-column-linear-grd" style="padding: 10px;text-align: center;padding-left: 30px;font-family: 'Helvetica Neue';">
+                                    If the price<br>of AUD/USD</td>
+                                <td class="tbe-hd" style="padding: 20px;text-align: center;padding-left: 60px;padding-top:20px;font-family: 'Helvetica Neue';">
+                                    To</td>
+                                <td class="tbe-hd" style="padding: 10px;font-family: 'Helvetica Neue';">You Could
+                                    Gain or Lose<br>(for a long position)</td>
+                                <td class="tbe-hd" style="padding: 10px;font-family: 'Helvetica Neue';">Resulting
+                                    in a Return<br>of the Initial Margin</td>
+                            </tr>
+                            <tr class="active1 tbe-con">
+                                <td class="text-center font18_5 font300 fptextcolor" style="text-align: center;padding-left: 30px;font-family: 'Helvetica Neue';padding-top: 15px;">
+                                    Rises by 10%</td>
+                                <td class="font18_5 font300 fptextcolor" style="padding: 15px;text-align: center;padding-left: 30px;font-family: 'Helvetica Neue';">
+                                    0.75603/0.75606</td>
+                                <td class="text-center font18_5 font300 fptextcolor" style="padding: 15px;font-family: 'Helvetica Neue';">0.75603/0.75606</td>
+                                <td class="text-center font18_5 font300 fptextcolor" style="padding: 15px;font-family: 'Helvetica Neue';">1000%</td>
+                            </tr>
+                            <tr class="active0 tbe-con">
+                                <td class="text-center font18_5 font300 fptextcolor" style="text-align: center;padding-left: 30px;font-family: 'Helvetica Neue';padding-top: 15px;">
+                                    Rises by 5%</td>
+                                <td class="font18_5 font300 fptextcolor" style="padding: 15px;text-align: center;padding-left: 30px;font-family: 'Helvetica Neue';">
+                                    0.72167/ 0.72169</td>
+                                <td class="text-center font18_5 font300 fptextcolor" style="padding: 15px;font-family: 'Helvetica Neue';">USD 687.4</td>
+                                <td class="text-center font18_5 font300 fptextcolor" style="padding: 15px;font-family: 'Helvetica Neue';">500%</td>
+                            </tr>
+                            <tr class="active1 tbe-con">
+                                <td class="text-center font18_5 font300 fptextcolor" style="text-align: center;padding-left: 30px;font-family: 'Helvetica Neue';padding-top: 15px;">
+                                    Declines by 10%</td>
+                                <td class="font18_5 font300 fptextcolor" style="padding: 15px;text-align: center;padding-left: 30px;font-family: 'Helvetica Neue';">
+                                    0.61857/0.61859</td>
+                                <td class="text-center font18_5 font300 fptextcolor" style="padding: 15px;font-family: 'Helvetica Neue';">USD -1374.6</td>
+                                <td class="text-center font18_5 font300 fptextcolor" style="padding: 15px;font-family: 'Helvetica Neue';">-500%</td>
+                            </tr>
+                            <tr class="active0 tbe-con">
+                                <td class="text-center font18_5 font300 fptextcolor" style="text-align: center;padding-left: 30px;font-family: 'Helvetica Neue';padding-top: 15px;">
+                                    Declines by 5%</td>
+                                <td class="font18_5 font300 fptextcolor" style="padding: 15px;text-align: center;padding-left: 30px;font-family: 'Helvetica Neue';">
+                                    0.65293/0.65297</td>
+                                <td class="text-center font18_5 font300 fptextcolor" style="padding: 15px;font-family: 'Helvetica Neue';">USD -687.4</td>
+                                <td class="text-center font18_5 font300 fptextcolor" style="padding: 15px;font-family: 'Helvetica Neue';">-1000%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="container-fluid c13 bottom-divider">
+    <div id="pip-forex-section" class="container default-wd">
+
+        <div class="row padding-top-40">
+            <div class="col-sm-6">
+                <div class="text-center hidden-xs">
+                    <span>
+                        <img src="../static/globalcityindex-live/files/pip.png" style="max-width:100%;margin-top: 0px;margin-left: -40px;">
+                    </span>
+                </div>
+            </div>
+            <div class="col-sm-6 padding-left-30-for-mobile">
+                <div>
+                    <div>
+                        <p class="h2-sec-hd-font hidden-xs" style="text-align:left">What is Pip <span class="helvetica-th-font" style="font-weight: 100;">in Forex?</span></p>
+                        <p class="h2-sec-hd-font visible-xs" style="margin-bottom:-10px;">What is Pip <span class="helvetica-th-font" style="font-weight: 100;">in Forex?</span></p>
+                    </div>
+                    <p class="normal-para-font padding-top-20">Pip is an acronym for Point in Percentage. It represents
+                        the smallest amount of change in the rate of a currency pair and is a standardised unit. For a
+                        US Dollar based currency pair, like the AUD/USD, one pip is $0.0001. However, for some
+                        currencies, like the Japanese Yen (JPY), it is denoted as $0.001.</p>
+                    <p class="normal-para-font">Pip value fluctuations have an effect on trading gains. For example, if
+                        you decide to buy €10,000 and the EUR/USD pair is trading at 1.1086, the price you will have to
+                        pay will be $(10,000x1.1086) or $11,086.</p>
+                    <p class="normal-para-font">If the exchange rate for this pair sees a 5-pip increase, which means
+                        the EUR/USD is now trading at 1.1091, then to buy €10,000, you will have to pay $11,091.</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center visible-xs">
+            <span>
+                <img src="../static/globalcityindex-live/files/pip.png" style="max-width:90%;margin-top: 25px; ">
+            </span>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid c14">
+    <div id="majors-minors-exotics-section" class="container default-wd">
+        <div class="padding-left-15-for-mobile">
+            <p class="h2-sec-hd-font hidden-xs">Forex Majors, Minors <span class="helvetica-th-font" style="font-weight: 100;">and</span> Exotics</p>
+            <p class="h2-sec-hd-font visible-xs" style="margin-bottom:0px;">Forex Majors, Minors and<br> Exotics</p>
+            <div class="width-align-desk padding-top-30">
+                <p class="normal-para-font">Not all currency pairs are traded in large volumes. The US Dollar, being the
+                    world’s reserve currency, is definitely traded the most; although, over the years, its dominance has
+                    waned somewhat. Based on how frequently they are traded, currency pairs are segregated into major,
+                    minor and exotic categories.</p>
+            </div>
+        </div>
+        <div class="row padding-top-60 pad-top-30-imp-for-mob">
+            <div class="col-sm-4 three-card-bord-right bottom-three-line-div-for-mobile ">
+                <div class="padding-left-15-for-mobile">
+                    <div class="text-center">
+                        <span>
+                            <img src="../static/globalcityindex-live/files/majors.png" style="max-width:100%;margin-top: 0px;margin-bottom: -20px;">
+                        </span>
+                    </div>
+                    <p class="three-card-h1-font">Majors</p>
+                    <p class="normal-para-font padding-top-10">Major currency pairs have the tightest spreads.</p>
+                    <div class="padding-top-20 margin-top-15-for-mob">
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;">They are:</p>
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;font-weight: 600;">
+                            EUR/USD</p>
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;font-style: italic;">
+                            Euro/US Dollar (aka Fiber)</p>
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;font-weight: 600;">
+                            GBP/USD</p>
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;font-style: italic;">
+                            British Pound/US Dollar (aka Cable)</p>
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;font-weight: 600;">
+                            USD/JPY</p>
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;font-style: italic;">US
+                            Dollar/Japanese Yen (aka Ninja)</p>
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;font-weight: 600;">
+                            USD/CHF</p>
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;font-style: italic;">US
+                            Dollar/Swiss Franc (aka Swissy)</p>
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;font-weight: 600;">
+                            CAD/USD</p>
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;font-style: italic;">
+                            Canadian Dollar/US Dollar (aka Loonie)</p>
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;font-weight: 600;">
+                            AUD/USD</p>
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;font-style: italic;">
+                            Australian Dollar/US Dollar (aka Aussie)</p>
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;font-weight: 600;">
+                            NZD/USD</p>
+                        <p class="normal-para-font hidden-xs" style="text-align: center;margin-bottom:25px;font-style: italic;">New Zealand Dollar/US
+                            Dollar (aka Kiwi)</p>
+                        <p class="normal-para-font visible-xs" style="text-align: center;margin-bottom:0px;font-style: italic;">New Zealand Dollar/US
+                            Dollar (aka Kiwi)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 three-card-bord-right bottom-three-line-div-for-mobile ">
+                <div class="padding-left-15-for-mobile">
+                    <div class="text-center">
+                        <span>
+                            <img src="../static/globalcityindex-live/files/minors.png" style="max-width:100%;margin-top: 2px;margin-bottom: -20px;">
+                        </span>
+                    </div>
+                    <p class="three-card-h1-font">Minors</p>
+                    <p class="normal-para-font padding-top-10">Then comes a category of minor currency pairs, otherwise
+                        known as cross-currency pairs. They are called so because they do not include the US Dollar. So,
+                        to convert one into the other, the US Dollar will need to act as a mediating currency.</p>
+                    <div class="padding-top-20 margin-top-15-for-mob">
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;">A few of the minor
+                            pairs are:</p>
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;font-weight: 600;">
+                            EUR/GBP</p>
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;font-style: italic;">
+                            Euro/British Pound (aka Chunnel)</p>
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;font-weight: 600;">
+                            EUR/AUD</p>
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;font-style: italic;">
+                            Euro/Australian Dollar</p>
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;font-weight: 600;">
+                            CHF/JPY</p>
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;font-style: italic;">
+                            Swiss Franc/Japanese Yen</p>
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;font-weight: 600;">
+                            GBP/JPY</p>
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;font-style: italic;">
+                            British Pound/Japanese Yen (aka Gopher)</p>
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;font-weight: 600;">
+                            GBP/CAD</p>
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;font-style: italic;">
+                            British Pound/Canadian Dollar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="padding-left-15-for-mobile">
+                    <div class="text-center">
+                        <span>
+                            <img src="../static/globalcityindex-live/files/exotics.png" style="max-width:100%;margin-top: -2px;margin-bottom: -20px;">
+                        </span>
+                    </div>
+                    <p class="three-card-h1-font">Exotics</p>
+                    <p class="normal-para-font padding-top-10">Exotics can include a major currency with an emerging
+                        market currency. Trading in exotics is considered risky, since they tend to have low liquidity,
+                        wider spreads and political instabilities in these countries can make these currencies volatile.
+                    </p>
+                    <div class="padding-top-20 margin-top-15-for-mob">
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;">Some examples are:</p>
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;font-weight: 600;">
+                            EUR/TRY</p>
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;font-style: italic;">
+                            Euro/Turkish Lira</p>
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;font-weight: 600;">
+                            USD/HKD</p>
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;font-style: italic;">US
+                            Dollar/Hong Kong Dollar</p>
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;font-weight: 600;">
+                            AUD/MXN</p>
+                        <p class="normal-para-font" style="text-align: center;margin-bottom:0px;font-style: italic;">
+                            Australian Dollar/Mexican Peso</p>
+                        <p class="normal-para-font padding-top-30">In the brackets are the common nicknames for these
+                            currency pairs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid c15">
+    <div id="going-long-short-section" class="container default-wd">
+        <div class="row">
+            <div class="col-sm-6 padding-left-30-for-mobile">
+                <div class="text-center">
+                    <span>
+                        <img class="hidden-xs" src="../static/globalcityindex-live/files/goinglong.png" style="max-width:100%;margin-top: -10px;margin-left: -60px;">
+                        <img class="visible-xs" src="../static/globalcityindex-live/files/goinglong.png" style="max-width:100%;margin-top: 0px;margin-bottom: 40px;">
+                    </span>
+                </div>
+            </div>
+            <div class="col-sm-6 padding-left-30-for-mobile">
+                <div>
+                    <p class="h2-white-left-font-card-bg hidden-xs"><span class="helvetica-th-font" style="font-weight: 100;">Going</span> Long <span class="helvetica-th-font" style="font-weight: 100;">or Going</span> Short</p>
+                    <p class="h2-white-left-font-card-bg visible-xs" style="text-align:center;">Going Long <span class="helvetica-th-font" style="font-weight: 100;">or</span> Going<br> Short</p>
+                    <p class="normal-white-bullet-para-font padding-top-20">When you assume a long position in a
+                        currency pair, you buy a currency in the hopes that its price will rise (appreciate) in the
+                        future. This means you wish to buy the base currency and sell the quote currency, since you
+                        expect the base currency to appreciate with respect to the quote currency.</p>
+                    <p class="normal-white-bullet-para-font">When you assume a short position in a currency pair, you
+                        sell the base currency, expecting it to depreciate (decline in price) in the future, allowing
+                        you to buy it at a later date but at a lower price.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid c16">
+    <div id="lot-sizes-section" class="container default-wd gr-line-mob">
+        <div class="text-center visible-xs">
+            <span>
+                <img src="../static/globalcityindex-live/files/lot-sizes.png" style="max-width: 85%;margin-bottom: 20px;margin-left: -40px;">
+            </span>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 padding-left-30-for-mobile">
+                <div>
+                    <p class="h2-left-font hidden-xs">Lot <span class="helvetica-th-font" style="font-weight: 100;">Sizes</span></p>
+                    <p class="h2-left-font visible-xs" style="text-align:center;">Lot <span class="helvetica-th-font" style="font-weight: 100;">Sizes</span></p>
+                    <p class="normal-para-font padding-top-10">When you decide on your position size, a term you will
+                        hear is “lot.” Lots are standardised position sizes for currencies. The forex market gives you
+                        the flexibility to trade according to your means and risk profile. The standard size for a lot
+                        is 100,000 units of the base currency. There also are mini and micro lot sizes that contain
+                        10,000 and 1,000 units of the base currency, respectively.</p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="text-center hidden-xs">
+                    <span>
+                        <img src="../static/globalcityindex-live/files/lot-sizes.png" style="max-width:100%;margin-top: -75px;">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid c17">
+    <div id="liquidity-in-forex-trading-section" class="container default-wd">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="text-center">
+                    <span>
+                        <img src="../static/globalcityindex-live/files/liquidity.png" style="max-width:100%;margin-top:-40px;">
+                    </span>
+                </div>
+            </div>
+            <div class="col-sm-6 padding-left-30-for-mobile">
+                <div>
+                    <p class="h2-left-font hidden-xs"><span class="helvetica-th-font" style="font-weight: 100;">What
+                            is</span> Liquidity <span class="helvetica-th-font" style="font-weight: 100;">in</span>
+                        Forex Trading?</p>
+                    <p class="h2-left-font visible-xs" style="text-align:center;margin-top: -20px;"><span class="helvetica-th-font" style="font-weight: 100;">What is</span> Liquidity <span class="helvetica-th-font" style="font-weight: 100;">in</span> Forex Trading?</p>
+                    <p class="normal-para-font padding-top-10">Liquidity in the forex market refers to the ability of a
+                        currency to be bought or sold on demand. When you trade in major currency pairs, there are a lot
+                        of buyers and sellers in the market. This means that there is always likely to be an opposite
+                        player for every position you take. You can buy or sell large amounts of these currencies
+                        without causing any significant difference to the exchange rate.</p>
+                    <p class="normal-para-font">Liquidity fluctuates during trading sessions. You are likely to see
+                        significant activity during the overlapping of the New York and London sessions. Depending on
+                        your style of trading, you could benefit from choosing specific trading sessions. For instance,
+                        short term traders prefer the US or London sessions, when large price breakouts and percentile
+                        movements tend to occur. The Tokyo session is often range-bound, which might not be the best for
+                        them.</p>
+                    <p class="normal-para-font">Liquid markets, such as forex, tend to fluctuate by smaller increments,
+                        since high liquidity means less volatility. However, high volatility can occur due to
+                        significant external events.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid c18">
+    <div id="concept-leverage-in-forex-trading-section" class="container default-wd">
+        <div>
+            <p class="h2-left-font-for-bg hidden-xs"><span class="helvetica-th-font" style="font-weight: 100;">The
+                    Concept</span> of Leverage <span class="helvetica-th-font" style="font-weight: 100;">in</span> Forex
+                Trading</p>
+            <p class="h2-left-font-for-bg visible-xs" style="margin-bottom: 0px;"><span class="helvetica-th-font" style="font-weight: 100;">The Concept</span> of<br> Leverage <span class="helvetica-th-font" style="font-weight: 100;">in</span> Forex<br> Trading</p>
+        </div>
+        <div class="row padding-top-30">
+            <div class="col-sm-6 padding-left-30-for-mobile">
+                <div>
+                    <p class="normal-white-bullet-para-font">Leverage in forex trading is a useful financial tool. It
+                        allows traders to gain greater exposure to market movements than they could otherwise afford.
+                        So, this means a trader can enter a position worth $100,000 with just $1,000 in their account,
+                        with a 100:1 leverage ratio.</p>
+                    <p class="normal-white-bullet-para-font">The leverage amount is provided by the forex broker.
+                        Consider it as a loan, which can help you to increase your gains with little price increments.
+                        However, also remember that leverage magnifies your losses too, if prices move in the wrong
+                        direction. This is why, it is important to put in place robust risk management strategies while
+                        trading.</p>
+                    <p class="normal-white-bullet-para-font">When you decide to trade, you need to open a margin account
+                        with a regulated broker. Here, you will need to deposit an initial margin amount that is
+                        required to keep your leveraged positions running.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 pad-left-50-for-align-desk">
+                <div>
+                    <p class="normal-white-bullet-para-font">This is also called deposit margin. When the amount drops
+                        below the minimum level, your broker will issue a margin call. This means that you need to
+                        deposit funds to keep your positions open. Otherwise, the broker may close your positions.</p>
+                    <p class="normal-white-bullet-para-font">A 50:1 leverage ratio means a minimum margin requirement of
+                        1/50 or 2% of the total trade value from you. Similarly, a 100:1 leverage ratio means that you
+                        need to deposit at least 1% of the total value of your trade in your margin account.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid c19 bottom-divider">
+    <div id="technical-fundamental-analysis-section" class="container default-wd">
+        <div>
+            <p class="h2-sec-hd-font">Technical <span class="helvetica-th-font" style="font-weight: 100;">and</span>
+                Fundamental Analysis</p>
+            <div class="width-align-desk padding-top-20 padding-left-15-for-mobile">
+                <p class="normal-para-font">Using guesswork to predict the direction of price movement is not the best
+                    idea. Experienced traders carefully conduct market analysis, in order to determine the direction in
+                    which currency rates are likely to move. Two major approaches are used here: fundamental analysis
+                    and technical analysis. For more in-depth fundamental and technical analysis plus trading education,
+                    please visit our <a href="index.php" style="color: #f82f4a;">Traders Hub blog.</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid c20">
+    <div id="card-fundamental-technical-analysis-section" class="container default-wd">
+        <div class="row">
+            <div class="col-sm-6 two-cd-br-rg pad-left-30-desk bottom-line-div-for-mobile">
+                <div>
+                    <div class="text-center">
+                        <span>
+                            <img src="../static/globalcityindex-live/files/fundamental-analysis.png" style="max-width:100%;">
+                        </span>
+                    </div>
+                    <p class="two-card-h2-font padding-top-30">Fundamental Analysis</p>
+                    <div class="padding-top-20">
+                        <p class="normal-para-font">Currency values fluctuate according to a nation’s perceived economic
+                            health. Fundamental analysis is the study of all factors that impact a country’s economy and
+                            is also representative of its future trends. When investors perceive a particular economy as
+                            being more rewarding than others, demand for the domestic currency increases, driving up its
+                            price. Fundamental traders look out for these indicators to gauge the economic health of a
+                            country.</p>
+                        <p class="normal-para-font padding-top-20"><span style="font-weight: 600;">Monetary
+                                Policy:</span> The interest rates decided by a country’s central bank directly impact
+                            the domestic currency. When the interest rate increases, currency value tends to appreciate
+                            and vice versa.</p>
+                        <p class="normal-para-font padding-top-20"><span style="font-weight: 600;">Inflation
+                                Rate:</span> Central banks are responsible for keeping inflation in check and promoting
+                            employment. To do so, they have various tools available, including the nation’s monetary
+                            policy, market interventions and quantitative easing.</p>
+                        <p class="normal-para-font padding-top-20"><span style="font-weight: 600;">Balance of
+                                Trade:</span> The balance between a country’s exports and imports can impact currency
+                            values.</p>
+                        <p class="normal-para-font padding-top-20"><span style="font-weight: 600;">GDP Growth:</span>
+                            The overall health of an economy is denoted by its GDP growth. Currency values tend to
+                            appreciate with a favourable GDP growth rate.</p>
+                        <p class="normal-para-font padding-top-20">There are several other economic indicators, like
+                            employment rate, retail sales, manufacturing index and housing market data, that impact the
+                            forex market. To keep track of the economic releases, traders use an economic calendar. This
+                            is because significant volatility tends to ensue on the days that important reports are
+                            released. Based on whether the actual figures meet or beat market consensus, currency prices
+                            can go up or down.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 pad-lef-40">
+                <div>
+                    <div class="text-center">
+                        <span>
+                            <img src="../static/globalcityindex-live/files/technical-analysis.png" style="max-width:100%;margin-top:15px;">
+                        </span>
+                    </div>
+                    <p class="two-card-h2-font padding-top-30">Technical Analysis</p>
+                    <div class="padding-top-20">
+                        <p class="normal-para-font">Technical analysis is based on the principle that the markets tend
+                            to repeat their historical price trends. To discover these trends, traders rely on technical
+                            indicators and forex chart analysis. Technical indicators are actually statistical formulae
+                            that can provide important information about the market. They are categorised into:</p>
+                        <p class="normal-para-font padding-top-20"><span style="font-weight: 600;">Trend:</span> Such as
+                            Simple Average, Trend lines, Moving Average Convergence Divergence (MACD)</p>
+                        <p class="normal-para-font padding-top-20"><span style="font-weight: 600;">Volume:</span> Such
+                            as On Balance Volume (OBV), Chaikin Money Flow</p>
+                        <p class="normal-para-font padding-top-20"><span style="font-weight: 600;">Momentum:</span> Such
+                            as Stochastic Oscillators, Relative Strength Index (RSI)</p>
+                        <p class="normal-para-font padding-top-20"><span style="font-weight: 600;">Volatility:</span>
+                            Such as Average True Range (ATR), Volatility Index (VIX)</p>
+                        <p class="normal-para-font padding-top-20">
+                            Forex trading platforms like MetaTrader 4, MetaTrader 5, cTrader and TradingView come 
+                            with pre-installed technical indicators, allowing you to analyse the ongoing trends 
+                            and any chances of price reversals. Based on these indicators, you can create
+                            forex trading strategies.
+                        </p>
+                        <p class="normal-para-font padding-top-20">These platforms also allow you to use a combination
+                            of both fundamental and technical analysis. While fundamental analysis, through financial
+                            news alerts, allows traders to gauge the interest rate and inflation outlook for both
+                            currencies in a pair, technical indicators and charts provide insight into trends and ranges
+                            within the price history. Chart patterns can provide clues regarding how prices might move
+                            within the patterns and where they are likely to go after a break-out.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid cfaq1">
+    <div id="forex-faq-acc-section" class="container">
+        <div>
+            <p class="h2-cent-font-sect">Forex Trading - <span class="helvetica-th-font" style="font-weight: 100;">FAQs</span></p>
+        </div>
+        <div class="wid-for-faq-section padding-top-20">
+            <div class="panel-group" id="accordion">
+                <div id="cardonnee" class="panel panel-default card-custom" style="border-radius: 0px 20px 20px 20px;background: linear-gradient( white, white), linear-gradient(to bottom right,#fff 14%,rgba(0,189,255,.48),#26CC68);background-clip: padding-box, border-box;background-origin: padding-box, border-box;border-left: 1px solid transparent;border-right: 1px solid transparent;border-bottom: 1px solid transparent;border-top: 1px solid transparent;">
+                    <div id="cone" class="panel-heading padding-for-card-head-align padding-20">
+                        <h4 class="panel-title hidden-xs">
+                            <a class="card-head" data-toggle="collapse" data-parent="#accordion" href="index.php#collapse1" onmouseover="this.style.color='#3e495c'" onmouseout="this.style.color='#3e495c'" onclick="cardOne()" aria-expanded="true">What is the difference between Forex and
+                                CFDs?</a>
+                        </h4>
+                        <h4 class="panel-title visible-xs">
+                            <a class="card-head" data-toggle="collapse" data-parent="#accordion" href="index.php#collapse1" onmouseover="this.style.color='#3e495c'" onmouseout="this.style.color='#3e495c'" onclick="cardOne()" aria-expanded="true">What is the difference<br> between Forex and
+                                CFDs?</a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in" aria-expanded="true">
+                        <div class="panel-body padding-for-card-align">
+                            <div>
+                                <p class="normal-para-font">The main difference between the two is that Forex is limited
+                                    to currencies while Contracts for Difference (CFDs) cover a broader range of asset
+                                    classes. This includes Shares, Indices, Commodities and Cryptocurrencies.</p>
+                                <p class="normal-para-font">Find our more about the <a class="custom-link-for-a" href="index.php" target="_blank"><b>Similarities and Differences Between
+                                            Forex and CFDs</b></a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cardsec" class="panel panel-default card-custom">
+                    <div id="csec" class="panel-heading padding-for-card-head-align">
+                        <h4 class="panel-title hidden-xs">
+                            <a class="card-head collapsed" data-toggle="collapse" data-parent="#accordion" href="index.php#collapse2" onmouseover="this.style.color='#3e495c'" onmouseout="this.style.color='#3e495c'" onclick="cardSec()" aria-expanded="false">What
+                                is the best time to trade Forex?</a>
+                        </h4>
+                        <h4 class="panel-title visible-xs">
+                            <a class="card-head collapsed" data-toggle="collapse" data-parent="#accordion" href="index.php#collapse2" onmouseover="this.style.color='#3e495c'" onmouseout="this.style.color='#3e495c'" onclick="cardSec()" aria-expanded="false">What
+                                is the best time<br> to trade Forex?</a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body padding-for-card-align">
+                            <div>
+                                <p class="normal-para-font">This depends on a number of factors including the currency
+                                    you wish to trade, any time constraints and trading strategies. It is important to
+                                    note that the forex market is most active when major trading sessions overlap. </p>
+                                <p class="normal-para-font">For further details about forex trading hours and the most
+                                    actively traded currencies, <a class="custom-link-for-a" href="index.php" target="_blank"><b>Click Here</b></a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cardthird" class="panel panel-default card-custom">
+                    <div id="cthir" class="panel-heading padding-for-card-head-align">
+                        <h4 class="panel-title hidden-xs">
+                            <a class="card-head collapsed" data-toggle="collapse" data-parent="#accordion" href="index.php#collapse3" onmouseover="this.style.color='#3e495c'" onmouseout="this.style.color='#3e495c'" onclick="cardThir(); cardThirdr();" aria-expanded="false">What is the best platform for trading Forex?</a>
+                        </h4>
+                        <h4 class="panel-title visible-xs">
+                            <a class="card-head collapsed" data-toggle="collapse" data-parent="#accordion" href="index.php#collapse3" onmouseover="this.style.color='#3e495c'" onmouseout="this.style.color='#3e495c'" onclick="cardThir(); cardThirdr();" aria-expanded="false">What is the best platform<br> for trading Forex?</a>
+                        </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body padding-for-card-align">
+                            <div>
+                                <p class="normal-para-font">
+                                    <a class="custom-link-for-a" href="MetaTrader_4.php" target="_blank"><b>MetaTrader 4</b></a> is the world's most popular trading
+                                    platform. Specifically designed for forex trading, it has an array of features and
+                                    tools that help provide an exceptional trading experience. Those who are looking for
+                                    a more elaborate platform can consider <a class="custom-link-for-a" href="MetaTrader_5.php" target="_blank"><b>MetaTrader 5</b></a>. Read <a class="custom-link-for-a" href="index.php" target="_blank"><b>Top Forex Trading Platforms</b></a> to help decide which is
+                                    best for you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cardfour" class="panel panel-default card-custom">
+                    <div id="cfr" class="panel-heading padding-for-card-head-align">
+                        <h4 class="panel-title hidden-xs">
+                            <a class="card-head collapsed" data-toggle="collapse" data-parent="#accordion" href="index.php#collapse4" onmouseover="this.style.color='#3e495c'" onmouseout="this.style.color='#3e495c'" onclick="cardFour()" aria-expanded="false">What
+                                is algorithmic trading in Forex?</a>
+                        </h4>
+                        <h4 class="panel-title visible-xs">
+                            <a class="card-head collapsed" data-toggle="collapse" data-parent="#accordion" href="index.php#collapse4" onmouseover="this.style.color='#3e495c'" onmouseout="this.style.color='#3e495c'" onclick="cardFour()" aria-expanded="false">What
+                                is algorithmic<br> trading in Forex?</a>
+                        </h4>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body padding-for-card-align">
+                            <div>
+                                <p class="normal-para-font" style="margin-bottom:10px;">Algorithmic trading is trading
+                                    based on an algorithm or set of computer programs that include a specific set of
+                                    rules to execute market orders such as stop-loss orders. Expert Advisors (EAs) and
+                                    copy trading software such as <a class="custom-link-for-a" href="index.php" target="_blank"><b>AutoTrade</b></a> are examples of
+                                    algorithmic trading.</p>
+                                <p class="normal-para-font" style="margin-bottom:10px;">Learn more about <a class="custom-link-for-a" href="<?php echo  $domain  ?>Forex_Trading/target="_blank"><b>Algorithmic Trading</b></a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="cardfour" class="panel panel-default card-custom">
+                    <div id="cfr" class="panel-heading padding-for-card-head-align">
+                        <h4 class="panel-title hidden-xs">
+                            <a class="card-head collapsed" data-toggle="collapse" data-parent="#accordion" href="index.php#collapse5" onmouseover="this.style.color='#3e495c'" onmouseout="this.style.color='#3e495c'" onclick="cardFour()" aria-expanded="false">How
+                                is the forex market regulated?
+                            </a>
+                        </h4>
+                        <h4 class="panel-title visible-xs">
+                            <a class="card-head collapsed" data-toggle="collapse" data-parent="#accordion" href="index.php#collapse5" onmouseover="this.style.color='#3e495c'" onmouseout="this.style.color='#3e495c'" onclick="cardFour()" aria-expanded="false">How
+                                is the forex market regulated?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse5" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body padding-for-card-align">
+                            <div>
+                                <p class="normal-para-font" style="margin-bottom:10px;">International and local
+                                    financial regulatory bodies and agencies, including the Financial Stability Board
+                                    (FSB), the European Securities and Market Authority (ESMA), the Islamic Financial
+                                    Services Board (IFSB), the Financial Conduct Authority (FCA), the Australian
+                                    Securities and Investments Commission (ASIC), and the Cyprus Securities and Exchange
+                                    Commission (CySEC) set prudential standards, regulations and guiding principles for
+                                    the effective and sound supervision of the financial industry and the forex market
+                                    to ensure investor protection and successful development of the securities market. A
+                                    forex broker must comply with all set standards under the jurisdictions it is
+                                    registered or licensed and must undergo regular audits.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="cardfour" class="panel panel-default card-custom">
+                    <div id="cfr" class="panel-heading padding-for-card-head-align">
+                        <h4 class="panel-title hidden-xs">
+                            <a class="card-head collapsed" data-toggle="collapse" data-parent="#accordion" href="index.php#collapse6" onmouseover="this.style.color='#3e495c'" onmouseout="this.style.color='#3e495c'" onclick="cardFour()" aria-expanded="false">What
+                                economic factors may affect Forex rates?
+
+                            </a>
+                        </h4>
+                        <h4 class="panel-title visible-xs">
+                            <a class="card-head collapsed" data-toggle="collapse" data-parent="#accordion" href="index.php#collapse6" onmouseover="this.style.color='#3e495c'" onmouseout="this.style.color='#3e495c'" onclick="cardFour()" aria-expanded="false">What
+                                economic factors may affect Forex rates?
+
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse6" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body padding-for-card-align">
+                            <div>
+                                <p class="normal-para-font" style="margin-bottom:10px;">
+                                    Forex Rates and Currency values fluctuate according to a nation’s perceived economic
+                                    health. The main factors representing a country’s or union’s economy are:
+                                </p><ul style="list-style-type: none; padding-left:0px;">
+                                    <li style="font-size: 18.5px;font-weight: 300;font-stretch: normal;font-style: normal;line-height: 1.51;letter-spacing: normal;text-align: left;color: #0b121c!important;">
+                                        • Monetary Policy / Foreign Exchange Policy / Interest Rate</li><br>
+                                    <li style="font-size: 18.5px;font-weight: 300;font-stretch: normal;font-style: normal;line-height: 1.51;letter-spacing: normal;text-align: left;color: #0b121c!important;">
+                                        • Inflation Rate / Inflation Rate Differential / Gross Domestic Product
+                                        (GDP) Growth </li><br>
+                                    <li style="font-size: 18.5px;font-weight: 300;font-stretch: normal;font-style: normal;line-height: 1.51;letter-spacing: normal;text-align: left;color: #0b121c!important;">
+                                        • Sovereign Debt Risks / Net Foreign Liabilities / Quantitative Easing</li>
+                                    <br>
+                                    <li style="font-size: 18.5px;font-weight: 300;font-stretch: normal;font-style: normal;line-height: 1.51;letter-spacing: normal;text-align: left;color: #0b121c!important;">
+                                        • Oil Prices / Commodity Prices / Bond Yields</li><br>
+                                    <li style="font-size: 18.5px;font-weight: 300;font-stretch: normal;font-style: normal;line-height: 1.51;letter-spacing: normal;text-align: left;color: #0b121c!important;">
+                                        • Unemployment Rate / Housing Market Data / Manufacturing Index</li><br>
+                                    <li style="font-size: 18.5px;font-weight: 300;font-stretch: normal;font-style: normal;line-height: 1.51;letter-spacing: normal;text-align: left;color: #0b121c!important;">
+                                        • Balance of Trade / Market Intervention / Consumer Confidence Index</li>
+                                    <br>
+                                    <li style="font-size: 18.5px;font-weight: 300;font-stretch: normal;font-style: normal;line-height: 1.51;letter-spacing: normal;text-align: left;color: #0b121c!important;">
+                                        • Geostrategic Turbulence / Geopolitical Instability / Natural Disasters
+                                    </li><br>
+                                </ul>
+                                <p></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="cardfour" class="panel panel-default card-custom">
+                    <div id="cfr" class="panel-heading padding-for-card-head-align">
+                        <h4 class="panel-title hidden-xs">
+                            <a class="card-head collapsed" data-toggle="collapse" data-parent="#accordion" href="index.php#collapse7" onmouseover="this.style.color='#3e495c'" onmouseout="this.style.color='#3e495c'" onclick="cardFour()" aria-expanded="false">How
+                                is trading Forex different from trading Stocks?
+
+                            </a>
+                        </h4>
+                        <h4 class="panel-title visible-xs">
+                            <a class="card-head collapsed" data-toggle="collapse" data-parent="#accordion" href="index.php#collapse7" onmouseover="this.style.color='#3e495c'" onmouseout="this.style.color='#3e495c'" onclick="cardFour()" aria-expanded="false">How
+                                is trading Forex different from trading Stocks?
+
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse7" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body padding-for-card-align">
+                            <div>
+                                <p class="normal-para-font" style="margin-bottom:10px;">The fundamental differences
+                                    between the forex market and the stock market are that in foreign exchange, traders
+                                    buy and sell single or multiple currencies, aiming to seize any of the countless
+                                    occasions of the topmost liquidity and high volatility the forex market offers. The
+                                    stock market is the meeting point of investors trading stocks (shareholder equity)
+                                    of publicly traded companies, mostly as short-term, mid-term investments and
+                                    portfolio diversification. Stock trading requires more capital and in-depth
+                                    technical analysis. Trading stocks is considered currying reduced risks and being
+                                    less volatile than forex trading, mainly due to an economy’s slower and indirect
+                                    effect on a company’s performance.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div id="cardfour" class="panel panel-default card-custom">
+                    <div id="cfr" class="panel-heading padding-for-card-head-align">
+                        <h4 class="panel-title hidden-xs">
+                            <a class="card-head collapsed" data-toggle="collapse" data-parent="#accordion" href="index.php#collapse8" onmouseover="this.style.color='#3e495c'" onmouseout="this.style.color='#3e495c'" onclick="cardFour()" aria-expanded="false">How
+                                do you start trading forex with A$100?
+
+
+                            </a>
+                        </h4>
+                        <h4 class="panel-title visible-xs">
+                            <a class="card-head collapsed" data-toggle="collapse" data-parent="#accordion" href="index.php#collapse8" onmouseover="this.style.color='#3e495c'" onmouseout="this.style.color='#3e495c'" onclick="cardFour()" aria-expanded="false">How
+                                do you start trading forex with A$100?
+
+
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse8" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body padding-for-card-align">
+                            <div>
+                                <p class="normal-para-font" style="margin-bottom:10px;">Trading forex requires less
+                                    capital than other investments. Having a proper plan and sticking to it is essential
+                                    for maintaining discipline and implementing good real-time risk management
+                                    strategies even with a minimum of A$100. Set your financial targets and open a Demo
+                                    Account or Live Account with a broker who offers robust education, support and
+                                    soundness. Learn, sharpen your trading skills and design your trading strategies for
+                                    a more prudential trading experience.
+
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid mta">
+    <div id="fp-markets-app-align-section" class="container">
+        <div class="row">
+            <div class="col-sm-6 pad-right-40">
+                <div>
+                    <p class="h4-left-font">Introducing the All-New <br>cityindex-live Trading App</p>
+                    <p class="semi-head-font">Low-Cost Trading on the Go!</p>
+                    <div class="visible-xs">
+                        <div class="row" style="display: inline-flex;margin: 0 auto;margin-top: 50px;">
+                            <div class="col-sm-6" style="padding-left: 0px;">
+                                <div>
+                                    <span>
+                                        <img src="../static/globalcityindex-live/files/iphone.png" style="max-width:100%;">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6" style="padding-left: 0px;">
+                                <div>
+                                    <span>
+                                        <img src="../static/globalcityindex-live/files/android.png" style="max-width:100%;margin-top: -12px;">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="normal-white-para-font padding-top-25">Trade global markets from the palm of your hand.
+                        Access all your favourite products from one convenient app through one account.</p>
+                    <p class="normal-white-para-font padding-top-25" style="font-size: 23px;font-weight: 600;line-height: 30px;">Forex / Share CFDs / Indices /
+                        <br>Commodities / Cryptocurrencies
+                    </p>
+                </div>
+                <div class="row padding-top-35 dis-fle-for-mob-align">
+                    <div class="col-sm-6">
+                        <div>
+                            <span>
+                                <a href="index.php#" target="_blank">
+                                    <img src="../static/globalcityindex-live/files/apple-store.png" style="max-width:100%;">
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 margin-left-90-align">
+                        <div>
+                            <span>
+                                <a href="index.php#" target="_blank">
+                                    <img src="../static/globalcityindex-live/files/google-store.png" style="max-width:100%;">
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 pad-left-40 hidden-xs">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div>
+                            <span>
+                                <img class="cs-11569-mobileapp-img-one" src="../static/globalcityindex-live/files/iphone.png" style="max-width:100%;">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div>
+                            <span>
+                                <img class="cs-11569-mobileapp-img-sec" src="../static/globalcityindex-live/files/android.png" style="max-width:100%;margin-left: -35px;margin-top: -18px;">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .custom-link-for-a {
+        color: #00bdff !important;
+        cursor: pointer;
+        text-decoration: underline !important;
+        font-weight: 600;
+    }
+
+    .panel-heading .card-head.collapsed:after {
+        height: 0px;
+    }
+
+    .panel .card-head:after {
+        font-family: 'Font Awesome 5 Pro';
+        content: "\f00d";
+        float: right;
+        height: 11px;
+        color: #00bdff;
+        font-size: 20px;
+    }
+
+    .panel-group .panel a {
+        text-decoration: none !important;
+    }
+
+    .panel-title::after {
+        content: "" !important;
+        color: #00bdff;
+        top: 5px;
+        right: 0px;
+        position: absolute;
+        font-size: 18px;
+        font-family: "Font Awesome 5 Pro"
+    }
+
+    .panel-heading .card-head.collapsed:after {
+        height: 0px;
+        content: "\f105";
+    }
+
+    .panel-heading .card-head .collapsed:after {
+        content: "\f00d";
+    }
+
+    h3.panel-title>.card-head .collapsed:after {
+        content: "\f00d";
+    }
+
+    .h2-cent-font-sect {
+        font-family: 'Helvetica Neue';
+        font-size: 32px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        text-align: center;
+        color: #0b121c;
+    }
+
+    .wid-for-faq-section {
+        width: 650px;
+        margin: 0 auto;
+    }
+
+    .panel-group .panel+.panel {
+        margin-top: 3px;
+    }
+
+    .panel-heading {
+        background-color: transparent !important;
+        color: #3e495c !important;
+    }
+
+    .panel-heading {
+        padding: 10px 15px 10px 25px;
+    }
+
+    .card-head {
+        font-family: 'Helvetica Neue';
+        font-size: 23px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: normal;
+        text-align: left;
+        color: #0b121c !important;
+    }
+
+    .panel-default>.panel-heading+.panel-collapse>.panel-body {
+        border-top-color: transparent;
+    }
+
+    .padding-for-card-align {
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 30px;
+        padding-top: 5px;
+    }
+
+    .card-custom {
+        background-color: #fff !important;
+        width: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: linear-gradient(white, white), linear-gradient(to right, #fff 25%, rgba(0, 189, 255, 0.48), #26CC68);
+        background-clip: padding-box, border-box;
+        background-origin: padding-box, border-box;
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+        border-top: 1px solid transparent;
+    }
+
+    .cfaq1 {
+        background: #eeeeee;
+    }
+
+    #forex-faq-acc-section {
+        padding-top: 90px;
+        padding-bottom: 75px;
+    }
+
+    #forex-trading-work-section {
+        padding-top: 100px;
+        padding-bottom: 90px;
+    }
+
+    .ct5 {
+        background-image: url(../static/globalcityindex-live/files/Rectangle-13-desktop.png);
+        position: relative;
+        z-index: 9;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #forex-market-participants-section {
+        padding-top: 100px;
+        padding-bottom: 95px;
+    }
+
+    .pad-left-40 {
+        padding-left: 40px;
+    }
+
+    .pad-right-40 {
+        padding-right: 40px;
+    }
+
+    .ct4 {
+        background: #eeeeee;
+    }
+
+    #base-quote-currency-section {
+        padding-top: 100px;
+        padding-bottom: 95px;
+    }
+
+    #how-do-forex-markets-section {
+        padding-top: 100px;
+        padding-bottom: 95px;
+    }
+
+    .wid-for-forex-sect {
+        width: 660px;
+        margin: 0 auto;
+    }
+
+    .h2-cent-font {
+        font-family: 'Helvetica Neue';
+        font-size: 32px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.08;
+        letter-spacing: normal;
+        text-align: center;
+        color: #0b121c;
+    }
+
+    .normal-para-font {
+        font-size: 18.5px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.51;
+        letter-spacing: normal;
+        text-align: left;
+        color: #0b121c !important;
+        font-family: 'Helvetica Neue';
+    }
+
+    .padding-top-91 {
+        padding-top: 75px;
+    }
+
+    .padding-top-55 {
+        padding-top: 55px;
+    }
+
+    .wid-ali-for-cent {
+        width: 685px;
+        margin: 0 auto;
+    }
+
+    .card-cc-para-font {
+        font-family: 'Helvetica Neue';
+        padding-top: 9px;
+        margin-bottom: 0px;
+        background-image: linear-gradient(155deg, #00bdff 48%, #26CC02 57%);
+        font-size: 70px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 55px;
+        letter-spacing: normal;
+        text-align: center;
+        color: #00bdff;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .padding-bottom-20 {
+        padding-bottom: 20px;
+    }
+
+    .bord-rig {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-left: none;
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .line-rig {
+        background: url(/wp-content/themes/fptheme/image-2020/usa-elections-landing-page/hr-line.png' %});
+        background-size: 275px;
+        background-repeat: no-repeat;
+        background-position: 120% 49%;
+    }
+
+    .right-bord-2 {
+        background: url(/wp-content/themes/fptheme/image-2020/usa-elections-landing-page/hr-line.png' %});
+        background-position: 0% 66%;
+        background-size: 215px;
+        background-repeat: no-repeat
+    }
+
+    .lef-bord {
+        background: url(/wp-content/themes/fptheme/image-2020/usa-elections-landing-page/hr-line.png' %});
+        background-size: 115px;
+        background-repeat: no-repeat;
+        background-position: 120% 90%;
+    }
+
+    .right-bord {
+        background: url(/wp-content/themes/fptheme/image-2020/usa-elections-landing-page/hr-line.png' %});
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: 0% 91%;
+    }
+
+    .card-para-font {
+        font-size: 18.5px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.51;
+        letter-spacing: normal;
+        text-align: center;
+        margin-bottom: 0px;
+        color: #ffffff;
+        font-family: 'Helvetica Neue';
+    }
+
+    .padding-top-80 {
+        padding-top: 80px;
+    }
+
+    .head-white-font-sec {
+        font-family: 'Helvetica Neue';
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 0.86;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    #history-forex-section {
+        padding-top: 100px;
+        padding-bottom: 110px;
+    }
+
+    .para-white-font-sec {
+        font-size: 23px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .card-para-lef-font {
+        font-family: 'Helvetica Neue';
+        padding-left: 20px;
+        margin-bottom: 0px;
+        font-size: 18.5px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.24;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+    }
+
+    .cfa3 {
+        background-image: url(../static/globalcityindex-live/files/Rectangle-12-desktop.png);
+        position: relative;
+        z-index: 9;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .pad-left-30-desk {
+        padding-right: 30px;
+    }
+
+    #step-five-risk-management-section {
+        padding-top: 70px;
+        padding-bottom: 75px;
+    }
+
+    .width-last-sec-align-desk {
+        width: 565px;
+        margin: 0 auto;
+    }
+
+    #step-four-trading-platform-section {
+        padding-top: 90px;
+        padding-bottom: 60px;
+    }
+
+    #step-three-margin-account-section {
+        padding-top: 65px;
+        padding-bottom: 20px;
+    }
+
+    #step-two-regulated-broker-section {
+        padding-top: 70px;
+        padding-bottom: 15px;
+    }
+
+    #step-one-educate-section {
+        padding-top: 90px;
+        padding-bottom: 60px;
+    }
+
+    .steps-head-font {
+        font-family: 'Helvetica Neue';
+        font-size: 23px;
+        line-height: 28px;
+        color: #0b121c;
+        margin-bottom: 0px;
+    }
+
+    .last-semi-head-font-sec {
+        font-family: 'Helvetica Neue';
+        font-size: 32px;
+        font-weight: bold;
+        font-style: normal;
+        color: #0b121c;
+        text-align: center;
+    }
+
+    .last-semi-h2-font-sec {
+        font-size: 18.5px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: italic;
+        line-height: 1.51;
+        letter-spacing: normal;
+        text-align: center;
+        color: #2e3642;
+    }
+
+    #card-fundamental-technical-analysis-section {
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+
+    .two-cd-br-rg {
+        border-right: 1px solid transparent;
+        border-image: url(./static/globalcityindex-live/files/vertical_line-1x260-1.png);
+        border-image-slice: 20;
+    }
+
+    .two-card-h2-font {
+        font-family: 'Helvetica Neue';
+        font-size: 32.5px;
+        text-align: center;
+        font-weight: 300;
+        line-height: 1.6em;
+        color: #0b121c;
+    }
+
+    #technical-fundamental-analysis-section {
+        padding-top: 85px;
+        padding-bottom: 70px;
+    }
+
+    #concept-leverage-in-forex-trading-section {
+        padding-top: 90px;
+        padding-bottom: 80px;
+    }
+
+    .pad-left-50-for-align-desk {
+        padding-left: 50px;
+    }
+
+    .c18 {
+        background: url(../static/globalcityindex-live/files/leverege-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #liquidity-in-forex-trading-section {
+        padding-top: 90px;
+        padding-bottom: 50px;
+    }
+
+    #lot-sizes-section {
+        padding-top: 85px;
+        padding-bottom: 45px;
+    }
+
+    .c16 {
+        background: url(../static/globalcityindex-live/files/lot-seze-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #going-long-short-section {
+        padding-top: 105px;
+        padding-bottom: 100px;
+    }
+
+    .c15 {
+        background-color: #1b2029;
+    }
+
+    .h2-white-left-font-card-bg {
+        font-family: 'Helvetica Neue';
+        font-size: 32px;
+        color: #ffffff;
+        font-weight: 700;
+        text-align: left;
+        line-height: 1.13;
+    }
+
+    #majors-minors-exotics-section {
+        padding-top: 85px;
+        padding-bottom: 95px;
+    }
+
+    .three-card-bord-right {
+        border-right: 1px solid transparent;
+        border-image: url(./static/globalcityindex-live/files/vertical_line-1x260-1.png);
+        border-image-slice: 20;
+    }
+
+    .three-card-h1-font {
+        font-family: 'Helvetica Neue';
+        font-size: 32px;
+        color: #0b121c;
+        font-weight: 300;
+        line-height: 1.6em;
+        text-align: center;
+    }
+
+    .width-align-desk {
+        width: 675px;
+        margin: 0 auto;
+    }
+
+    #pip-forex-section {
+        padding-top: 80px;
+        padding-bottom: 90px;
+    }
+
+    .bt1,
+    .bt2,
+    .bt3 {
+        background-color: #152a4a;
+    }
+
+    #blue-button-section {
+        padding-top: 40px;
+        padding-bottom: 45px;
+    }
+
+    .open-account .d-flex {
+        justify-content: center;
+    }
+
+    .open-account p {
+        font-family: 'Helvetica Neue';
+        margin-bottom: 0px;
+        color: #fff !important;
+        align-self: center;
+        font-size: 32px !important;
+        font-weight: 200 !important;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.79;
+        letter-spacing: normal;
+        padding-top: 5px;
+    }
+
+    .btn-account {
+        font-family: 'Helvetica Neue';
+        margin-top: 5px;
+        background: #00bdff;
+        text-transform: uppercase;
+        margin-left: 12px;
+        z-index: 1;
+        height: 50px;
+        padding: 15px 15px !important;
+        color: #ffffff !important;
+        background-color: #00bdff;
+        position: relative;
+        display: inline-block;
+        font-size: 20.5px !important;
+        font-weight: 700;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: 1px;
+        text-align: center;
+        border-bottom-left-radius: 10px;
+    }
+
+    #forex-quotes-exchange-rates-spread-section {
+        padding-top: 85px;
+        padding-bottom: 85px;
+    }
+
+    .pad-rig-40 {
+        padding-right: 40px;
+    }
+
+    .pad-lef-40 {
+        padding-left: 40px;
+    }
+
+    .c12 {
+        background: url(../static/globalcityindex-live/files/bg-6-reasons.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .h2-left-font-for-bg {
+        font-family: 'Helvetica Neue';
+        font-size: 32px;
+        color: #ffffff;
+        font-weight: 700;
+        text-align: center;
+        line-height: 1.13;
+    }
+
+    .first-row-column-linear-grd {
+        background-image: linear-gradient(to right, rgb(9, 30, 86) 18%, #0086A9);
+    }
+
+    #price-table-align-section {
+        padding-top: 0px;
+        padding-bottom: 75px;
+    }
+
+    .nctable table {
+        background: linear-gradient(white, white), linear-gradient(to bottom right, #fff 4%, rgba(0, 189, 255, .48), #26CC68);
+        background-clip: padding-box, border-box;
+        background-origin: padding-box, border-box;
+        border: 1px solid transparent !important;
+        border-left: 1px solid transparent !important;
+        border-radius: 0px 10px 20px 20px;
+        border-collapse: collapse;
+        overflow: hidden !important;
+        position: inherit;
+        border-left: 1px solid transparent !important;
+        border-right: 1px solid transparent !important;
+    }
+
+    .table tr {
+        border-bottom: none !important;
+        border-right: none !important;
+        border-top: none !important;
+    }
+
+    .active0 {
+        background-color: #ffffff !important;
+    }
+
+    .first-row-linear-grd {
+        background-image: linear-gradient(to right, rgb(-140, 134, 171) 55%, #26cc68);
+    }
+
+    .table>tbody>tr>td {
+        border-top: none !important;
+    }
+
+    .tbe-hd {
+        font-size: 18.5px !important;
+        font-weight: 600 !important;
+        font-stretch: normal !important;
+        font-style: normal !important;
+        line-height: 22px !important;
+        letter-spacing: normal !important;
+        text-align: center !important;
+        color: #fff !important;
+    }
+
+    .active1 {
+        background-color: #f5f6f7;
+    }
+
+    .tbe-con {
+        font-size: 18.5px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.7;
+        letter-spacing: normal;
+        text-align: center;
+        color: #3e495c;
+    }
+
+    table tr td,
+    table tr th {
+        min-width: 143px !important;
+    }
+
+    table tr td {
+        border-left: none !important;
+    }
+
+    #notice-how-small-section {
+        padding-top: 0px;
+        padding-bottom: 60px;
+    }
+
+    #red-green-section {
+        padding-top: 0px;
+        padding-bottom: 80px;
+    }
+
+    .bg-align-desktop {
+        background-color: #f5f5f5;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        border-radius: 0 20px 20px 20px;
+    }
+
+    .bord-right-des {
+        background: url(/wp-content/themes/fptheme/image-2020/Trading-cfds/vertical_line-1x260.png' %});
+        background-repeat: no-repeat;
+        background-position: 99%;
+    }
+
+    .pad-right-30 {
+        padding-right: 60px;
+    }
+
+    .padding-left-55 {
+        padding-left: 60px;
+        padding-right: 70px;
+    }
+
+    #bid-ask-spread-section {
+        padding-top: 90px;
+        padding-bottom: 10px;
+    }
+
+    #example-of-leverage-cfd-section {
+        padding-top: 85px;
+        padding-bottom: 55px;
+    }
+
+    #major-trading-section {
+        padding-top: 85px;
+        padding-bottom: 80px;
+    }
+
+    .pad-left-60 {
+        padding-left: 60px;
+    }
+
+    #what-is-forex-trading-section {
+        padding-top: 100px;
+        padding-bottom: 95px;
+    }
+
+    .bottom-line-divid {
+        background-size: 270px;
+        background-position: bottom center;
+        background-image: url(../static/globalcityindex-live/files/vertical-image.png);
+        background-repeat: no-repeat;
+    }
+
+    #forex-australian-regulated-forex-section {
+        padding-top: 90px;
+        padding-bottom: 15px;
+    }
+
+    .h2-left-font {
+        font-family: 'Helvetica Neue';
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 1.13;
+        text-align: left;
+        color: #0b121c;
+    }
+
+    #currency-trading-with-australian-section {
+        padding-top: 90px;
+        padding-bottom: 80px;
+    }
+
+    .normal-white-bullet-para-font {
+        font-family: 'Helvetica Neue';
+        font-size: 18.5px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.51;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+    }
+
+    .c3 {
+        background: url(./static/globalcityindex-live/files/currency-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .h2-wht-cen-font {
+        font-family: 'Helvetica Neue';
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 1.13;
+        font-weight: 700;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .h5-wht-cen-font {
+        font-family: 'Helvetica Neue';
+        font-size: 22px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    #start-trading-forex-section {
+        padding-top: 80px;
+        padding-bottom: 85px;
+    }
+
+    .fr-cad-rig-bg {
+        padding: 15px;
+        background: url(/wp-content/themes/fptheme/image-2020/myfxbook-autotrade/vertical-image-1.png' %});
+        background-repeat: no-repeat;
+        background-position: 100%;
+    }
+
+    .nor-cad-rig-bg {
+        padding: 20px;
+        background: url(/wp-content/themes/fptheme/image-2020/myfxbook-autotrade/vertical-image-1.png' %});
+        background-repeat: no-repeat;
+        background-position: 100%;
+    }
+
+    .lst-cad-rig-bg {
+        padding: 20px;
+    }
+
+    .card-h2-font-sec {
+        font-family: 'Helvetica Neue';
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.51;
+        letter-spacing: normal;
+        color: #0b121c;
+    }
+
+    .h2-sec-hd-font {
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 1.13;
+        color: #0b121c !important;
+        font-family: 'Helvetica Neue';
+        text-align: center;
+    }
+
+    .h4-font-sem {
+        font-family: 'Helvetica Neue';
+        font-size: 23px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: normal;
+        text-align: center;
+        color: #0b121c;
+    }
+
+    #trade-forex-fr-section {
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+
+    .custom-link-for-a {
+        color: #00bdff !important;
+        cursor: pointer;
+        text-decoration: underline !important;
+        font-weight: 700;
+    }
+
+    .bottom-divider {
+        background-size: auto;
+        background-position: bottom center;
+        background-image: url(../static/globalcityindex-live/files/dotted-lines-icon-.png) !important;
+        background-repeat: no-repeat;
+    }
+
+    .normal-para-font {
+        font-size: 18.5px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.51;
+        letter-spacing: normal;
+        text-align: left;
+        color: #2e3642;
+    }
+
+    .pad-left-80-desk {
+        padding-left: 80px;
+    }
+
+    .h1-font-sec {
+        font-family: 'Helvetica Neue';
+        font-size: 44px;
+        font-weight: bold;
+        line-height: 1;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #0b121c;
+    }
+
+    .padding-top-55 {
+        padding-top: 55px;
+    }
+
+    .padding-top-35 {
+        padding-top: 35px;
+    }
+
+    .padding-top-45 {
+        padding-top: 45px;
+    }
+
+    .padding-top-30 {
+        padding-top: 20px;
+    }
+
+    .headerbg {
+        background-size: 100% 120%;
+        background-position: 55% 100%;
+    }
+
+    .container-fluid.nav-bar-section.nav-desktop {
+        display: block;
+    }
+
+    .cus-nav-inner {
+        height: 54px;
+        background-size: initial;
+        background-image: url(../static/globalcityindex-live/files/dotted-lines-icon-.png);
+        background-position: 50%;
+        text-transform: uppercase;
+        font-size: 17px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 3.12;
+        letter-spacing: normal;
+        text-align: center;
+    }
+
+    .cus-nav-bar ul,
+    ol {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .cus-nav-bar li {
+        float: left;
+        text-align: center;
+    }
+
+    li.list-item-menu {
+        width: auto !important;
+        min-width: 186px !important;
+    }
+
+    .menu-divider {
+        background-size: 1px 35px;
+        background-position: center right !important;
+        background-image: url(./static/globalcityindex-live/files/vertical-image-1.png);
+        background-repeat: no-repeat;
+    }
+
+    .cus-nav-bar li a.active {
+        background-color: #fff !important;
+        border-radius: 0px 25px 0px 0px !important;
+        background: linear-gradient(white, white), linear-gradient(to bottom right, #fff 14%, rgba(0, 189, 255, .48), #26cc68);
+        background-clip: padding-box, border-box;
+        background-origin: padding-box, border-box;
+        margin-left: -1px;
+        border: 2px solid transparent !important;
+        border-bottom: none !important;
+        border-top: none !important;
+        display: block;
+        position: relative;
+        font-size: 17px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #2e3642;
+        margin-right: -1px;
+        box-shadow: 29px 53.1px rgba(0, 189, 255, .48), -11px 53.1px rgba(0, 189, 255, .48);
+    }
+
+    .cus-nav-bar li a {
+        display: block;
+        color: #3e495c;
+        text-align: center;
+        padding: 1px 16px;
+        text-decoration: none;
+    }
+
+    .cus-nav-bar li a:hover {
+        z-index: 1;
+        background-color: #ffffff;
+        border-radius: 0px 25px 0px 0px !important;
+        background: linear-gradient(white, white), linear-gradient(to bottom right, #fff 14%, rgba(0, 189, 255, .48), #26cc68);
+        background-clip: padding-box, border-box;
+        background-origin: padding-box, border-box;
+        margin-left: -1px;
+        border: 2px solid transparent !important;
+        border-bottom: none !important;
+        border-top: none !important;
+        display: block;
+        position: relative;
+        cursor: pointer;
+        font-size: 17px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #2e3642;
+        margin-right: -1px;
+        box-shadow: 29px 53.1px rgba(0, 189, 255, .48), -11px 53.1px rgba(0, 189, 255, .48);
+    }
+
+    .mob-hei {
+        line-height: 25px !important;
+    }
+
+    .page-navi {
+        background-color: #ffffff;
+        z-index: 9;
+        position: relative;
+        margin-top: 2px;
+    }
+
+    .row.fb-cus-row {
+        max-width: 1080px;
+        margin: auto;
+        position: relative;
+        top: 10px;
+    }
+
+    ol {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .container-fluid.page-navi li {
+        float: left;
+        text-align: center;
+    }
+
+    u {
+        font-size: 18.5px;
+    }
+
+    .btn.btn-transparent-red {
+        border: none;
+        border-radius: 0 10px 10px 10px !important;
+        font-size: 24px !important;
+        font-weight: bold !important;
+        font-stretch: normal !important;
+        font-style: normal !important;
+        letter-spacing: 0.98px !important;
+        text-align: center !important;
+        color: #ffffff !important;
+    }
+
+    .layer {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .padding-top-10 {
+        padding-top: 10px;
+    }
+
+    .padding-top-20 {
+        padding-top: 20px;
+    }
+
+    .padding-top-25 {
+        padding-top: 25px;
+    }
+
+    .padding-top-30 {
+        padding-top: 30px;
+    }
+
+    .padding-top-40 {
+        padding-top: 40px;
+    }
+
+    .padding-top-50 {
+        padding-top: 50px;
+    }
+
+    .padding-top-60 {
+        padding-top: 60px;
+    }
+
+    .padding-bottom-10 {
+        padding-bottom: 10px;
+    }
+
+    .padding-bottom-15 {
+        padding-bottom: 15px;
+    }
+
+    .padding-bottom-20 {
+        padding-bottom: 20px;
+    }
+
+    .padding-bottom-25 {
+        padding-bottom: 25px;
+    }
+
+    .padding-bottom-30 {
+        padding-bottom: 30px;
+    }
+
+    .padding-bottom-35 {
+        padding-bottom: 35px;
+    }
+
+    .padding-bottom-40 {
+        padding-bottom: 40px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-transform: none !important;
+        letter-spacing: normal !important;
+    }
+
+    .mobile-container {
+        max-width: 480px;
+        margin: auto;
+        color: white;
+        border-radius: 10px;
+    }
+
+    .mobile-container {
+        display: none;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: white;
+        position: relative;
+    }
+
+    .topnav a {
+        color: black;
+        padding: 18px 16px;
+        text-transform: uppercase;
+        font-size: 28px;
+        display: block;
+    }
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .mob-active-link {
+        font-weight: 700;
+    }
+
+    .topnav a.icon {
+        font-size: 44px;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: -13px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .left-ll-mob-df {
+            background: url(./static/globalcityindex-live/files/hr-line.png);
+            background-size: 40px;
+            background-repeat: no-repeat;
+        }
+
+        .right-ll-mob-df {
+            background: url(./static/globalcityindex-live/files/hr-line.png);
+            background-size: 23px;
+            background-repeat: no-repeat;
+        }
+
+        .bord-rig-mob {
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-left: none;
+            border-top: none;
+            border-bottom: none;
+            padding-right: 25px;
+        }
+
+        .dis-fle {
+            display: flex;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .left-ll-mob {
+            background: url(/wp-content/themes/fptheme/image-2020/usa-elections-landing-page/hr-line.png' %});
+            background-size: 40px;
+            background-repeat: no-repeat;
+            background-position: 120% 47%;
+        }
+
+        .right-ll-mob {
+            background: url(/wp-content/themes/fptheme/image-2020/usa-elections-landing-page/hr-line.png' %});
+            background-size: 23px;
+            background-repeat: no-repeat;
+            background-position: 0% 47%;
+        }
+
+        .cfa3 {
+            background: url(../static/globalcityindex-live/files/Rectangle-12-mobile1.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #history-forex-section {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        .card-para-lef-font {
+            padding-left: 0px !important;
+        }
+
+        #how-do-forex-markets-section {
+            padding-top: 65px;
+            padding-bottom: 55px;
+        }
+
+        #base-quote-currency-section {
+            padding-top: 65px;
+            padding-bottom: 55px;
+        }
+
+        #forex-market-participants-section {
+            padding-top: 65px;
+            padding-bottom: 55px;
+        }
+
+        #forex-trading-work-section {
+            padding-top: 65px;
+            padding-bottom: 60px;
+        }
+
+        .pad-for-mobile {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .ct5 {
+            background-image: url(../static/globalcityindex-live/files/Rectangle-13-mobile.png);
+            position: relative;
+            z-index: 9;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .wid-for-forex-sect {
+            width: auto !important;
+            margin: 0 auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .panel-heading {
+            padding: 10px 15px 10px 20px;
+        }
+
+        .padding-for-card-align {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-top: 5px;
+        }
+
+        .h2-cent-font-sect {
+            font-size: 32px !important;
+        }
+
+        .padding-50 {
+            padding-top: 0px !important;
+        }
+
+        .wid-for-faq-section {
+            width: auto !important;
+            margin: 0 auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-top: 0px;
+            padding-top: 10px !important;
+        }
+
+        #forex-faq-acc-section {
+            padding-top: 60px;
+            padding-bottom: 50px;
+        }
+
+        .wid-ali-for-cent {
+            width: auto !important;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin: 0 auto;
+        }
+
+        #trade-forex-fr-section {
+            padding-top: 60px;
+            padding-bottom: 50px;
+        }
+
+        .section.headerbg {
+            background-image: url(./static/globalcityindex-live/files/herosection.png) !important;
+        }
+
+        .pad-left-80-desk {
+            padding-left: 30px !important;
+            padding-right: 30px;
+        }
+
+        #start-trading-forex-section {
+            padding-top: 60px;
+            padding-bottom: 50px;
+        }
+
+        .fr-cad-rig-bg,
+        .nor-cad-rig-bg {
+            padding: 0px;
+            background-image: url(../static/globalcityindex-live/files/vertical-image.png) !important;
+            background-repeat: no-repeat !important;
+            padding-bottom: 35px;
+            margin-bottom: 25px;
+            background-size: 250px;
+            background-position: bottom center !important;
+        }
+
+        .lst-cad-rig-bg {
+            padding: 0px;
+        }
+
+        .card-h2-font-sec {
+            line-height: 23px;
+        }
+
+        #currency-trading-with-australian-section {
+            padding-top: 65px;
+            padding-bottom: 51px;
+        }
+
+        #forex-australian-regulated-forex-section {
+            padding-top: 90px;
+            padding-bottom: 50px;
+        }
+
+        #what-is-forex-trading-section {
+            padding-top: 70px;
+            padding-bottom: 45px;
+        }
+
+        .mob-vid-align {
+            margin: auto;
+            display: block;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        #major-trading-section {
+            padding-top: 50px;
+            padding-bottom: 55px;
+        }
+
+        .pad-left-60 {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        #example-of-leverage-cfd-section {
+            padding-top: 55px;
+            padding-bottom: 15px;
+        }
+
+        #bid-ask-spread-section {
+            padding-top: 50px;
+            padding-bottom: 10px;
+        }
+
+        #red-green-section {
+            padding-top: 30px;
+            padding-bottom: 50px;
+        }
+
+        .bord-right-des {
+            background-size: 270px !important;
+            background-position: bottom center !important;
+            background-image: url(../static/globalcityindex-live/files/vertical-image.png) !important;
+            background-repeat: no-repeat !important;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        .mob-img-align-2 {
+            margin-top: -50px;
+        }
+
+        .mob-img-align-1 {
+            margin-top: -30px;
+        }
+
+        .pad-right-30 {
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        .padding-left-55 {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .padding-left-right-15-mob {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        #notice-how-small-section {
+            padding-top: 0px;
+            padding-bottom: 45px;
+        }
+
+        .scroll-bar-for-table::-webkit-scrollbar {
+            width: 250px;
+            height: 10px;
+        }
+
+        .scroll-bar-for-table::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #00BFFF;
+            outline: 2px solid #00BFFF;
+        }
+
+        .scroll-bar-for-table::-webkit-scrollbar-track {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+        }
+
+        #price-table-align-section {
+            padding-top: 0px;
+            padding-bottom: 60px;
+        }
+
+        .padding-left-15-for-table {
+            padding-left: 15px !important;
+        }
+
+        .scroll-bar-for-table {
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        #forex-quotes-exchange-rates-spread-section {
+            padding-top: 60px;
+            padding-bottom: 65px;
+        }
+
+        .pad-rig-40 {
+            padding-right: 30px !important;
+            padding-left: 30px;
+        }
+
+        .pad-top-20-imp-for-mob {
+            padding-top: 20px !important;
+        }
+
+        .pad-top-30-imp-for-mob {
+            padding-top: 30px !important;
+        }
+
+        #pip-forex-section {
+            padding-top: 55px;
+            padding-bottom: 60px;
+        }
+
+        #majors-minors-exotics-section {
+            padding-top: 55px;
+            padding-bottom: 45px;
+        }
+
+        .bottom-three-line-div-for-mobile {
+            background-size: 270px;
+            background-position: bottom center;
+            background-image: url(../static/globalcityindex-live/files/vertical-image.png);
+            background-repeat: no-repeat;
+            padding-bottom: 40px;
+            margin-bottom: 45px;
+        }
+
+        .three-card-bord-right {
+            border-image: none !important;
+            border: none !important;
+        }
+
+        .margin-top-15-for-mob {
+            margin-top: -15px;
+        }
+
+        .pad-left-30-desk {
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+
+        #going-long-short-section {
+            padding-top: 65px;
+            padding-bottom: 50px;
+        }
+
+        .c16 {
+            z-index: 9;
+            position: relative;
+        }
+
+        .gr-line-mob {
+            background-size: auto;
+            background-position: bottom center;
+            background-image: url(../static/globalcityindex-live/files/dotted-lines-icon-.png) !important;
+            background-repeat: no-repeat;
+        }
+
+        #lot-sizes-section {
+            padding-top: 30px;
+            padding-bottom: 50px;
+        }
+
+        #liquidity-in-forex-trading-section {
+            padding-top: 22px;
+            padding-bottom: 45px;
+        }
+
+        #concept-leverage-in-forex-trading-section {
+            padding-top: 60px;
+            padding-bottom: 55px;
+        }
+
+        .pad-left-50-for-align-desk {
+            padding-left: 30px !important;
+            padding-right: 30px;
+        }
+
+        .width-align-desk {
+            width: auto !important;
+            margin: 0 auto;
+        }
+
+        #technical-fundamental-analysis-section {
+            padding-top: 55px;
+            padding-bottom: 45px;
+        }
+
+        #card-fundamental-technical-analysis-section {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .bottom-line-div-for-mobile {
+            background-size: 270px;
+            background-position: bottom center;
+            background-image: url(../static/globalcityindex-live/files/vertical-image.png);
+            background-repeat: no-repeat;
+            padding-bottom: 30px;
+            margin-bottom: 25px;
+        }
+
+        .two-cd-br-rg {
+            border-image: none !important;
+            border: none !important;
+        }
+
+        .pad-lef-40 {
+            padding-left: 30px !important;
+            padding-right: 30px;
+        }
+
+        #step-one-educate-section {
+            padding-top: 60px;
+            padding-bottom: 45px;
+        }
+
+        #step-two-regulated-broker-section {
+            padding-top: 20px;
+            padding-bottom: 25px;
+        }
+
+        #step-three-margin-account-section {
+            padding-top: 20px;
+            padding-bottom: 35px;
+        }
+
+        #step-four-trading-platform-section {
+            padding-top: 35px;
+            padding-bottom: 55px;
+        }
+
+        #step-five-risk-management-section {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .padding-left-15-for-mobile {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .padding-left-30-for-mobile {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .width-last-sec-align-desk {
+            width: auto !important;
+            margin: 0 auto;
+        }
+
+        .table {
+            max-width: none !important;
+        }
+
+        .nctable table {
+            border-width: 1px;
+            border-style: solid;
+            border-image: linear-gradient(to top, #fff, rgba(62, 73, 92, 0.3), #fff) 1 100%;
+        }
+
+        body,
+        html {
+            overflow-x: hidden !important;
+        }
+
+        .btn.btn-transparent-red {
+            display: none;
+        }
+
+        .mobile-link-active {
+            height: 54px;
+            margin-right: 0.5px;
+            background-image: url(../static/globalcityindex-live/files/dotted-lines-icon-.png);
+            background-position: 50%;
+            text-transform: uppercase;
+        }
+
+        .mobile-container {
+            display: block !important;
+        }
+
+        .container-fluid {
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+        .nav-icon {
+            margin: 1em;
+            width: 40px;
+            margin-top: -9px;
+            margin-right: 1px;
+        }
+
+        .nav-icon:after,
+        .nav-icon:before,
+        .nav-icon div {
+            background: linear-gradient(to right, rgb(-140, 134, 171) 55%, #26cc68);
+            border-radius: 3px;
+            content: '';
+            display: block;
+            height: 2px;
+            margin: 11px 0px;
+            transition: all .2s ease-in-out;
+        }
+
+        a.link-end-mobile-divider {
+            background-size: 370px 1px;
+            background-position: top !important;
+            background-image: url(./static/globalcityindex-live/files/vertical_line-1x260-1-1.png);
+            background-repeat: no-repeat;
+        }
+
+        .container-fluid.page-navi {
+            display: none;
+        }
+
+        .container-fluid.nav-bar-section.nav-desktop {
+            display: none;
+        }
+
+        .padding-top-10-for-mobile {
+            padding-top: 10px;
+        }
+
+        .padding-top-20-for-mobile {
+            padding-top: 20px;
+        }
+
+        .padding-top-25-for-mobile {
+            padding-top: 25px;
+        }
+
+        .padding-top-30-for-mobile {
+            padding-top: 30px;
+        }
+
+        .padding-top-40-for-mobile {
+            padding-top: 40px;
+        }
+
+        .padding-top-50-for-mobile {
+            padding-top: 50px;
+        }
+
+        .padding-top-60-for-mobile {
+            padding-top: 60px;
+        }
+    }
+</style>
+
+<style>
+    #fp-markets-app-align-section {
+        padding-top: 70px;
+        padding-bottom: 5px;
+    }
+
+    .mta {
+        background: url(../static/globalcityindex-live/files/Rectangle-12-desktop.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .normal-white-para-font {
+        font-size: 18px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.56;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+    }
+
+    .semi-head-font {
+        font-size: 23px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+    }
+
+    .h4-left-font {
+        font-size: 32px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.13;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+        margin-bottom: 5px;
+    }
+
+    .pad-right-40 {
+        padding-right: 40px
+    }
+
+    .pad-left-40 {
+        padding-left: 40px
+    }
+
+    .padding-top-10 {
+        padding-top: 10px;
+    }
+
+    .padding-top-20 {
+        padding-top: 20px;
+    }
+
+    .padding-top-25 {
+        padding-top: 25px;
+    }
+
+    .padding-top-30 {
+        padding-top: 30px;
+    }
+
+    .padding-top-40 {
+        padding-top: 40px;
+    }
+
+    .padding-top-25 {
+        padding-top: 25px;
+    }
+
+    .padding-top-35 {
+        padding-top: 35px;
+    }
+
+    .margin-left-90-align {
+        margin-left: -90px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .card-cc-para-font {
+            font-size: 32px;
+            line-height: 25px;
+        }
+
+        .margin-left-90-align {
+            margin-left: 0px !important;
+        }
+
+        .dis-fle-for-mob-align {
+            display: inline-flex;
+            margin: 0 auto;
+        }
+
+        .pad-right-40 {
+            padding-right: 30px !important;
+            padding-left: 30px;
+        }
+
+        .pad-left-40 {
+            padding-left: 30px !important;
+            padding-right: 30px;
+        }
+
+        .h4-left-font {
+            text-align: center;
+        }
+
+        .semi-head-font {
+            text-align: center;
+        }
+
+        .normal-white-para-font {
+            text-align: center;
+        }
+
+        .mta {
+            background: url(../static/globalcityindex-live/files/Rectangle-12-mobile.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #fp-markets-app-align-section {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+    }
+</style>
+
+
+<script type="text/javascript">
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+
+<style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        letter-spacing: 0;
+        text-transform: unset;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .container-fluid.c1.end-divider {
+            background: none !important;
+        }
+
+        a.btn-account {
+            margin-left: 50px !important;
+            ;
+            margin-right: 50px !important;
+            ;
+        }
+
+        .mobile-container {
+            display: block !important;
+        }
+
+        .navbar-header {
+            padding-right: 20px !important;
+        }
+
+        div#register-now {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        .section.nomarginmobile.footer-links div {
+            text-align: center !important;
+        }
+
+        .col-md-6.col-xs-6.dropdown {
+            padding-left: 20px !important;
+        }
+
+        .col-md-6.col-xs-6.pxmobilef.font12.text-right {
+            padding-right: 22px !important;
+        }
+
+        .margin60.col-md-12.text-left.footer-intro.font12 {
+            padding-left: 25px !important;
+            padding-right: 25px !important;
+        }
+
+        .registration p {
+            color: white !important;
+        }
+
+        .nav-icon {
+            margin: 1em;
+            width: 40px;
+            margin-top: -9px;
+            margin-right: 1px;
+
+        }
+
+        .nav-icon:after,
+        .nav-icon:before,
+        .nav-icon div {
+            background: linear-gradient(to right, rgb(-140, 134, 171) 55%, #26cc68);
+            border-radius: 3px;
+            content: '';
+            display: block;
+            height: 2px;
+            margin: 11px 0px;
+            transition: all .2s ease-in-out;
+        }
+
+        div#el-11d961c2 {
+            margin-bottom: 68px !important;
+        }
+
+        #el-4923d651[data-vce-do-apply*=all][data-vce-do-apply*=el-4923d651] {
+            padding-bottom: 104px !important;
+        }
+
+        .only-on-mobile {
+            display: block !important;
+        }
+
+        #el-4ae40169>.vce-col-inner>.vce-col-content {
+            padding-right: 18px !important;
+        }
+
+        .vce-single-image-inner.vce-single-image--absolute {
+            padding-right: 20px !important;
+        }
+
+        #el-0d5c28f5[data-vce-do-apply*=all][data-vce-do-apply*=el-0d5c28f5] {
+            margin-left: -20px !important;
+        }
+
+        p.third-head-sec {
+            margin-left: 32px !important;
+        }
+
+        div#el-4c4559f7 {
+            margin-left: -18px !important;
+        }
+
+        div#el-82367445 {
+            margin-top: -97px !important;
+        }
+
+        div#el-c633099b {
+            margin-top: -60px !important;
+        }
+
+        #el-e9436ba9[data-vce-do-apply*=all][data-vce-do-apply*=el-e9436ba9] {
+            padding-top: 0px !important;
+        }
+
+        div#el-7790f85e {
+            margin-top: -19px !important;
+        }
+
+        #el-832c5bbf {
+            margin-top: 24px !important;
+        }
+
+        a.navbar-brand {
+            padding-left: 12px !important;
+        }
+
+        .whitedown {
+            margin-left: 178px !important;
+        }
+    }
+
+
+    @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+        a.navbar-brand img {
+            width: 206px !important;
+        }
+
+        .img-align-nav {
+            height: 40px !important;
+        }
+
+        #el-a4b6ced5 {
+            padding-right: 55px !important;
+            padding-left: 0px !important;
+        }
+
+        #el-0a7659c4>figure>.vce-single-image-inner.vce-single-image--absolute>.vce-single-image {
+            min-width: 130% !important;
+        }
+
+        #el-0e8a640e,
+        #el-a4b6ced5 {
+            padding-right: 50px !important;
+        }
+
+        p.third-head-sec {
+            margin-left: 5px !important;
+            margin-right: 44px !important;
+        }
+
+        p.third-sec-text {
+            margin-right: 14px !important;
+        }
+
+    }
+
+
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) {
+        a.navbar-brand img {
+            width: 164px !important;
+        }
+
+        .img-align-nav {
+            height: 35px !important;
+        }
+
+        .title.mobile-title-3 p {
+            font-size: 30px !important;
+        }
+
+        .colms-title1mt4 {
+            font-size: 15px !important;
+        }
+
+        .blue-button-last-section {
+            font-size: 17px !important;
+        }
+    }
+
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {
+        a.navbar-brand img {
+            width: 214px !important;
+        }
+
+    }
+
+    .bord-lin {
+        border-radius: 0px 20px 20px 20px !important;
+        background: linear-gradient(white, white), linear-gradient(to bottom right, #fff 14%, rgba(0, 189, 255, .48), #26CC68) !important;
+        background-clip: padding-box, border-box !important;
+        background-origin: padding-box, border-box !important;
+        border-left: 1px solid transparent !important;
+        border-right: 1px solid transparent !important;
+        border-bottom: 1px solid transparent !important;
+        border-top: 1px solid transparent !important;
+    }
+
+    .bord-line-one {
+        border-radius: 20px 20px 20px 20px !important;
+    }
+
+    .bg-bord-card-one {
+        background: linear-gradient(white, white), linear-gradient(to right, #fff 25%, rgba(0, 189, 255, 0.48), #26CC68) !important;
+        background-clip: padding-box, border-box !important;
+        background-origin: padding-box, border-box !important;
+        border-left: 1px solid transparent !important;
+        border-right: 1px solid transparent !important;
+        border-bottom: 1px solid transparent !important;
+        border-top: 1px solid transparent !important;
+    }
+
+    .panel-group .panel {
+        border-radius: 20px 20px 20px 20px;
+    }
+</style>
+
+<script>
+    function cardOne() {
+        document.getElementById("cone").classList.add("padding-20");
+        document.getElementById("cthir").classList.remove("padding-20");
+        document.getElementById("csec").classList.remove("padding-20");
+
+        document.getElementById("cardonnee").classList.remove("bord-line-one");
+        document.getElementById("cardsec").classList.remove("bord-lin");
+        document.getElementById("cardthird").classList.remove("bord-lin");
+        document.getElementById("cardfour").classList.remove("bord-lin");
+        document.getElementById("cfr").classList.remove("padding-20");
+
+        document.getElementById("cardonnee").classList.remove("bg-bord-card-one");
+    }
+    function cardSec() {
+        document.getElementById("csec").classList.add("padding-20");
+        document.getElementById("cthir").classList.remove("padding-20");
+        document.getElementById("cone").classList.remove("padding-20");
+
+        document.getElementById("cardsec").classList.add("bord-lin");
+        document.getElementById("cardthird").classList.remove("bord-lin");
+        document.getElementById("cardonnee").classList.add("bord-line-one");
+        document.getElementById("cardfour").classList.remove("bord-lin");
+        document.getElementById("cfr").classList.remove("padding-20");
+
+        document.getElementById("cardonnee").classList.add("bg-bord-card-one");
+    }
+    function cardThir() {
+        document.getElementById("cthir").classList.add("padding-20");
+        document.getElementById("csec").classList.remove("padding-20");
+        document.getElementById("cone").classList.remove("padding-20");
+        document.getElementById("cfr").classList.remove("padding-20");
+
+        document.getElementById("cardthird").classList.add("bord-lin");
+        document.getElementById("cardsec").classList.remove("bord-lin");
+        document.getElementById("cardfour").classList.remove("bord-lin");
+        document.getElementById("cardonnee").classList.add("bord-line-one");
+
+        document.getElementById("cardonnee").classList.add("bg-bord-card-one");
+    }
+    function cardFour() {
+        document.getElementById("cfr").classList.add("padding-20");
+        document.getElementById("cthir").classList.remove("padding-20");
+        document.getElementById("csec").classList.remove("padding-20");
+        document.getElementById("cone").classList.remove("padding-20");
+
+        document.getElementById("cardfour").classList.add("bord-lin");
+        document.getElementById("cardthird").classList.remove("bord-lin");
+        document.getElementById("cardsec").classList.remove("bord-lin");
+        document.getElementById("cardonnee").classList.add("bord-line-one");
+
+        document.getElementById("cardonnee").classList.add("bg-bord-card-one");
+    }		
+</script>
+<style>
+    @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 667px) and (min-device-width: 375px) {
+        .sep-19-lf-align {
+            background-position: 100% 55% !important;
+            background-size: 20px !important;
+        }
+
+        .sep-19-rg-align {
+            background-position: 0% 55% !important;
+            background-size: 10px !important;
+        }
+
+        .sep-29-lf-align {
+            background-position: 100% 45% !important;
+            background-size: 14px !important;
+        }
+
+        .sep-29-rg-align {
+            background-position: 0% 45% !important;
+            background-size: 10px !important;
+        }
+
+        .sep-30-lf-align {
+            background-position: 100% 40% !important;
+            background-size: 14px !important;
+        }
+
+        .sep-30-rg-align {
+            background-position: 0% 40% !important;
+            background-size: 10px !important;
+        }
+
+        .oct-7-lf-align {
+            background-position: 100% 15% !important;
+            background-size: 14px !important;
+        }
+
+        .oct-7-rg-align {
+            background-position: 0% 15% !important;
+            background-size: 10px !important;
+        }
+
+        .oct-15-lf-align {
+            background-position: 100% 23% !important;
+            background-size: 14px !important;
+        }
+
+        .oct-15-rg-align {
+            background-position: 0% 23% !important;
+            background-size: 10px !important;
+        }
+
+        .oct-22-lf-align {
+            background-position: 100% 50% !important;
+            background-size: 14px !important;
+        }
+
+        .oct-22-rg-align {
+            background-position: 0% 50% !important;
+            background-size: 10px !important;
+        }
+
+        .nov-3-lf-align {
+            background-position: 100% 55% !important;
+            background-size: 14px !important;
+        }
+
+        .nov-3-rg-align {
+            background-position: 0% 55% !important;
+            background-size: 10px !important;
+        }
+
+        .nov-4-lf-align {
+            background-position: 100% 25% !important;
+            background-size: 14px !important;
+        }
+
+        .nov-4-rg-align {
+            background-position: 0% 25% !important;
+            background-size: 10px !important;
+        }
+
+        .dec-14-lf-align {
+            background-position: 100% 50% !important;
+            background-size: 7px !important;
+        }
+
+        .dec-14-rg-align {
+            background-position: 0% 50% !important;
+            background-size: 10px !important;
+        }
+    }
+
+    @media screen and (-webkit-device-pixel-ratio: 3) and (device-height: 640px) and (device-width: 360px) {
+        .sep-19-lf-align {
+            background-position: 100% 48% !important;
+            background-size: 20px !important;
+        }
+
+        .sep-19-rg-align {
+            background-position: 0% 48% !important;
+            background-size: 10px !important;
+        }
+
+        .sep-29-lf-align {
+            background-position: 100% 35% !important;
+            background-size: 14px !important;
+        }
+
+        .sep-29-rg-align {
+            background-position: 0% 35% !important;
+            background-size: 10px !important;
+        }
+
+        .sep-30-lf-align {
+            background-position: 100% 32% !important;
+            background-size: 14px !important;
+        }
+
+        .sep-30-rg-align {
+            background-position: 0% 32% !important;
+            background-size: 10px !important;
+        }
+
+        .oct-7-lf-align {
+            background-position: 100% 11% !important;
+            background-size: 14px !important;
+        }
+
+        .oct-7-rg-align {
+            background-position: 0% 11% !important;
+            background-size: 10px !important;
+        }
+
+        .oct-15-lf-align {
+            background-position: 100% 15% !important;
+            background-size: 14px !important;
+        }
+
+        .oct-15-rg-align {
+            background-position: 0% 15% !important;
+            background-size: 10px !important;
+        }
+
+        .oct-22-lf-align {
+            background-position: 100% 50% !important;
+            background-size: 14px !important;
+        }
+
+        .oct-22-rg-align {
+            background-position: 0% 50% !important;
+            background-size: 10px !important;
+        }
+
+        .nov-3-lf-align {
+            background-position: 100% 55% !important;
+            background-size: 14px !important;
+        }
+
+        .nov-3-rg-align {
+            background-position: 0% 55% !important;
+            background-size: 10px !important;
+        }
+
+        .nov-4-lf-align {
+            background-position: 100% 20% !important;
+            background-size: 14px !important;
+        }
+
+        .nov-4-rg-align {
+            background-position: 0% 20% !important;
+            background-size: 10px !important;
+        }
+
+        .dec-14-lf-align {
+            background-position: 100% 50% !important;
+            background-size: 7px !important;
+        }
+
+        .dec-14-rg-align {
+            background-position: 0% 50% !important;
+            background-size: 10px !important;
+        }
+
+    }
+</style>
+<style>
+    @media only screen and (max-width: 600px) {
+        .nctable table {
+            border-width: 1px !important;
+            border-style: solid !important;
+            border-image: linear-gradient(to top, #fff, rgba(62, 73, 92, 0.3), #fff) 1 100% !important;
+        }
+
+
+
+        .first-row-linear-grd {
+            background: linear-gradient(to right, rgb(-140, 134, 171) 100%, #26cc68) !important;
+        }
+    }
+</style>
+<style>
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+        .first-row-linear-grd {
+            background-size: contain;
+            background-position: center right;
+            background-attachment: fixed;
+        }
+
+        .nctable table {
+            border-width: 1px !important;
+            border-style: solid !important;
+            border-image: linear-gradient(to top, #fff, rgba(62, 73, 92, 0.3), #fff) 1 100% !important;
+        }
+    }
+
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+        .first-row-linear-grd {
+            background-size: contain;
+            background-position: center right;
+            background-attachment: fixed;
+        }
+
+        .nctable table {
+            border-width: 1px !important;
+            border-style: solid !important;
+            border-image: linear-gradient(to top, #fff, rgba(62, 73, 92, 0.3), #fff) 1 100% !important;
+        }
+    }
+    #blue-button-section .btn-account {
+        width: 300px;
+    }
+</style>
+        
+        
+
+
+
+    </main>
+    <!--------- Main area end --------->
+
+
+    <div class="section trading-bg2" style="padding-bottom: 0px;background-image: url(../static/globalcityindex-live/files/bottom-bg-1.webp);" id="register-now">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 padding60 col-md-offset-1">
+				<div class="trading_header_title_inner" style="padding-top:10px;">Start Trading <br>in Minutes</div>
+				<br>
+				<div class="trading_bullets_new">
+					<img src="../static/globalcityindex-live/files/bullet-17.png" class="lazy" alt="bullet"> Access 10,000+ financial instruments<br>
+					<img src="../static/globalcityindex-live/files/bullet-17.png" class="lazy" alt="bullet"> Auto open &amp; close positions<br>
+					<img src="../static/globalcityindex-live/files/bullet-17.png" class="lazy" alt="bullet"> News &amp; economic calendar<br>
+					<img src="../static/globalcityindex-live/files/bullet-17.png" class="lazy" alt="bullet"> Technical indicators &amp; charts<br>
+					<img src="../static/globalcityindex-live/files/bullet-17.png" class="lazy" alt="bullet"> Many more tools included
+				</div>						
+            </div>
+            
+            <div class="clear"></div>
+            <br>
+			<div class="col-md-12">
+			
+				<hr style="border-color:#676869;">
+				<div class="clearfix"></div>
+				<br><br>
+				
+					</div>
+			<div class="clearfix"></div>	
+			<br><br>
+        </div>
+    </div>
+</div>
+
+    <!--------- Footer area start --------->
+   <!-- start: Footer -->
+
+
+
+
+
+
+<?php  include("../includes/footer.php") ?>
+<style>
+    .footerp p {
+        margin-bottom: 15px;
+        line-height: 1.8;
+    }
+
+    .menu li {
+        list-style: none !important;
+    }
+</style>
+
+<!--Mobile Footer Start-->
+<footer class="mob-footer" style="padding-top: 35px;">
+    <div class="container">
+    <div class="row visible-xs">
+        <p class="mob-para">
+            <a data-toggle="collapse" data-parent="#accordion" class="a-mobmenu anymenu" href="index.php#collapseExample" aria-expanded="false"> Quick Start &amp; Resources</a>
+        </p>
+         <div class="footermenu collapse" id="collapseExample" aria-expanded="false">
+            <div class="card card-body">
+            <div class="menu-footer-0-container">
+            <ul id="menu-footer-1" class="menu">
+                <li><a href="<?php echo $domain ?>auth/register.php">Open An Account</a></li>
+                <li><a href="<?php echo $domain ?>auth/register.php">Try a Demo</a></li>
+            
+            </ul>
+            </div>  
+            </div>
+        </div>
+
+        <p class="mob-para">
+            <a data-toggle="collapse" data-parent="#accordion" class="a-mobmenu anymenu" href="index.php#collapseExample2" aria-expanded="false"> Markets</a>
+        </p>
+        <div class="footermenu collapse" id="collapseExample2" aria-expanded="false" style="height: 0px;">
+            <div class="card card-body">
+            <div class="menu-footer-1-container">
+            <ul id="menu-footer-6" class="menu">
+                <li><a href="index.php">What is Forex Trading?</a></li>
+                <li><a href="index.php">What is CFD Trading?</a></li>
+     
+                <li><a href="Forex.php">Forex</a></li>
+                <li><a href="Share_CFDs.php">Shares</a></li>
+                <li><a href="Metals.php">Metals</a></li>
+                <li><a href="commodities.php">Commodities</a></li>
+                <li><a href="Indices.php">Indices</a></li>
+                 
+                <li><a href="index.php">Futures</a></li>
+                <li><a href="cryptocurrency.php">Digital Currencies</a></li>
+                <li><a href="bonds.php">Bonds</a></li>
+                <li><a href="ETF_Trading.php">ETFs</a></li>
+            </ul>
+            </div>  
+            </div>
+        </div>
+
+    <p class="mob-para">
+        <a data-toggle="collapse" data-parent="#accordion" class="a-mobmenu anymenu" href="index.php#collapseExample3"> Tools &amp; Platforms</a>
+    </p>
+      <div class="collapse footermenu" id="collapseExample3">
+            <div class="card card-body">
+            <div class="menu-footer-2-container">
+            <ul id="menu-footer-7" class="menu">
+                <li><a href="MetaTrader_4.php">MetaTrader 4 (MT4)</a></li>
+                <li><a href="MetaTrader_5.php">MetaTrader 5 (MT5)</a></li>
+                <li><a href="ctrader.php">cTrader</a> </li>
+          
+               
+                <li><a href="Virtual_Private_Server.php">VPS</a></li>
+                 
+                <li><a href="MAM_PAMM.php">MAM/PAMM</a></li>
+                 
+                <li><a href="Social_Trading.php">Social Trading</a></li>
+                 <li><a href="Trading_Central.php">
+                    Trading Central 
+                </a>
+                </li> 
+
+            </ul>
+            </div> 
+            </div>
+        </div>
+
+    <p class="mob-para">
+        <a data-toggle="collapse" data-parent="#accordion" class="a-mobmenu anymenu" href="index.php#collapseExample4"> Trading Info</a>
+    </p>
+      <div class="collapse footermenu" id="collapseExample4">
+            <div class="card card-body">
+            <div class="menu-footer-3-container">
+            <ul id="menu-footer-7" class="menu">
+                <li><a href="Forex_Account_Types.php">MT4/5 Account Types</a></li>
+                <li><a href="Funding.php">Deposit Funds</a></li>
+                <li><a href="<?php echo  $domain  ?>pages/Withdraw_Funds.php">Withdraw Funds</a></li>
+                 
+                <li><a href="Forex_Spreads.php">Forex Spreads</a></li>
+                <li><a href="Swap_Rates.php">Forex Swap Rates</a></li>
+              
+                <li><a href="ctrader_fees.php">cTrader Fees &amp; Charges</a></li>
+                <li><a href="Trading_Hours.php">Trading Hours</a></li>
+            </ul>
+            </div> 
+            </div>
+        </div>
+
+    <p class="mob-para">
+        <a data-toggle="collapse" data-parent="#accordion" class="a-mobmenu anymenu" href="index.php#collapseExample5">
+          About Us</a>
+    </p>
+      <div class="collapse footermenu" id="collapseExample5">
+            <div class="card card-body">
+            <div class="menu-footer-4-container">
+            <ul id="menu-footer-8" class="menu">
+                <li><a href="Why_FP_Markets.php">Why cityindex-live?</a></li>
+                <li><a href="about.php">About cityindex-live</a></li>
+                <li><a href="ECN_Pricing.php">ECN Pricing</a></li>
+                <!--<li><a href="what-is-dma-pricing">DMA Pricing</a></li>-->
+                <li><a href="FP_Markets_Partners.php">Partner with cityindex-live</a></li>
+                <li><a href="">FAQ</a></li>
+               
+                <li><a href="contact.php">Contact Us</a></li>
+            </ul>
+            </div> 
+            </div>
+        </div>
+
+    <p class="mob-para">
+        <a data-toggle="collapse" data-parent="#accordion" class="a-mobmenu anymenu" href="index.php#collapseExample6">
+          Regulation &amp; Licence </a>
+    </p>
+      <div class="collapse footermenu" id="collapseExample6">
+            <div class="card card-body">
+            <div class="menu-footer-5-container">
+            <ul id="menu-footer-9" class="menu">
+                
+                <li><a href="Regulation.php">Regulation</a></li>
+            </ul>
+            </div> 
+            </div>
+        </div>
+
+    <div class="visible-xs" style="margin-bottom: 30px;margin-top: 20px;">
+        <img src="../static/globalcityindex-live/files/fmenu-seperator.webp" alt="menu-seperator">
+    </div>
+
+    <div class="col-md-12 text-center visible-xs mobile-socials">
+        <div style="margin-bottom:20px;">
+            <a href="index.php"><img class="lazy max__width__200" src="../static/globalcityindex-live/files/logo-main.4b9c545ea9347660b73dd3b00a629d43.png" alt=" footer logo"></a>
+        </div>
+         <!--<div class="mob-contact"> Call us: </div>
+          <div><a class="mob-contact-info" href="tel:+44 20 3831 3622">+44 20 3831 3622</a></div>-->
+          <br>
+          
+          <div class="mob-contact">Email:</div>
+          <div><a class="mob-contact-info" href="mailto:support@cityindex-live.net"> support@cityindex-live.net</a></div>    
+            
+          <br><br>
+            
+    <div class="footer__bottom">
+            <div class="footer__bottom__top">
+                <div class="align-items-center">
+                    <div class="col-md-6">
+                        <!--<div class="footer__select">
+                            <select name="" id="" class="form-select select-options">
+                                <option value="" selected>ASIC</option>
+                                <option value="">Option 1</option>
+                                <option value="">Option 2</option>
+                                <option value="">Option 3</option>
+                                <option value="">Option 4</option>
+                                <option value="">Option 5</option>
+                            </select>
+                            <div class="input-icon">
+                                <i class="far fa-chevron-down"></i>
+                            </div>-->
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                         
+                    </div>
+                    <div class="col-md-12 footer_certificate" style="display: flex;justify-content: center;">
+                        <img class="certificate" src="../static/globalcityindex-live/files/FP_Markets_2023_Certification_Badge.png" alt="Certified" style="height: 140px; padding: 35px 37px 0px 37px;margin-bottom: -38px;">
+                    </div>
+                </div>
+            
+</div>
+
+</footer>
+
+<!-- Smartsupp Live Chat script -->
+
+   
+    
+
+
+<!--Mobile Footer End-->    <!--------- Footer area end --------->
+    
+     <script src="../static/globalcityindex-live/files/owl.carousel.min.js"></script>
+    <script src="../static/globalcityindex-live/files/simplyScroll.js"></script>
+    <script src="../static/globalcityindex-live/files/main.js"></script>
+
+    <link href="../static/globalcityindex-live/files/style.css" rel="stylesheet">
+    <link href="../static/globalcityindex-live/files/style_v3.css" rel="stylesheet">
+    <link href="../static/globalcityindex-live/files/responsive.css" rel="stylesheet">
+   
+    <!-- Footer Chunk Start -->
+
+    <style>
+      .new-object {
+        background-color: #FF0000;
+        color: #fff;
+        border-radius: 10px;
+        text-align: center;
+        font-weight: 800;
+        font-size: 10px;
+        width: auto;
+        display: inline-block;
+        padding: 2px 6px 3px 6px;
+    }
+    .new-item{
+      justify-content: normal !important;
+    }
+    @media  only screen and (max-width: 768px) {
+      .new-item .new-object{
+            margin: 0px 5px;
+      }
+    }
+  </style>
+<div class="container page__id">
+    <div class="row">
+        <p style="color:white;">Source - [^s^] | Page ID - 23 </p>
+    </div>
+</div>
+<!-- nc schema-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "[[!++site_url]][[$current_url]]"
+  },
+  "headline": "Forex Account Types",
+  "image": "[[!++site_url]]/static/globalcityindex-live/files/logo-main.png",  
+  "author": {
+    "@type": "Organization",
+    "name": "cityindex-live",
+    "url": "[[!++site_url]]"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "cityindex-live",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "[[!++site_url]]/static/globalcityindex-live/files/logo-main.png"
+    }
+  },
+  "datePublished": "[[*publishedon]]"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "[[*pagetitle]]",
+    "description": "[[*description:default=`[[*introtext]]",
+    "publisher": {
+        "@type": "Organization",
+        "name": "cityindex-live"
+    },
+    "license": "[[!++site_url]][[$current_url]]"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org", 
+  "@type": "BreadcrumbList", 
+  "itemListElement": [{
+    "@type": "ListItem", 
+    "position": 1, 
+    "name": "Home",
+    "item": "[[!++site_url]]"  
+  },{
+    "@type": "ListItem", 
+    "position": 2, 
+    "name": "[[*pagetitle]]",
+    "item": "[[!++site_url]][[$current_url]]"  
+  }]
+}
+</script>
+
+ 
+
+
+
+<!-- TrustBox script -->
+<script type="text/javascript" src="../static/globalcityindex-live/files/tp.widget.bootstrap.min.js" async=""></script>
+<!-- End TrustBox script -->
+
+<!-- New Live Chat code -->
+
+<!-- End of New Live Chat code -->
+
+<!-- New Live Widget Start 30/01/25 -->
+
+
+
+<!-- New Live Widget Start 30/01/25 -->
+
+
+<!-- GLOBAL FORM SIGN UP -->
+<!-- <script src="https://www.google.com/recaptcha/api.js' %}" async ></script> -->
+<script src="../static/globalcityindex-live/files/js.cookie.js"></script>
+<script src="../static/globalcityindex-live/files/i1502958122408_jquery.validate.js"></script>
+
+
+<script>
+    /* SIGN UP FORM VALIDATION */
+    var signupFormGlobal = "#form_signup_global";
+    var $ = jQuery.noConflict();
+    $(signupFormGlobal).validate({
+        ignore: [],
+        rules: {
+            first_name: {
+                required: true,
+                minlength: 3,
+            },
+            last_name: {
+                required: true,
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            phone: {
+                required: true,
+            },
+            country: {
+                required: true,
+            }
+        },
+        onfocusout: function (element) {
+            $(element).valid();
+        },
+        errorClass: 'error',
+        validClass: 'valid',
+        errorElement: 'span',
+        highlight: function (element, errorClass, validClass) {
+            $(element).addClass(errorClass).removeClass(validClass);
+        },
+        unhighlight: function (element, errorClass, validClass) {
+            $(element).removeClass(errorClass).addClass(validClass);
+        },
+        messages: {
+            first_name: {
+                required: "First name is required.",
+            },
+            last_name: {
+                required: "Last name is required.",
+            },
+            email: {
+                required: "Email is required.",
+                email: "Please enter a valid email address",
+            },
+            phone: {
+                required: "Phone is required."
+            },
+            country: {
+                required: "Country is required."
+            },
+        },
+        errorPlacement: function (error, element) {
+            if ($(element).is("input")) {
+                //error.insertAfter($(element));
+            } else if ($(element).is("select")) {
+                //error.insertAfter($(element).closest(".form-msg"));
+            } else {
+                //error.insertAfter(element)
+            }
+        },
+        submitHandler: function (form) {
+
+            var fpphone = $('#form_signup_global #phone').val();
+
+            if (fpphone.match(/^[0-9]*$/)) {
+                $('#form_signup_global #phone').removeClass('error').addClass('valid');
+                $('.fp-demo-signup-global .form_signup_global_msg').php("");
+            }
+            else {
+                $('#form_signup_global #phone').removeClass('valid').addClass('error');
+                $('.fp-demo-signup-global .form_signup_global_msg').php("Please enter a valid phone number; only numeric value is expected.");
+                return false;
+            }
+
+            $('.fp-demo-signup-global .form_signup_global_msg').php("");
+            /* grecaptcha.execute();
+            console.log("The captcha has been already solved"); */
+            var honeypot = $('#form_signup_global #honeypot').val();
+            if (honeypot != "") {
+                alert('value is - >' + honeypot);
+                return false;
+            } else {
+                function readCookie(name) {
+                    var cookiename = name + "=";
+                    var ca = document.cookie.split(';');
+                    for (var i = 0; i < ca.length; i++) {
+                        var c = ca[i];
+                        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                        if (c.indexOf(cookiename) == 0) return c.substring(cookiename.length, c.length);
+                    }
+                    return null;
+                }
+                var test_mydata = document.getElementById('_mkto_trk').value = readCookie('_mkto_trk');
+                var chk_lang = GetURLParameter('language');
+
+
+                var fpm_affiliate_pcode = "fpm-affiliate-pcode";
+                var fpm_affiliate_utm_source = "fpm-affiliate-utm-source";
+                var fpm_affiliate_utm_campaign = "fpm-affiliate-utm-campaign";
+                var fpm_affiliate_utm_content = "fpm-affiliate-utm-content";
+                var fpm_affiliate_agt = "fpm-affiliate-agt";
+                var bta_chk = $("#form_signup_global #track7_2").val();
+                var bta_fianl_val = "";
+                if (bta_chk === "") {
+                    bta_fianl_val = "0";
+                } else {
+                    bta_fianl_val = $("#form_signup_global #track7_2").val();
+                }
+                var lang_chk = $("#form_signup_global #track_lang").val();
+                var lang_fianl_val = "";
+
+                if (lang_chk === "") {
+
+
+
+                    lang_fianl_val = "en";
+
+
+
+                } else {
+
+                    lang_fianl_val = $("#form_signup_global #track_lang").val();
+                }
+
+                var request = $.ajax({
+                    url: "https://portal.firstprudentialmarkets.com/api/demoRegister",
+                    type: "POST",
+                    data: {
+                        first_name: $("#form_signup_global #first_name").val().toString(),
+                        last_name: $("#form_signup_global #last_name").val().toString(),
+                        email: $("#form_signup_global #email").val().toString(),
+                        phone: $("#form_signup_global #phone").val().toString(),
+                        platform: $("#form_signup_global #platform").val().toString(),
+                        country: $("#form_signup_global #country").val().toString(),
+                        nationality: $("#form_signup_global #nationality").val().toString(),
+                        demo_preferred_Language: $("#form_signup_global #demo_preferred_Language").val().toString(),
+                        landing_page: $("#form_signup_global #landing_page").val().toString(),
+                        currency: $("#form_signup_global #currency").val().toString(),
+                        "fpm-affiliate-pcode": $("#form_signup_global #track1_1").val().toString(),
+                        "fpm-affiliate-utm-source": $("#form_signup_global #track2_1").val().toString(),
+                        "fpm-affiliate-utm-campaign": $("#form_signup_global #track3_1").val().toString(),
+                        "fpm-affiliate-utm-content": $("#form_signup_global #track4_1").val().toString(),
+                        "fpm-affiliate-agt": $("#form_signup_global #track5_1").val().toString(),
+                        "_mkto_trk": $("#form_signup_global #_mkto_trk").val().toString(),
+                        "cxd": $("#form_signup_global #track7_1").val().toString(),
+                        "bta": bta_fianl_val.toString(),
+                        "language": lang_fianl_val.toString(),
+                    },
+                    dataType: 'json',
+                    beforeSend: function (xhr) {
+                        $('#form_signup_global .fp-demo-submit-global input[type=submit]').val('Processing..');
+                        $('#form_signup_global .fp-demo-submit-global input[type=submit]').attr('disabled', 'disabled');
+                    },
+                    success: function (msg) {
+                        $('.fp-demo-signup-global .form_signup_global_msg').php("");
+                        console.log("Success");
+                        if (msg.success == true) {
+                            console.log("Success if");
+                            var first_name = encodeURIComponent($("#first_name").val().toString()),
+                                last_name = encodeURIComponent($("#last_name").val().toString()),
+                                email = encodeURIComponent($("#email").val().toString()),
+                                phone = encodeURIComponent($("#phone").val().toString()),
+                                country = encodeURIComponent($("#country").val().toString());
+                            var fpURLstructure = 'fname=' + first_name + '&lname=' + last_name + '&email=' + email + '&phone=' + phone + '&actype=1&countrycode=' + country;
+
+                            //getting current URL segments
+                            var pathName = window.location.pathname;
+                            var url_segment2 = pathName.split('/');
+                            // console.log('url-segment::'+segments2[1]);
+
+                            var redirect_lang_short_code = "";
+                            var lang_array = ['en', 'ar', 'br', 'ca', 'cz', 'cn', 'de', 'es', 'fr', 'gr', 'id', 'ie', 'it', 'ke', 'ko', 'ms', 'pt', 'pl', 'ru', 'th', 'uk', 'vi', 'za', 'zh', 'zh_tw'];
+
+                            // Check if a value exists in the fruits array
+                            if (lang_array.indexOf(url_segment2[1]) !== -1) {
+                                redirect_lang_short_code = "" + url_segment2[1];
+                            } else {
+                                // console.log("Value does not exists!")
+                                // console.log(url_segment2[1])
+                            }
+
+                            setTimeout(function () {
+                                if (typeof (chk_lang) != "undefined" && chk_lang !== null) {
+
+                                    if (chk_lang == "es") {
+                                        window.location = "thank-you-application/?" + fpURLstructure;
+                                    } else if (chk_lang == "aus") {
+                                        window.location = "thank-you-application/?" + fpURLstructure;
+                                    } else if (chk_lang == "en") {
+                                        window.location = "thank-you-application/?" + fpURLstructure;
+                                    }
+                                } else {
+
+
+                                    window.location = redirect_lang_short_code + "thank-you-application/?" + fpURLstructure;
+
+
+
+
+                                }
+                            })
+                        } else {
+                            console.log("Success else");
+                            $('.fp-demo-signup-global .form_signup_global_msg').php("This email address is already registered. Please enter a new email address.");
+                            $('#form_signup_global .fp-demo-submit-global input[type=submit]').val('Register Now');
+                            $('#form_signup_global .fp-demo-submit-global input[type=submit]').removeAttr('disabled');
+                        }
+                    },
+                    error: function (msg, error) {
+                        $('.fp-demo-signup-global .form_signup_global_msg').php("Please enter a valid phone number.");
+                        $('#form_signup_global .fp-demo-submit-global input[type=submit]').val('Register Now');
+                        $('#form_signup_global .fp-demo-submit-global input[type=submit]').removeAttr('disabled');
+                    }
+                }).done(function (data) {
+                    /* $('#form_signup_global .fp-demo-submit-global input[type=submit]').val('Register Now');
+                    $('#form_signup_global .fp-demo-submit-global input[type=submit]').removeAttr('disabled'); */
+                });
+                return false;
+            }
+        }
+    });
+    $(signupFormGlobal + " button[type='submit']").click(function () {
+        setTimeout(function () {
+            $("input.error").first().focus();
+        }, 50)
+    });
+    /* EO SIGN UP FORM VALIDATION */
+
+    /* SIGN UP FORM 2 VALIDATION - START TRADING IN MINUTES */
+    var signupFormGlobal_ST = "#form_signup_global_ST";
+    var $ = jQuery.noConflict();
+    $(signupFormGlobal_ST).validate({
+        ignore: [],
+        rules: {
+            first_name: {
+                required: true,
+                minlength: 3,
+            },
+            last_name: {
+                required: true,
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            phone: {
+                required: true,
+            },
+            country: {
+                required: true,
+            }
+        },
+        onfocusout: function (element) {
+            $(element).valid();
+        },
+        errorClass: 'error',
+        validClass: 'valid',
+        errorElement: 'span',
+        highlight: function (element, errorClass, validClass) {
+            $(element).addClass(errorClass).removeClass(validClass);
+        },
+        unhighlight: function (element, errorClass, validClass) {
+            $(element).removeClass(errorClass).addClass(validClass);
+        },
+        messages: {
+            first_name: {
+                required: "First name is required.",
+            },
+            last_name: {
+                required: "Last name is required.",
+            },
+            email: {
+                required: "Email is required.",
+                email: "Please enter a valid email address",
+            },
+            phone: {
+                required: "Phone is required."
+            },
+            country: {
+                required: "Country is required."
+            },
+        },
+        errorPlacement: function (error, element) {
+            if ($(element).is("input")) {
+                //error.insertAfter($(element));
+            } else if ($(element).is("select")) {
+                //error.insertAfter($(element).closest(".form-msg"));
+            } else {
+                //error.insertAfter(element)
+            }
+        },
+        submitHandler: function (form) {
+            var fpphone_ST = $('#form_signup_global_ST #phone_ST').val();
+            console.log("test1Dec");
+            /*if( fpphone_ST.match(/^[0-9]*$/) ){
+                $('#form_signup_global_ST #phone_ST').removeClass('error').addClass('valid');
+                $('.fp-demo-signup-global .form_signup_global_msg_ST').php("");
+            }
+            else{
+                $('#form_signup_global_ST #phone_ST').removeClass('valid').addClass('error');
+                $('.fp-demo-signup-global .form_signup_global_msg_ST').php("Please enter a valid phone number; only numeric value is expected.");
+                return false;
+            }*/
+
+            $('.fp-demo-signup-global .form_signup_global_msg_ST').php("");
+            /* grecaptcha.execute();
+            console.log("The captcha has been already solved"); */
+            var honeypot = $('#form_signup_global_ST #honeypot_ST').val();
+            if (honeypot != "") {
+                alert('value is - >' + honeypot);
+                return false;
+            } else {
+                function readCookie(name) {
+                    var cookiename = name + "=";
+                    var ca = document.cookie.split(';');
+                    for (var i = 0; i < ca.length; i++) {
+                        var c = ca[i];
+                        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                        if (c.indexOf(cookiename) == 0) return c.substring(cookiename.length, c.length);
+                    }
+                    return null;
+                }
+                var test_mydata = document.getElementById('_mkto_trk_ST').value = readCookie('_mkto_trk');
+                var chk_lang = GetURLParameter('language');
+
+
+                var fpm_affiliate_pcode = "fpm-affiliate-pcode";
+                var fpm_affiliate_utm_source = "fpm-affiliate-utm-source";
+                var fpm_affiliate_utm_campaign = "fpm-affiliate-utm-campaign";
+                var fpm_affiliate_utm_content = "fpm-affiliate-utm-content";
+                var fpm_affiliate_utm_term = "fpm-affiliate-utm-term";
+                var fpm_affiliate_agt = "fpm-affiliate-agt";
+                var bta_chk = $("#form_signup_global_ST #track7_2_ST").val();
+                var bta_fianl_val = "";
+                if (bta_chk === "") {
+                    bta_fianl_val = "0";
+                } else {
+                    bta_fianl_val = $("#form_signup_global_ST #track7_2_ST").val();
+                }
+                var lang_chk = $("#form_signup_global_ST #track_lang_ST").val();
+                var lang_fianl_val = "";
+                console.log(fpm_affiliate_utm_term);
+                if (lang_chk === "") {
+
+                    lang_fianl_val = "en";
+
+                } else {
+
+                    lang_fianl_val = $("#form_signup_global_ST #track_lang_ST").val();
+                }
+
+                var request = $.ajax({
+                    url: "https://portal.firstprudentialmarkets.com/api/demoRegister",
+                    type: "POST",
+                    data: {
+                        first_name: $("#form_signup_global_ST #first_name_ST").val().toString(),
+                        last_name: $("#form_signup_global_ST #last_name_ST").val().toString(),
+                        email: $("#form_signup_global_ST #email_ST").val().toString(),
+                        phone: $("#form_signup_global_ST #phone_ST").val().toString(),
+                        platform: $("#form_signup_global_ST #platform_ST").val().toString(),
+                        country: $("#form_signup_global_ST #country_ST").val().toString(),
+                        nationality: $("#form_signup_global_ST #nationality").val().toString(),
+                        demo_preferred_Language: $("#form_signup_global_ST #demo_preferred_Language").val().toString(),
+                        landing_page: $("#form_signup_global_ST #landing_page").val().toString(),
+                        currency: $("#form_signup_global_ST #currency_ST").val().toString(),
+                        "fpm-affiliate-pcode": $("#form_signup_global_ST #track1_1_ST").val().toString(),
+                        "fpm-affiliate-utm-source": $("#form_signup_global_ST #track2_1_ST").val().toString(),
+                        "fpm-affiliate-utm-campaign": $("#form_signup_global_ST #track3_1_ST").val().toString(),
+                        "fpm-affiliate-utm-content": $("#form_signup_global_ST #track4_1_ST").val().toString(),
+                        "fpm-affiliate-agt": $("#form_signup_global_ST #track5_1_ST").val().toString(),
+                        "fpm-affiliate-utm-term": $("#form_signup_global_ST #track6_1_ST").val().toString(),
+                        "_mkto_trk": $("#form_signup_global_ST #_mkto_trk_ST").val().toString(),
+                        "cxd": $("#form_signup_global_ST #track7_1_ST").val().toString(),
+                        "bta": bta_fianl_val.toString(),
+                        "language": lang_fianl_val.toString(),
+                    },
+                    dataType: 'json',
+                    beforeSend: function (xhr) {
+                        $('#form_signup_global_ST .fp-demo-submit-global input[type=submit]').val('Processing..');
+                        $('#form_signup_global_ST .fp-demo-submit-global input[type=submit]').attr('disabled', 'disabled');
+                    },
+                    success: function (msg) {
+                        $('.fp-demo-signup-global .form_signup_global_msg_ST').php("");
+
+                        if (msg.success == true) {
+                            var first_name = encodeURIComponent($("#first_name_ST").val().toString()),
+                                last_name = encodeURIComponent($("#last_name_ST").val().toString()),
+                                email = encodeURIComponent($("#email_ST").val().toString()),
+                                phone = encodeURIComponent($("#phone_ST").val().toString()),
+                                country = encodeURIComponent($("#country_ST").val().toString());
+                            var fpURLstructure = 'fname=' + first_name + '&lname=' + last_name + '&email=' + email + '&phone=' + phone + '&actype=1&countrycode=' + country;
+
+                            //getting current URL segments
+                            var pathName = window.location.pathname;
+                            var url_segment2 = pathName.split('/');
+                            // console.log('url-segment::'+segments2[1]);
+
+                            var redirect_lang_short_code = "";
+                            var lang_array = ['en', 'ar', 'br', 'ca', 'cz', 'cn', 'de', 'es', 'fr', 'gr', 'id', 'ie', 'it', 'ke', 'ko', 'ms', 'pt', 'pl', 'ru', 'th', 'uk', 'vi', 'za', 'zh', 'zh_tw'];
+
+                            // Check if a value exists in the fruits array
+                            if (lang_array.indexOf(url_segment2[1]) !== -1) {
+                                redirect_lang_short_code = "" + url_segment2[1];
+                            } else {
+                                // console.log("Value does not exists!")
+                                // console.log(url_segment2[1])
+                            }
+
+                            setTimeout(function () {
+                                if (typeof (chk_lang) != "undefined" && chk_lang !== null) {
+
+                                    if (chk_lang == "es") {
+                                        window.location = "thank-you-application/?" + fpURLstructure;
+                                    } else if (chk_lang == "aus") {
+                                        window.location = "thank-you-application/?" + fpURLstructure;
+                                    } else if (chk_lang == "en") {
+                                        window.location = "thank-you-application/?" + fpURLstructure;
+                                    }
+                                } else {
+
+
+
+
+
+
+                                    window.location = redirect_lang_short_code + "thank-you-application/?" + fpURLstructure;
+                                }
+                            })
+                        } else {
+                            $('.fp-demo-signup-global .form_signup_global_msg_ST').php("This email address is already registered. Please enter a new email address.");
+                            $('#form_signup_global_ST .fp-demo-submit-global input[type=submit]').val('Register Now');
+                            $('#form_signup_global_ST .fp-demo-submit-global input[type=submit]').removeAttr('disabled');
+                        }
+                    },
+                    error: function (msg, error) {
+                        $('.fp-demo-signup-global .form_signup_global_msg_ST').php("Please enter a valid phone number");
+                        $('#form_signup_global_ST .fp-demo-submit-global input[type=submit]').val('Register Now');
+                        $('#form_signup_global_ST .fp-demo-submit-global input[type=submit]').removeAttr('disabled');
+                    }
+                }).done(function (data) {
+                    /* $('#form_signup_global_ST .fp-demo-submit-global input[type=submit]').val('Register Now');
+                    $('#form_signup_global_ST .fp-demo-submit-global input[type=submit]').removeAttr('disabled'); */
+                });
+                return false;
+            }
+            console.log("finish");
+        }
+    });
+    $(signupFormGlobal_ST + " button[type='submit']").click(function () {
+        setTimeout(function () {
+            $("input.error").first().focus();
+        }, 50)
+    });
+    /* EO SIGN UP FORM 2 VALIDATION - START TRADING IN MINUTES  */
+
+    function parseQueryString() {
+        var parsedParameters = {},
+            uriParameters = location.search.substr(1).split('&');
+        for (var i = 0; i < uriParameters.length; i++) {
+            var parameter = uriParameters[i].split('=');
+            var value = typeof (parameter[1]) !== 'undefined' ? parameter[1] : '';
+            parsedParameters[parameter[0]] = decodeURIComponent(value);
+        }
+        return parsedParameters;
+    }
+
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function convertAffiliateQueryStringToCookies() {
+        console.log("1");
+        var params = parseQueryString();
+        for (var i in params) {
+            if (params.hasOwnProperty(i) && (i.match(/fpm-affiliate/) || i.match(/bta/) || i.match(/cxd/) || i.match(/affiliate-utm-content/) || i.match(/language/))) {
+                if (i.match(/bta/) || i.match(/cxd/)) {
+                    if (getCookie('fpm-affiliate-' + i) === "") {
+                        document.cookie = 'fpm-affiliate-' + i + '=' + params[i] + '; path=/; domain=.' + window.location.host.split('.').slice(1).join('.') + ';max-age=7776000';
+                        document.cookie = i + '=' + params[i] + '; path=/; domain=.' + window.location.host.split('.').slice(1).join('.') + ';max-age=7776000';
+                    }
+                } else
+                    if (getCookie(i) === "") {
+                        document.cookie = i + '=' + params[i] + '; path=/; domain=.' + window.location.host.split('.').slice(1).join('.') + ';max-age=7776000';
+                    }
+            }
+        }
+    }
+
+
+
+    jQuery(document).ready(function () {
+        convertAffiliateQueryStringToCookies();
+        console.log("2");
+
+        //var track1 = GetURLParameter('fpm-affiliate-pcode');
+        var track1 = typeof (GetURLParameter('fpm-affiliate-pcode')) !== 'undefined' ? GetURLParameter('fpm-affiliate-pcode') : '';
+        track1 = getCookie('fpm-affiliate-pcode') !== "" ? getCookie('fpm-affiliate-pcode') : track1;
+
+        //var track2 = GetURLParameter('fpm-affiliate-utm-source');
+        var track2 = typeof (GetURLParameter('fpm-affiliate-utm-source')) !== 'undefined' ? GetURLParameter('fpm-affiliate-utm-source') : 'Website';
+        track2 = getCookie('fpm-affiliate-utm-source') !== "" ? getCookie('fpm-affiliate-utm-source') : track2;
+
+        var track3 = GetURLParameter('fpm-affiliate-utm-campaign');
+        track3 = getCookie('fpm-affiliate-utm-campaign') !== "" ? getCookie('fpm-affiliate-utm-campaign') : track3;
+
+        var track4 = GetURLParameter('fpm-affiliate-utm-content');
+        track4 = getCookie('fpm-affiliate-utm-content') !== "" ? getCookie('fpm-affiliate-utm-content') : track4;
+
+        var track5 = GetURLParameter('fpm-affiliate-agt');
+        track5 = getCookie('fpm-affiliate-agt') !== "" ? getCookie('fpm-affiliate-agt') : track5;
+
+        var trackterm = GetURLParameter('fpm-affiliate-utm-term');
+        trackterm = getCookie('fpm-affiliate-utm-term') !== "" ? getCookie('fpm-affiliate-utm-term') : trackterm;
+
+        var track7_1 = GetURLParameter('cxd');
+        track7_1 = getCookie('fpm-affiliate-cxd') !== "" ? getCookie('fpm-affiliate-cxd') : track7_1;
+
+        var track7_2 = GetURLParameter('bta');
+        track7_2 = getCookie('fpm-affiliate-bta') !== "" ? getCookie('fpm-affiliate-bta') : track7_2;
+
+        var track8_1 = GetURLParameter('language');
+        track8_1 = getCookie('language') !== "" ? getCookie('language') : track8_1;
+
+        console.log(trackterm);
+
+        $("#form_signup_global #track1_1").val(track1);
+        $("#form_signup_global #track2_1").val(track2);
+        $("#form_signup_global #track3_1").val(track3);
+        $("#form_signup_global #track4_1").val(track4);
+        $("#form_signup_global #track5_1").val(track5);
+        $("#form_signup_global #track6_1").val(trackterm);
+        $("#form_signup_global #track7_1").val(track7_1);
+        $("#form_signup_global #track7_2").val(track7_2);
+        $("#form_signup_global #track_lang").val(track8_1);
+
+        $("#form_signup_global_ST #track1_1_ST").val(track1);
+        $("#form_signup_global_ST #track2_1_ST").val(track2);
+        $("#form_signup_global_ST #track3_1_ST").val(track3);
+        $("#form_signup_global_ST #track4_1_ST").val(track4);
+        $("#form_signup_global_ST #track5_1_ST").val(track5);
+        $("#form_signup_global_ST #track6_1_ST").val(trackterm);
+        $("#form_signup_global_ST #track7_1_ST").val(track7_1);
+        $("#form_signup_global_ST #track7_2_ST").val(track7_2);
+        //$("#form_signup_global_ST #track_lang_ST").val(track8_1);
+    });
+</script>
+
+
+<script>
+    jQuery(document).ready(function ($) {
+        $("#form_signup_global #phone").on('keypress blur change keyup', function (e) {
+            var keyCode = (e.which) ? e.which : e.keyCode
+            return !(keyCode > 31 && (keyCode < 48 || keyCode > 57));
+        });
+
+        $("#form_signup_global_ST #phone_ST").on('keypress blur change keyup', function (e) {
+            var keyCode = (e.which) ? e.which : e.keyCode
+            return !(keyCode > 31 && (keyCode < 48 || keyCode > 57));
+        });
+
+        $("#form_signup_global_LP #phone_LP").on('keypress blur change keyup', function (e) {
+            var keyCode = (e.which) ? e.which : e.keyCode
+            return !(keyCode > 31 && (keyCode < 48 || keyCode > 57));
+        });
+
+        $("#form_signup_global_LP2 #phone_LP2").on('keypress blur change keyup', function (e) {
+            var keyCode = (e.which) ? e.which : e.keyCode
+            return !(keyCode > 31 && (keyCode < 48 || keyCode > 57));
+        });
+
+        $("#form_signup_global_LP #countrycode_LP").on('keypress blur change keyup', function (e) {
+            var keyCode = (e.which) ? e.which : e.keyCode
+            return !(keyCode > 31 && (keyCode < 48 || keyCode > 57));
+        });
+
+        $("#form_signup_global_LP2 #countrycode_LP2").on('keypress blur change keyup', function (e) {
+            var keyCode = (e.which) ? e.which : e.keyCode
+            return !(keyCode > 31 && (keyCode < 48 || keyCode > 57));
+        });
+
+        $("#form_signup_global #phone").attr("maxlength", "21");
+        $("#form_signup_global_ST #phone_ST").attr("maxlength", "21");
+        $("#form_signup_global_LP #phone_LP").attr("maxlength", "15");
+        $("#form_signup_global_LP2 #phone_LP2").attr("maxlength", "15");
+
+        $("#form_signup_global_LP #countrycode_LP").attr("maxlength", "6");
+        $("#form_signup_global_LP2 #countrycode_LP2").attr("maxlength", "6");
+
+        $("#form_new #countrycode").attr("maxlength", "6");
+        $("#form_new #phone").attr("maxlength", "15");
+    });
+</script>
+
+
+
+
+
+<!--scripts starts here-->
+<script type="text/javascript" src="../static/globalcityindex-live/files/browser_selector.js"></script>
+<script type="text/javascript" src="../static/globalcityindex-live/files/scripts.js"></script>
+<!--scripts ends here-->
+<script>
+    //Form Validator
+    /*Validation For The Planner Step 1*/
+    //you can create your own Regular expression like we have done for the mobile number and make it true its name.
+    // allow user to enter number of Austrelia format [ if client have this requirement ]
+    //******** Add your form id here********
+    var formDefualt = "#form_new";
+    $(formDefualt).validate({
+
+        //Ignore Field is for the Ignoring display None inputs validation
+        ignore: [],
+        rules: {
+            first_name: {
+                //******this is for the required field
+                required: true,
+                //******This option is for the minimum number of character
+                minlength: 3,
+            },
+            last_name: {
+                required: true,
+            },
+            email: {
+                required: true,
+                //******This option for the email address
+                email: true
+            },
+            phone: {
+                required: true,
+                //******it will allow users to enter number only
+                minlength: 3,
+            },
+            entityTypeId: {
+                required: true,
+            },
+            country: {
+                required: true,
+            }
+        },
+        onfocusout: function (element) {
+            $(element).valid();
+        },
+        errorClass: 'error',
+        validClass: 'valid',
+        errorElement: 'span',
+        highlight: function (element, errorClass, validClass) {
+            $(element).addClass(errorClass).removeClass(validClass);
+        },
+        unhighlight: function (element, errorClass, validClass) {
+            $(element).removeClass(errorClass).addClass(validClass);
+        },
+        /*comment this code if you dont want messages*/
+        messages: {
+            first_name: { required: "This field is required.", },
+            last_name: { required: "This field is required.", },
+            email: {
+                required: "This field is required.",
+                email: "Please enter a valid email address",
+            },
+            phone: { required: "This field is required." },
+            entityTypeId: { required: "This field is required." },
+            country: { required: "This field is required." },
+        },
+        //***********comment this code if you dont want messages*/
+
+        //Add your class instead of .form-msg (after that class error message will show)
+
+        errorPlacement: function (error, element) {
+            if ($(element).is("input")) {
+                error.insertAfter($(element));
+            }
+            else if ($(element).is("select")) {
+                error.insertAfter($(element).closest(".form-msg"));
+            }
+            else {
+                error.insertAfter(element)
+            }
+        },
+        //*******In windows.location you can put your link where you want to redirect your form.
+
+        submitHandler: function (form) {
+
+            //Empty out error messages.
+            $('.email_msg').php("");
+
+
+            //Basics.
+            var honeypot = $('#honeypot').val();
+            var errorMessageContainerHeight = '10px';
+            var remoteErrorMessage = 'Unable to process request at the time. Please try again later.';
+            var messagesSeparator = '<br>';
+
+            if (honeypot != "") {
+                alert('value is - >' + honeypot);
+                return false;
+            } else {
+                /*cookie*/
+                console.log("test");
+                function readCookie(name) {
+                    var cookiename = name + "=";
+                    var ca = document.cookie.split(';');
+                    for (var i = 0; i < ca.length; i++) {
+                        var c = ca[i];
+                        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                        if (c.indexOf(cookiename) == 0) return c.substring(cookiename.length, c.length);
+                    }
+                    return null;
+                }
+                var test_mydata = document.getElementById('_mkto_trk').value = readCookie('_mkto_trk');
+                /* cookie */
+
+                // Get language.
+                var chk_lang = GetURLParameter('language');
+
+                // $('.loader').css('display','block');
+
+                // Change submit button UI.
+                $("#thebutton span").text("Please wait...");
+                $("#thebutton span").addClass("loaderimg");
+                $("#thebutton").prop('disabled', true).addClass('btn-disable');
+
+                var fpm_affiliate_pcode = "fpm-affiliate-pcode";
+                var fpm_affiliate_utm_source = "fpm-affiliate-utm-source";
+                var fpm_affiliate_utm_campaign = "fpm-affiliate-utm-campaign";
+                var fpm_affiliate_utm_content = "fpm-affiliate-utm-content";
+                var fpm_affiliate_agt = "fpm-affiliate-agt";
+
+                var bta_chk = $("#track7_2").val();
+                var bta_fianl_val = "";
+                if (bta_chk === "") {
+                    bta_fianl_val = "0";
+                } else {
+                    bta_fianl_val = $("#track7_2").val();
+                }
+
+                var lang_chk = $("#track_lang").val();
+                var lang_fianl_val = "";
+                if (lang_chk === "") {
+                    lang_fianl_val = "en";
+                } else {
+                    lang_fianl_val = $("#track_lang").val();
+                }
+
+                var request = $.ajax({
+                    url: "[[!portalUrl]]api/register",
+                    type: "POST",
+                    data: {
+                        first_name: $("#first_name").val().toString(),
+                        last_name: $("#last_name").val().toString(),
+                        email: $("#email").val().toString(),
+                        phone: $("#phone").val().toString(),
+                        platform: $("#platform").val().toString(),
+                        country: $("#user_country").val().toString(),
+                        entityTypeId: $("#entity_type_id").val().toString(),
+                        currency: $("#currency").val().toString(),
+                        "fpm-affiliate-pcode": $("#track1_1").val().toString(),
+                        "fpm-affiliate-utm-source": $("#track2_1").val().toString(),
+                        "fpm-affiliate-utm-campaign": $("#track3_1").val().toString(),
+                        "fpm-affiliate-utm-content": $("#track4_1").val().toString(),
+                        "fpm-affiliate-agt": $("#track5_1").val().toString(),
+                        "_mkto_trk": $("#_mkto_trk").val().toString(),
+                        "cxd": $("#track7_1").val().toString(),
+                        "bta": bta_fianl_val.toString(),
+                        "language": lang_fianl_val.toString(),
+                    },
+                    dataType: 'json',
+                    success: function (response) {
+                        $('.email_msg').php("");
+                        $('.loader').css('display', 'none');
+
+                        //Now let's check if it was success?
+                        if (response.success == true) {
+
+                            //If it's a page redirection?
+                            if (response.redirectToUrl != '') {
+                                window.location = response.redirectTo;
+
+                            } else {
+                                //Change form action url and submit it.
+                                $(formDefualt).attr('action', response.redirectTo);
+                                form.submit();
+                            }
+
+                        } else {
+                            //Remove processing from submit button.
+                            var btn_name_get = $('#btn_name_get').val();
+                            $("#thebutton span").text(btn_name_get);
+                            $("#thebutton span").removeClass("loaderimg");
+                            $("#thebutton").prop('disabled', false).removeClass('btn-disable');
+
+                            //If we have messages?
+                            var messages = response.messages;
+                            var messagesLength = messages.length;
+                            if (messagesLength > 0) {
+
+                                //Add margin bottom to email_msg div.
+                                $(".email_msg").css('margin-bottom', errorMessageContainerHeight);
+
+                                //Iteration.
+                                for (var i = 0; i < messagesLength; i++) {
+                                    $('.email_msg').append(messages[i] + messagesSeparator);
+                                }
+                            } else {
+                                $('.email_msg').append(remoteErrorMessage + messagesSeparator);
+                            }
+                        }
+
+                    },
+                    error: function (response) {
+                        $('.email_msg').php("");
+                        $('.loader').css('display', 'none');
+
+                        var btn_name_get = $('#btn_name_get').val();
+                        $("#thebutton span").text(btn_name_get);
+                        $("#thebutton span").removeClass("loaderimg");
+                        $("#thebutton").prop('disabled', false).removeClass('btn-disable');
+
+                        // Add margin bottom to email_msg div.
+                        $(".email_msg").css('margin-bottom', errorMessageContainerHeight);
+
+                        //Response.
+                        var data = response.responseJSON;
+
+                        // Check if we have an object here?
+                        if (response.status == 422 && data !== null && typeof data === 'object') {
+
+                            //Iterate all and append to html errors.
+                            for (var key in data) {
+                                if (data.hasOwnProperty(key)) {
+                                    $('.email_msg').append(data[key][0] + messagesSeparator);
+                                };
+                            }
+                        } else {
+                            $('.email_msg').append(remoteErrorMessage + messagesSeparator);
+                        }
+                    }
+                });
+
+                return false;
+            }
+        }
+    });
+
+    //**********On Submit form will be submit 
+    $(formDefualt + " button[type='submit']").click(function () {
+        setTimeout(function () {
+            $("input.error").first().focus();
+        }, 50)
+    });
+
+
+    //**********GetURLParameter
+    function GetURLParameter(sParam) {
+        var sPageURL = window.location.search.substring(1);
+        var sURLVariables = sPageURL.split('&');
+        for (var i = 0; i < sURLVariables.length; i++) {
+            var sParameterName = sURLVariables[i].split('=');
+            if (sParameterName[0] == sParam) {
+                return sParameterName[1];
+            }
+        }
+    }
+
+    function parseQueryString() {
+        var parsedParameters = {}, uriParameters = location.search.substr(1).split('&');
+        for (var i = 0; i < uriParameters.length; i++) {
+            var parameter = uriParameters[i].split('=');
+            var value = typeof (parameter[1]) !== 'undefined' ? parameter[1] : '';
+            parsedParameters[parameter[0]] = decodeURIComponent(value);
+        }
+        return parsedParameters;
+    }/** Convert query params into cookie params */
+
+
+
+    function convertAffiliateQueryStringToCookies() {
+        console.log("3");
+
+        var params = parseQueryString();
+
+        for (var i in params) {
+            if (params.hasOwnProperty(i) && (i.match(/fpm-affiliate/) || i.match(/bta/) || i.match(/cxd/) || i.match(/affiliate-utm-content/) || i.match(/language/))) {
+                if (i.match(/bta/) || i.match(/cxd/)) {
+                    if (getCookie('fpm-affiliate-' + i) === "") {
+                        console.log("3a");
+                        document.cookie = 'fpm-affiliate-' + i + '=' + params[i] + '; path=/; domain=.' + window.location.host.split('.').slice(1).join('.') + ';max-age=7776000';
+                        document.cookie = i + '=' + params[i] + '; path=/; domain=.' + window.location.host.split('.').slice(1).join('.') + ';max-age=7776000';
+                    }
+                } else
+                    console.log("3b");
+                if (getCookie(i) === "") {
+                    console.log("3c");
+                    document.cookie = i + '=' + params[i] + '; path=/; domain=.' + window.location.host.split('.').slice(1).join('.') + ';max-age=7776000';
+                }
+            }
+        }
+    }
+
+
+
+    $(document).ready(function () {
+        console.log("4");
+        convertAffiliateQueryStringToCookies();
+
+
+        //set default country as AU 
+        $("#user_country").val('AU');
+
+        // Get country from IP.
+        $.get("https://ipinfo.io?token=8113c8e7b3e768", function (response) {
+            $("#user_country").val(response.country);
+        }, "jsonp");
+
+        //set default country as AU 
+        $("#user_country2").val('AU');
+
+        // Get country from IP.
+        $.get("https://ipinfo.io?token=8113c8e7b3e768", function (response) {
+            $("#user_country2").val(response.country);
+        }, "jsonp");
+
+        var track1 = GetURLParameter('fpm-affiliate-pcode');
+        var track2 = GetURLParameter('fpm-affiliate-utm-source');
+        var track3 = GetURLParameter('fpm-affiliate-utm-campaign');
+        var track4 = GetURLParameter('fpm-affiliate-utm-content');
+        var track5 = GetURLParameter('fpm-affiliate-agt');
+        var trackterm = GetURLParameter('fpm-affiliate-utm-term');
+
+        var track7_1 = GetURLParameter('cxd');
+        var track7_2 = GetURLParameter('bta');
+        var track8_1 = GetURLParameter('language');
+
+        $("#track1_1").val(track1);
+        $("#track2_1").val(track2);
+        $("#track3_1").val(track3);
+        $("#track4_1").val(track4);
+        $("#track5_1").val(track5);
+        $("#track6_1").val(trackterm);
+        $("#track7_1").val(track7_1);
+        $("#track7_2").val(track7_2);
+        $("#track_lang").val(track8_1);
+    });
+
+    $(document).ready(function () {
+        $(".anchor").click(function (e) {
+            $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top
+            }, 1000);
+        });
+    });
+
+</script>
+
+
+
+<!-- TR  Survery get currency code -->
+<script type="text/javascript">
+
+    var curObj = [{ 'cur_id': 'AUD', 'cur_code': 36 }, { 'cur_id': 'CAD', 'cur_code': 124 }, { 'cur_id': 'EUR', 'cur_code': 978 }, { 'cur_id': 'GBP', 'cur_code': 826 }, { 'cur_id': 'HKD', 'cur_code': 344 }, { 'cur_id': 'JPY', 'cur_code': 392 }, { 'cur_id': 'NZD', 'cur_code': 554 }, { 'cur_id': 'SGD', 'cur_code': 702 }, { 'cur_id': 'USD', 'cur_code': 840 }, { 'cur_id': 'IDR', 'cur_code': 360 }, { 'cur_id': 'MYR', 'cur_code': 458 }, { 'cur_id': 'VND', 'cur_code': 704 }, { 'cur_id': 'THB', 'cur_code': 764 }];
+    function getCurrency(curId) {
+        return $.grep(curObj, function (obj) {
+            return obj.cur_id === curId;
+        });
+    }
+
+</script>
+
+
+
+
+<style>
+    .chat-with-telegram {
+        display: inline-flex;
+        padding-top: 10px;
+        padding-left: 5px;
+        position: fixed;
+        left: 30px;
+        bottom: 30px;
+        z-index: 99;
+        align-items: center;
+        height: 46px;
+        width: 46px;
+        overflow: hidden;
+        background-color: #00bdff;
+        border-radius: 84px;
+        color: white;
+        text-decoration: none;
+        box-shadow: rgba(0, 0, 0, 0.24) 0 0 18px;
+        transition: all 0.1s ease;
+    }
+
+    .chat-with-telegram .label {
+        padding-right: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 13px;
+        line-height: 14px;
+        transition: all 0.1s ease;
+        opacity: 0;
+        visibility: hidden;
+        float: left;
+    }
+
+    .chat-with-telegram .icon-wrap {
+        float: left;
+        position: absolute;
+        top: 10px;
+    }
+
+    .chat-with-telegram .label span {
+        font-size: 11px;
+        text-transform: none;
+        display: block;
+    }
+
+    .chat-with-telegram:hover .label {
+        visibility: visible;
+        opacity: 1;
+        padding-left: 35px;
+    }
+
+    .chat-with-telegram:hover {
+        width: 185px;
+        padding-top: 6px;
+        justify-content: space-between;
+    }
+
+    .containerrr iframe {
+        height: 41px !important;
+    }
+
+
+    .fa-2x {
+        font-size: 2em !important;
+    }
+
+    .containerrr {
+
+        display: flex;
+        display: -webkit-flex;
+        -webkit-justify-content: center;
+        justify-content: center;
+        align-items: left;
+
+
+    }
+
+    .button {
+        z-index: 99;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 55px;
+        height: 55px;
+        background: #01bdff;
+        border-radius: 50px;
+        color: #fff;
+        bottom: 25px;
+        box-shadow: 0 0 30px rgb(116 116 116 / 33%);
+    }
+
+    .social {
+        opacity: 0;
+        position: fixed;
+        margin: 8px;
+        width: 140px;
+        height: 40px;
+        display: inline-block;
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 20px;
+        margin-bottom: 4px;
+
+    }
+
+
+    .social a {
+        color: #fff;
+    }
+
+    .twitter {
+        background: #00aced;
+        bottom: 280px;
+        border: 1px solid rgb(255 255 255 / 60%);
+    }
+
+    .instagram {
+        background: #00aced;
+        bottom: 235px;
+    }
+
+    .facebook {
+        background: #3b5998;
+        bottom: 190px;
+    }
+
+    .whatsapp {
+        background: #dd4b39;
+        bottom: 145px;
+    }
+
+    .clicked {
+        opacity: 1;
+        transition: 1.2s all ease;
+        transform: translateY(56px);
+    }
+
+    #myAnim {
+        animation: pulse-green 3s infinite;
+    }
+
+    @keyframes  pulse-green {
+        0% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0 rgba(0, 189, 255, 0.7);
+        }
+
+        70% {
+            transform: scale(1);
+            box-shadow: 0 0 0 10px rgba(51, 217, 178, 0);
+        }
+
+        100% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0 rgba(51, 217, 178, 0);
+        }
+    }
+</style>
+
+<script>
+    $(".button").click(function () {
+        $(".social.instagram").toggleClass("clicked");
+        $(".social.facebook").toggleClass("clicked");
+        $(".social.whatsapp").toggleClass("clicked");
+        $(".social.twitter").toggleClass("clicked");
+    })
+</script>
+
+
+
+
+<script>
+    /* modal script from EU */
+    $(document).ready(function () {
+
+        var entity = document.cookie.indexOf('fpm-entity-pass=');
+        var country = "[[!userIP]]";
+        if (["DE", "AT", "BE", "BG", "HR", "CZ", "DK", "EE", "FI", "FR", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE"].includes(country)) {
+            if (entity < 0) {
+                $('#scModal').modal("show");
+            }
+        }
+        console.log("Footer content loading at - SC");
+
+    });
+
+    function cookieFunction() {
+        var today = new Date();
+        var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        var dateTime = date + ' ' + time;
+        //alert(dateTime);
+
+       
+    }
+</script>
+
+
+
+<!-- Mobile App Box Script 
+<script>
+    $(document).ready(function () {
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        var countryCode = "[[!userIP]]";
+        function mobAppCk() {
+
+            // Check if the country code is 'IT'
+            if (countryCode === 'IT') {
+                console.log('Country code is IT, returning false.');
+                return false;
+            }
+
+            var cookieValue = "; " + document.cookie;
+            var indexOfNi = cookieValue.indexOf("; fpm-mab=NA");
+            if (indexOfNi !== -1) {
+                // Cookie "fpm-mab" exists and has the value "ni"
+                console.log('Cookie "fpm-mab" exists and has the value "ni"');
+                return true;
+            } else {
+                if (/android/i.test(userAgent)) {
+                    // Append 'Android' to the element with id 'output'
+                    $('#mob-app-installer').show();
+                    $('#app-url').attr('href', 'https://play.google.com/store/apps/details?id=com.cityindex-live.mobileapp&pli=1');
+                } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                    // Append 'iOS' to the element with id 'output'
+                    $('#mob-app-installer').show();
+                    $('#app-url').attr('href', 'https://apps.apple.com/au/app/fp-markets-forex-cfd-trading/id1666759328');
+
+                } else {
+                    // Append 'Other Device' to the element with id 'output'
+                    $('#mob-app-installer').hide();
+                }
+                return false;
+            }
+        }
+        mobAppCk();
+
+
+        $('#app-close-btn').on('click', function () {
+            $('#mob-app-installer').hide();
+            document.cookie = 'fpm-mab=NA; expires=' + new Date(new Date().getTime() + 30 * 24 * 60 * 60 * 1000) + '; path=/';
+        });
+        $('#app-url').on('click', function () {
+            $('#mob-app-installer').hide();
+            document.cookie = 'fpm-mab=NA; expires=' + new Date(new Date().getTime() + 180 * 24 * 60 * 60 * 1000) + '; path=/';
+        });
+
+    });
+
+</script>-->
+
+<!-- Mobile App Box Script -->
+<script>
+    $(document).ready(function () {
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        var countryCode = "[[!userIP]]";
+        function mobAppCk() {
+
+            // Get all query parameters from the current URL
+            const currentUrlParams = new URLSearchParams(window.location.search);
+            const queryParams = currentUrlParams.toString(); // Converts to a query string
+
+            // Construct the final URL with dynamic parameters
+            const baseLink = 'https://prpy.adj.st?adj_t=1iv421q0_1iznqq1j&adj_campaign=live_onboarding';
+            const finalLink = queryParams ? `${baseLink}&${queryParams}` : baseLink;
+
+            const cookieValue = "; " + document.cookie;
+            const indexOfNi = cookieValue.indexOf("; fpm-mab=NA");
+            if (indexOfNi !== -1) {
+                console.log('Cookie "fpm-mab" exists and has the value "NA"');
+                return true;
+            } else {
+                // Determine the device type and update the link
+                if (/android/i.test(userAgent)) {
+                    $('#mob-app-installer').show();
+                    $('#app-url').attr('href', finalLink);
+                } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                    $('#mob-app-installer').show();
+                    $('#app-url').attr('href', finalLink);
+                } else {
+                    $('#mob-app-installer').hide();
+                }
+                return false;
+            }
+        }
+        mobAppCk();
+
+
+        $('#app-close-btn').on('click', function () {
+            $('#mob-app-installer').hide();
+            document.cookie = 'fpm-mab=NA; expires=' + new Date(new Date().getTime() + 30 * 24 * 60 * 60 * 1000) + '; path=/';
+        });
+        $('#app-url').on('click', function () {
+            $('#mob-app-installer').hide();
+            document.cookie = 'fpm-mab=NA; expires=' + new Date(new Date().getTime() + 180 * 24 * 60 * 60 * 1000) + '; path=/';
+        });
+
+    });
+
+</script>
+
+
+
+<script type="text/javascript" id="hs-script-loader" async="" defer="defer" src="../static/globalcityindex-live/files/21424556_002.js"></script>             <!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = 'e979ae60811001d9db52c56022f45547442df5e8';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+<noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

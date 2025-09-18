@@ -20,11 +20,11 @@ $(document).ready(function() {
         if ($('.kr-chat-right').hasClass('kr-chat-right-hidded')) {
             updateUserSettings('show_bar_chat', 'true');
             $('.kr-chat-right').removeClass('kr-chat-right-hidded');
-            $(this).html('<svg class="lnr lnr-chevron-right"><use xlink:href="#lnr-chevron-right"></use></svg>');
+            $(this).php('<svg class="lnr lnr-chevron-right"><use xlink:href="#lnr-chevron-right"></use></svg>');
         } else {
             updateUserSettings('show_bar_chat', 'false');
             $('.kr-chat-right').addClass('kr-chat-right-hidded');
-            $(this).html('<svg class="lnr lnr-chevron-left"><use xlink:href="#lnr-chevron-left"></use></svg>');
+            $(this).php('<svg class="lnr lnr-chevron-left"><use xlink:href="#lnr-chevron-left"></use></svg>');
         }
         checkGraphResize();
     });
@@ -111,7 +111,7 @@ function _syncChatBar() {
                 }
 
                 if ($('[kr-change-chat-rid="' + room_id + '"]').length > 0) {
-                    $('[kr-change-chat-rid="' + room_id + '"]').find('.kr-chat-rs-lmsg').html(msg_list[Object.keys(msg_list)[Object.keys(msg_list).length - 1]]['date_formated_lm']);
+                    $('[kr-change-chat-rid="' + room_id + '"]').find('.kr-chat-rs-lmsg').php(msg_list[Object.keys(msg_list)[Object.keys(msg_list).length - 1]]['date_formated_lm']);
                 }
 
             });

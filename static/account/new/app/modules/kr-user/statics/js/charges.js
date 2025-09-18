@@ -28,7 +28,7 @@ function showChargePopup(tc, args = {}) {
             showAlert('Ooops', res.msg, 'error');
         } catch (e) {
             // When view is loaded, charge controllers
-            $.when($('.kr-ov-charges').html(data)).then(function() {
+            $.when($('.kr-ov-charges').php(data)).then(function() {
                 initChargePopupController();
             });
         }
@@ -103,7 +103,7 @@ function initChargePopupController() {
         $(this).hide();
         $(this).parent().prepend('<div class="kr-overley kr-ov-nblr kr-ov-charges"> <section> <div class="kr-overley-loading"> <div><div class="sk-folding-cube sk-folding-cube-orange"> <div class="sk-cube1 sk-cube"></div> <div class="sk-cube2 sk-cube"></div> <div class="sk-cube4 sk-cube"></div> <div class="sk-cube3 sk-cube"></div> </div></div> </div> </section> </div>')
 
-        $(this).find('.kr-msg').html('').hide();
+        $(this).find('.kr-msg').php('').hide();
 
         // Make creditcard action
         $.post($(this).attr('action'), $(this).serialize()).done(function(data) {
@@ -113,7 +113,7 @@ function initChargePopupController() {
                 window.location.replace($('body').attr('hrefapp') + "/dashboard.php?c=" + result.type + '&t=' + result.time + '&k=' + result.key);
             } else if (result.error == 1) { // Error found
                 $('.kr-charges-creditcard').parent().find('.kr-overley').remove();
-                $('.kr-charges-creditcard').find('.kr-msg').html(result.msg).show();
+                $('.kr-charges-creditcard').find('.kr-msg').php(result.msg).show();
                 $('.kr-charges-creditcard').show();
             } else if (result.error == 2) { // Error found (fields missing or fail)
                 $('.kr-charges-creditcard').parent().find('.kr-overley').remove();
@@ -161,7 +161,7 @@ function initChargePopupController() {
  * Show loading charge view
  */
 function showChargeLoading() {
-    $('.kr-ov-charges').html('<section> <div class="kr-overley-loading"> <div><div class="sk-folding-cube sk-folding-cube-orange"> <div class="sk-cube1 sk-cube"></div> <div class="sk-cube2 sk-cube"></div> <div class="sk-cube4 sk-cube"></div> <div class="sk-cube3 sk-cube"></div> </div></div> </div> </section>');
+    $('.kr-ov-charges').php('<section> <div class="kr-overley-loading"> <div><div class="sk-folding-cube sk-folding-cube-orange"> <div class="sk-cube1 sk-cube"></div> <div class="sk-cube2 sk-cube"></div> <div class="sk-cube4 sk-cube"></div> <div class="sk-cube3 sk-cube"></div> </div></div> </div> </section>');
 }
 
 /**

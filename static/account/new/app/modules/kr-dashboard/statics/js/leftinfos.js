@@ -28,25 +28,25 @@ function loadLeftInfosCoin(symbol, currency, market = "CCCAGG") {
         "asks": {}
     };
     $.each($('.kr-infoscurrencylf-orderbook').find('> div'), function() {
-        $(this).html('');
+        $(this).php('');
     })
-    $('.kr-dash-orderlistpassed-lst').html('');
+    $('.kr-dash-orderlistpassed-lst').php('');
     loadInfosInitied = true;
     $.post($('body').attr('hrefapp') + '/app/modules/kr-dashboard/src/actions/loadLeftInfosCoin.php', {
         symbol: symbol,
         currency: currency,
         market: market
     }).done(function(data) {
-        $('.kr-infoscurrencylf').html(data);
+        $('.kr-infoscurrencylf').php(data);
         addSubscribtion(symbol, currency, 2, market);
         subscribeStreamerCallback(function(dataCoin) {
             if ($('[kr-leftinfoisp]').attr('kr-leftinfoisp') != dataCoin.MARKET.toUpperCase() + ":" + dataCoin.FROMSYMBOL + dataCoin.TOSYMBOL) return false;
             if (dataCoin.FROMSYMBOL == symbol && currency == dataCoin.TOSYMBOL && market.toLowerCase() == dataCoin.MARKET.toLowerCase()) {
                 _highlightNumber(KRformatNumber(dataCoin.PRICE, dataCoin.PRICE > 1 ? 2 : 5), $('span.kr-infoscurrencylf-price-cp'));
                 var change24 = dataCoin.CHANGE24HOUR.match(/(.)[\d\.]+/g);
-                if (change24 != null) $('.kr-infoscurrencylf-price-evolv').html(KRformatNumber(change24, (change24 > 1 ? 2 : 5)).toString().replace(" ", "") + " (" + KRformatNumber(dataCoin.CHANGE24HOURPCT, 2) + "%)");
-                $('.kr-infoscurrencylf-range-infos-low').html(KRformatNumber(dataCoin.LOW24HOUR, (dataCoin.LOW24HOUR > 1 ? 2 : 5)));
-                $('.kr-infoscurrencylf-range-infos-high').html(KRformatNumber(dataCoin.HIGH24HOUR, (dataCoin.HIGH24HOUR > 1 ? 2 : 5)));
+                if (change24 != null) $('.kr-infoscurrencylf-price-evolv').php(KRformatNumber(change24, (change24 > 1 ? 2 : 5)).toString().replace(" ", "") + " (" + KRformatNumber(dataCoin.CHANGE24HOURPCT, 2) + "%)");
+                $('.kr-infoscurrencylf-range-infos-low').php(KRformatNumber(dataCoin.LOW24HOUR, (dataCoin.LOW24HOUR > 1 ? 2 : 5)));
+                $('.kr-infoscurrencylf-range-infos-high').php(KRformatNumber(dataCoin.HIGH24HOUR, (dataCoin.HIGH24HOUR > 1 ? 2 : 5)));
 
                 let percentage = 0;
                 if (dataCoin.HIGH24HOUR > dataCoin.LOW24HOUR) {
@@ -84,8 +84,8 @@ function hideLeftInfosMoreDetails() {
     $('.kr-wtchl').removeClass('kr-wtchl-lowd');
     $('.kr-infoscurrencylf').removeClass('kr-infoscurrencylf-moredetails');
     stopLeftInfosOrderBookSync();
-    $('.kr-infoscurrencylf-orderbook').find('section').html('');
-    $('.kr-dash-orderlistpassed-lst').html('');
+    $('.kr-infoscurrencylf-orderbook').find('section').php('');
+    $('.kr-dash-orderlistpassed-lst').php('');
 }
 
 
@@ -199,8 +199,8 @@ function _changeLeftInfosOrderBook(side = "bids", data = null, deletenexist = tr
         else amountFetched += parseFloat(v);
 
         if (orderBookSideContent.find('div[kr-orderbook-side-p="' + k + '"]').length > 0) {
-            orderBookSideContent.find('div[kr-orderbook-side-p="' + k + '"]').find("li[kr-orderbook-i='amount']").html(parseFloat(v).toFixed(6));
-            orderBookSideContent.find('div[kr-orderbook-side-p="' + k + '"]').find("li[kr-orderbook-i='sum']").html(KRformatNumber(amountFetched, 3));
+            orderBookSideContent.find('div[kr-orderbook-side-p="' + k + '"]').find("li[kr-orderbook-i='amount']").php(parseFloat(v).toFixed(6));
+            orderBookSideContent.find('div[kr-orderbook-side-p="' + k + '"]').find("li[kr-orderbook-i='sum']").php(KRformatNumber(amountFetched, 3));
             orderBookSideContent.find('div[kr-orderbook-side-p="' + k + '"]').find('div').css('width', (((amountFetched / totalFetched) * 100) / 1.5) + '%');
         } else {
 
@@ -256,7 +256,7 @@ function loadOrderGraphList(symbol, currency, market = null) {
                 updateOrderGraphList(symbol, currency, market);
             }, 2500);
 
-            $('.kr-dash-orderlistpassed-pairname').html(" - " + (!objReturn.show_market ? objReturn.market + " - " : "") + objReturn.pair);
+            $('.kr-dash-orderlistpassed-pairname').php(" - " + (!objReturn.show_market ? objReturn.market + " - " : "") + objReturn.pair);
         }
     }).fail(function() {
         showAlert('Oops', 'Fail to load order list graph', 'error');
@@ -331,9 +331,9 @@ function _toggleLayerOrderGraphList(dnc = false) {
 function _toogleLeftSide() {
     $('.kr-leftside').toggleClass('kr-leftside-hide');
     if ($('.kr-leftside').hasClass('kr-leftside-hide')) {
-        $('.kr-leftside > .kr-leftside-hide-controller').html('<svg class="lnr lnr-chevron-right"><use xlink:href="#lnr-chevron-right"></use></svg>');
+        $('.kr-leftside > .kr-leftside-hide-controller').php('<svg class="lnr lnr-chevron-right"><use xlink:href="#lnr-chevron-right"></use></svg>');
     } else {
-        $('.kr-leftside > .kr-leftside-hide-controller').html('<svg class="lnr lnr-chevron-left"><use xlink:href="#lnr-chevron-left"></use></svg>');
+        $('.kr-leftside > .kr-leftside-hide-controller').php('<svg class="lnr lnr-chevron-left"><use xlink:href="#lnr-chevron-left"></use></svg>');
     }
     checkGraphResize();
 }

@@ -1,5 +1,5 @@
 (function(w,d,s){
-    var fledgePageUrl = s + '/s/fledge/MSFledgePage.html';
+    var fledgePageUrl = s + '/s/fledge/MSFledgePage.php';
     var fledgePageUETParameter = 'UETEventStr';
 
 	var isEdgeBrowser = /Edg/.test(navigator.userAgent);

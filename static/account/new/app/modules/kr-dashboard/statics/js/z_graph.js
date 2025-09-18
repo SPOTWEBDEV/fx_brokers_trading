@@ -9,16 +9,16 @@
 function changeGraph(dataCoin, currency, container, topitem, replace = false, market = "CCCAGG") {
 
     // Change graph text
-    $('#' + container).find('.kr-dash-pan-graph').html('');
+    $('#' + container).find('.kr-dash-pan-graph').php('');
     $('#' + container).addClass('kr-dash-pan-cry-vsbl');
-    $('#' + container).html('');
+    $('#' + container).php('');
     $('#' + container).attr('symbol', dataCoin.symbol);
     $('#' + container).attr('currency', currency);
     $('#' + container).attr('market', market);
 
-    $('#' + container).find('.kr-dash-pan-tb-nopt-icon').html(dataCoin.icon);
-    $('#' + container).find('.kr-dash-pan-tb-nopt-n > label').html(dataCoin.name);
-    $('#' + container).find('.kr-dash-pan-tb-nopt-n > span').html(dataCoin.symbol);
+    $('#' + container).find('.kr-dash-pan-tb-nopt-icon').php(dataCoin.icon);
+    $('#' + container).find('.kr-dash-pan-tb-nopt-n > label').php(dataCoin.name);
+    $('#' + container).find('.kr-dash-pan-tb-nopt-n > span').php(dataCoin.symbol);
 
     $('#' + container).attr('chart-init', 'true');
 
@@ -33,11 +33,11 @@ function changeGraph(dataCoin, currency, container, topitem, replace = false, ma
         $('.kr-top-graphlist-item[topitem="' + topitem + '"]').attr('symbol', dataCoin.symbol);
         $('.kr-top-graphlist-item[topitem="' + topitem + '"]').attr('market', market);
         $('.kr-top-graphlist-item[topitem="' + topitem + '"]').attr('currency', currency);
-        $('.kr-top-graphlist-item[topitem="' + topitem + '"]').find('[kr-data="CHANGE24HOURPCT"]').html('~');
+        $('.kr-top-graphlist-item[topitem="' + topitem + '"]').find('[kr-data="CHANGE24HOURPCT"]').php('~');
         $('.kr-top-graphlist-item[topitem="' + topitem + '"]').find('[kr-data="CHANGE24HOURPCT"]').removeClass('kr-top-graphlist-item-evl-up');
         $('.kr-top-graphlist-item[topitem="' + topitem + '"]').find('[kr-data="CHANGE24HOURPCT"]').removeClass('kr-top-graphlist-item-evl-down');
-        $('.kr-top-graphlist-item[topitem="' + topitem + '"]').find('.kr-top-graphlist-inf').find('label').html(($('.kr-wallet-top-real').length > 0 ? market + ':' : '') + dataCoin.symbol + '/' + currency);
-        $('.kr-top-graphlist-item[topitem="' + topitem + '"]').find('.kr-top-graphlist-pic').html(dataCoin.icon);
+        $('.kr-top-graphlist-item[topitem="' + topitem + '"]').find('.kr-top-graphlist-inf').find('label').php(($('.kr-wallet-top-real').length > 0 ? market + ':' : '') + dataCoin.symbol + '/' + currency);
+        $('.kr-top-graphlist-item[topitem="' + topitem + '"]').find('.kr-top-graphlist-pic').php(dataCoin.icon);
         addSubscribtion(dataCoin.icon, currency, 5, market);
     }
 
@@ -121,7 +121,7 @@ function removeGraph(container) {
     if (!f) {
         $('#' + container).attr('symbol', 'not_init');
         $('#' + container).attr('chart-init', 'false');
-        $('#' + container).html('<div class="kr-dash-pan-lgl" onclick="showBigSearch(\'addGraphDashboardNotInit\');">' +
+        $('#' + container).php('<div class="kr-dash-pan-lgl" onclick="showBigSearch(\'addGraphDashboardNotInit\');">' +
             '<div class="kr-dash-pan-cry-select" graph="' + $('#' + container).attr('id') + '" style="display: none;">' +
             '<header>' +
             '<input type="text" name="" graph="' + $('#' + container).attr('id') + '" placeholder="Search by name or symbol" value="">' +
@@ -181,7 +181,7 @@ function loadChart(symbol, callback, container, currency, market = "CCCAGG") {
             }
         } catch (e) {
 
-            $.when($('#' + container).html(data)).then(function() { // Add graph in container & load data
+            $.when($('#' + container).php(data)).then(function() { // Add graph in container & load data
 
                 loadStaticSearchBox();
 

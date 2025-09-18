@@ -3,7 +3,7 @@
 <html lang="en">
 
     
-<!-- Mirrored from themesdesign.in/upcube/layouts/auth-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Apr 2025 19:19:24 GMT -->
+<!-- Mirrored from themesdesign.in/upcube/layouts/auth-login.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Apr 2025 19:19:24 GMT -->
 <head>
         
         <meta charset="utf-8" />
@@ -176,5 +176,5 @@
 
     </body>
 
-<!-- Mirrored from themesdesign.in/upcube/layouts/auth-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Apr 2025 19:19:24 GMT -->
+<!-- Mirrored from themesdesign.in/upcube/layouts/auth-login.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Apr 2025 19:19:24 GMT -->
 </html>
