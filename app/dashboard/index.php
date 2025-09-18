@@ -3155,7 +3155,7 @@ window.onload = setInterval(() => target.style.opacity = '0', 4000)
                                                             </div>
                                   </div>
                                   <section>
-                                                                                                                                                <a href="<?php echo $domain ?>app/withdraw/" class="btn btn-grey btn-autowidth btn-small">Withdraw</a>
+                                                                                                                                                <a href="<?php echo $domain ?>app/withdrawal/" class="btn btn-grey btn-autowidth btn-small">Withdraw</a>
                                                                                                                                         <a href="<?php echo $domain ?>app/deposit/" class="btn btn-green btn-autowidth btn-small">Credit</a>
                                   </section>
                                 </li>
