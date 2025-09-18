@@ -1,6 +1,20 @@
 <?php
 function generateEmailTemplate($type, $name, $email, $table = false, $tableData = []) {
     global $domain;
+
+    // Define readable titles for each type
+    $typeTitles = [
+        "register" => "Welcome",
+        "login" => "Login Alert",
+        "deposit" => "Deposit Notification",
+        "withdrawal" => "Withdrawal Notification",
+        "deposit_declined" => "Deposit Declined",
+        "withdrawal_declined" => "Withdrawal Declined",
+        "approve_deposit" => "Deposit Approved",
+        "approve_withdrawal" => "Withdrawal Approved",
+        "trading" => "Trading Activity"
+    ];
+
     // Detect system info (for login template)
     $ip = $_SERVER['REMOTE_ADDR'] ?? 'Unknown';
     $userAgent = $_SERVER['HTTP_USER_AGENT'] ?? 'Unknown';
@@ -48,7 +62,7 @@ function generateEmailTemplate($type, $name, $email, $table = false, $tableData 
         <div style="text-align:center; margin-bottom:20px;">
             <img src="<?php echo $domain ?>/static/globalfpmarkets/files/logo-main.4b9c545ea9347660b73dd3b00a629d43.png" alt="Site Logo" style="height:40px;">
         </div>
-        <h2 style="color:#222;"><?= ucfirst($type) ?> Notification</h2>
+        <h2 style="color:#222;"><?= $typeTitles[$type] ?? "Notification" ?></h2>
         <p>Hey <?= htmlspecialchars($name) ?>,</p>
 
         <?php if ($type === "register") { ?>
@@ -70,9 +84,25 @@ function generateEmailTemplate($type, $name, $email, $table = false, $tableData 
 
         <?php } elseif ($type === "deposit") { ?>
             <p>Your deposit request was received. Details below:</p>
+            <?php if ($table) { ?>
+                <table style="width:100%; border-collapse:collapse; margin-top:15px;">
+                    <tr><td style="border:1px solid #ddd; padding:8px; font-weight:bold;">Amount</td><td style="border:1px solid #ddd; padding:8px;"><?= htmlspecialchars($tableData['amount'] ?? 'N/A') ?></td></tr>
+                    <tr><td style="border:1px solid #ddd; padding:8px; font-weight:bold;">Date</td><td style="border:1px solid #ddd; padding:8px;"><?= htmlspecialchars($tableData['date'] ?? date("Y-m-d")) ?></td></tr>
+                    <tr><td style="border:1px solid #ddd; padding:8px; font-weight:bold;">Status</td><td style="border:1px solid #ddd; padding:8px;"><?= htmlspecialchars($tableData['status'] ?? 'Pending') ?></td></tr>
+                    <tr><td style="border:1px solid #ddd; padding:8px; font-weight:bold;">Account</td><td style="border:1px solid #ddd; padding:8px;"><?= htmlspecialchars($tableData['account'] ?? 'N/A') ?></td></tr>
+                </table>
+            <?php } ?>
 
         <?php } elseif ($type === "withdrawal") { ?>
             <p>Your withdrawal request was received. Details below:</p>
+            <?php if ($table) { ?>
+                <table style="width:100%; border-collapse:collapse; margin-top:15px;">
+                    <tr><td style="border:1px solid #ddd; padding:8px; font-weight:bold;">Amount</td><td style="border:1px solid #ddd; padding:8px;"><?= htmlspecialchars($tableData['amount'] ?? 'N/A') ?></td></tr>
+                    <tr><td style="border:1px solid #ddd; padding:8px; font-weight:bold;">Date</td><td style="border:1px solid #ddd; padding:8px;"><?= htmlspecialchars($tableData['date'] ?? date("Y-m-d")) ?></td></tr>
+                    <tr><td style="border:1px solid #ddd; padding:8px; font-weight:bold;">Status</td><td style="border:1px solid #ddd; padding:8px;"><?= htmlspecialchars($tableData['status'] ?? 'Pending') ?></td></tr>
+                    <tr><td style="border:1px solid #ddd; padding:8px; font-weight:bold;">Account</td><td style="border:1px solid #ddd; padding:8px;"><?= htmlspecialchars($tableData['account'] ?? 'N/A') ?></td></tr>
+                </table>
+            <?php } ?>
 
         <?php } elseif ($type === "deposit_declined") { ?>
             <p style="color:red;">Your deposit was declined. Details below:</p>
@@ -82,9 +112,16 @@ function generateEmailTemplate($type, $name, $email, $table = false, $tableData 
 
         <?php } elseif ($type === "trading") { ?>
             <p>A new trading activity occurred on your account. Details below:</p>
+
+        <?php } elseif ($type === "approve_deposit") { ?>
+            <p style="color:green;">Your deposit has been approved. Details below:</p>
+
+        <?php } elseif ($type === "approve_withdrawal") { ?>
+            <p style="color:green;">Your withdrawal has been approved. Details below:</p>
+
         <?php } ?>
 
-        <?php if ($table && !empty($tableData)) { ?>
+        <?php if ($table && !empty($tableData) && !in_array($type, ['deposit', 'withdrawal'])) { ?>
             <table style="width:100%; border-collapse:collapse; margin-top:15px;">
                 <?php foreach ($tableData as $key => $value) { ?>
                     <tr>
@@ -100,13 +137,3 @@ function generateEmailTemplate($type, $name, $email, $table = false, $tableData 
     <?php
     return ob_get_clean();
 }
-
-
-// echo generateEmailTemplate("register", "Ezea", "ezea@example.com");
-// echo generateEmailTemplate("deposit", "Ezea", "ezea@example.com", true, [
-//     ["method" => "USDT (TRC20)", "account" => "Dogecoin Account", "amount" => "$5003", "transaction_id" => "WRX214459573", "status" => "Pending"]
-// ]);
-
-// $body =  generateEmailTemplate("login", "Ezea", "ezea@example.com", true);
-
-// echo $body;

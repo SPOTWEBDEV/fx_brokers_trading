@@ -41,9 +41,9 @@ if ($isLocalhost) {
     // Online (Live Server)
     $domain = "https://cityindex-live.net/";
 
-    define("USER", "");
-    define("PASSWORD", "");
-    define("DATABASE", "");
+    define("USER", "cityinde_kingsley");
+    define("PASSWORD", "07089611318Kk");
+    define("DATABASE", "cityinde_forex");
 
     // Database connection
     $connection = mysqli_connect(HOST, USER, PASSWORD, DATABASE);

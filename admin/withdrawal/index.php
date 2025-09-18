@@ -1,5 +1,11 @@
 <?php  include("../../server/connection.php") ?>
 <?php  include("../../server/auth/admin.php") ?>
+<?php
+
+    require_once '../../mailer/email_template.php';
+    require_once '../../mailer/mailer.php';
+
+?>
 <!doctype html>
 <html lang="en">
 
@@ -114,6 +120,7 @@
 
                                                 <th>S/N:</th>
                                                 <th>Full-Name:</th>
+                                                <th>Email:</th>
                                                 <th>Amount:</th>
                                                 <th>Payment-Method:</th>
                                                 <th>From:</th>
@@ -132,7 +139,7 @@
 
                                             <?php
 
-                                            $query = "SELECT withdrawals.* , users.firstname, users.lastname FROM withdrawals JOIN users ON withdrawals.user_id = users.id WHERE withdrawals.status = 'pending' ORDER BY withdrawals.created_at DESC";
+                                            $query = "SELECT withdrawals.* , users.firstname, users.lastname ,users.email  FROM withdrawals JOIN users ON withdrawals.user_id = users.id WHERE withdrawals.status = 'pending' ORDER BY withdrawals.created_at DESC";
                                             $select_logs = mysqli_query($connection, $query);
                                             $sn = 1;
                                             while ($row = mysqli_fetch_assoc($select_logs)) {
@@ -140,6 +147,7 @@
                                                 $user = $row['user_id'];
                                                 $fullname = $row['firstname'] . " " . $row['lastname'];
                                                 $amount = $row['amount'];
+                                                $email = $row['email'];
                                                 $method = $row['withdraw_to'];
                                                 $from = $row['account_type'];
                                                 $date = $row['created_at'];
@@ -147,6 +155,7 @@
                                                 echo "<tr>";
                                                 echo "<td>$sn</td>";
                                                 echo "<td>$fullname</td>";
+                                                echo "<td>$email</td>";
                                                 echo "<td>$amount</td>";
                                                 echo "<td>$method</td>";
                                                 echo "<td>$from</td>";
@@ -164,7 +173,7 @@
                                                 if ($status == "pending") {
 
                                                     echo "<td><button class='btn btn-success btn-sm'><a style='color: white;' href='index.php?approve=$id&user_id=$user&amount=$amount&account=$from'>Approve</a></button></td>";
-                                                    echo "<td><button class='btn btn-danger btn-sm'><a style='color: white;' href='index.php?decline=$id'>Decline</a></button></td>";
+                                                    echo "<td><button class='btn btn-danger btn-sm'><a style='color: white;' href='index.php?decline=$id&user=$user&amount=$amount&date=$date&type=$method'>Decline</a></button></td>";
 
                                                 }
 
@@ -174,80 +183,142 @@
 
 
 
+                                                
                                                 if (isset($_GET['approve'])) {
-
                                                     $id = $_GET['approve'];
                                                     $amount = $_GET['amount'];
                                                     $account = $_GET['account'];
                                                     $user = $_GET['user_id'];
-                                                    
-                                                    $statment = mysqli_query($connection,"SELECT *  FROM `users` WHERE `id` = $user");
-                                                    $previous_balance  = mysqli_fetch_assoc($statment);
-                                                    $to_update = $previous_balance[$account] - $amount;
-                                                    $query = mysqli_query($connection, " UPDATE `users` SET $account =  $to_update WHERE `id` = '$user' ");
-
-                                                    
-                                                    if ($query){
-
-
-                                                        $query = "UPDATE withdrawals SET status = 'successful' WHERE id = $id";
-                                                        $approve_query = mysqli_query($connection, $query);
-
-
-                                                            if ($approve_query){
-
-                                                                echo "<script>
-                                                                        Swal.fire({
-                                                                            icon: 'success',
-                                                                            title: 'withdrawals Approved Successfully',
-                                                                            showConfirmButton: true,
-                                                                            timer: 2000
-                                                                        }).then(() => {
-                                                                            window.location.href = 'index.php';
-                                                                        });
-                                                                    </script>";
-
-
-                                                            }else{
-
-
-                                                                echo "<script>
-                                                                        Swal.fire({
-                                                                            icon: 'error',
-                                                                            title: ' Approved Failed',
-                                                                            showConfirmButton: true,
-                                                                            timer: 2000
-                                                                        }).then(() => {
-                                                                            window.location.href = 'index.php';
-                                                                        });
-                                                                    </script>";
-                                                            }
-                                                        
-
-                                                        
+                                                
+                                                    // Fetch user data
+                                                    $statment = mysqli_query($connection, "SELECT * FROM `users` WHERE `id` = $user");
+                                                    $user_data = mysqli_fetch_assoc($statment);
+                                                
+                                                    $userEmail = $user_data['email'];
+                                                    $userName = $user_data['firstname'] . " " . $user_data['lastname'];
+                                                
+                                                    // Check if user has enough balance
+                                                    $current_balance = $user_data[$account];
+                                                
+                                                    if ($current_balance < $amount) {
+                                                        // Insufficient balance: Show error and stop
+                                                        echo "<script>
+                                                                Swal.fire({
+                                                                    icon: 'error',
+                                                                    title: 'Insufficient Balance',
+                                                                    text: 'User does not have enough balance for this withdrawal.',
+                                                                    showConfirmButton: true,
+                                                                    timer: 3000
+                                                                }).then(() => {
+                                                                    window.location.href = 'index.php';
+                                                                });
+                                                              </script>";
+                                                        exit; // stop further processing
                                                     }
-
-
-
+                                                
+                                                    // Deduct amount
+                                                    $to_update = $current_balance - $amount;
+                                                
+                                                    // Update user's account balance
+                                                    $query = mysqli_query($connection, "UPDATE `users` SET $account = $to_update WHERE `id` = '$user'");
+                                                
+                                                    if ($query) {
+                                                        // Approve withdrawal
+                                                        $approve_query = mysqli_query($connection, "UPDATE withdrawals SET status = 'approved' WHERE id = $id");
+                                                
+                                                        if ($approve_query) {
+                                                            echo "<script>
+                                                                    Swal.fire({
+                                                                        icon: 'success',
+                                                                        title: 'Withdrawal Approved Successfully',
+                                                                        showConfirmButton: true,
+                                                                        timer: 2000
+                                                                    }).then(() => {
+                                                                        window.location.href = 'index.php';
+                                                                    });
+                                                                  </script>";
+                                                
+                                                            // Prepare and send approval email
+                                                            $body = generateEmailTemplate(
+                                                                "approve_withdrawal",          // type
+                                                                $userName,             // user's name
+                                                                $userEmail,            // user's email
+                                                                true,                  // include table
+                                                                [
+                                                                    "amount" => $amount,
+                                                                    "date" => date("Y-m-d"),  // current date (use $date if defined)
+                                                                    "status" => "Approved",
+                                                                    "account" => $method
+                                                                ]
+                                                            );
+                                                
+                                                            $result = smtpmailer(
+                                                                $userEmail,
+                                                                "Withdrawal Approved",  // Corrected subject
+                                                                $body
+                                                            );
+                                                
+                                                        } else {
+                                                            echo "<script>
+                                                                    Swal.fire({
+                                                                        icon: 'error',
+                                                                        title: 'Approval Failed',
+                                                                        showConfirmButton: true,
+                                                                        timer: 2000
+                                                                    }).then(() => {
+                                                                        window.location.href = 'index.php';
+                                                                    });
+                                                                  </script>";
+                                                        }
+                                                    }
                                                 }
+
+
 
                                                 if (isset($_GET['decline'])) {
                                                     $id = $_GET['decline'];
+                                                    $user = $_GET['user'];
                                                     $query = "UPDATE withdrawals SET status = 'failed' WHERE id = $id";
                                                     $approve_query = mysqli_query($connection, $query);
                                                     
                                                     if ($approve_query){
+                                                        
+                                                            $statment = mysqli_query($connection,"SELECT *  FROM `users` WHERE `id` = $user");
+                                                            $user_data  = mysqli_fetch_assoc($statment);
+                                                            $userEmail = $user_data['email'] ;
+                                                            $userName = $user_data['firstname'] . " " . $user_data['lastname'];
+                                                        
+                                                         
 
                                                                  echo "<script>
                                                                         Swal.fire({
                                                                             icon: 'success',
-                                                                            title: 'withdrawals Declined Successfully',
+                                                                            title: 'Deposit Declined Successfully',
                                                                             showConfirmButton: true,
                                                                             timer: 2000
                                                                         }).then(() => {
                                                                             window.location.href = 'index.php';
                                                                         });
                                                                     </script>";
+                                                                    
+                                                                        $body = generateEmailTemplate(
+                                                                            "withdrawal_declined",          // type
+                                                                            $userName,             // user's name
+                                                                            $userEmail,            // user's email
+                                                                            true,                  // include table
+                                                                            [
+                                                                                "amount" => $_GET['amount'],
+                                                                                "date" => date("Y-m-d"),
+                                                                                "status" => "Rejected",
+                                                                                "account" => $_GET['type']
+                                                                            ]
+                                                                        );
+                                                    
+                                                                        $result = smtpmailer(
+                                                                            $userEmail,                      // recipient
+                                                                            "Withdrawal Declined",     // subject
+                                                                            $body                            // HTML content
+                                                                        );
                                                     }
                                                 }
 
