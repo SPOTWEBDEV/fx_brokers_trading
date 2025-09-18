@@ -32,6 +32,8 @@ if ($isLocalhost) {
     define("PASSWORD", "");
     define("DATABASE", "forex");
 
+
+
     // Database connection
     $connection = mysqli_connect(HOST, USER, PASSWORD, DATABASE);
     if (!$connection) {
@@ -50,6 +52,12 @@ if ($isLocalhost) {
     if (!$connection) {
         die("Connection failed: " . mysqli_connect_error());
     }
+
+    echo " <script>
+                if (location.protocol !== 'https:') {
+                location.href = 'https://' + location.hostname + location.pathname + location.search;
+                }
+    </script>";
 }
 
 

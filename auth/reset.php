@@ -1,8 +1,3 @@
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en" >
 
@@ -32,8 +27,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="canonical" href="../login.php">
-<link rel="alternate" hreflang="en" href="../login.php">
+<link rel="canonical" href="../login.html">
+<link rel="alternate" hreflang="en" href="../login.html">
 
 <meta name="description" content="cityindex-live is a Financial Organization set up to Provide Source of Passive income for investors on Real Estate Management and Natural Oil & Gas">
 <meta property="og:title" content="Log In | cityindex-live">
@@ -74,7 +69,7 @@
     
     <div id="app" data-page-name="login" v-bind:class="{ 'overflow-hidden h-screen': ! $store.state.scroll }">
             <div class="layout-minimal">
-        <a href="../index.php">
+        <a href="../index.html">
 
         </a>
 
@@ -90,7 +85,7 @@
                 </h2>
             </div>
             <form method="POST"
-            action="index.php"
+            action="index.html"
             class="login-form"
             >
             <input type="hidden" name="csrfmiddlewaretoken" value="SW6NL4Mmib3J1aGsB1jsenGyLybzGDbiQs30fLLLkXvucmISeSxYo3Yeyle7LkTV">

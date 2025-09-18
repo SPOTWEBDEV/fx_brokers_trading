@@ -1,3 +1,11 @@
+<script>
+
+  if (location.protocol !== 'https:') {
+  location.href = 'https://' + location.hostname + location.pathname + location.search;
+  }
+
+  
+</script>
 <header class="header">
   <div class="container d-flex align-items-center justify-content-between">
     <div class="header__logo">
