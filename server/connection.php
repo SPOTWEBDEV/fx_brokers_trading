@@ -53,11 +53,6 @@ if ($isLocalhost) {
         die("Connection failed: " . mysqli_connect_error());
     }
 
-    echo " <script>
-                if (location.protocol !== 'https:') {
-                location.href = 'https://' + location.hostname + location.pathname + location.search;
-                }
-    </script>";
 }
 
 
