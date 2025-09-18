@@ -48,7 +48,7 @@ function updateListCoinGraph(query = null, graph = null, callbackclick = null, r
             let coinList = jQuery.parseJSON(data);
 
             // Clear coin list
-            if (reset) $('.kr-dash-pan-cry-select[graph="' + graph + '"]').find('ul.kr-dash-pan-cry-select-lst').html('');
+            if (reset) $('.kr-dash-pan-cry-select[graph="' + graph + '"]').find('ul.kr-dash-pan-cry-select-lst').php('');
 
             // Fetch all coin
             $.each(coinList, function(k, coin) {
@@ -153,7 +153,7 @@ function initCoinGraphControllers() {
             newType = "line";
             chartList[containerInit]['graph'].setOption(chartList[containerInit]['option']);
             let SVGIcon = $(this).find('svg').clone();
-            $(this).parent().parent().find('div').html(SVGIcon);
+            $(this).parent().parent().find('div').php(SVGIcon);
             $.post($('body').attr('hrefapp') + '/app/modules/kr-dashboard/src/actions/changeTypeGraph.php', {
                 graph_id: $('#' + containerInit).attr('graph-id'),
                 type: newType
@@ -174,7 +174,7 @@ function initCoinGraphControllers() {
             newType = "candlestick";
             chartList[containerInit]['graph'].setOption(chartList[containerInit]['option']);
             let SVGIcon = $(this).find('svg').clone();
-            $(this).parent().parent().find('div').html(SVGIcon);
+            $(this).parent().parent().find('div').php(SVGIcon);
             $.post($('body').attr('hrefapp') + '/app/modules/kr-dashboard/src/actions/changeTypeGraph.php', {
                 graph_id: $('#' + containerInit).attr('graph-id'),
                 type: newType

@@ -14,7 +14,7 @@ function initCoinlist() {
 
     // Add subscription for each market list item
     $('.kr-marketlist').find('.kr-marketlist-n-nn').each(function() {
-        let symbol = $(this).find('span').html();
+        let symbol = $(this).find('span').php();
         addSubscribtion(symbol, $('.kr-marketlist').attr('kr-currency-mm'));
     });
 
@@ -43,13 +43,13 @@ function initCoinlist() {
                 // if(dataCoin.PRICE > 10) dataCoin.PRICE = $.number(dataCoin.PRICE, 2, ',', ' ' );
                 // else ("" + dataCoin.PRICE).replace('.', ',');
 
-                //$('[kr-symbol-mm="' + dataCoin.FROMSYMBOL + '"]').find('[kr-mm-c="PRICE"]').html($('[kr-currency-mm-symb]').attr('kr-currency-mm-symb') + ' ' + dataCoin.PRICE);
+                //$('[kr-symbol-mm="' + dataCoin.FROMSYMBOL + '"]').find('[kr-mm-c="PRICE"]').php($('[kr-currency-mm-symb]').attr('kr-currency-mm-symb') + ' ' + dataCoin.PRICE);
 
                 // Update percentage change 24h
                 if (!isNaN(dataCoin.CHANGE24HOURPCT)) {
                     if (dataCoin.CHANGE24HOURPCT < 0) $('[kr-symbol-mm="' + dataCoin.FROMSYMBOL + '"]').find('[kr-mm-c="CHANGE24HOURPCT"]').removeClass('kr-marketlist-cellnumber-positiv').addClass('kr-marketlist-cellnumber-negativ');
                     else $('[kr-symbol-mm="' + dataCoin.FROMSYMBOL + '"]').find('[kr-mm-c="CHANGE24HOURPCT"]').removeClass('kr-marketlist-cellnumber-negativ').addClass('kr-marketlist-cellnumber-positiv');
-                    $('[kr-symbol-mm="' + dataCoin.FROMSYMBOL + '"]').find('[kr-mm-c="CHANGE24HOURPCT"]').html($.number(dataCoin.CHANGE24HOURPCT, 2, ',', ' ') + '%');
+                    $('[kr-symbol-mm="' + dataCoin.FROMSYMBOL + '"]').find('[kr-mm-c="CHANGE24HOURPCT"]').php($.number(dataCoin.CHANGE24HOURPCT, 2, ',', ' ') + '%');
                 }
 
                 // Update volume last 24 hours
@@ -57,7 +57,7 @@ function initCoinlist() {
                     if (dataCoin.VOLUME24HOURTO > 1000000000) dataCoin.VOLUME24HOURTO = $.number((dataCoin.VOLUME24HOURTO / 1000000000), 2, ',', ' ') + ' B';
                     else if (dataCoin.VOLUME24HOURTO > 1000000) dataCoin.VOLUME24HOURTO = $.number((dataCoin.VOLUME24HOURTO / 1000000), 2, ',', ' ') + ' M';
                     else dataCoin.VOLUME24HOURTO = $.number(dataCoin.VOLUME24HOURTO, 2, ',', ' ');
-                    $('[kr-symbol-mm="' + dataCoin.FROMSYMBOL + '"]').find('[kr-mm-c="VOLUME24HOURTO"]').html($('[kr-currency-mm-symb]').attr('kr-currency-mm-symb') + ' ' + dataCoin.VOLUME24HOURTO);
+                    $('[kr-symbol-mm="' + dataCoin.FROMSYMBOL + '"]').find('[kr-mm-c="VOLUME24HOURTO"]').php($('[kr-currency-mm-symb]').attr('kr-currency-mm-symb') + ' ' + dataCoin.VOLUME24HOURTO);
                 }
             }
         }

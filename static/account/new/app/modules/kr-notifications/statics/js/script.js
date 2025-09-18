@@ -73,7 +73,7 @@ function startNotoficiationHook() {
 
             if (response.manager_notifications > 0) {
                 $('.kr-leftnav-bubble-manager-notification').show();
-                $('.kr-leftnav-bubble-manager-notification').html(response.manager_notifications);
+                $('.kr-leftnav-bubble-manager-notification').php(response.manager_notifications);
             } else {
                 $('.kr-leftnav-bubble-manager-notification').hide();
             }
@@ -84,7 +84,7 @@ function startNotoficiationHook() {
                     $('div.kr-account.kr-identity-acc').removeClass(statusFetched);
                 });
                 $('div.kr-account.kr-identity-acc').addClass(response.identity_status.class);
-                $('div.kr-account-pic > div').html(response.identity_status.icon);
+                $('div.kr-account-pic > div').php(response.identity_status.icon);
             }
 
             if (response.identity_status.class == 'kr-identity-verified') {
@@ -97,7 +97,7 @@ function startNotoficiationHook() {
                 $('.kr-notification-center-icon > span').hide();
             } else {
                 $('.kr-notification-center-icon > span').show();
-                $('.kr-notification-center-icon > span').html(response.notifications_number_unread);
+                $('.kr-notification-center-icon > span').php(response.notifications_number_unread);
             }
 
             hookNotificationTO = setTimeout(function() {
@@ -116,7 +116,7 @@ function startNotoficiationHook() {
  * Show loading notification center
  */
 function showLoadingNotificationCenter() {
-    $('.kr-notification-center').html('<div><div class="sk-folding-cube sk-folding-cube-orange"> <div class="sk-cube1 sk-cube"></div> <div class="sk-cube2 sk-cube"></div> <div class="sk-cube4 sk-cube"></div> <div class="sk-cube3 sk-cube"></div> </div></div>');
+    $('.kr-notification-center').php('<div><div class="sk-folding-cube sk-folding-cube-orange"> <div class="sk-cube1 sk-cube"></div> <div class="sk-cube2 sk-cube"></div> <div class="sk-cube4 sk-cube"></div> <div class="sk-cube3 sk-cube"></div> </div></div>');
 }
 
 /**
@@ -135,14 +135,14 @@ function loadNotifications() {
 
         $('[kr-action="kr-notification-center"]').removeClass('kr-header-icon-act');
         if (jQuery.parseJSON(response.notifications).length == 0) {
-            $('.kr-notification-center').html('<div class="kr-notification-center-empty">' +
+            $('.kr-notification-center').php('<div class="kr-notification-center-empty">' +
                 '<span>No notifications to display.</span>' +
                 '</div>');
 
         } else {
 
             // Clean all notifications
-            $('.kr-notification-center').html('<ul></ul>');
+            $('.kr-notification-center').php('<ul></ul>');
 
             // Check response error
             if (response.error == 0) {

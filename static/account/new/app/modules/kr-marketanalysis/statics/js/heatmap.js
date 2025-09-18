@@ -39,5 +39,5 @@ function initSubHeatmap() {
 function updateHeatMap(dataCoin) {
     if (isNaN(dataCoin.CHANGE24HOURPCT)) return false;
     let elementHeatmap = $('.kr-marketa-currency').find('li[symbol="' + dataCoin.TOSYMBOL + '"][fromsymbol="' + dataCoin.FROMSYMBOL + '"]');
-    elementHeatmap.find('span').html(dataCoin.CHANGE24HOURPCT + '%');
+    elementHeatmap.find('span').php(dataCoin.CHANGE24HOURPCT + '%');
 }

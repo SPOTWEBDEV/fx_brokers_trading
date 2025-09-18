@@ -57,7 +57,7 @@ function initDashboard(onlyGraphProperty = false) {
     // Subscribe top list item
     subscribeStreamerCallback(function(dataMessage) {
         if (isNaN(dataMessage.CHANGE24HOURPCT)) return false;
-        $('.kr-top-graphlist-item[symbol="' + dataMessage.FROMSYMBOL + '"]').find('[kr-data="CHANGE24HOURPCT"]').html(dataMessage.CHANGE24HOURPCT + "%");
+        $('.kr-top-graphlist-item[symbol="' + dataMessage.FROMSYMBOL + '"]').find('[kr-data="CHANGE24HOURPCT"]').php(dataMessage.CHANGE24HOURPCT + "%");
         $('.kr-top-graphlist-item[symbol="' + dataMessage.FROMSYMBOL + '"]').attr('kr-val-graph', dataMessage.PRICE);
         $('.kr-top-graphlist-item[symbol="' + dataMessage.FROMSYMBOL + '"]').find('[kr-data="CHANGE24HOURPCT"]').removeClass('kr-top-graphlist-item-evl-up').removeClass('kr-top-graphlist-item-evl-down')
         if (parseFloat(dataMessage.CHANGE24HOURPCT) < 0) {
@@ -301,7 +301,7 @@ function changeTopItemAction(item) {
         item.attr('container', containerID);
 
         changeGraph({
-                icon: item.find('.kr-top-graphlist-pic').html(),
+                icon: item.find('.kr-top-graphlist-pic').php(),
                 name: item.attr('coinname'),
                 symbol: item.attr('symbol')
             }, item.attr('currency'), containerID, item.attr('topitem'), false,

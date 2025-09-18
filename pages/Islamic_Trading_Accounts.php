@@ -1,0 +1,6630 @@
+
+
+
+
+<?php  include("../server/connection.php") ?>
+<!DOCTYPE html>
+<html class="gecko win js fa-events-icons-ready" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="../static/globalcityindex-live/files/insight.min.js"></script><script type="text/javascript" async="" src="https://cityindex-live-int.com/Islamic_Trading_Accounts/{%&#32;static&#32;'globalcityindex-live/files/destination"></script><script type="text/javascript" async="" src="https://cityindex-live-int.com/Islamic_Trading_Accounts/{%&#32;static&#32;'globalcityindex-live/files/destination_002"></script>
+    
+    <title>Islamic Trading Accounts | Cityindex-live</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap CSS -->
+<!-- Latest compiled and minified CSS -->
+<link href="../static/globalcityindex-live/files/bootstrap.min.css" rel="stylesheet">
+<link href="../static/globalcityindex-live/files/all.min.css" rel="stylesheet">
+<link href="../static/globalcityindex-live/files/owl.carousel.min.css" rel="stylesheet">
+<link href="../static/globalcityindex-live/files/simplyScroll.css" rel="stylesheet">
+<link href="../static/globalcityindex-live/files/style_002.css" rel="stylesheet">
+<link href="../static/globalcityindex-live/files/style_v3_002.css" rel="stylesheet">
+<link href="../static/globalcityindex-live/files/responsive.css" rel="stylesheet">
+<link href="../static/globalcityindex-live/files/new.css" rel="stylesheet">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="./static/globalcityindex-live/wp-content/themes/vt/favicon-new.png" sizes="16x16">
+<script src="../static/globalcityindex-live/files/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+<!-- Marketing tag 13-Feb -->
+<script type="text/javascript" src="../static/globalcityindex-live/files/evergage.min.js"></script>
+
+<script>
+        // Define dataLayer and the gtag function.
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        // Set default consent to 'denied' as a placeholder
+        // Determine actual values based on your own requirements
+        gtag('consent', 'default', {
+          'ad_storage': 'granted',
+          'ad_user_data': 'granted',
+          'ad_personalization': 'granted',
+          'analytics_storage': 'granted'
+        });
+        console.log('Default gtag');
+      </script><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TJQ6RQ');
+</script>
+<!-- End Google Tag Manager -->
+
+
+<body>
+
+    <style>
+    @media  only screen and (max-width: 768px) {
+        .mob-app-container {
+            top: 0px; 
+            background: white;
+            height: auto;
+            z-index: 99999;
+            width: 100%;
+        }
+    }
+</style>
+<!-- start: HEADER -->
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.1/css/all.css">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<div class="offcanvas-area bg__brand__blue offcanvas-area-main">
+    <div class="off-menu-close">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+
+    <div class="offcanvas-menu">
+        <div class="main-menu">
+            <ul class="d-block">
+                <li><a data-bs-toggle="collapse" href="index.php#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="tradingCollapse" class="collapsed menu-category bd-top-white">QUICK START <i class="text-white-cus fa fa-chevron-down" aria-hidden="true"></i></a>
+                    <ul class="collapse multi-collapse m-0 p-0 list-unstyled" id="multiCollapseExample1">
+                        <div class="row">
+                            <div class="col-md-12 col-xl-3 off_menu__bg">
+                                <div class="off__menu__item">
+                                    <span class="off__menu__category">Introduction</span>
+                                    <span class="off_menu__item__link">
+                                        <a href="Why_FP_Markets.php"> Why cityindex-live? </a>
+                                    </span>
+                                   
+                                    <span class="off_menu__item__link">
+                                        <a href="Forex_Trading.php"> What is Forex Trading? </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="index.php"> What is CFD Trading? </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="ECN_Pricing.php"> ECN Pricing </a>
+                                    </span>
+                                    <!--<span class="off_menu__item__link">
+                                        <a href="what-is-dma-pricing"> DMA Pricing </a>
+                                    </span>-->
+
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-xl-3 off_menu__bg">
+                                <div class="off__menu__item">
+                                    <span class="off__menu__category">Your Account</span>
+                                    <span class="off_menu__item__link">
+                                        <a href="<?php echo $domain ?>auth/register.php"> Try A Demo </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="Funding.php"> Deposit Funds </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="https://cityindex-live-int.com/Withdraw_Funds/"> Withdraw Funds </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-xl-3 off_menu__bg">
+                                <div class="off__menu__item">
+                                    <span class="off__menu__category">Trading Platforms</span>
+                                    <span class="off_menu__item__link">
+                                        <a href="MetaTrader_4.php"> Metatrader 4 (MT4) </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="MetaTrader_5.php"> Metatrader 5 (MT5) </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a class="new-item" href="TradingView.php"> TradingView </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="ctrader.php"> cTrader </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="WebTrader.php"> WebTrader </a>
+                                    </span>
+                                     
+                                    <span class="off_menu__item__link">
+                                        <a href="Social_Trading.php"> Social Trading </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                <li><a data-bs-toggle="collapse" href="index.php#tradingCollapse" role="button" aria-expanded="false" aria-controls="tradingCollapse" class="collapsed menu-category">Trading <i class="text-white-cus fa fa-chevron-down" aria-hidden="true"></i></a>
+                    <ul class=" collapse multi-collapse m-0 p-0 list-unstyled" id="tradingCollapse">
+                        <div class="row">
+                            <div class="col-md-12 col-xl-3 off_menu__bg">
+                                <div class="off__menu__item">
+                                    <span class="off__menu__category">Trading Accounts</span>
+                                    <span class="off_menu__item__link">
+                                        <a href="Forex_Account_Types.php"> Forex Account Types </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="index.php"> Islamic Trading Accounts </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="Funding.php"> Account Funding </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="https://cityindex-live-int.com/Withdraw_Funds/"> Funds Withdrawal </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-xl-3 off_menu__bg">
+                                <div class="off__menu__item">
+                                    <span class="off__menu__category">Markets</span>
+                                    <span class="off_menu__item__link">
+                                        <a href="Forex.php"> Forex </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="Share_CFDs.php"> Shares </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="Metals.php"> Metals </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="commodities.php"> Commodities </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="Indices.php"> Indices </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="cryptocurrency.php"> Digital Currencies </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="bonds.php"> Bonds </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="ETF_Trading.php"> ETFs </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-xl-3 off_menu__bg">
+                                <div class="off__menu__item">
+                                    <span class="off__menu__category">Pricing</span>
+                                    <span class="off_menu__item__link">
+                                        <a href="Forex_Spreads.php"> Spreads </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="Swap_Rates.php"> Swap Rates </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="Trading_Hours.php"> Trading Hours </a>
+                                    </span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                <li><a data-bs-toggle="collapse" href="index.php#platformsCollapse" role="button" aria-expanded="false" aria-controls="platformsCollapse" class="collapsed menu-category">Platforms <i class="text-white-cus fa fa-chevron-down" aria-hidden="true"></i></a>
+                    <ul class="collapse multi-collapse m-0 p-0 list-unstyled" id="platformsCollapse">
+                        <div class="row">
+                            <div class="col-md-12 col-xl-3 off_menu__bg">
+                                <div class="off__menu__item">
+                                    <span class="off__menu__category">Platforms</span>
+                                    <span class="off_menu__item__link">
+                                        <a href="MetaTrader_4.php"> Metatrader 4 (MT4) </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="MetaTrader_5.php"> Metatrader 5 (MT5) </a>
+                                    </span>  
+                                    <span class="off_menu__item__link">
+                                        <a class="new-item" href="TradingView.php"> TradingView </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="ctrader.php"> <span>cTrader</span></a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="WebTrader.php"> WebTrader </a>
+                                    </span>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 col-xl-3 off_menu__bg">
+                                <div class="off__menu__item">
+                                    <span class="off__menu__category">Fees &amp; Charges</span>
+                                    <span class="off_menu__item__link">
+                                        <a href="ctrader_fees.php"> cTrader Fees &amp; Charges </a>
+                                    </span>
+                                     
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 col-xl-3 off_menu__bg">
+                                <div class="off__menu__item">
+                                    <span class="off__menu__category">Trading Tools</span>
+                                     
+                                    <span class="off_menu__item__link">
+                                        <a href="MAM_PAMM.php"> MAM/PAMM </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="Virtual_Private_Server.php"> VPS </a>
+                                    </span>
+                                     
+                                     
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-xl-3 off_menu__bg">
+                                <div class="off__menu__item">
+                                    <span class="off__menu__category">Copy Trading</span>
+                                    <span class="off_menu__item__link">
+                                        <a href="Social_Trading.php"> Social Trading </a>
+                                    </span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+
+                <li><a class="menu-category" href="FP_Markets_Partners.php">PARTNERS </a></li>
+                <li><a data-bs-toggle="collapse" href="index.php#resourcesCollapse" role="button" aria-expanded="false" aria-controls="resourcesCollapse" class="collapsed menu-category">Resources <i class="text-white-cus fa fa-chevron-down" aria-hidden="true"></i></a>
+                    <ul class="collapse multi-collapse m-0 p-0 list-unstyled" id="resourcesCollapse">
+                        <div class="row">
+                            <div class="col-md-12 col-xl-3 off_menu__bg">
+                                <div class="off__menu__item">
+                                    <span class="off__menu__category">Company</span>
+                                    <span class="off_menu__item__link">
+                                        <a href="about.php"> About cityindex-live </a>
+                                    </span>
+                                    <span class="off_menu__item__link">
+                                        <a href="Regulation.php"> Regulation </a>
+                                    </span>
+                                    
+                                  
+                                </div>
+                            </div>
+                           
+                             
+                            <div class="col-md-12 col-xl-3 off_menu__bg">
+                                <div class="off__menu__item">
+                                    <span class="off__menu__category">Help</span>
+                                    <span class="off_menu__item__link">
+                                        <a href=""> FAQ </a>
+                                    </span>
+                                     
+                                    
+                                    <span class="off_menu__item__link">
+                                        <a href="contact.php"> Contact Us </a>
+                                     
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+
+            </ul>
+            <div class="foot">
+                <div class="offcanvas-btn text-center">
+                    <a href="<?php echo $domain ?>auth/register.php" class="offcanvas-btn-white">Open Live </a> <br><br>
+                    <a href="../auth/login.php" class="offcanvas-btn-white"> Client Portal </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="offcanvas-overlay"></div>
+<!--------- Offcanvas area end --------->
+
+
+
+<!--------- Page Header area start --------->
+<section class="page__header">
+    <div class="container d-flex align-items-center justify-content-between">
+        <div class="page__header__menu">
+            <ul class="m-0 p-0 list-unstyled d-flex align-items-center">
+                <li><a href="contact.php">Contact </a></li>
+                <li><a href="index.php">Webtrader </a></li>
+                <li><a href="Funding.php">Funding </a></li>
+                <li><a href="FP_Markets_Group.php">Group </a></li>
+            </ul>
+        </div>
+        <div class="page__header__right">
+
+            <div class="page__header__right__link">
+
+               
+                <a href="../auth/login.php"><b>Client Portal</b></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--------- Page Header area end --------->
+
+<!--------- Header area start --------->
+<?php   include("../includes/nav.php")  ?>
+<!--------- Header area end --------->
+    <!--------- Main area start --------->
+    <main class="main">
+        <!--------- Hero area start --------->
+        <section class="hero__area hero-2 lazy" loading="lazy" style="background-image: url(../static/globalcityindex-live/files/hero-bg-2.webp)">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="common__content text-center">
+                            <h1>
+                                <span class="text-white basic__section__xl fw__boldest">
+                                    Islamic Forex Trading Accounts
+                                </span>
+                            </h1>
+                            
+                            <div class="hidden-xs universal__header__description">
+                                Swap Fees will not be credited or debited (on selected products) on cityindex-live Islamic Trading <br> accounts for traders of Islamic faith
+                            </div>
+                            
+                                                            <div class="common__content__btn pt-4">
+                                    <div class="common-btn active ms-3 fw__boldest text__white">
+                                        <a class="text__white" id="23" href="<?php echo $domain ?>auth/register.php">Start Trading</a>
+                                    </div>
+                                </div>
+
+                                                        
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------- Hero area end --------->
+
+         
+<!------------- SECONDARY NAVBAR Desktop END -------------->
+
+<div class="container"><div class="row"><div class="page-navi"><div class="container" id="breadcrumb"><li><a href="index.php">Home</a></li><li><a href="index.php">Islamic trading accounts</a></li></div></div></div></div>
+
+
+
+<div class="container-fluid end-divider">
+    <div id="islamic-accounts-first-section" class="container default-wd mobile-padding-top1">
+        <div class="title">
+            <h2>
+                <p class="hidden-xs " style="padding-bottom:5px;">Islamic <span class="helvetica-th-font" style="font-weight: 100;">Accounts</span></p>
+                <p class="visible-xs" style="padding-bottom:0px;font-size: 44px !important;margin-bottom: -10px;">
+                    Islamic <span class="helvetica-th-font" style="font-weight: 100;">Accounts</span></p>
+            </h2>
+        </div>
+        <div class="sub-title mobile-subtitle-1 text-center">
+            <p class="para-for-list hidden-xs cs1282essubp cs1282viislasub" style="font-size:23px!important;font-family: 'Helvetica Neue';">What is an Islamic Forex Account
+                and how to trade in accordance with Islamic Finance?</p>
+            <p class="para-for-list visible-xs" style="font-size:23px!important;font-family: 'Helvetica Neue';">
+                What is an Islamic Forex Account<br> and how to trade in accordance<br> with Islamic Finance?</p>
+        </div>
+        <div class="padding-70"></div>
+        <div class="row fb-cus-row">
+
+            <div class="col-sm-6 text-content-1 p__fixer" style="padding-right:30px;">
+                <div class="text-block1 visible-xs">
+                    <p style="padding-bottom:20px">Swap Fees will not be credited or debited (on selected products) on
+                        cityindex-live Islamic Trading accounts for traders of Islamic faith</p>
+                </div>
+                <div class="text-block1">
+                    <p style="font-family: 'Helvetica Neue';">Also known as a swap-free accounts, Islamic
+                        accounts are ideally suited to muslim clients as they are in line with Islamic law in that they
+                        incur no swaps or interest charges on overnight positions. Instead, the account holder is
+                        charged an administration fee on positions which is deducted from the balance of the account.
+                    </p>
+                </div>
+                <div class="text-block2 padding-30">
+                    <p style="font-family: 'Helvetica Neue';">Trading in Islam can be considered to be haram but
+                        it is still possible to trade if you find an Islamic Forex Account which provides swap-free
+                        trading and which has been designed for forex traders who cannot pay or receive swaps or
+                        rollover interest on overnight positions due to their religious beliefs, in line with Sharia
+                        Law.</p>
+                </div>
+                <div class="text-block3 padding-30">
+                    <p style="font-family: 'Helvetica Neue';">
+                        <b style="font-family: 'Helvetica Neue';">Steps to open an Islamic Forex Account:</b>
+                        <br>
+                        <img style="max-width:20px;" src="../static/globalcityindex-live/files/check-box-new-small.png"> Open a MetaTrader 4 or MetaTrader 5 (MT4/MT5) trading account<br>
+                        <img style="max-width:20px;" src="../static/globalcityindex-live/files/check-box-new-small.png"> Email the account number to <a href="index.php"><b></b></a> and request
+                        for
+                        it to be converted to Islamic<br>
+                        <img style="max-width:20px;" src="../static/globalcityindex-live/files/check-box-new-small.png"> Wait for a confirmation from our Onboarding team
+                        <br><br>
+                        <!--* We do not offer Swap Free accounts on IRESS platform.<br>-->
+                        * cityindex-live reserves the right to request additional documentation in order to offer swap free
+                        privilege to an account. If the religion is not mentioned on your ID document,
+                        we may require a proof of faith in the form of a letter from your mosque confirming your
+                        religion.
+                    </p>
+                    <br>
+                    <p style="font-family: 'Helvetica Neue';">If you want to be sure that your trading activities
+                        are halal, you can consult a religious authority that can take into account your personal
+                        situation.
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-sm-6 text_content-1 padding-left-40 p__fixer" style="padding-left:40px;">
+                <div class="text-block1">
+                    <p class="para-cent" style="font-size:23px!important;font-family: 'Helvetica Neue';">Islamic
+                        Account Types</p>
+                </div>
+                <div class="text-block padding-top-20 width-for-auto-for-first text-center-mobile bottom-divier-line-first" style="width: 510px;">
+                    <p style="font-weight: 600;font-family: 'Helvetica Neue';">MetaTrader 4 Islamic Account</p>
+                    <p class="hidden-xs" style="font-family: 'Helvetica Neue';">Trade Forex and access the
+                        markets on the World's most Powerful<br> Trading Platform</p>
+                    <p class="visible-xs" style="font-family: 'Helvetica Neue';">Trade Forex and access the
+                        markets on the World's most Powerful Trading Platform</p>
+                    <p class="padding-top-20"><a href="<?php echo $domain ?>auth/register.php" class="blue-button">Open MT4
+                            Account</a></p>
+                </div>
+                <div class="text-block padding-30 width-for-auto-for-first text-center-mobile bottom-divier-line-first" style="width: 510px;">
+                    <p style="font-weight: 600;font-family: 'Helvetica Neue';">MetaTrader 5 Islamic Account</p>
+                    <p class="hidden-xs" style="font-family: 'Helvetica Neue';">Experience the future of day
+                        trading with a range of powerful new <br>features</p>
+                    <p class="visible-xs" style="font-family: 'Helvetica Neue';">Experience the future of day
+                        trading with a range of powerful new features</p>
+                    <p class="padding-top-20"><a href="<?php echo $domain ?>auth/register.php" class="blue-button">Open MT5
+                            Account</a></p>
+                </div>
+                <div class="text-block padding-30 width-for-auto-for-first text-center-mobile" style="width: 520px;">
+                    <p style="font-weight: 600;font-family: 'Helvetica Neue';">Demo Islamic Account</p>
+                    <p style="font-family: 'Helvetica Neue';">Practice trading today</p>
+                    <p class="padding-top-20"><a href="<?php echo $domain ?>auth/register.php" class="black-button">Try
+                            a Demo</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div class="padding-50 pad-top-50"></div>
+
+
+<div class="container" style="padding-top: 100px; background-color: white;">
+    <div class="text__align__center" style="padding-bottom:50px;">
+        <div class="title mobile-title-1">
+            <h2 style="margin-bottom:0px;">
+                <p class="hidden-xs" style="padding-bottom: 0px;font-size:32px!important;line-height: 1!important;">
+                    <span class="helvetica-th-font" style="font-weight: 100;">What</span> Islamic Account Types<br><span class="helvetica-th-font" style="font-weight: 100;">Does</span> cityindex-live <span class="helvetica-th-font" style="font-weight: 100;">Offer?</span>
+                </p>
+                <p class="visible-xs" style="padding-bottom: 0px;font-size:32px!important;line-height: 1!important;padding-left: 0px;padding-right: 0px;">
+                    <span class="helvetica-th-font" style="font-weight: 100;">What</span> Islamic Account<br> Types Does
+                    cityindex-live<br><span class="helvetica-th-font" style="font-weight: 100;">Offer?</span>
+                </p>
+            </h2>
+        </div>
+        <div class="sub-title mobile-subtitle-1 padding-30 p__fixer">
+            <p class="margin-for-subtitile hidden-xs" style="font-family: 'Helvetica Neue';">The swap-free
+                account option is available on both our Raw and Standard account types on the MT4 and MT5 trading
+                platforms. </p>
+            <p class="margin-for-subtitile visible-xs" style="font-size: 19px!important;font-family: 'Helvetica Neue TH Pro';">The swap-free account option is
+                available on both our Raw and Standard account types on the MT4 and MT5 trading platforms. </p>
+            <p class="margin-for-subtitile hidden-xs" style="font-weight: 600; color: #3e495c!important;font-family: 'Helvetica Neue';">An Islamic
+                client can trade all the instruments available on the platforms.</p>
+            <p class="margin-for-subtitile visible-xs" style="font-family: 'Helvetica Neue TH Pro';font-weight: 600; color: #3e495c!important;font-size:18.5px!important;margin-bottom:-30px;">
+                An Islamic client can trade all the<br> instruments available on the platforms.</p>
+        </div>
+    </div>
+    <div class="row" style="padding-right: 10px; padding-left: 10px; padding-bottom: 40px;">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            <div class="panel panel-default shadow-all panel-table-cards">
+                <div class="panel-heading-cus text-center" style="background-color: #B7B7B7;">
+                    <span class="acount-type">Account</span>
+                    <span class="account-type-title-cus">Islamic Standard </span>
+                    <span class="acount-type">MT4 - MT5</span>
+                </div>
+                <div class="panel-body account-type-content-mob"> <span class="account-type-content-title-mob">
+                        Minimum
+                        Opening Balance
+                    </span> $100 AUD or
+                    equivalent</div>
+                <div class="panel-body account-type-content-mob"> <span class="account-type-content-title-mob">
+                        Spreads
+                    </span> From 1.0 pips</div>
+                <div class="panel-body account-type-content-mob">
+                    <span class="account-type-content-title-mob">
+                        Instruments
+                    </span>
+                    70+ Forex pairs, metals,
+                    indices, commodities
+                </div>
+                <div class="panel-body account-type-content-mob"> <span class="account-type-content-title-mob">
+                        Max Leverage
+                    </span>500:1</div>
+                <div class="panel-body account-type-content-mob"> <span class="account-type-content-title-mob">
+                        Execution
+                    </span>ECN-Pricing</div>
+                <div class="panel-body account-type-content-mob"> <span class="account-type-content-title-mob">
+                        Commission per Lot
+                    </span>Zero</div>
+                <div class="panel-body account-type-content-mob"> <span class="account-type-content-title-mob">
+                        Minimum Trade Size
+                    </span>0.01 Lot</div>
+                <div class="panel-body account-type-content-mob"> <span class="account-type-content-title-mob">
+                        EA’s
+                    </span>Yes</div>
+                <div class="panel-body account-type-content-mob"> <span class="account-type-content-title-mob">
+                        Mobile App
+                    </span>Yes</div>
+                <div class="panel-body account-type-content-mob"> <span class="account-type-content-title-mob">
+                        VPS Available
+                    </span>Yes</div>
+                <div class="panel-footer">
+                    <div class="text-center">
+                        <a href="<?php echo $domain ?>auth/register.php">
+                            <button class="btn bg-white panel-btn">Start Trading
+                                Now</button>
+                        </a>
+                    </div>
+                    <div class="text-center" style="padding-top:20px;">
+                        <a href="<?php echo $domain ?>auth/register.php" class="try-demo-link"> Try a Free Demo </a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-top:10px; font-size: 18px;">* excluding MT5 equities
+
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default shadow-all panel-table-cards">
+
+                <div class="panel-heading-cus text-center" style="background-color: #152A4A;">
+                    <span class="ribbon" style="font-size: 15px !important;">POPULAR</span>
+
+
+                    <span class="acount-type">Account</span>
+                    <span class="account-type-title-cus">Islamic Raw</span>
+                    <span class="acount-type">MT4 - MT5</span>
+                </div>
+                <div class="panel-body account-type-content-mob"> <span class="account-type-content-title-mob">
+                        Minimum
+                        Opening Balance
+                    </span> $100 AUD or
+                    equivalent</div>
+                <div class="panel-body account-type-content-mob"> <span class="account-type-content-title-mob">
+                        Spreads
+                    </span> From 0.0 pips</div>
+                <div class="panel-body account-type-content-mob">
+                    <span class="account-type-content-title-mob">
+                        Instruments
+                    </span>
+                    70+ Forex pairs, metals,
+                    indices, commodities
+                </div>
+                <div class="panel-body account-type-content-mob"> <span class="account-type-content-title-mob">
+                        Max Leverage
+                    </span>500:1</div>
+                <div class="panel-body account-type-content-mob"> <span class="account-type-content-title-mob">
+                        Execution
+                    </span>ECN-Pricing</div>
+                <div class="panel-body account-type-content-mob"> <span class="account-type-content-title-mob">
+                        Commission per Lot
+                    </span>USD $3 per 100,000</div>
+                <div class="panel-body account-type-content-mob"> <span class="account-type-content-title-mob">
+                        Minimum Trade Size
+                    </span>0.01 Lot</div>
+                <div class="panel-body account-type-content-mob"> <span class="account-type-content-title-mob">
+                        EA’s
+                    </span>Yes</div>
+                <div class="panel-body account-type-content-mob"> <span class="account-type-content-title-mob">
+                        Mobile App
+                    </span>Yes</div>
+                <div class="panel-body account-type-content-mob"> <span class="account-type-content-title-mob">
+                        VPS Available
+                    </span>Yes</div>
+                <div class="panel-footer">
+                    <div class="text-center">
+                        <a href="<?php echo $domain ?>auth/register.php">
+                            <button class="btn bg-white panel-btn">Start Trading
+                                Now</button>
+                        </a>
+                    </div>
+                    <div class="text-center" style="padding-top:20px;">
+                        <a href="<?php echo $domain ?>auth/register.php" class="try-demo-link"> Try a Free Demo </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+
+
+<div class="container-fluid light-blue-bg">
+    <div id="trade-with-islamic-account-section" class="container default-wd">
+        <div class="title mobile-title-1">
+            <h2>
+                <p style="padding-bottom: 2px;color:#ffffff!important;font-size:32px!important;"><span class="helvetica-th-font" style="font-weight: 100;">What Can You</span> Trade <span class="helvetica-th-font" style="font-weight: 100;">With An</span> Islamic Account?</p>
+            </h2>
+        </div>
+        <div class="sub-title mobile-subtitle-1">
+            <p class="margin-for-subtitile hidden-xs" style="color:#ffffff!important;font-size: 23px!important;font-family: 'Helvetica Neue';">Islamic
+                Accounts at cityindex-live allow you to<br>start trading the following financial instruments:</p>
+            <p class="margin-for-subtitile visible-xs" style="color:#ffffff!important;font-size: 23px!important;font-family: 'Helvetica Neue';">Islamic
+                Accounts at cityindex-live<br> allow you to start trading the <br>following financial instruments:</p>
+        </div>
+
+        <div class="col-sm-12 padding-50 padding-top-six-reasons-mobile">
+            <div class="row hidden-xs">
+                <div class="col-sm-7">
+                    <div class="row">
+                        <div class="col-sm-4 dis-flex">
+                            <div class="image-section margin-right-for-mob" style="padding-bottom: 10px;text-align:center">
+                                <span class="section_image_wrap "><img src="../static/globalcityindex-live/files/Group&#32;397-min.png" alt="" title=""></span>
+                            </div>
+                            <div class="text_block2">
+                                <p class="light-blue-bg-font"><span style=" font-weight: 600;font-size: 20px;font-family: 'Helvetica Neue';">Forex</span>
+                                </p>
+                                <p class="light-blue-bg-font" style="width: 205px;font-family: 'Helvetica Neue';">If you
+                                    are interested in
+                                    trading forex, try your hand at currency trading on 70+ pairs</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 dis-flex">
+                            <div class="image-section " style="padding-bottom: 10px;text-align:center">
+                                <span class="section_image_wrap "><img src="../static/globalcityindex-live/files/Group&#32;397&#32;copy&#32;2-min.png" alt="" title="" style="margin-top:10px;"></span>
+                            </div>
+                            <div class="text_block2">
+                                <p class="light-blue-bg-font"><span style=" font-weight: 600;font-size: 20px;font-family: 'Helvetica Neue';">Commodities</span>
+                                </p>
+                                <p class="light-blue-bg-font" style="font-family: 'Helvetica Neue';">Gold,
+                                    silver, <br>oil &amp; more</p>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-4 dis-flex">
+                            <div class="image-section " style="padding-bottom: 10px;text-align:center">
+                                <span class="section_image_wrap "><img src="../static/globalcityindex-live/files/Group&#32;397&#32;copy&#32;4-min.png" alt="" title="" style="margin-top:10px;"></span>
+                            </div>
+                            <div class="text_block2">
+                                <p class="light-blue-bg-font"><span style=" font-weight: 600;font-size: 20px;font-family: 'Helvetica Neue';">Indices</span>
+                                </p>
+                                <p class="light-blue-bg-font" style="font-family: 'Helvetica Neue';">19 to trade
+                                    on <br>global indices</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="row">
+                        <div class="col-sm-6 dis-flex padding-formobile">
+                            <div class="image-section " style="padding-bottom: 10px;text-align:center">
+                                <span class="section_image_wrap "><img src="../static/globalcityindex-live/files/Group&#32;397&#32;copy&#32;5.png" alt="" title=""></span>
+                            </div>
+                            <div class="text_block2">
+                                <p class="light-blue-bg-font"><span style=" font-weight: 600;font-size: 20px;font-family: 'Helvetica Neue';">Share</span>
+                                </p>
+                                <p class="light-blue-bg-font" style="font-family: 'Helvetica Neue';">120+ share<br>
+                                    CFDs on global <br>stock markets</p>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-6 dis-flex">
+
+                            <div class="image-section " style="padding-bottom: 10px;text-align:center">
+                                <span class="section_image_wrap "><img src="../static/globalcityindex-live/files/0012_Group-398.png" alt="" title="" style="margin-top:10px;"></span>
+                            </div>
+                            <div class="text_block2">
+                                <p class="light-blue-bg-font"><span style=" font-weight: 600;font-size: 20px;font-family: 'Helvetica Neue';">Cryptocurrencies</span>
+                                </p>
+                                <p class="light-blue-bg-font" style="font-family: 'Helvetica Neue';">Bitcoin,
+                                    Ethereum,<br> Ripple, Bitcoin Cash, <br>Litecoin &amp; more</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row visible-xs">
+                <div class="col-sm-7">
+                    <div class="row">
+                        <div class="col-sm-4 dis-flex">
+                            <div class="image-section margin-right-for-mob" style="padding-bottom: 10px;text-align:center">
+                                <span class="section_image_wrap "><img src="../static/globalcityindex-live/files/Group&#32;397-min.png" alt="" title=""></span>
+                            </div>
+                            <div class="text_block2">
+                                <p class="light-blue-bg-font" style="text-align: left;"><span style=" font-weight: 600;font-size: 20px;font-family: 'Helvetica Neue';">Forex</span>
+                                </p>
+                                <p class="light-blue-bg-font" style="width: auto;text-align: left;font-family: 'Helvetica Neue';">if you
+                                    are interested in trading forex, try your hand at currency trading on 60+ pairs</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 dis-flex">
+                            <div class="image-section " style="padding-bottom: 10px;text-align:center">
+                                <span class="section_image_wrap "><img src="../static/globalcityindex-live/files/Group&#32;397&#32;copy&#32;2-min.png" alt="" title="" style="margin-top:10px;margin-left: -10px;"></span>
+                            </div>
+                            <div class="text_block2" style="margin-top: 20px;margin-left: -10px;">
+                                <p class="light-blue-bg-font" style="text-align: left;"><span style=" font-weight: 600;font-size: 20px;font-family: 'Helvetica Neue';">Commodities</span>
+                                </p>
+                                <p class="light-blue-bg-font" style="font-family: 'Helvetica Neue';">gold,
+                                    silver, oil &amp; more</p>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-4 dis-flex">
+                            <div class="image-section " style="padding-bottom: 10px;text-align:center">
+                                <span class="section_image_wrap "><img src="../static/globalcityindex-live/files/Group&#32;397&#32;copy&#32;4-min.png" alt="" title="" style="margin-top:10px;"></span>
+                            </div>
+                            <div class="text_block2" style="margin-top: 20px;margin-left: -10px;">
+                                <p class="light-blue-bg-font" style="text-align: left;"><span style=" font-weight: 600;font-size: 20px;font-family: 'Helvetica Neue';">Indices</span>
+                                </p>
+                                <p class="light-blue-bg-font" style="font-family: 'Helvetica Neue';">12 to trade
+                                    on global indices</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5" style="margin-top: 40px;">
+                    <div class="row">
+                        <div class="col-sm-6 dis-flex padding-formobile">
+                            <div class="image-section " style="padding-bottom: 10px;text-align:center">
+                                <span class="section_image_wrap "><img src="../static/globalcityindex-live/files/Group&#32;397&#32;copy&#32;5.png" alt="" title="" style="margin-left: -10px;margin-right: 10px;"></span>
+                            </div>
+                            <div class="text_block2">
+                                <p class="light-blue-bg-font" style="text-align: left;"><span style=" font-weight: 600;font-size: 20px;font-family: 'Helvetica Neue';">Share</span>
+                                </p>
+                                <p class="light-blue-bg-font" style="text-align: left;font-family: 'Helvetica Neue';">54
+                                    share CFDs on
+                                    global stock markets</p>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-6 dis-flex" style="margin-top: 30px;">
+
+                            <div class="image-section " style="padding-bottom: 10px;text-align:center">
+                                <span class="section_image_wrap "><img src="../static/globalcityindex-live/files/0012_Group-398.png" alt="" title="" style="margin-top:10px;margin-left: -10px;margin-right: 10px;"></span>
+                            </div>
+                            <div class="text_block2" style="margin-top: 15px;">
+                                <p class="light-blue-bg-font" style="text-align: left;"><span style=" font-weight: 600;font-size: 20px;font-family: 'Helvetica Neue';">Cryptocurrencies</span>
+                                </p>
+                                <p class="light-blue-bg-font" style="text-align: left;font-family: 'Helvetica Neue';">
+                                    Bitcoin, Ethereum,
+                                    Ripple, Bitcoin Cash, Litecoin</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid c22 end-divider">
+    <div id="about-halal-forex-section" class="container default-wd">
+        <div class="title mobile-title-1">
+            <h2 style="margin-bottom:0px;">
+                <p class="hidden-xs" style="padding-bottom: 0px;font-size:32px!important;line-height: 1!important;">
+                    <span class="helvetica-th-font" style="font-weight: 100;">About</span> Halal Forex Trading - Halal
+                    Trading <br><span class="helvetica-th-font" style="font-weight: 100;">with</span> Islamic Forex
+                    Accounts
+                </p>
+                <p class="visible-xs" style="padding-bottom: 0px;font-size:32px!important;line-height: 1!important;padding-left: 0px;padding-right: 0px;">
+                    <span class="helvetica-th-font" style="font-weight: 100;">About</span> Halal Forex<br>Trading -
+                    Halal Trading <br><span class="helvetica-th-font" style="font-weight: 100;">with</span> Islamic
+                    Forex<br> Accounts
+                </p>
+            </h2>
+        </div>
+        <div class="sub-title mobile-subtitle-1 padding-30 p__fixer">
+            <p class="margin-for-subtitile" style="font-family: 'Helvetica Neue';">Islamic finance is guided by
+                four basic principles:</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid c6">
+    <div id="prohibition-of-gambling-section" class="container default-wd cs-1282-es-regn-pad-al-aftr">
+        <div class="row">
+            <div class="col-sm-6">
+                <span>
+                    <img class="margin-image-top" src="../static/globalcityindex-live/files/Dice.png" alt="" title="" style="margin-top: -125px;max-width: 100%!important;transform: scale(0.9);">
+                </span>
+            </div>
+            <div class="col-sm-6 pad-align-what-sec">
+                <div class="text_block pad-for-what-com-sec">
+                    <p class="font-with-line">1 | Prohibition of gambling</p>
+                </div>
+                <div class="text_block padding-30 padding-for-left-right-mobile-prohibition-gambling-section p__fixer">
+                    <p style="font-family: 'Helvetica Neue';">According to Islam, gambling is prohibited but
+                        trading forex and other financial instruments can be considered an educated game of chance which
+                        involves the buying and selling of assets based on forex market analysis and using a variety of
+                        concepts and trading strategies.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid c7">
+    <div id="prohibition-payment-risk-section" class="container default-wd">
+        <div class="padding-70 mobile-padding-none"></div>
+        <div class="row">
+            <div class="col-sm-6 bottom-divier-line">
+                <div class="text_block pad-for-what-com-sec">
+                    <p class="font-with-line" style="text-align: center;">2 | Prohibition of payment and<br>receipt of
+                        any interest rate (Riba)</p>
+                </div>
+                <div class="text_block padding-30 padding-for-left-right-mobile-section p__fixer">
+                    <p style="font-family: 'Helvetica Neue';">Usually, when a trader holds open positions at the
+                        close of a trading session, cityindex-live charges a swap commission linked to an interest rate
+                        which is in turn related to the fact that traders receive an indirect loan through leverage.
+                        This leverage usually results in profit for the forex broker and therefore why a standard
+                        trading account is classified as haram given it includes interest payment whereas an Islamic
+                        trading account would be halal as it does not feature payment of these swap interest rates and
+                        therefore satisfies the riba threshold. </p>
+                </div>
+
+            </div>
+            <div class="col-sm-6 padding-left-removing-for-col-sm-6" style="padding-left: 80px;">
+                <div class="text_block pad-for-what-com-sec">
+                    <p class="font-with-line" style="text-align: center;">3 | Risk and benefits distribution</p>
+                </div>
+                <div class="text_block padding-50 padding-for-left-right-mobile-principal-concerns-section p__fixer">
+                    <p style="font-family: 'Helvetica Neue';">One of the principal concerns about trading is the
+                        element of shared risk. Interest ensures a reward for the lender and the borrower is the one who
+                        incurs the risk. Excessive or a high level of risk (gharar) is prohibited in the same way that
+                        excessive gambling is. Financial activity must also be seen to promote social and economic
+                        activity and justice as well as happiness. With an Islamic trading account, all interest charges
+                        are waived. </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<div class="container-fluid c8">
+    <div id="immediate-exchange-section" class="container default-wd">
+        <div class="row">
+            <div class="col-sm-6 ar-content-hide">
+                <div class="ar-content-lt">
+                    <div class="text_block pad-for-what-com-sec" style="padding-right: 50px;">
+                        <p class="font-with-line margin-for-image-para-align" style="color: #ffffff!important;">4 |
+                            Immediate Exchange or "Hand in Hand"</p>
+                    </div>
+                    <div class="text_block padding-30 padding-for-left-right-mobile-section p__fixer">
+                        <p style="color: #ffffff!important;font-family: 'Helvetica Neue';">Now that interest
+                            rates not being applicable, the next item to consider is that trading is only permitted if
+                            it is "hand in hand". In times gone by this meant face-to-face but in the modern world and
+                            with the advent of online trading and e-commerce, which involves an almost instantaneous
+                            transaction between broker and trader executed in seconds, is considered halal under Shariah
+                            and is therefore permissable.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="ar-content-show" style="display:none;">
+                    <div class="text_block pad-for-what-com-sec" style="padding-right: 50px;">
+                        <p class="font-with-line margin-for-image-para-align" style="color: #ffffff!important;">4 |
+                            Immediate Exchange or "Hand in Hand"</p>
+                    </div>
+                    <div class="text_block padding-30 padding-for-left-right-mobile-section p__fixer">
+                        <p style="color: #ffffff!important;font-family: 'Helvetica Neue';">Now that interest
+                            rates not being applicable, the next item to consider is that trading is only permitted if
+                            it is "hand in hand". In times gone by this meant face-to-face but in the modern world and
+                            with the advent of online trading and e-commerce, which involves an almost instantaneous
+                            transaction between broker and trader executed in seconds, is considered halal under Shariah
+                            and is therefore permissable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid c23">
+    <div id="key-features-islamic-forex-section" class="container default-wd">
+        <div class="text-block">
+            <p class="font-with-line hidden-xs" style="text-align:center;">Key Features of the cityindex-live Islamic Forex
+                Account:</p>
+            <p class="font-with-line visible-xs" style="text-align:center;">Key Features of the cityindex-live<br> Islamic
+                Forex Account:</p>
+        </div>
+        <div class="row fb-cus-row padding-20 p__fixer">
+            <div class="padding-default margin-auto-for-mobile padding-for-left-right-mobile-section" style="margin: 0 255px;display: table;">
+                <div class="inner-text padding-left-right-for-mobile-section">
+                    <span style="display: inline-flex;padding-bottom: 10px;">
+                        <p><img style="padding-top: 3px;max-width:none;" src="../static/globalcityindex-live/files/check-box-new-small.png"> </p>
+                        <p style="padding-left: 10px;font-family: 'Helvetica Neue';padding-top:5px;">Zero
+                            interest/swap charges on selected pairs</p>
+                    </span><br>
+                    <span style="display: inline-flex;padding-bottom: 10px;">
+                        <p><img style="padding-top: 3px;max-width:none;" src="../static/globalcityindex-live/files/check-box-new-small.png"> </p>
+                        <p style="padding-left: 10px;font-family: 'Helvetica Neue';padding-top:5px;">Similarly
+                            excellent trading conditions, services and features as cityindex-live trading accounts; the only
+                            difference being the elimination of non-Shariah compliant interest charges</p>
+                    </span><br>
+                    <span style="display: inline-flex;padding-bottom: 10px;">
+                        <p><img style="padding-top: 3px;max-width:none;" src="../static/globalcityindex-live/files/check-box-new-small.png"> </p>
+                        <p style="padding-left: 10px;font-family: 'Helvetica Neue';padding-top:5px;">Stable,
+                            secure and intuitive leading <a class="custom-link-for-a" href="Platforms.php"><b>trading
+                                    platforms</b></a> with no re quotes, nor any hidden charges</p>
+                    </span><br>
+                    <span style="display: inline-flex;padding-bottom: 10px;">
+                        <p><img style="padding-top: 3px;max-width:none;" src="../static/globalcityindex-live/files/check-box-new-small.png"> </p>
+                        <p style="padding-left: 10px;font-family: 'Helvetica Neue';padding-top:5px;">Fast
+                            execution under 40 milliseconds^</p>
+                    </span><br>
+                    <span style="display: inline-flex;padding-bottom: 10px;">
+                        <p><img style="padding-top: 3px;max-width:none;" src="../static/globalcityindex-live/files/check-box-new-small.png"> </p>
+                        <p style="padding-left: 10px;font-family: 'Helvetica Neue';padding-top:5px;">Free and
+                            unlimited access to MetaTrader 4 and MetaTrader 5 trading platforms including WebTrader, and
+                            Android and iOS platforms</p>
+                    </span><br>
+                    <span style="display: inline-flex;padding-bottom: 10px;">
+                        <p><img style="padding-top: 3px;max-width:none;" src="../static/globalcityindex-live/files/check-box-new-small.png"> </p>
+                        <p style="padding-left: 10px;font-family: 'Helvetica Neue';padding-top:5px;">Compatible
+                            with a variety of trading strategies including Scalping, Swing Trading and Day trading.</p>
+                    </span><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid c24">
+    <div id="advantages-islamic-accounts-section" class="container default-wd">
+        <div class="title mobile-title-1">
+            <h2>
+                <p style="padding-bottom: 2px;font-size:32px!important;line-height:1 !important;"><span class="helvetica-th-font" style="font-weight: 100;">Advantages of</span> Islamic Accounts</p>
+            </h2>
+        </div>
+        <div class="padding-30 margin-auto-for-mobile p__fixer" style="margin: 0 255px;display: table;">
+            <div class="text-block padding-for-left-right-mobile-section">
+                <p style="font-family: 'Helvetica Neue';">Sometimes a trader opens a position in the morning,
+                    with the intention of closing it at the end of the day, but at the end of the session the position
+                    is making a profit and the trader anticipates that the movement should continue. When trading on
+                    selected pairs (Outlined below) you can keep the position open without administration fees for the
+                    first five nights of trading. Also trading in a non-Islamic account also
+                    exposes the Islamic trader to the risk of forgetting and falling into a haram trading activity.</p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="container-fluid c25">
+    <div id="simple-steps-blue-last-section" class="container default-wd">
+        <div class="white-sub-title">
+            <p class="hidden-xs">3 <span class="helvetica-th-font" style="font-weight: 100;">Simple Steps to Open
+                    an</span> Islamic Account<br><span class="helvetica-th-font" style="font-weight: 100;">with
+                    an</span> Australian-Regulated CFD &amp; Forex Broker</p>
+            <p class="visible-xs" style="font-size: 32px!important;">3 <span class="helvetica-th-font" style="font-weight: 100;">Simple Steps to</span> Open<br> an Islamic Account <span class="helvetica-th-font" style="font-weight: 100;">with an Australian-Regulated<br> CFD
+                    &amp; Forex Broker</span></p>
+        </div>
+        <div class="white-title mobile-title-1 padding-for-left-right-mobile-section">
+            <h2>
+                <p style="padding-bottom: 2px;">We offer swap-free accounts to those clients of the Muslim faith. Steps
+                    as follows:</p>
+            </h2>
+        </div>
+
+        <div class="padding-default"></div>
+        <div class="row padding-last-blue-section">
+            <div class="col-sm-4 dis-flex padding-top-10-for-mobile-blue-section">
+                <span><img class="image-center" src="../static/globalcityindex-live/files/1.png" alt="" title="">
+                    <img class="arrow-imag-align hidden-xs" src="../static/globalcityindex-live/files/arrow-copy.png" alt="" title="">
+                    <img class="arrow-imag-align visible-xs" src="../static/globalcityindex-live/files/arrow-copy-4.png" alt="" title="">
+                </span>
+                <div class="inner_text margin-last-blue-section cs1282vistep1 p__fixer">
+                    <span class="mobile-desktop-font-aligns">
+                        <p style="color:#ffffff!important;text-align: center;font-family: 'Helvetica Neue';">Open
+                            a <a class="custom-link-for-a" href="MetaTrader_4.php"><b>MetaTrader 4</b></a> or <br><a class="custom-link-for-a" href="MetaTrader_5.php"><b>MetaTrader 5</b></a> account.</p>
+                    </span><br>
+                </div>
+            </div>
+            <div class="col-sm-4 dis-flex padding-top-10-for-mobile-blue-section">
+                <span><img class="image-center" src="index.php" alt="" title="">
+                    <img class="arrow-imag-align hidden-xs" src="../static/globalcityindex-live/files/arrow-copy.png" alt="" title="">
+                    <img class="arrow-imag-align visible-xs" src="../static/globalcityindex-live/files/arrow-copy-4.png" alt="" title=""></span>
+                <div class="inner_text margin-last-blue-section p__fixer">
+                    <span class="mobile-desktop-font-aligns">
+                        <p class="hidden-xs" style="color:#ffffff!important;width: 350px;text-align: center;font-family: 'Helvetica Neue';">
+                            Please send your request to make it an Islamic Trading account via email from your
+                            registered email address to <a class="custom-link-for-a" href="index.php"><b></b></a>.</p>
+                        <p class="visible-xs" style="color:#ffffff!important;margin-top:-40px;font-family: 'Helvetica Neue';">
+                            Please send your request to make it an Islamic Trading account via email from your
+                            registered email address to <a class="custom-link-for-a" href="index.php"><b></b></a>.</p>
+                    </span><br>
+                </div>
+            </div>
+            <div class="col-sm-4 dis-flex padding-top-10-for-mobile-blue-section">
+                <span><img class="image-center" src="../static/globalcityindex-live/files/3.png" alt="" title="">
+
+                </span>
+                <div class="inner_text margin-last-blue-section" style="margin-top: 10px;">
+
+                    <span class="mobile-desktop-font-aligns p__fixer">
+                        <p class="margin-top-auto-for-mobile" style="color: #ffffff!important;text-align: center;width: 270px;margin: 0 auto;margin-top: 30px;font-family: 'Helvetica Neue';">
+                            Please include an official document showing confirmation of your faith (e.g a Proof of Faith
+                            document from your local mosque) if evidence is not already included visible in the ID
+                            document we have on record for you.</p>
+                    </span><br>
+                </div>
+            </div>
+        </div>
+        <div class="padding-for-left-right-mobile-section p__fixer">
+            <p style="text-align: center;color: #ffffff!important;font-family: 'Helvetica Neue';">If you have any
+                questions, please contact our customer support team <a class="custom-link-for-a" href="contact.php"><b>here</b></a>.</p>
+        </div>
+        <span>
+            <img class="image-center-for-mobile" style="margin-top: 20px;" src="../static/globalcityindex-live/files/logo-white.png" alt="" title="">
+        </span>
+    </div>
+</div>
+
+
+<div class="container-fluid c12">
+    <div id="islamic-account-table-section" class="container default-wd">
+        <div class="title mobile-title-1">
+            <h2>
+                <p style="padding-bottom: 2px;font-size:32px!important;line-height:1 !important;">Islamic Account <span class="helvetica-th-font" style="font-weight: 100;">Admin Fees</span></p>
+            </h2>
+        </div>
+        <div class="title mobile-title-1">
+            <h2>
+                <p class="hidden-xs" style="padding-bottom: 2px;font-size:18.5px!important;font-weight: 300; line-height: 1.3 !important;">
+                    Please note
+                    there will be the following administration fees:</p>
+                <p class="visible-xs" style="padding-bottom: 2px;font-size:18.5px!important;font-weight: 300;line-height:25px!important;">
+                    Please note there will be the following administration fees:</p>
+            </h2>
+        </div>
+        <script>
+            function tableFunction() {
+                var input, filter, table, tr, td, i, txtValue;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                table = document.getElementById("tableFunction");
+                tr = table.getElementsByTagName("tr");
+                for (i = 0; i < tr.length; i++) {
+                    td = tr[i].getElementsByTagName("td")[0];
+                    if (td) {
+                        txtValue = td.textContent || td.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.display = "";
+                        } else {
+                            tr[i].style.display = "none";
+                        }
+                    }
+                }
+            }
+        </script>
+        <style>
+            .table>tbody>tr>th {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            .searchbar-image-align {
+                float: right;
+                position: absolute;
+                margin-left: 0px;
+                margin-top: 8px;
+                z-index: 1;
+                right: 25px;
+                top: 7px;
+            }
+
+            .input-icons {
+                width: 100%;
+                margin-bottom: 10px;
+                position: relative;
+            }
+
+            .input-icons img {
+                position: absolute;
+                right: 0px;
+                margin-top: 5px;
+            }
+
+            .icon {
+                padding: 10px;
+                text-align: center;
+            }
+
+            @media only screen and (max-width: 600px) {
+                div.nctable {
+                    max-width: 100% !important;
+                }
+
+                input.bg-style-for-box {
+                    width: 100% !important;
+                }
+
+                .input-icons img {
+                    margin-top: 25px;
+                }
+            }
+
+            @media only screen and (min-width: 601px) and (max-width:991px) {
+                div.nctable {
+                    max-width: 100% !important;
+                }
+            }
+        </style>
+        <div class="col-md-12 padding-30">
+            <div>
+                <div class="nctable scroll-bar-for-table height-for-forex-table" style="max-width:70%; margin:auto;">
+                    <div class="input-icons">
+                        <input class="searchby__symbol__control bg-style-for-box cs150visearchsym cs150frsearchw cs-search-comn-150" id="myInput" type="text" placeholder="Search by Symbol" style="width: 30%; margin-bottom:25px; border: 1px solid transparent!important;border-image-source: url(/wp-content/themes/fptheme/image-2020/metals/desktop/search-2-min.png' %})!important;border-image-slice: 16!important;border-image-width: 10px!important;" onkeyup="tableFunction()">
+                        <img class="icon" src="../static/globalcityindex-live/files/search-min.png" alt="" title="">
+
+                    </div>
+                    <table class="table  forex-table-style" id="tableFunction" style="border: 2px solid transparent;">
+                        <tbody>
+                            <tr class="active0 first-row-linear-grd">
+
+                                <th class="tbe-hd">
+                                    Symbol
+                                </th>
+                                <th class="tbe-hd">
+                                    <div>
+                                        Admin fee in USD <br>
+                                        per lot, per night
+                                    </div>
+
+                                </th>
+                                <th class="tbe-hd">
+                                    Grace period
+                                </th>
+                            </tr>
+                            <tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> NZDUSD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $1 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 5 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> AUS200
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $1 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> EURO50
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $1 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> FRA40 </span>
+    </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $2 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> HK50 </span>
+    </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $1 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> US500 </span>
+    </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $1 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> BCHUSD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $1 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> DOGUSD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $1 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> DOTUSD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $1 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> EOSUSD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $1 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> ETHUSD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $1 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> LNKUSD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $1 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> LTCUSD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $1 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> RPLUSD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $1 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> SOLUSD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $1 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> XBRUSD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $10 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> XLMUSD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $1 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> XTIUSD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $10 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> ADAUSD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $1 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> JP225 </span>
+    </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $2 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> GBPUSD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $2 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 5 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> AUDCAD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $3 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> AUDSGD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $2 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> EURSEK
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $2 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> NZDCAD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $2 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> SPA35 </span>
+    </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $2 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> UK100 </span>
+    </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $1 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> USDCAD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $3 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 5 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> EURNOK
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $3 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> GBPCAD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $3 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> GBPNZD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $3 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> AUDUSD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $3 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 5 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> AUDNZD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $3 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> CHINA50
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $3 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> EURAUD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $2 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> EURDKK
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $3 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> GER40 </span>
+    </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $3 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> USDPLN
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $4 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> EURSGD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $5 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> US100 </span>
+    </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $2 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> EURCAD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $5 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> NZDSGD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $3 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> EURUSD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $5 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 5 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> AUDCHF
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $5 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> CADCHF
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $5 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> CHFJPY
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $5 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> EURGBP
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $5 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> EURNZD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $5 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> EURPLN
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $5 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> GBPAUD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $5 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> GBPPLN
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $5 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> GBPSEK
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $5 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> GBPSGD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $5 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> NZDCHF
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $5 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> USDCNH
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $5 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> USDCZK
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $5 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> USDDKK
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $5 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> USDNOK
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $5 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> USDSEK
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $5 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> USDSGD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $5 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> AUDJPY
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $5 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> EURCHF
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $5 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> GBPDKK
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $5 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> US30 </span>
+    </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $3 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> USDCHF
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $10 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 5 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> CADJPY
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $10 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> CHFSGD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $10 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> NZDJPY
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $10 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> USDTHB
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $55 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> USDZAR
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $10 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> BTCUSD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $60 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> BWPUSD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $20 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> EURCZK
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $10 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> EURJPY
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $10 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> GBPCHF
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $10 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> USDINR
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $15 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> XNGUSD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $80 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> USDJPY
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $15 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 5 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> EURZAR
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $15 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> XAGEUR
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $15 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> XPTUSD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $15 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> USDZMW
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $25 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> XAGAUD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $15 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> GBPJPY
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $20 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> USDHUF
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $20 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> USDMXN
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $20 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> XPDUSD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $15 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> USDKRW
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $15 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> XAGUSD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $20 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> EURMXN
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $25 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> XAUEUR
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $25 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> EURHUF
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $25 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> GBPMXN
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $25 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> XAUAUD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $25 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> XAUUSD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $30 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 5 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> USDTWD
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $30 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> USDCLP
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $45 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> USDUGX
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $30 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> USDKES
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $55 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> USDCOP
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $35 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> USDTRY
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $125 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active1">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> EURTRY
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $140 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+<tr class="active0">
+    <td class="tbe-para" style="padding: 15px;font-size:18.5px;font-weight:300; text-align:center;"><span> GBPTRY
+        </span></td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> $155 </td>
+    <td class="tbe-para font300" style="font-size:16px; padding: 15px; text-align:center;"> 0 nights </td>
+</tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="container-fluid c26">
+    <div id="our-account-terms-section" class="container default-wd mobile-padding-top1">
+        <div class="row fb-cus-row">
+
+            <div class="col-sm-6 text-content-1 padding-right-for-first-30">
+                <div class="text-block1 p__fixer">
+                    <p style="font-family: 'Helvetica Neue';">
+                        Please refer to the remaining <a href="index.php" target="_blank">legal documents</a> for additional terms and conditions relating to Islamic Accounts.
+                    </p>
+                    <br>
+                    <p style="font-family: 'Helvetica Neue';">
+                        * For Islamic Accounts, these products will not be subject to an admin fee for the first five
+                        nights of trading. However, if positions are held for longer than this period, the admin fee
+                        will become applicable from the sixth night onwards.
+
+                    </p>
+                    <br>
+                    <p style="font-family: 'Helvetica Neue';">* Kindly note that Admin fees will not occur in the Swap
+                        free demo accounts.</p>
+                </div>
+                <div class="text-block2 padding-30 p__fixer">
+                    <p style="font-family: 'Helvetica Neue';">Please note that Islamic account status does not apply to
+                        pairs not listed above, and swaps will be charged/credited as with a normal account. To avoid
+                        receiving any swap credits/charges on these symbols, ensure that all open positions are closed
+                        before the end of the day at 00:00 platform time. cityindex-live reserves the right to update
+                        administration charges regularly. Any amendments to the charges will be notified to clients via
+                        the cityindex-live website.
+
+                    </p>
+                    <p style="font-family: 'Helvetica Neue';">
+                        Swap-Free Accounts will have the same trading conditions and terms as a regular MetaTrader 4,
+                        MetaTrader 5, or cTrader Platform Account.
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-sm-6 text_content-1 padding-left-for-first-30 padding-align-for-last-bullet-section" style="padding-left: 75px;">
+                <div class="inner_text">
+                    <ul class="width-auto-for-mobile" style="padding-left: 0px;margin-left:0px!important;width: 540px;">
+                        <p></p>
+                        <li class="list-item-default p__fixer">
+                            <p style="font-family: 'Helvetica Neue';">
+                                Islamic clients can trade all instruments available on the platform.
+                            </p>
+                        </li>
+                        <div class="padding-30"></div>
+                        <li class="list-item-default p__fixer">
+                            <p style="font-family: 'Helvetica Neue';">
+                                Please note, when triple swap charges apply - on Wednesday and Friday nights - the admin
+                                fee is not charged at a triple rate; instead, we absorb the risk/cost.
+                            </p>
+                        </li>
+                        <div class="padding-30"></div>
+
+                        <li class="list-item-default p__fixer">
+                            <p style="font-family: 'Helvetica Neue';">
+                                Future products do not incur swap charges/credits. However, the monthly Rollover is
+                                applied in the swap column. Clients who wish to avoid even the appearance of a swap
+                                charge should ensure positions are closed before the roll date
+                            </p>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .panel {
+        border-radius: 0px 20px 20px 20px;
+        border: 1px solid #c1c1c1;
+
+
+    }
+
+    .shadow-all {
+        box-shadow: 0 0 7px #BEBEBE;
+
+    }
+
+    .panel-table {
+        border: none;
+    }
+
+    .panel-table .panel-body {
+        border-top: 1px solid #c1c1c1 !important;
+    }
+
+    .panel-table-cards .panel-body {
+        border-top: 1px solid #c1c1c1 !important;
+    }
+
+    .panel-heading-custom {
+        height: 125px;
+        padding: 30px;
+        border-radius: 0px 20px 0 0;
+        color: #fff;
+        font-size: 22px;
+        line-height: 1.3;
+    }
+
+    .panel-footer {
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .account-type {
+        font-size: 26px;
+    }
+
+    .account-type-title {
+        font-size: 26px;
+        display: block;
+    }
+
+    .account-type-content {
+        font-size: 20px;
+        color: black;
+        text-align: center;
+        background-color: #f8f8f8;
+        border-top: 1px solid #c1c1c1;
+
+    }
+
+    .account-table-content {
+        font-size: 20px;
+        color: black;
+        border-top: 1px solid #c1c1c1;
+        font-weight: 600;
+    }
+
+    .panel-footer {
+        background-color: #f8f8f8;
+        border-top: none;
+        padding: 30px;
+    }
+
+    .panel-btn {
+        background-color: white;
+        color: #00bdff;
+        border: 1px solid #00bdff;
+        border-radius: 0 10px 10px 10px;
+        padding: 10px;
+        width: 70%;
+        font-size: 18px;
+        display: inline-block;
+    }
+
+    .panel-btn:hover {
+        background-color: #00bdff;
+        color: #fff;
+        border: 1px solid #00bdff;
+        border-radius: 0 10px 10px 10px;
+        padding: 10px;
+        width: 70%;
+    }
+
+    .panel:hover {
+        border: 1px solid #00bdff !important;
+    }
+
+    .panel:hover .panel-btn {
+        background-color: #00bdff;
+        color: #fff;
+        border: 1px solid #00bdff;
+        border-radius: 0 10px 10px 10px;
+        padding: 10px;
+        width: 70%;
+    }
+
+    .account-type-content-mob {
+        font-size: 19px;
+        color: black;
+        text-align: left;
+        background-color: #f8f8f8;
+        border-top: 1px solid #c1c1c1;
+        font-weight: 600;
+
+
+    }
+
+    .account-type-content-title-mob {
+        display: block;
+        font-size: 16px;
+        font-weight: 500;
+
+
+    }
+
+    .panel-heading-cus {
+        height: 150px;
+        padding: 30px;
+        border-radius: 0px 20px 0 0;
+        color: #fff;
+        font-size: 22px;
+        line-height: 1.3;
+        overflow: hidden;
+        /*this is required for ribbon */
+        position: relative;
+        /*this is required for ribbon */
+    }
+
+    .account-type-title-cus {
+        font-size: 28px;
+        display: block;
+        font-weight: 700;
+    }
+
+    .try-demo-link {
+        font-size: 18px;
+        color: #00bdff;
+        text-decoration: underline !important;
+    }
+
+    .panel:hover .try-demo-link {
+        color: #152A4A;
+    }
+
+    .panel:hover .panel-heading-cus {
+        background-color: #00bdff !important;
+    }
+
+    .panel:hover {
+        cursor: pointer;
+    }
+
+
+    /* ribbon */
+
+    .ribbon {
+        margin: 0;
+        padding: 0;
+        background: red;
+        color: white;
+        padding: 0.3em 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(30%) translateY(0%) rotate(45deg);
+        transform-origin: top left;
+    }
+
+    .ribbon:before,
+    .ribbon:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        margin: 0 -1px;
+        /* tweak */
+        width: 100%;
+        height: 100%;
+        background: red;
+    }
+
+    .ribbon:before {
+        right: 100%;
+    }
+
+    .ribbon:after {
+        left: 100%;
+    }
+</style>
+<style>
+    .width-height-for-desktop {
+        width: 100%;
+        height: 303px;
+    }
+
+    .title p {
+        font-family: 'Helvetica Neue';
+        font-size: 40px !important;
+        line-height: 40px !important;
+        color: #0b121c !important;
+        text-align: center;
+        padding-bottom: 24px;
+        font-weight: 800;
+    }
+
+    #what-trade-section {
+        padding-bottom: 45px;
+    }
+
+    a.blue-button-card:hover {
+        color: #fff;
+    }
+
+    a.red-button-card:hover {
+        color: #fff;
+    }
+
+    .custom-link-for-a {
+        color: #00bdff !important;
+        cursor: pointer;
+        text-decoration: underline !important;
+        font-weight: 700;
+    }
+
+    a:hover {
+        color: #00aeef;
+    }
+
+    .normal-par-font-section {
+        font-family: 'Helvetica Neue';
+        font-size: 20.5px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.51;
+        letter-spacing: normal;
+        text-align: center;
+        color: #0b121c;
+        margin-bottom: 15px;
+    }
+
+    .mobile-container {
+        display: none;
+    }
+
+    .mobile-container {
+        max-width: 480px;
+        margin: auto;
+        color: white;
+        border-radius: 10px;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: white;
+        position: relative;
+    }
+
+    .topnav a {
+        color: black;
+        padding: 18px 16px;
+        text-transform: uppercase;
+        font-size: 28px;
+        display: block;
+    }
+
+    .mobile-link-active {
+        height: 54px;
+        margin-right: 0.5px;
+        background-image: url(../static/globalcityindex-live/files/dotted-lines-icon-.png);
+        background-position: 50%;
+        text-transform: uppercase;
+    }
+
+    .mob-active-link {
+        font-weight: 700;
+    }
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: black;
+        padding: 18px 16px;
+        text-transform: uppercase;
+        font-size: 28px;
+        display: block;
+    }
+
+    .mob-active-link {
+        font-weight: 700;
+    }
+
+    .topnav a.icon {
+        font-size: 44px;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: -13px;
+    }
+
+
+
+    #standard-raw-account-section {
+        padding-top: 85px;
+        padding-bottom: 80px;
+    }
+
+    .line-bg-for-last {
+        background: url(/wp-content/themes/fptheme/image-2020/forex-account-type/vertical-image-1.png' %}) right no-repeat;
+    }
+
+    .padding-right-60-for-last-sec {
+        padding-right: 60px;
+    }
+
+    .padding-left-60-for-last-sec {
+        padding-left: 70px;
+    }
+
+    .center-align-div {
+        width: 1070px;
+        margin: auto;
+    }
+
+    .last-section-bullet-font {
+        font-family: 'Helvetica Neue';
+        padding-top: 5px;
+        font-size: 18.5px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.51;
+        letter-spacing: normal;
+        text-align: left;
+        color: #0b121c;
+        margin-bottom: 0px;
+    }
+
+    .last-section-h1-font {
+        font-family: 'Helvetica Neue';
+        font-size: 32px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.88;
+        letter-spacing: normal;
+        text-align: center;
+        color: #0b121c;
+    }
+
+    #choose-metaTrader-five-trading-section {
+        padding-top: 95px;
+        padding-bottom: 90px;
+    }
+
+    .normal-white-h1-font-section {
+        font-family: 'Helvetica Neue';
+        font-size: 32px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+    }
+
+    .normal-white-para-font-section {
+        font-family: 'Helvetica Neue';
+        font-size: 18.5px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.51;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+    }
+
+    .padding-right-60-for-dekstop {
+        padding-left: 44px;
+    }
+
+    .c3 {
+        background-color: #202835;
+    }
+
+    #choose-our-metatrader-trading-section {
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+
+    .normal-h1-font-section {
+        font-family: 'Helvetica Neue';
+        font-size: 32px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        text-align: left;
+        color: #0b121c;
+    }
+
+    .normal-para-font-section {
+        font-family: 'Helvetica Neue';
+        font-size: 18.5px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.51;
+        letter-spacing: normal;
+        text-align: left;
+        color: #0b121c;
+    }
+
+    .end-divider {
+        background-size: auto;
+        background-position: bottom center;
+        background-image: url(../static/globalcityindex-live/files/dotted-lines-icon-.png) !important;
+        background-repeat: no-repeat;
+    }
+
+    .para-left-font {
+        font-family: 'Helvetica Neue';
+        font-size: 17px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.35;
+        letter-spacing: normal;
+        text-align: left;
+        color: #0b121c;
+    }
+
+    .para-right-font {
+        font-family: 'Helvetica Neue';
+        font-size: 17px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.35;
+        letter-spacing: normal;
+        text-align: right;
+        color: #2e3642;
+    }
+
+    #forex-account-types-section {
+        padding-top: 45px;
+        padding-bottom: 65px;
+    }
+
+    .cus-nav-bar li a:hover {
+        z-index: 1;
+        background-color: #ffffff;
+        border-radius: 0px 25px 0px 0px !important;
+        background: linear-gradient(white, white), linear-gradient(to bottom right, #fff 14%, rgba(0, 189, 255, .48), #26cc68);
+        background-clip: padding-box, border-box;
+        background-origin: padding-box, border-box;
+        margin-left: -1px;
+        border: 2px solid transparent !important;
+        border-bottom: none !important;
+        border-top: none !important;
+        display: block;
+        position: relative;
+        cursor: pointer;
+        font-size: 17px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #2e3642;
+        margin-right: -1px;
+        box-shadow: 29px 53.1px rgba(0, 189, 255, .48), -11px 53.1px rgba(0, 189, 255, .48);
+    }
+
+    .row.fb-cus-row {
+        max-width: 1080px;
+        margin: auto;
+        position: relative;
+        top: 10px;
+    }
+
+    .card-left {
+        display: inline-flex;
+        margin-top: 160px;
+        margin-left: 165px;
+    }
+
+    .card-right {
+        font-weight: bold;
+        color: #0b121c !important;
+        margin-left: 100px;
+    }
+
+    .stan-box-bg {
+        background-repeat: no-repeat;
+        background-image: url(/wp-content/themes/fptheme/image-2020/forex-account-type/std-box.png' %});
+        background-size: contain;
+        background-position: 95%;
+        height: 870px;
+    }
+
+    .raw-box-bg {
+        background-repeat: no-repeat;
+        background-image: url(/wp-content/themes/fptheme/image-2020/forex-account-type/raw-secion.png' %});
+        background-size: contain;
+        background-position: 15%;
+        height: 870px;
+    }
+
+    .blue-button-card {
+        font-family: 'Helvetica Neue';
+        border-radius: 0px 10px 10px 10px;
+        background-color: #00beff;
+        color: #fff;
+        font-size: 22px;
+        line-height: 25px;
+        width: 265px;
+        font-weight: 700;
+        padding: 20px 14px;
+    }
+
+    span.dis-blo.card-left.cs1267esdemo.cs1267vitab1try,
+    span.dis-blo.card-left.cs1267esdemo2.cs1267vitab2try {
+        font-family: 'Helvetica Neue';
+    }
+
+    .red-button-card {
+        font-family: 'Helvetica Neue';
+        border-radius: 0px 10px 10px 10px;
+        background-color: #f82f4a;
+        color: #fff;
+        font-size: 22px;
+        line-height: 25px;
+        width: 265px;
+        font-weight: 700;
+        padding: 20px 14px;
+    }
+
+    .header-forex-font {
+        font-family: 'Helvetica Neue';
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 1.13;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #0b121c;
+    }
+
+    .headerbg {
+        background-size: 100% 120%;
+        background-position: 55% 100%;
+    }
+
+    .container-fluid.nav-bar-section.nav-desktop {
+        display: block;
+    }
+
+    .mob-hei {
+        line-height: 25px !important;
+    }
+
+    .page-navi {
+        background-color: #ffffff;
+        z-index: 9;
+        position: relative;
+    }
+
+    .row.fb-cus-row {
+        max-width: 1080px;
+        margin: auto;
+        position: relative;
+        top: 10px;
+    }
+
+    ol {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .container-fluid.page-navi li {
+        float: left;
+        text-align: center;
+    }
+
+    u {
+        font-size: 18.5px;
+    }
+
+    .btn.btn-transparent-red {
+        border: none;
+        border-radius: 0 10px 10px 10px !important;
+        font-size: 24px !important;
+        font-weight: bold !important;
+        font-stretch: normal !important;
+        font-style: normal !important;
+        letter-spacing: 0.98px !important;
+        text-align: center !important;
+        color: #ffffff !important;
+    }
+
+    .layer {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .padding-top-10 {
+        padding-top: 10px;
+    }
+
+    .padding-top-20 {
+        padding-top: 20px;
+    }
+
+    .padding-top-25 {
+        padding-top: 25px;
+    }
+
+    .padding-top-30 {
+        padding-top: 30px;
+    }
+
+    .padding-top-40 {
+        padding-top: 40px;
+    }
+
+    .padding-top-50 {
+        padding-top: 50px;
+    }
+
+    .padding-top-60 {
+        padding-top: 60px;
+    }
+
+    .padding-bottom-10 {
+        padding-bottom: 10px;
+    }
+
+    .padding-bottom-15 {
+        padding-bottom: 15px;
+    }
+
+    .padding-bottom-20 {
+        padding-bottom: 20px;
+    }
+
+    .padding-bottom-25 {
+        padding-bottom: 25px;
+    }
+
+    .padding-bottom-30 {
+        padding-bottom: 30px;
+    }
+
+    .padding-bottom-35 {
+        padding-bottom: 35px;
+    }
+
+    .padding-bottom-40 {
+        padding-bottom: 40px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-transform: none !important;
+        letter-spacing: normal !important;
+    }
+
+    .cus-nav-inner {
+        height: 54px;
+        background-size: initial;
+        background-image: url(../static/globalcityindex-live/files/dotted-lines-icon-.png);
+        background-position: 50%;
+        text-transform: uppercase;
+        font-size: 17px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 3.12;
+        letter-spacing: normal;
+        text-align: center;
+    }
+
+    .cus-nav-bar ul,
+    ol {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .cus-nav-bar li {
+        float: left;
+        text-align: center;
+    }
+
+    li.list-item-menu {
+        width: 16%;
+    }
+
+    .menu-divider {
+        background-size: 1px 35px;
+        background-position: center right !important;
+        background-image: url(./static/globalcityindex-live/files/vertical-image-1.png);
+        background-repeat: no-repeat;
+    }
+
+    .cus-nav-bar li a.active {
+        background-color: #fff !important;
+        border-radius: 0px 25px 0px 0px !important;
+        background: linear-gradient(white, white), linear-gradient(to bottom right, #fff 14%, rgba(0, 189, 255, .48), #26cc68);
+        background-clip: padding-box, border-box;
+        background-origin: padding-box, border-box;
+        margin-left: -1px;
+        border: 2px solid transparent !important;
+        border-bottom: none !important;
+        border-top: none !important;
+        display: block;
+        position: relative;
+        font-size: 17px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #2e3642;
+        margin-right: -1px;
+        box-shadow: 29px 53.1px rgba(0, 189, 255, .48), -11px 53.1px rgba(0, 189, 255, .48);
+    }
+
+    .cus-nav-bar li a {
+        display: block;
+        color: #3e495c;
+        text-align: center;
+        padding: 1px 16px;
+        text-decoration: none;
+    }
+
+    @media only screen and (max-width: 600px) {
+        #standard-raw-account-section {
+            padding-top: 60px;
+            padding-bottom: 55px;
+        }
+
+        .padding-left-60-for-last-sec {
+            background: url(./static/globalcityindex-live/files/vertical_line-1x260-1-1.png) top no-repeat !important;
+            padding-top: 50px;
+            margin-top: 40px;
+            padding-left: 30px !important;
+            padding-right: 30px;
+        }
+
+        .padding-right-60-for-last-sec {
+            padding-right: 30px !important;
+            padding-left: 30px;
+        }
+
+        .center-align-div {
+            width: auto !important;
+            margin: auto;
+        }
+
+        #choose-metaTrader-five-trading-section {
+            padding-top: 70px;
+            padding-bottom: 60px;
+        }
+
+        .nav-icon {
+            margin: 1em;
+            width: 40px;
+            margin-top: -9px;
+            margin-right: 1px;
+        }
+
+        .nav-icon:after,
+        .nav-icon:before,
+        .nav-icon div {
+            background: linear-gradient(to right, rgb(-140, 134, 171) 55%, #26cc68);
+            border-radius: 3px;
+            content: '';
+            display: block;
+            height: 2px;
+            margin: 11px 0px;
+            transition: all .2s ease-in-out;
+        }
+
+        a.link-end-mobile-divider {
+            background-size: 370px 1px;
+            background-position: top !important;
+            background-image: url(./static/globalcityindex-live/files/vertical_line-1x260-1-1.png);
+            background-repeat: no-repeat;
+        }
+
+        .container-fluid.page-navi {
+            display: none;
+        }
+
+        .container-fluid.nav-bar-section.nav-desktop {
+            display: none;
+        }
+
+        .mobile-container {
+            display: block !important;
+        }
+
+        .btn.btn-transparent-red {
+            display: none;
+        }
+
+        .section.headerbg {
+            background-image: url(/wp-content/themes/fptheme/image-2020/forex-account-type/hero-mobile.png' %}) !important;
+        }
+
+        .container-fluid {
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+        body,
+        html {
+            overflow-x: hidden !important;
+        }
+
+        #forex-account-types-section {
+            padding-top: 45px;
+            padding-bottom: 45px;
+        }
+
+        #choose-our-metatrader-trading-section {
+            padding-top: 60px;
+            padding-bottom: 50px;
+        }
+
+        .padding-left-right-15-for-mobile {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .normal-h1-font-section {
+            text-align: center;
+        }
+
+        .padding-right-60-for-dekstop {
+            padding-left: 30px !important;
+            padding-right: 25px;
+        }
+
+        .normal-white-h1-font-section {
+            text-align: center;
+        }
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 667px) and (min-device-width: 375px) {
+        .margin-top-20 {
+            margin-top: -20px;
+        }
+
+        .std-mini-open-100-align {
+            margin-left: 25px !important;
+            margin-top: 175px !important;
+        }
+
+        .std-spread-pips-align {
+            margin-left: 25px !important;
+        }
+
+        .std-instr-pair-align {
+            margin-top: 30px !important;
+            margin-left: 55px !important;
+        }
+
+        .std-max-level-align {
+            margin-top: 10px !important;
+            margin-left: 25px !important;
+        }
+
+        .std-exec-align {
+            margin-left: 25px !important;
+        }
+
+        .std-com-per-align {
+            margin-top: 15px !important;
+            margin-left: 25px !important;
+        }
+
+        .std-mini-trade-align {
+            margin-top: 20px;
+            margin-left: 25px !important;
+        }
+
+        .std-eas-trade-align {
+            margin-top: 20px;
+            margin-left: 25px !important;
+        }
+
+        .std-mobile-app-align {
+            margin-top: 20px !important;
+            margin-left: 25px !important;
+        }
+
+        .std-vps-yes-align {
+            margin-top: 20px !important;
+            margin-left: 25px !important;
+        }
+
+        .std-start-button-align {
+            margin-top: 15px !important;
+            margin-left: 40px !important;
+        }
+
+        .std-free-demo-align {
+            margin-top: 15px !important;
+            margin-left: 120px !important;
+        }
+
+        .raw-mini-open-100-align {
+            margin-left: 25px !important;
+            margin-top: 175px !important;
+        }
+
+        .raw-spread-pips-align {
+            margin-top: 20px !important;
+            margin-left: 25px !important;
+        }
+
+        .raw-instr-pair-align {
+            margin-top: 20px !important;
+            margin-left: 55px !important;
+        }
+
+        .raw-max-level-align {
+            margin-top: 15px !important;
+            margin-left: 25px !important;
+        }
+
+        .raw-exec-align {
+            margin-top: 20px !important;
+            margin-left: 25px !important;
+        }
+
+        .raw-com-per-align {
+            margin-top: 20px !important;
+            margin-left: 25px !important;
+        }
+
+        .raw-mini-trade-align {
+            margin-top: 15px !important;
+            margin-left: 25px !important;
+        }
+
+        .raw-eas-trade-align {
+            margin-left: 25px !important;
+        }
+
+        .raw-mobile-app-align {
+            margin-top: 15px !important;
+            margin-left: 25px !important;
+        }
+
+        .raw-vps-yes-align {
+            margin-top: 15px !important;
+            margin-left: 25px !important;
+        }
+
+        .raw-start-button-align {
+            margin-top: 20px !important;
+            margin-left: 40px !important;
+        }
+
+        .raw-free-demo-align {
+            margin-top: 15px !important;
+            margin-left: 120px !important;
+        }
+    }
+
+    @media only screen and (max-width: 767px) and (min-width: 411px) {
+        .margin-top-20 {
+            margin-top: 20px;
+        }
+
+        .stan-box-bg {
+            margin-top: 30px;
+            background-position: 30%;
+        }
+
+        .std-mini-open-100-align {
+            margin-left: 40px !important;
+            margin-top: 160px !important;
+        }
+
+        .std-spread-pips-align {
+            margin-left: 40px !important;
+        }
+
+        .std-instr-pair-align {
+            margin-top: 33px !important;
+            margin-left: 70px !important;
+        }
+
+        .std-max-level-align {
+            margin-top: 20px !important;
+            margin-left: 40px !important;
+        }
+
+        .std-exec-align {
+            margin-left: 40px !important;
+        }
+
+        .std-com-per-align {
+            margin-top: 20px !important;
+            margin-left: 40px !important;
+        }
+
+        .std-mini-trade-align {
+            margin-top: 20px !important;
+            margin-left: 40px !important;
+        }
+
+        .std-eas-trade-align {
+            margin-top: 20px !important;
+            margin-left: 40px !important;
+        }
+
+        .std-mobile-app-align {
+            margin-top: 20px !important;
+            margin-left: 40px !important;
+        }
+
+        .std-vps-yes-align {
+            margin-top: 20px !important;
+            margin-left: 40px !important;
+        }
+
+        .std-start-button-align {
+            margin-top: 20px !important;
+            margin-left: 55px !important;
+        }
+
+        .std-free-demo-align {
+            margin-top: 15px !important;
+            margin-left: 130px !important;
+        }
+
+        .raw-mini-open-100-align {
+            margin-left: 35px !important;
+            margin-top: 160px !important;
+        }
+
+        .raw-spread-pips-align {
+            margin-top: 20px !important;
+            margin-left: 35px !important;
+        }
+
+        .raw-instr-pair-align {
+            margin-top: 28px !important;
+            margin-left: 65px !important;
+        }
+
+        .raw-max-level-align {
+            margin-top: 20px !important;
+            margin-left: 35px !important;
+        }
+
+        .raw-exec-align {
+            margin-top: 20px !important;
+            margin-left: 35px !important;
+        }
+
+        .raw-com-per-align {
+            margin-top: 20px !important;
+            margin-left: 35px !important;
+        }
+
+        .raw-mini-trade-align {
+            margin-top: 20px !important;
+            margin-left: 35px !important;
+        }
+
+        .raw-eas-trade-align {
+            margin-left: 35px !important;
+        }
+
+        .raw-mobile-app-align {
+            margin-top: 25px !important;
+            margin-left: 35px !important;
+        }
+
+        .raw-vps-yes-align {
+            margin-top: 20px !important;
+            margin-left: 35px !important;
+        }
+
+        .raw-start-button-align {
+            margin-left: 55px !important;
+        }
+
+        .raw-free-demo-align {
+            margin-left: 135px !important;
+        }
+    }
+</style>
+
+<style>
+    .card-left>p {
+        font-family: 'Helvetica Neue';
+    }
+
+    p.card-right {
+        font-family: 'Helvetica Neue';
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        letter-spacing: 0;
+        text-transform: unset;
+    }
+
+    .image-center-for-mobile {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #key-features-islamic-forex-section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    #advantages-islamic-accounts-section {
+        padding-bottom: 85px;
+        padding-top: 85px;
+    }
+
+    .custom-link-for-a {
+        color: #00bdff !important;
+        cursor: pointer;
+        text-decoration: underline !important;
+        font-weight: 700;
+    }
+
+    #our-account-terms-section {
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+
+    .c25 {
+        background-image: url(../static/globalcityindex-live/files/0006_steps-1.png);
+        position: relative;
+        z-index: 9;
+        background-size: cover;
+        background-position: 50%;
+    }
+
+    #simple-steps-blue-last-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .white-title p {
+        font-family: 'Helvetica Neue';
+        padding-top: 10px;
+        font-size: 18.5px !important;
+        font-weight: 200;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        text-align: center !important;
+        color: #ffffff !important;
+    }
+
+    .white-sub-title p {
+        font-family: 'Helvetica Neue';
+        line-height: 1.1 !important;
+        font-size: 44px !important;
+        font-weight: bold !important;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center !important;
+        color: #ffffff !important;
+    }
+
+    .padding-last-blue-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .image-center {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .arrow-imag-align {
+        margin-left: 230px;
+        margin-top: -100px;
+        min-width: 80%;
+    }
+
+    .c24 {
+        background-color: #eeeeee;
+    }
+
+    .c8 {
+        background-image: url(../static/globalcityindex-live/files/Group-426.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 45%;
+    }
+
+    #prohibition-of-gambling-section {
+        padding-top: 75px;
+        padding-bottom: 46px;
+    }
+
+    .c7 {
+        background-color: #ffffff;
+        margin-top: -110px;
+    }
+
+    .font-with-line {
+        font-family: 'Helvetica Neue';
+        font-size: 23px !important;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22 !important;
+        letter-spacing: normal;
+        text-align: left;
+        color: #0b121c !important;
+    }
+
+    .stan-box-bg {
+        background-repeat: no-repeat;
+        background-image: url(./static/globalcityindex-live/files/islamic-standard.png);
+        background-size: contain;
+        background-position: 95%;
+        height: 870px;
+    }
+
+    .card-left {
+        display: inline-flex;
+        margin-top: 160px;
+        margin-left: 165px;
+    }
+
+    .card-right {
+        font-weight: bold;
+        color: #0b121c !important;
+        margin-left: 100px;
+    }
+
+    .blue-button-card {
+        border-radius: 0px 10px 10px 10px;
+        background-color: #00beff;
+        color: #fff;
+        font-size: 22px;
+        line-height: 25px;
+        width: 265px;
+        font-weight: 700;
+        padding: 16px 28px;
+    }
+
+    .raw-box-bg {
+        background-repeat: no-repeat;
+        background-image: url(./static/globalcityindex-live/files/islamic-raw.png);
+        background-size: contain;
+        background-position: 35%;
+        height: 870px;
+    }
+
+    .red-button-card {
+        border-radius: 0px 10px 10px 10px;
+        background-color: #f82f4a;
+        color: #fff;
+        font-size: 22px;
+        line-height: 25px;
+        width: 265px;
+        font-weight: 700;
+        padding: 16px 28px;
+    }
+
+    .light-blue-bg-font {
+        font-size: 18.5px;
+        font-weight: 200;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.51;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff !important;
+    }
+
+
+    #trade-with-islamic-account-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .light-blue-bg {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+        background-image: url(../static/globalcityindex-live/files/0017_Group-399.png);
+    }
+
+    .padding-top-20 {
+        padding-top: 20px;
+    }
+
+    .headerbg {
+        background-size: 120% 140% !important;
+        background-position: 55% 100%;
+    }
+
+    .mob-hei {
+        line-height: 25px !important;
+    }
+
+    .btn.btn-transparent-red {
+        font-size: 24px !important;
+        font-weight: bold !important;
+        font-stretch: normal !important;
+        font-style: normal !important;
+        letter-spacing: 0.98px !important;
+        text-align: center !important;
+        color: #ffffff !important;
+        border-radius: 0 10px 10px 10px !important;
+        padding: 16px 28px !important;
+    }
+
+    .pad-for-six-reason-sec {
+        margin-bottom: -30px;
+        padding-bottom: 0px !important;
+    }
+
+    .col-sm-4.mobile-sm4 {
+        padding-top: 60px !important;
+    }
+
+    .an-example-sec-para {
+        text-align: left !important;
+        font-size: 32px !important;
+        line-height: 36px !important;
+        color: #3e495c !important;
+        text-align: center;
+        padding-bottom: 24px;
+        font-weight: 800;
+    }
+
+    #immediate-exchange-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .layer {
+        background-color: rgba(0, 0, 0, 0) !Important;
+    }
+
+    .bottom-divider {
+        background-size: auto;
+        background-position: bottom center !important;
+        background-image: url(./static/globalcityindex-live/files/vertical_line-1x260-1-1.png);
+        background-repeat: no-repeat;
+    }
+
+    #islamic-account-types-card-section {
+        padding-top: 40px;
+        padding-bottom: 105px;
+    }
+
+    #padding-options-section {
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+
+    .platform-para {
+        font-size: 23px !important;
+        font-weight: 300 !important;
+        letter-spacing: 0;
+        line-height: 28px;
+        text-align: center !important;
+    }
+
+    #six-reason-section {
+        padding-top: 85px;
+        padding-bottom: 100px;
+    }
+
+    #about-halal-forex-section {
+        padding-top: 75px;
+        padding-bottom: 80px;
+    }
+
+    .pad-align-what-sec {
+        padding-left: 60px;
+    }
+
+    #prohibition-payment-risk-section {
+        padding-top: 10px;
+        padding-bottom: 85px;
+    }
+
+    #going-strat-section {
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+
+    #normal-table-section {
+        padding-top: 65px;
+        padding-bottom: 75px;
+    }
+
+    #cfd-section-table {
+        padding-top: 75px;
+        padding-bottom: 60px;
+    }
+
+    .form-control::-webkit-input-placeholder {
+        color: #2E3642 !important;
+        font-weight: 300 !important;
+        font-family: 'Titillium Web', sans-serif !important;
+    }
+
+
+    #islamic-account-table-section {
+        padding-top: 90px;
+        padding-bottom: 0px;
+    }
+
+    .pad-for-table {
+        padding-left: 250px;
+    }
+
+    .bg-style-for-box {
+        font-weight: 300;
+        width: 75%;
+        box-shadow: none;
+        font-size: 18px;
+        color: #2E3642 !important;
+        float: right;
+
+    }
+
+    .tbe-red {
+        font-size: 18.5px !important;
+        font-weight: 600 !important;
+        font-stretch: normal !important;
+        font-style: normal !important;
+        line-height: 2.7 !important;
+        letter-spacing: normal !important;
+        text-align: center !important;
+        color: #f82f4a !important;
+    }
+
+    .tbe-litered {
+        font-size: 18.5px !important;
+        font-weight: 300 !important;
+        font-stretch: normal !important;
+        font-style: normal !important;
+        line-height: 2.7 !important;
+        letter-spacing: normal !important;
+        text-align: center !important;
+        color: #f82f4a !important;
+    }
+
+    .tbe-blue {
+        font-size: 18.5px !important;
+        font-weight: 600 !important;
+        font-stretch: normal !important;
+        font-style: normal !important;
+        line-height: 2.7 !important;
+        letter-spacing: normal !important;
+        text-align: center !important;
+        color: #00bdff !important;
+    }
+
+    .tbe-liteblue {
+        font-size: 18.5px !important;
+        font-weight: 300 !important;
+        font-stretch: normal !important;
+        font-style: normal !important;
+        line-height: 2.7 !important;
+        letter-spacing: normal !important;
+        text-align: center !important;
+        color: #00bdff !important;
+    }
+
+    table tr th {
+        background: none !important;
+        border-left: none !important;
+    }
+
+    .table>tbody>tr>th {
+        border-top: none !important;
+        /*line-height: .2!important; */
+        vertical-align: inherit !important;
+    }
+
+    .table>tbody>tr>td {
+        border-top: none !important;
+    }
+
+    table tr td {
+        border-left: none !important;
+    }
+
+    table tr td,
+    table tr th {
+        min-width: 143px;
+    }
+
+    .tbe-hd {
+        font-family: 'Helvetica Neue';
+        font-size: 18.5px !important;
+        font-weight: 600 !important;
+        font-stretch: normal !important;
+        font-style: normal !important;
+        line-height: 1 !important;
+        letter-spacing: normal !important;
+        text-align: center !important;
+        color: #fff !important;
+    }
+
+    .tbe-con {
+        font-family: 'Helvetica Neue';
+        font-size: 18.5px !important;
+        font-weight: 300 !important;
+        font-stretch: normal !important;
+        font-style: normal !important;
+        line-height: 2.7 !important;
+        letter-spacing: normal !important;
+        text-align: center !important;
+        color: #0b121c !important;
+    }
+
+    .active1 {
+        background-color: #f5f6f7;
+    }
+
+    .active0 {
+        background-color: #ffffff !important;
+    }
+
+    .nctable #myTable2 {
+        white-space: normal !important;
+    }
+
+    .nctable table {
+        background: linear-gradient(white, white), linear-gradient(to bottom right, #fff 10%, rgba(0, 189, 255, .48), #26CC68);
+        background-clip: padding-box, border-box;
+        background-origin: padding-box, border-box;
+        border: 1px solid transparent !important;
+        border-radius: 0px 20px 20px 20px;
+        border-collapse: collapse;
+        overflow: hidden;
+        position: inherit;
+        border-right: 1px solid transparent !important;
+    }
+
+    .first-row-linear-grd {
+        background-image: linear-gradient(90deg, #152a4a 0%, #0888be 48%, #24c870 94%, #26cc68 97%);
+    }
+
+    .table tr {
+        border-bottom: none !important;
+        border-right: none !important;
+        border-top: none !important;
+    }
+
+    .c5 {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+        background-image: url(./static/globalcityindex-live/files/commodities/bg-6-reasons.png);
+    }
+
+    .padding-15 {
+        padding-top: 15px;
+    }
+
+    .blue-button {
+        font-family: 'Helvetica Neue';
+        margin-right: 10px;
+        padding: 17px 16px 15px 16px !important;
+        border-radius: 0px 10px 10px 10px;
+        color: #fff;
+        font-size: 22px;
+        line-height: 25px;
+        font-weight: 700;
+        background-color: #00beff;
+        text-transform: uppercase;
+    }
+
+    .black-button {
+        font-family: 'Helvetica Neue';
+        margin-right: 10px;
+        padding: 17px 16px 15px 16px !important;
+        border-radius: 0px 10px 10px 10px;
+        color: #fff;
+        font-size: 22px;
+        line-height: 25px;
+        font-weight: 700;
+        background-color: #202835;
+        text-transform: uppercase;
+    }
+
+    .row>.col-md-12>nav {
+        display: block !important;
+    }
+
+    p {
+        color: #0b121c !important;
+    }
+
+    .mobile-container {
+        display: none;
+    }
+
+    .nav-bar-section {
+        padding-bottom: 20px;
+    }
+
+    .end-divider {
+        background-size: auto;
+        background-position: bottom center;
+        background-image: url(../static/globalcityindex-live/files/dotted-lines-icon-.png) !important;
+        background-repeat: no-repeat;
+    }
+
+    .cus-nav-bar ul,
+    ol {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+
+    }
+
+    .cus-nav-bar li {
+        float: left;
+        text-align: centre;
+    }
+
+    .cus-nav-bar li a {
+        display: block;
+        color: #3e495c;
+        text-align: center;
+        padding: 1px 16px;
+        text-decoration: none;
+    }
+
+
+    .cus-nav-bar li a:hover {
+        z-index: 1;
+        background-color: #ffffff;
+        border-radius: 0px 25px 0px 0px !important;
+        background: linear-gradient(white, white), linear-gradient(to bottom right, #fff 14%, rgba(0, 189, 255, .48), #26cc68);
+        background-clip: padding-box, border-box;
+        background-origin: padding-box, border-box;
+        margin-left: -1px;
+        border: 2px solid transparent !important;
+        border-bottom: none !important;
+        border-top: none !important;
+        display: block;
+        position: relative;
+        cursor: pointer;
+        font-size: 17px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #2e3642;
+        margin-right: -1px;
+        box-shadow: 29px 53.1px rgba(0, 189, 255, .48), -11px 53.1px rgba(0, 189, 255, .48);
+    }
+
+    .cus-nav-bar li a.active {
+
+        background-color: #fff !important;
+        border-radius: 0px 25px 0px 0px !important;
+        background: linear-gradient(white, white), linear-gradient(to bottom right, #fff 14%, rgba(0, 189, 255, .48), #26cc68);
+        background-clip: padding-box, border-box;
+        background-origin: padding-box, border-box;
+        margin-left: -1px;
+        border: 2px solid transparent !important;
+        border-bottom: none !important;
+        border-top: none !important;
+        display: block;
+        position: relative;
+        font-size: 17px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #2e3642;
+        margin-right: -1px;
+        box-shadow: 29px 53.1px rgba(0, 189, 255, .48), -11px 53.1px rgba(0, 189, 255, .48);
+    }
+
+
+    .cus-nav-inner {
+        height: 54px;
+        background-size: initial;
+        background-image: url(../static/globalcityindex-live/files/dotted-lines-icon-.png);
+        padding-left: 0px;
+        background-position: 50%;
+        text-transform: uppercase;
+        font-size: 17px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 3.12;
+        letter-spacing: normal;
+        text-align: center;
+    }
+
+    li.list-item-menu {
+        width: auto;
+        min-width: 185px;
+    }
+
+    .container-fluid.page-navi li {
+        float: left;
+        text-align: centre;
+    }
+
+    .fp-color-white {
+        color: white !important;
+    }
+
+    .container-fluid.c4 p,
+    .container-fluid.c4 h3 {
+        color: white !important;
+    }
+
+    .container-fluid.c4 h3 {
+        font-size: 32px !important;
+        padding-top: 24px;
+    }
+
+    p.mobile-subtitle-1 {
+        font-size: 22px;
+    }
+
+    .inner_text.padding-default p {
+        font-size: 17px;
+    }
+
+    .inner-section-content.mobile-title-3 h3 {
+        color: white;
+        font-size: 30px;
+    }
+
+    p.padding-10.mobile-title-3 {
+        color: white !important;
+        font-size: 17px !important;
+    }
+
+    .c2 {
+        background-image: url(./static/globalcityindex-live/files/bg2.png) !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 550px;
+    }
+
+    .c4 {
+        height: 404px;
+        color: white;
+        background-image: url(./static/globalcityindex-live/files/auto.png) !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+    }
+
+    .c6 {
+        background-color: #eeeeee;
+
+    }
+
+    span.mobile_image_wrap {
+        position: absolute;
+        top: -76px;
+    }
+
+    body {
+        text-align: left;
+        color: #2e3642 !important;
+    }
+
+    p {
+        margin-bottom: 0px;
+        font-weight: 300;
+    }
+
+    .row.fb-cus-row {
+
+        max-width: 1080px;
+        margin: auto;
+        position: relative;
+        top: 10px;
+    }
+
+    .sub-title.mobile-subtitle-1 p {
+        font-size: 17px;
+    }
+
+    .title p {
+        font-family: 'Helvetica Neue';
+        font-size: 40px !important;
+        line-height: 40px !important;
+        color: #0b121c !important;
+        text-align: center;
+        padding-bottom: 24px;
+        font-weight: 800;
+    }
+
+    .text-block1 p {
+        font-size: 17.5px;
+    }
+
+    #islamic-accounts-first-section {
+        padding-top: 60px;
+        padding-bottom: 110px;
+    }
+
+    div#section4 {
+        padding-top: 32px;
+        padding-bottom: 100px;
+    }
+
+    .section7_text_box p {
+        padding-right: 16px;
+        padding-left: 24px;
+    }
+
+    .padding-default {
+        padding-top: 20px;
+    }
+
+    .list-item-default {
+        list-style: none !important;
+        padding-left: 24px !important;
+        background-image: url(./static/globalcityindex-live/files/bullet.png) !important;
+        background-repeat: no-repeat !important;
+        background-size: 5px !important;
+        background-position: 0 12px !important;
+    }
+
+    .container-fluid.nav-bar-section.nav-desktop {
+        display: block;
+    }
+
+    .padding-10 {
+        padding-top: 10px;
+    }
+
+    .padding-30 {
+        padding-top: 30px;
+    }
+
+    .padding-50 {
+        padding-top: 50px;
+    }
+
+    .padding-70 {
+        padding-top: 70px;
+    }
+
+    .left-padding-1 {
+        padding-left: 90px;
+    }
+
+    .left-padding-2 {
+        padding-left: 50px;
+    }
+
+    .sub-title p {
+        text-align: center;
+    }
+
+    .list-item-greentick {
+        list-style: none !important;
+        padding-left: 24px !important;
+        background-image: url(./static/globalcityindex-live/files/bullet.png) !important;
+        background-repeat: no-repeat !important;
+        background-size: 5px !important;
+        background-position: 0 12px !important;
+    }
+
+    .au-mt4 {
+        font-size: 18.5px;
+        line-height: 28px;
+        text-align: left;
+        color: #2e3642 !important;
+    }
+
+    .right-divider-1 {
+
+        background-size: auto;
+        background-position: center right !important;
+        background-image: url(./static/globalcityindex-live/files/vertical_line-1x260-1.png);
+        background-repeat: no-repeat;
+    }
+
+    .right-divider-2 {
+        position: absolute;
+        padding-right: 20px !important;
+        padding-bottom: 18px;
+        margin-left: 1px;
+        background-size: contain !important;
+        background-position: center right !important;
+        background-image: url(./static/globalcityindex-live/files/vertical-image-1.png);
+        background-repeat: no-repeat;
+    }
+
+    .image-effect-top {
+        position: absolute;
+        left: 483px;
+        top: -196px;
+        width: 100%;
+    }
+
+    .image-effect-bottom {
+        position: absolute;
+        left: 485px;
+        top: 337px;
+        width: 100%;
+    }
+
+    p.text-7 {
+        font-weight: bold;
+        font-size: 26px !important;
+        line-height: 36px !important;
+        color: #3e495c !important;
+        text-align: center;
+    }
+
+    .section7_text_box {
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .full-width-divider {
+        width: 100%;
+        height: 1px;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        border-top-color: #c4c4c4;
+    }
+
+    .inner-section-6 {
+        top: 20px;
+        left: 60px;
+    }
+
+    .image-for-autochartist-mobile {
+        display: none;
+    }
+
+    .mobile-divider {
+        display: none;
+    }
+
+    .col-sm-6.image-for-section6-mobile {
+        display: none;
+    }
+
+    .mobile-full-width-divider {
+        display: none !important;
+    }
+
+    .mobile-full-width-divider {
+        width: 100%;
+        height: 1px;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        border-top-color: #c4c4c4;
+    }
+
+
+    .mobile-container {
+        max-width: 480px;
+        margin: auto;
+        color: white;
+        border-radius: 10px;
+    }
+
+    .topnav {
+
+        overflow: hidden;
+        background-color: white;
+        position: relative;
+    }
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: black;
+        ;
+        padding: 18px 16px;
+        text-transform: uppercase;
+        font-size: 28px;
+        display: block;
+    }
+
+    .topnav a.icon {
+        font-size: 44px;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: -13px;
+    }
+
+    .topnav a:hover {
+        color: Blue;
+    }
+
+    .mobile-link-active {
+
+        height: 54px;
+        margin-right: 0.5px;
+        background-image: url(../static/globalcityindex-live/files/dotted-lines-icon-.png);
+        background-position: 50%;
+        text-transform: uppercase;
+    }
+
+    .mob-active-link {
+        font-weight: 700;
+    }
+
+    .fa-gradient {
+        background: linear-gradient(to right, rgb(88, 137, 139), rgb(70, 211, 155));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .menu-divider {
+        background-size: 1px 35px;
+        background-position: center right !important;
+        background-image: url(./static/globalcityindex-live/files/vertical-image-1.png);
+        background-repeat: no-repeat;
+
+    }
+
+
+    @media only screen and (max-width: 600px) {
+        .first-row-linear-grd {
+            background: linear-gradient(to right, rgb(-140, 134, 171) 100%, #26cc68 45%) !important;
+            -o-background-size: cover;
+            background-size: cover;
+            -moz-background-size: cover;
+        }
+
+        .nctable table {
+            border: 1px solid transparent !important;
+            border-width: 1px !important;
+            border-style: solid !important;
+            border-image: linear-gradient(to top, #fff, rgba(62, 73, 92, 0.3), #fff) 1 100% !important;
+        }
+
+        .image-section {
+            margin-right: 10px;
+        }
+
+        .padding-left-removing-for-col-sm-6 {
+            padding-left: 0px !important;
+        }
+
+        .c7 {
+            margin-top: 0px !important;
+        }
+
+        table tr td,
+        table tr th {
+            min-width: 121px !important;
+        }
+
+        .first-col-head-left-mobile {
+            padding: 35px !important;
+            text-align: left !important;
+            padding-left: 20px !important;
+        }
+
+        .first-col-head-right-mobile {
+            padding-right: 20px !important;
+        }
+
+        .par-col-left-mobile {
+            padding-left: 15px !important;
+        }
+
+        .par-col-right-mobile {
+            padding-right: 0px !important;
+        }
+
+        #our-account-terms-section {
+            padding-top: 0px !important;
+            padding-bottom: 75px !important;
+        }
+
+        .width-auto-for-mobile {
+            width: auto !important;
+        }
+
+        .padding-align-for-last-bullet-section {
+            padding-top: 30px;
+            padding-left: 15px !important;
+            padding-right: 15px;
+        }
+
+        body,
+        html {
+            overflow-x: hidden !important;
+        }
+
+
+        .bottom-divier {
+            background-size: auto !important;
+            background-position: bottom center !important;
+            background-image: url(./static/globalcityindex-live/files/vertical_line-1x260-1-1.png) !important;
+            background-repeat: no-repeat !important;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .margin-for-subtitile {
+            margin-top: 10px;
+        }
+
+        #six-reason-section {
+            padding-top: 60px;
+            padding-bottom: 70px;
+        }
+
+        .col-sm-4.mobile-sm4 {
+            width: 50%;
+            max-width: 100%;
+            float: left;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .dis-blo {
+            display: inline-flex;
+        }
+
+        .para-for-list {
+            font-size: 22px !important;
+            margin-top: 15px;
+            margin-bottom: -40px;
+        }
+
+        .pad-top-50 {
+            padding-top: 0px !important;
+        }
+
+        .padding-left-40 {
+            padding-left: 25px !important;
+        }
+
+        .para-cent {
+            text-align: center !important;
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+
+        #islamic-accounts-first-section {
+            padding-top: 60px;
+            padding-bottom: 85px !important;
+        }
+
+        #islamic-account-types-card-section {
+            padding-top: 65px !important;
+            padding-bottom: 65px;
+        }
+
+        .padding-for-green-bullet {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .padding-for-green-bullet-top {
+            padding-top: 20px !important;
+
+        }
+
+        .pading-right-40 {
+            padding-right: 15px !important;
+
+        }
+
+
+        #padding-options-section {
+            padding-top: 40px;
+            padding-bottom: 65px !important;
+        }
+
+        #about-halal-forex-section {
+            padding-top: 70px;
+            padding-bottom: 70px !important;
+        }
+
+        .text-cent {
+            text-align: center !important;
+        }
+
+        .margin-image-top {
+            margin-top: -55px !important;
+        }
+
+        .pad-for-what-com-sec {
+            padding-right: 15px;
+            padding-left: 30px;
+        }
+
+        .padding-for-an-example-sec {
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-bottom: 40px;
+        }
+
+        .an-example-sec-para {
+
+            font-size: 30px !important;
+            text-align: center !important;
+            padding-bottom: 15px !important;
+
+        }
+
+        #prohibition-payment-risk-section {
+            padding-top: 60px !important;
+            padding-bottom: 60px !important;
+        }
+
+        .padding-left-60 {
+            padding-left: 15px !important;
+        }
+
+        .mob-img {
+            max-width: 100% !important;
+        }
+
+        .pading-top-for-red-green {
+            padding-top: 20px !important;
+        }
+
+        .padding-for-mobile-para-section {
+            padding-top: 0px !important;
+            padding-bottom: 40px;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .end-divider {
+            background-size: auto !important;
+
+        }
+
+        #normal-table-section {
+            padding-top: 30px;
+            padding-bottom: 45px !important;
+        }
+
+        #cfd-section-table {
+            padding-top: 50px !important;
+            padding-bottom: 55px !important;
+        }
+
+        .pad-for-table-align {
+            padding-left: 25px;
+        }
+
+        .scroll-bar-for-table {
+            overflow-x: auto;
+            white-space: nowrap;
+
+        }
+
+        .scroll-bar-for-table::-webkit-scrollbar {
+            width: 369px;
+            height: 10px;
+
+
+        }
+
+        .scroll-bar-for-table::-webkit-scrollbar-track {
+            border-radius: 10px;
+
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+        }
+
+        .scroll-bar-for-table::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #00BFFF;
+            outline: 2px solid #00BFFF;
+
+        }
+
+        .scroll-bar-for-table::-webkit-scrollbar:vertical {
+            display: none;
+
+        }
+
+        .bg-style-for-box {
+            margin: 0 auto;
+            margin-top: 20px;
+            float: none !important;
+            text-align: left !important;
+            width: 55% !important;
+        }
+
+        #islamic-account-table-section {
+            padding-top: 60px;
+            padding-bottom: 30px !important;
+        }
+
+        .padding-30 {
+            padding-top: 20px !important;
+        }
+
+        .pad-for-table {
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+        .row>.col-md-12>nav {
+            display: block !important;
+            padding-left: 10px;
+            padding-right: 10px;
+
+        }
+
+        .row>div.visible-xs.fp-font.no-uppercase.color-white {
+            padding-top: 75px !important;
+        }
+
+        .pad-align-what-sec {
+            padding-left: 0px !important;
+        }
+
+        .title p {
+            font-size: 50px !important;
+            line-height: 50px !important;
+        }
+
+        .container-fluid.page-navi {
+            display: none;
+        }
+
+        .col-sm-6.image-box {
+            display: none;
+        }
+
+        h3 {
+            font-size: 40px;
+        }
+
+        .padding-default.mobile-padding-none {
+            padding-top: 0px;
+        }
+
+        .c4 {
+            background-image: url(./static/globalcityindex-live/files/img-2.png) !important;
+            height: 860px;
+        }
+
+        .col-sm-4.mobile-sm4-1 {
+            padding-top: 0px !important;
+        }
+
+        .inner_text.padding-30.mobile-text-4 {
+            padding-left: 54px !important;
+            padding-right: 30px !important;
+        }
+
+        .title.mobile-title-3 p {
+            font-size: 38px !important;
+            text-align: center;
+        }
+
+        .padding-70.mobile-padding-section-5 {
+            display: none;
+        }
+
+        .left-padding-1 {
+            padding-left: 25px !important;
+        }
+
+        .left-padding-2 {
+            padding-left: 25px !important;
+        }
+
+        .col-sm-4 {
+            padding-top: 30px;
+        }
+
+        .padding-70.mobile-padding-none {
+            padding-top: 0px;
+        }
+
+        .padding-50.mobile-padding-none {
+            padding-top: 0px;
+        }
+
+        .container-fluid.nav-bar-section.nav-desktop {
+            display: none;
+        }
+
+        .section7_text_box p {
+            padding-right: 8px;
+            padding-left: 12px;
+        }
+
+        .container-fluid {
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+        .image-for-autochartist-mobile {
+            display: block !important;
+            padding-bottom: 30px;
+        }
+
+        .mobile-full-width-divider {
+            display: block !important;
+        }
+
+        .mobile-divider {
+            display: block !important;
+        }
+
+        .mobile-container {
+            display: block !important;
+        }
+
+        .container-fluid.c2 {
+            height: 950px !important;
+        }
+
+        .col-sm-6.text-content-1 {
+            padding-left: 15px;
+        }
+
+        .col-sm-4 p {
+            padding-left: 12px !important;
+        }
+
+        .title.mobile-title-1 p {
+            padding-bottom: 2px;
+            padding-left: 38px;
+            padding-right: 34px;
+            font-size: 32px !important;
+            line-height: 36px !important;
+        }
+
+        .col-sm-6.image-for-section6-mobile {
+            display: block !important;
+        }
+
+        .mobile-subtitle-1 p {
+            font-size: 25px !important;
+        }
+
+        .inner_text.padding-50 {
+            padding-left: 25px !important;
+        }
+
+        .mobile-inner-image-section6 {
+            padding-top: 20px;
+            padding-bottom: 0px;
+            margin-top: -32px !important;
+            margin-right: -28px !important;
+            margin-left: -35px !important;
+        }
+
+        .mobile-apps-link.padding-50 {
+            padding-top: 8px !important;
+        }
+
+        .col-sm-6.mobile-title-2 h3 {
+            font-size: 30px !important;
+            font-weight: 700 !important;
+            padding-left: 19px !important;
+            padding-right: 16px !important;
+            text-align: center !important;
+        }
+
+        .col-sm-6.mobile-title-2 p {
+            text-align: center !important;
+            font-size: 24px !important;
+            padding-left: 52px !important;
+            padding-right: 48px !important;
+        }
+
+        .mobile-title-3 h3 {
+            font-weight: 700 !important;
+            padding-left: 8px;
+            font-size: 28px;
+        }
+
+        p.padding-10.mobile-title-3 {
+            font-size: 20px !important;
+            text-align: center;
+        }
+
+        .right-divider-1 {
+            position: unset;
+            background: none
+        }
+
+        .right-divider-2 {
+            position: unset;
+            background: none
+        }
+
+        .full-width-divider {
+            display: none;
+        }
+
+        .mobile_image_wrap {
+            display: none;
+        }
+
+        .image-effect-top {
+            display: none;
+        }
+
+        .image-effect-bottom {
+            display: none;
+        }
+
+        .inner-section-6 {
+            left: 0px;
+        }
+
+        .desktop-app-icon img {
+            width: 142px;
+        }
+
+
+
+        .final-content {
+            padding-left: 11px !important;
+            padding-right: 16px !important;
+        }
+
+        .final-content p {
+            font-size: 14px !important;
+        }
+
+        a.link-end-mobile-divider {
+            background-size: 370px 1px;
+            background-position: top !important;
+            background-image: url(./static/globalcityindex-live/files/vertical_line-1x260-1-1.png);
+            background-repeat: no-repeat;
+        }
+    }
+
+
+    @media (min-width: 768px) {
+        .col-sm-6 {
+            width: 48% !important;
+        }
+    }
+</style>
+<style>
+    @media only screen and (max-width: 600px) {
+        .section.headerbg {
+            background-image: url(./static/globalcityindex-live/files/header-mobile.png) !important;
+        }
+
+        .btn.btn-transparent-red {
+            display: none !important;
+        }
+
+        .width-for-auto-for-first {
+            width: auto !important;
+        }
+
+        .bottom-divier-line-first {
+            background-size: auto !important;
+            background-position: bottom center !important;
+            background-image: url(./static/globalcityindex-live/files/vertical_line-1x260-1-1.png) !important;
+            background-repeat: no-repeat !important;
+            padding-bottom: 50px;
+            margin-bottom: 10px;
+        }
+
+        .padding-top-six-reasons-mobile {
+            padding-top: 20px !important;
+        }
+
+        #trade-with-islamic-account-section {
+            padding-top: 65px !important;
+            padding-bottom: 70px !important;
+        }
+
+        .light-blue-bg {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50%;
+            background-image: url(../static/globalcityindex-live/files/_0014_Group-400-mobile.png) !important;
+        }
+
+        .padding-for-left-right-mobile-prohibition-gambling-section {
+            padding-left: 30px;
+            padding-right: 15px;
+        }
+
+        #prohibition-of-gambling-section {
+            padding-top: 0px !important;
+            padding-bottom: 60px !important;
+        }
+
+        .padding-for-left-right-mobile-principal-concerns-section {
+            padding-left: 30px;
+            padding-right: 15px;
+            margin-top: -20px;
+
+        }
+
+        .bottom-divier-line {
+            background-size: auto !important;
+            background-position: bottom center !important;
+            background-image: url(./static/globalcityindex-live/files/vertical_line-1x260-1-1.png) !important;
+            background-repeat: no-repeat !important;
+            padding-bottom: 50px;
+            margin-bottom: 50px;
+        }
+
+        .margin-for-image-para-align {
+            margin-top: 250px;
+        }
+
+        .c8 {
+            background-image: url(../static/globalcityindex-live/files/bg-2-mobile.png) !important;
+            height: 770px;
+        }
+
+        .font-with-line {
+            text-align: center !important;
+        }
+
+        .tbe-hd {
+            font-size: 17.5px !important;
+        }
+
+        .image-center {
+            display: block;
+            margin: 0 20px !important;
+        }
+
+        .arrow-imag-align {
+            margin-left: 39px;
+            min-width: 30% !important;
+            width: 10%;
+            margin-top: 5px !important;
+            margin-bottom: 5px !important;
+        }
+
+        .dis-flex {
+            display: flex;
+            padding-left: 20px;
+        }
+
+        .margin-last-blue-section {
+            margin-top: 5px !important;
+            margin-left: -20px !important;
+            text-align: left;
+        }
+
+        .padding-top-10-for-mobile-blue-section {
+            padding-top: 10px;
+        }
+
+        .margin-top-auto-for-mobile {
+            text-align: left !important;
+            width: auto !important;
+            margin-top: -20px !important;
+        }
+
+        .padding-for-left-right-mobile-section {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .padding-last-blue-section {
+            padding-top: 15px !important;
+            padding-bottom: 20px !important;
+        }
+
+        .c25 {
+            background-image: url(../static/globalcityindex-live/files/bg3-section-mobile.png) !important;
+        }
+
+        #simple-steps-blue-last-section {
+            padding-top: 70px !important;
+            padding-bottom: 70px !important;
+        }
+
+        .margin-auto-for-mobile {
+            margin: 0px !important;
+        }
+
+        #advantages-islamic-accounts-section {
+            padding-bottom: 65px !important;
+            padding-top: 65px !important;
+        }
+
+        #key-features-islamic-forex-section {
+            padding-top: 55px;
+            padding-bottom: 55px;
+        }
+
+    }
+
+    @media screen and (-webkit-device-pixel-ratio: 3) and (device-height: 640px) and (device-width: 360px) {
+        .raw-box-bg {
+            margin-top: -30px;
+        }
+
+        .open-bal-ac-mobile-align {
+            margin-left: -10px;
+            padding-top: 15px;
+        }
+
+        .margin-top-left-for-table-para {
+            margin-left: -10px;
+            margin-top: -5px;
+        }
+
+        .try-demo-mobile-align {
+            margin-left: -10px;
+        }
+
+        .start-demo-button-mobile-align {
+            margin-left: -10px;
+            margin-top: -10px;
+        }
+    }
+
+    @media only screen and (max-width: 767px) and (min-width: 411px) {
+        .open-bal-ac-mobile-align {
+            margin-left: 15px;
+        }
+
+        .margin-top-left-for-table-para {
+            margin-left: 15px;
+        }
+
+        .try-demo-mobile-align {
+            margin-left: 15px;
+        }
+
+        .start-demo-button-mobile-align {
+            margin-left: 15px;
+        }
+
+        .stan-box-bg {
+            background-position: 40%;
+        }
+
+        .raw-box-bg {
+            margin-top: 40px;
+        }
+    }
+</style>
+
+
+
+
+<style>
+    @media only screen and (max-width: 600px) {
+
+        .mobile-container {
+            display: block !important;
+        }
+
+        .navbar-header {
+            padding-right: 20px !important;
+        }
+
+        div#register-now {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        .section.nomarginmobile.footer-links div {
+            text-align: center !important;
+        }
+
+        .col-md-6.col-xs-6.dropdown {
+            padding-left: 20px !important;
+        }
+
+        .col-md-6.col-xs-6.pxmobilef.font12.text-right {
+            padding-right: 22px !important;
+        }
+
+        .margin60.col-md-12.text-left.footer-intro.font12 {
+            padding-left: 25px !important;
+            padding-right: 25px !important;
+        }
+
+        .registration p {
+            color: white !important;
+        }
+
+        .nav-icon {
+            margin: 1em;
+            width: 40px;
+            margin-top: -8px;
+            margin-right: 1px;
+
+        }
+
+        .nav-icon:after,
+        .nav-icon:before,
+        .nav-icon div {
+            background: linear-gradient(to right, rgb(-140, 134, 171) 55%, #26cc68);
+            border-radius: 3px;
+            content: '';
+            display: block;
+            height: 2px;
+            margin: 11px 0px;
+            transition: all .2s ease-in-out;
+        }
+
+        div#el-11d961c2 {
+            margin-bottom: 68px !important;
+        }
+
+        #el-4923d651[data-vce-do-apply*=all][data-vce-do-apply*=el-4923d651] {
+            padding-bottom: 104px !important;
+        }
+
+        .only-on-mobile {
+            display: block !important;
+        }
+
+        #el-4ae40169>.vce-col-inner>.vce-col-content {
+            padding-right: 18px !important;
+        }
+
+        .vce-single-image-inner.vce-single-image--absolute {
+            padding-right: 20px !important;
+        }
+
+        #el-0d5c28f5[data-vce-do-apply*=all][data-vce-do-apply*=el-0d5c28f5] {
+            margin-left: -20px !important;
+        }
+
+        p.third-head-sec {
+            margin-left: 32px !important;
+        }
+
+        div#el-4c4559f7 {
+            margin-left: -18px !important;
+        }
+
+        div#el-82367445 {
+            margin-top: -97px !important;
+        }
+
+        div#el-c633099b {
+            margin-top: -60px !important;
+        }
+
+        #el-e9436ba9[data-vce-do-apply*=all][data-vce-do-apply*=el-e9436ba9] {
+            padding-top: 0px !important;
+        }
+
+        div#el-7790f85e {
+            margin-top: -19px !important;
+        }
+
+        #el-832c5bbf {
+            margin-top: 24px !important;
+        }
+
+        a.navbar-brand {
+            padding-left: 18px !important;
+        }
+
+        .whitedown {
+            margin-left: 178px !important;
+        }
+    }
+
+
+    @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+        a.navbar-brand img {
+            width: 206px !important;
+        }
+
+        .img-align-nav {
+            height: 40px !important;
+        }
+
+        #el-a4b6ced5 {
+            padding-right: 55px !important;
+            padding-left: 0px !important;
+        }
+
+        #el-0a7659c4>figure>.vce-single-image-inner.vce-single-image--absolute>.vce-single-image {
+            min-width: 130% !important;
+        }
+
+        #el-0e8a640e,
+        #el-a4b6ced5 {
+            padding-right: 50px !important;
+        }
+
+        p.third-head-sec {
+            margin-left: 5px !important;
+            margin-right: 44px !important;
+        }
+
+        p.third-sec-text {
+            margin-right: 14px !important;
+        }
+
+    }
+
+
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) {
+        a.navbar-brand img {
+            width: 164px !important;
+        }
+
+        .img-align-nav {
+            height: 35px !important;
+        }
+
+        .title.mobile-title-3 p {
+            font-size: 30px !important;
+        }
+
+        .colms-title1mt4 {
+            font-size: 15px !important;
+        }
+
+        .blue-button-last-section {
+            font-size: 17px !important;
+        }
+    }
+
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {
+        a.navbar-brand img {
+            width: 214px !important;
+        }
+
+    }
+</style>
+
+
+<script>
+    window.onscroll = function () { myFunctionsssd() };
+
+    var header = document.getElementById("navbar");
+    var openlive = document.getElementById("mobile-open-live-btn");
+
+    var sticky = header.offsetTop;
+
+    function myFunctionsssd() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+            openlive.classList.add("add-bg-when-open-live");
+            openlive.classList.add("white-for-hover-open-grey");
+        } else {
+            header.classList.remove("sticky");
+            openlive.classList.remove("add-bg-when-open-live");
+            openlive.classList.remove("white-for-hover-open-grey");
+        }
+    }
+</script>
+
+<script>
+    function myFunctionnav() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+<style>
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+        .first-row-linear-grd {
+            background-attachment: fixed;
+        }
+
+        .nctable table {
+            border-width: 1px !important;
+            border-style: solid !important;
+            border-image: linear-gradient(to top, #fff, rgba(62, 73, 92, 0.3), #fff) 1 100% !important;
+        }
+
+    }
+
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+        .first-row-linear-grd {
+            background-attachment: fixed;
+        }
+
+        .nctable table {
+            border-width: 1px !important;
+            border-style: solid !important;
+            border-image: linear-gradient(to top, #fff, rgba(62, 73, 92, 0.3), #fff) 1 100% !important;
+        }
+
+    }
+
+    .searchbar-image-align {
+        float: right;
+        position: absolute;
+        margin-left: -24px;
+        margin-top: 8px;
+        z-index: 1;
+    }
+</style>
+        
+        
+
+
+
+    </main>
+    <!--------- Main area end --------->
+
+
+    <div class="section trading-bg2" style="padding-bottom: 0px;background-image: url(../static/globalcityindex-live/files/bottom-bg-1.webp);" id="register-now">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 padding60 col-md-offset-1">
+				<div class="trading_header_title_inner" style="padding-top:10px;">Start Trading <br>in Minutes</div>
+				<br>
+				<div class="trading_bullets_new">
+					<img src="../static/globalcityindex-live/files/bullet-17.png" class="lazy" alt="bullet"> Access 10,000+ financial instruments<br>
+					<img src="../static/globalcityindex-live/files/bullet-17.png" class="lazy" alt="bullet"> Auto open &amp; close positions<br>
+					<img src="../static/globalcityindex-live/files/bullet-17.png" class="lazy" alt="bullet"> News &amp; economic calendar<br>
+					<img src="../static/globalcityindex-live/files/bullet-17.png" class="lazy" alt="bullet"> Technical indicators &amp; charts<br>
+					<img src="../static/globalcityindex-live/files/bullet-17.png" class="lazy" alt="bullet"> Many more tools included
+				</div>						
+            </div>
+            
+            <div class="clear"></div>
+            <br>
+			<div class="col-md-12">
+			
+				<hr style="border-color:#676869;">
+				<div class="clearfix"></div>
+				<br><br>
+				
+				</div>
+			<div class="clearfix"></div>	
+			<br><br>
+        </div>
+    </div>
+</div>
+
+    <!--------- Footer area start --------->
+   <!-- start: Footer -->
+
+
+
+
+
+
+<?php  include("../includes/footer.php") ?>
+<style>
+    .footerp p {
+        margin-bottom: 15px;
+        line-height: 1.8;
+    }
+
+    .menu li {
+        list-style: none !important;
+    }
+</style>
+
+<!--Mobile Footer Start-->
+<footer class="mob-footer" style="padding-top: 35px;">
+    <div class="container">
+    <div class="row visible-xs">
+        <p class="mob-para">
+            <a data-toggle="collapse" data-parent="#accordion" class="a-mobmenu anymenu" href="index.php#collapseExample" aria-expanded="false"> Quick Start &amp; Resources</a>
+        </p>
+         <div class="footermenu collapse" id="collapseExample" aria-expanded="false">
+            <div class="card card-body">
+            <div class="menu-footer-0-container">
+            <ul id="menu-footer-1" class="menu">
+                <li><a href="<?php echo $domain ?>auth/register.php">Open An Account</a></li>
+                <li><a href="<?php echo $domain ?>auth/register.php">Try a Demo</a></li>
+            
+            </ul>
+            </div>  
+            </div>
+        </div>
+
+        <p class="mob-para">
+            <a data-toggle="collapse" data-parent="#accordion" class="a-mobmenu anymenu" href="index.php#collapseExample2" aria-expanded="false"> Markets</a>
+        </p>
+        <div class="footermenu collapse" id="collapseExample2" aria-expanded="false" style="height: 0px;">
+            <div class="card card-body">
+            <div class="menu-footer-1-container">
+            <ul id="menu-footer-6" class="menu">
+                <li><a href="Forex_Trading.php">What is Forex Trading?</a></li>
+                <li><a href="index.php">What is CFD Trading?</a></li>
+     
+                <li><a href="Forex.php">Forex</a></li>
+                <li><a href="Share_CFDs.php">Shares</a></li>
+                <li><a href="Metals.php">Metals</a></li>
+                <li><a href="commodities.php">Commodities</a></li>
+                <li><a href="Indices.php">Indices</a></li>
+                 
+                <li><a href="index.php">Futures</a></li>
+                <li><a href="cryptocurrency.php">Digital Currencies</a></li>
+                <li><a href="bonds.php">Bonds</a></li>
+                <li><a href="ETF_Trading.php">ETFs</a></li>
+            </ul>
+            </div>  
+            </div>
+        </div>
+
+    <p class="mob-para">
+        <a data-toggle="collapse" data-parent="#accordion" class="a-mobmenu anymenu" href="index.php#collapseExample3"> Tools &amp; Platforms</a>
+    </p>
+      <div class="collapse footermenu" id="collapseExample3">
+            <div class="card card-body">
+            <div class="menu-footer-2-container">
+            <ul id="menu-footer-7" class="menu">
+                <li><a href="MetaTrader_4.php">MetaTrader 4 (MT4)</a></li>
+                <li><a href="MetaTrader_5.php">MetaTrader 5 (MT5)</a></li>
+                <li><a href="ctrader.php">cTrader</a> </li>
+          
+               
+                <li><a href="Virtual_Private_Server.php">VPS</a></li>
+                 
+                <li><a href="MAM_PAMM.php">MAM/PAMM</a></li>
+                 
+                <li><a href="Social_Trading.php">Social Trading</a></li>
+                 <li><a href="Trading_Central.php">
+                    Trading Central 
+                </a>
+                </li> 
+
+            </ul>
+            </div> 
+            </div>
+        </div>
+
+    <p class="mob-para">
+        <a data-toggle="collapse" data-parent="#accordion" class="a-mobmenu anymenu" href="index.php#collapseExample4"> Trading Info</a>
+    </p>
+      <div class="collapse footermenu" id="collapseExample4">
+            <div class="card card-body">
+            <div class="menu-footer-3-container">
+            <ul id="menu-footer-7" class="menu">
+                <li><a href="Forex_Account_Types.php">MT4/5 Account Types</a></li>
+                <li><a href="Funding.php">Deposit Funds</a></li>
+                <li><a href="https://cityindex-live-int.com/Withdraw_Funds/">Withdraw Funds</a></li>
+                 
+                <li><a href="Forex_Spreads.php">Forex Spreads</a></li>
+                <li><a href="Swap_Rates.php">Forex Swap Rates</a></li>
+              
+                <li><a href="ctrader_fees.php">cTrader Fees &amp; Charges</a></li>
+                <li><a href="Trading_Hours.php">Trading Hours</a></li>
+            </ul>
+            </div> 
+            </div>
+        </div>
+
+    <p class="mob-para">
+        <a data-toggle="collapse" data-parent="#accordion" class="a-mobmenu anymenu" href="index.php#collapseExample5">
+          About Us</a>
+    </p>
+      <div class="collapse footermenu" id="collapseExample5">
+            <div class="card card-body">
+            <div class="menu-footer-4-container">
+            <ul id="menu-footer-8" class="menu">
+                <li><a href="Why_FP_Markets.php">Why cityindex-live?</a></li>
+                <li><a href="about.php">About cityindex-live</a></li>
+                <li><a href="ECN_Pricing.php">ECN Pricing</a></li>
+                <!--<li><a href="what-is-dma-pricing">DMA Pricing</a></li>-->
+                <li><a href="FP_Markets_Partners.php">Partner with cityindex-live</a></li>
+                <li><a href="">FAQ</a></li>
+               
+                <li><a href="contact.php">Contact Us</a></li>
+            </ul>
+            </div> 
+            </div>
+        </div>
+
+    <p class="mob-para">
+        <a data-toggle="collapse" data-parent="#accordion" class="a-mobmenu anymenu" href="index.php#collapseExample6">
+          Regulation &amp; Licence </a>
+    </p>
+      <div class="collapse footermenu" id="collapseExample6">
+            <div class="card card-body">
+            <div class="menu-footer-5-container">
+            <ul id="menu-footer-9" class="menu">
+                
+                <li><a href="Regulation.php">Regulation</a></li>
+            </ul>
+            </div> 
+            </div>
+        </div>
+
+    <div class="visible-xs" style="margin-bottom: 30px;margin-top: 20px;">
+        <img src="../static/globalcityindex-live/files/fmenu-seperator.webp" alt="menu-seperator">
+    </div>
+
+    <div class="col-md-12 text-center visible-xs mobile-socials">
+        <div style="margin-bottom:20px;">
+            <a href="index.php"><img class="lazy max__width__200" src="../static/globalcityindex-live/files/logo-main.4b9c545ea9347660b73dd3b00a629d43.png" alt=" footer logo"></a>
+        </div>
+         <!--<div class="mob-contact"> Call us: </div>
+          <div><a class="mob-contact-info" href="tel:+44 20 3831 3622">+44 20 3831 3622</a></div>-->
+          <br>
+          
+          <div class="mob-contact">Email:</div>
+          <div><a class="mob-contact-info" href="mailto:support@cityindex-live.net"> support@cityindex-live.net</a></div>    
+            
+          <br><br>
+            
+    <div class="footer__bottom">
+            <div class="footer__bottom__top">
+                <div class="align-items-center">
+                    <div class="col-md-6">
+                        <!--<div class="footer__select">
+                            <select name="" id="" class="form-select select-options">
+                                <option value="" selected>ASIC</option>
+                                <option value="">Option 1</option>
+                                <option value="">Option 2</option>
+                                <option value="">Option 3</option>
+                                <option value="">Option 4</option>
+                                <option value="">Option 5</option>
+                            </select>
+                            <div class="input-icon">
+                                <i class="far fa-chevron-down"></i>
+                            </div>-->
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                         
+                    </div>
+                    <div class="col-md-12 footer_certificate" style="display: flex;justify-content: center;">
+                        <img class="certificate" src="../static/globalcityindex-live/files/FP_Markets_2023_Certification_Badge.png" alt="Certified" style="height: 140px; padding: 35px 37px 0px 37px;margin-bottom: -38px;">
+                    </div>
+                </div>
+            
+</div>
+
+</footer>
+
+<!-- Smartsupp Live Chat script -->
+
+   
+    
+
+
+<!--Mobile Footer End-->    <!--------- Footer area end --------->
+    
+     <script src="../static/globalcityindex-live/files/owl.carousel.min.js"></script>
+    <script src="../static/globalcityindex-live/files/simplyScroll.js"></script>
+    <script src="../static/globalcityindex-live/files/main.js"></script>
+
+    <link href="../static/globalcityindex-live/files/style.css" rel="stylesheet">
+    <link href="../static/globalcityindex-live/files/style_v3.css" rel="stylesheet">
+    <link href="../static/globalcityindex-live/files/responsive.css" rel="stylesheet">
+   
+    <!-- Footer Chunk Start -->
+
+    <style>
+      .new-object {
+        background-color: #FF0000;
+        color: #fff;
+        border-radius: 10px;
+        text-align: center;
+        font-weight: 800;
+        font-size: 10px;
+        width: auto;
+        display: inline-block;
+        padding: 2px 6px 3px 6px;
+    }
+    .new-item{
+      justify-content: normal !important;
+    }
+    @media  only screen and (max-width: 768px) {
+      .new-item .new-object{
+            margin: 0px 5px;
+      }
+    }
+  </style>
+<div class="container page__id">
+    <div class="row">
+        <p style="color:white;">Source - [^s^] | Page ID - 40 </p>
+    </div>
+</div>
+<!-- nc schema-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "[[!++site_url]][[$current_url]]"
+  },
+  "headline": "Forex Account Types",
+  "image": "[[!++site_url]]/static/globalcityindex-live/files/logo-main.png",  
+  "author": {
+    "@type": "Organization",
+    "name": "cityindex-live",
+    "url": "[[!++site_url]]"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "cityindex-live",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "[[!++site_url]]/static/globalcityindex-live/files/logo-main.png"
+    }
+  },
+  "datePublished": "[[*publishedon]]"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "[[*pagetitle]]",
+    "description": "[[*description:default=`[[*introtext]]",
+    "publisher": {
+        "@type": "Organization",
+        "name": "cityindex-live"
+    },
+    "license": "[[!++site_url]][[$current_url]]"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org", 
+  "@type": "BreadcrumbList", 
+  "itemListElement": [{
+    "@type": "ListItem", 
+    "position": 1, 
+    "name": "Home",
+    "item": "[[!++site_url]]"  
+  },{
+    "@type": "ListItem", 
+    "position": 2, 
+    "name": "[[*pagetitle]]",
+    "item": "[[!++site_url]][[$current_url]]"  
+  }]
+}
+</script>
+
+    <!--nc schema end-->   
+    
+    
+
+
+
+<!-- TrustBox script -->
+<script type="text/javascript" src="../static/globalcityindex-live/files/tp.widget.bootstrap.min.js" async=""></script>
+<!-- End TrustBox script -->
+
+<!-- New Live Chat code -->
+
+<!-- End of New Live Chat code -->
+
+<!-- New Live Widget Start 30/01/25 -->
+
+
+
+<!-- New Live Widget Start 30/01/25 -->
+
+
+<!-- GLOBAL FORM SIGN UP -->
+<!-- <script src="https://www.google.com/recaptcha/api.js' %}" async ></script> -->
+<script src="../static/globalcityindex-live/files/js.cookie.js"></script>
+<script src="../static/globalcityindex-live/files/i1502958122408_jquery.validate.js"></script>
+
+
+<script>
+    /* SIGN UP FORM VALIDATION */
+    var signupFormGlobal = "#form_signup_global";
+    var $ = jQuery.noConflict();
+    $(signupFormGlobal).validate({
+        ignore: [],
+        rules: {
+            first_name: {
+                required: true,
+                minlength: 3,
+            },
+            last_name: {
+                required: true,
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            phone: {
+                required: true,
+            },
+            country: {
+                required: true,
+            }
+        },
+        onfocusout: function (element) {
+            $(element).valid();
+        },
+        errorClass: 'error',
+        validClass: 'valid',
+        errorElement: 'span',
+        highlight: function (element, errorClass, validClass) {
+            $(element).addClass(errorClass).removeClass(validClass);
+        },
+        unhighlight: function (element, errorClass, validClass) {
+            $(element).removeClass(errorClass).addClass(validClass);
+        },
+        messages: {
+            first_name: {
+                required: "First name is required.",
+            },
+            last_name: {
+                required: "Last name is required.",
+            },
+            email: {
+                required: "Email is required.",
+                email: "Please enter a valid email address",
+            },
+            phone: {
+                required: "Phone is required."
+            },
+            country: {
+                required: "Country is required."
+            },
+        },
+        errorPlacement: function (error, element) {
+            if ($(element).is("input")) {
+                //error.insertAfter($(element));
+            } else if ($(element).is("select")) {
+                //error.insertAfter($(element).closest(".form-msg"));
+            } else {
+                //error.insertAfter(element)
+            }
+        },
+        submitHandler: function (form) {
+
+            var fpphone = $('#form_signup_global #phone').val();
+
+            if (fpphone.match(/^[0-9]*$/)) {
+                $('#form_signup_global #phone').removeClass('error').addClass('valid');
+                $('.fp-demo-signup-global .form_signup_global_msg').php("");
+            }
+            else {
+                $('#form_signup_global #phone').removeClass('valid').addClass('error');
+                $('.fp-demo-signup-global .form_signup_global_msg').php("Please enter a valid phone number; only numeric value is expected.");
+                return false;
+            }
+
+            $('.fp-demo-signup-global .form_signup_global_msg').php("");
+            /* grecaptcha.execute();
+            console.log("The captcha has been already solved"); */
+            var honeypot = $('#form_signup_global #honeypot').val();
+            if (honeypot != "") {
+                alert('value is - >' + honeypot);
+                return false;
+            } else {
+                function readCookie(name) {
+                    var cookiename = name + "=";
+                    var ca = document.cookie.split(';');
+                    for (var i = 0; i < ca.length; i++) {
+                        var c = ca[i];
+                        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                        if (c.indexOf(cookiename) == 0) return c.substring(cookiename.length, c.length);
+                    }
+                    return null;
+                }
+                var test_mydata = document.getElementById('_mkto_trk').value = readCookie('_mkto_trk');
+                var chk_lang = GetURLParameter('language');
+
+
+                var fpm_affiliate_pcode = "fpm-affiliate-pcode";
+                var fpm_affiliate_utm_source = "fpm-affiliate-utm-source";
+                var fpm_affiliate_utm_campaign = "fpm-affiliate-utm-campaign";
+                var fpm_affiliate_utm_content = "fpm-affiliate-utm-content";
+                var fpm_affiliate_agt = "fpm-affiliate-agt";
+                var bta_chk = $("#form_signup_global #track7_2").val();
+                var bta_fianl_val = "";
+                if (bta_chk === "") {
+                    bta_fianl_val = "0";
+                } else {
+                    bta_fianl_val = $("#form_signup_global #track7_2").val();
+                }
+                var lang_chk = $("#form_signup_global #track_lang").val();
+                var lang_fianl_val = "";
+
+                if (lang_chk === "") {
+
+
+
+                    lang_fianl_val = "en";
+
+
+
+                } else {
+
+                    lang_fianl_val = $("#form_signup_global #track_lang").val();
+                }
+
+                var request = $.ajax({
+                    url: "https://portal.firstprudentialmarkets.com/api/demoRegister",
+                    type: "POST",
+                    data: {
+                        first_name: $("#form_signup_global #first_name").val().toString(),
+                        last_name: $("#form_signup_global #last_name").val().toString(),
+                        email: $("#form_signup_global #email").val().toString(),
+                        phone: $("#form_signup_global #phone").val().toString(),
+                        platform: $("#form_signup_global #platform").val().toString(),
+                        country: $("#form_signup_global #country").val().toString(),
+                        nationality: $("#form_signup_global #nationality").val().toString(),
+                        demo_preferred_Language: $("#form_signup_global #demo_preferred_Language").val().toString(),
+                        landing_page: $("#form_signup_global #landing_page").val().toString(),
+                        currency: $("#form_signup_global #currency").val().toString(),
+                        "fpm-affiliate-pcode": $("#form_signup_global #track1_1").val().toString(),
+                        "fpm-affiliate-utm-source": $("#form_signup_global #track2_1").val().toString(),
+                        "fpm-affiliate-utm-campaign": $("#form_signup_global #track3_1").val().toString(),
+                        "fpm-affiliate-utm-content": $("#form_signup_global #track4_1").val().toString(),
+                        "fpm-affiliate-agt": $("#form_signup_global #track5_1").val().toString(),
+                        "_mkto_trk": $("#form_signup_global #_mkto_trk").val().toString(),
+                        "cxd": $("#form_signup_global #track7_1").val().toString(),
+                        "bta": bta_fianl_val.toString(),
+                        "language": lang_fianl_val.toString(),
+                    },
+                    dataType: 'json',
+                    beforeSend: function (xhr) {
+                        $('#form_signup_global .fp-demo-submit-global input[type=submit]').val('Processing..');
+                        $('#form_signup_global .fp-demo-submit-global input[type=submit]').attr('disabled', 'disabled');
+                    },
+                    success: function (msg) {
+                        $('.fp-demo-signup-global .form_signup_global_msg').php("");
+                        console.log("Success");
+                        if (msg.success == true) {
+                            console.log("Success if");
+                            var first_name = encodeURIComponent($("#first_name").val().toString()),
+                                last_name = encodeURIComponent($("#last_name").val().toString()),
+                                email = encodeURIComponent($("#email").val().toString()),
+                                phone = encodeURIComponent($("#phone").val().toString()),
+                                country = encodeURIComponent($("#country").val().toString());
+                            var fpURLstructure = 'fname=' + first_name + '&lname=' + last_name + '&email=' + email + '&phone=' + phone + '&actype=1&countrycode=' + country;
+
+                            //getting current URL segments
+                            var pathName = window.location.pathname;
+                            var url_segment2 = pathName.split('/');
+                            // console.log('url-segment::'+segments2[1]);
+
+                            var redirect_lang_short_code = "";
+                            var lang_array = ['en', 'ar', 'br', 'ca', 'cz', 'cn', 'de', 'es', 'fr', 'gr', 'id', 'ie', 'it', 'ke', 'ko', 'ms', 'pt', 'pl', 'ru', 'th', 'uk', 'vi', 'za', 'zh', 'zh_tw'];
+
+                            // Check if a value exists in the fruits array
+                            if (lang_array.indexOf(url_segment2[1]) !== -1) {
+                                redirect_lang_short_code = "" + url_segment2[1];
+                            } else {
+                                // console.log("Value does not exists!")
+                                // console.log(url_segment2[1])
+                            }
+
+                            setTimeout(function () {
+                                if (typeof (chk_lang) != "undefined" && chk_lang !== null) {
+
+                                    if (chk_lang == "es") {
+                                        window.location = "thank-you-application/?" + fpURLstructure;
+                                    } else if (chk_lang == "aus") {
+                                        window.location = "thank-you-application/?" + fpURLstructure;
+                                    } else if (chk_lang == "en") {
+                                        window.location = "thank-you-application/?" + fpURLstructure;
+                                    }
+                                } else {
+
+
+                                    window.location = redirect_lang_short_code + "thank-you-application/?" + fpURLstructure;
+
+
+
+
+                                }
+                            })
+                        } else {
+                            console.log("Success else");
+                            $('.fp-demo-signup-global .form_signup_global_msg').php("This email address is already registered. Please enter a new email address.");
+                            $('#form_signup_global .fp-demo-submit-global input[type=submit]').val('Register Now');
+                            $('#form_signup_global .fp-demo-submit-global input[type=submit]').removeAttr('disabled');
+                        }
+                    },
+                    error: function (msg, error) {
+                        $('.fp-demo-signup-global .form_signup_global_msg').php("Please enter a valid phone number.");
+                        $('#form_signup_global .fp-demo-submit-global input[type=submit]').val('Register Now');
+                        $('#form_signup_global .fp-demo-submit-global input[type=submit]').removeAttr('disabled');
+                    }
+                }).done(function (data) {
+                    /* $('#form_signup_global .fp-demo-submit-global input[type=submit]').val('Register Now');
+                    $('#form_signup_global .fp-demo-submit-global input[type=submit]').removeAttr('disabled'); */
+                });
+                return false;
+            }
+        }
+    });
+    $(signupFormGlobal + " button[type='submit']").click(function () {
+        setTimeout(function () {
+            $("input.error").first().focus();
+        }, 50)
+    });
+    /* EO SIGN UP FORM VALIDATION */
+
+    /* SIGN UP FORM 2 VALIDATION - START TRADING IN MINUTES */
+    var signupFormGlobal_ST = "#form_signup_global_ST";
+    var $ = jQuery.noConflict();
+    $(signupFormGlobal_ST).validate({
+        ignore: [],
+        rules: {
+            first_name: {
+                required: true,
+                minlength: 3,
+            },
+            last_name: {
+                required: true,
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            phone: {
+                required: true,
+            },
+            country: {
+                required: true,
+            }
+        },
+        onfocusout: function (element) {
+            $(element).valid();
+        },
+        errorClass: 'error',
+        validClass: 'valid',
+        errorElement: 'span',
+        highlight: function (element, errorClass, validClass) {
+            $(element).addClass(errorClass).removeClass(validClass);
+        },
+        unhighlight: function (element, errorClass, validClass) {
+            $(element).removeClass(errorClass).addClass(validClass);
+        },
+        messages: {
+            first_name: {
+                required: "First name is required.",
+            },
+            last_name: {
+                required: "Last name is required.",
+            },
+            email: {
+                required: "Email is required.",
+                email: "Please enter a valid email address",
+            },
+            phone: {
+                required: "Phone is required."
+            },
+            country: {
+                required: "Country is required."
+            },
+        },
+        errorPlacement: function (error, element) {
+            if ($(element).is("input")) {
+                //error.insertAfter($(element));
+            } else if ($(element).is("select")) {
+                //error.insertAfter($(element).closest(".form-msg"));
+            } else {
+                //error.insertAfter(element)
+            }
+        },
+        submitHandler: function (form) {
+            var fpphone_ST = $('#form_signup_global_ST #phone_ST').val();
+            console.log("test1Dec");
+            /*if( fpphone_ST.match(/^[0-9]*$/) ){
+                $('#form_signup_global_ST #phone_ST').removeClass('error').addClass('valid');
+                $('.fp-demo-signup-global .form_signup_global_msg_ST').php("");
+            }
+            else{
+                $('#form_signup_global_ST #phone_ST').removeClass('valid').addClass('error');
+                $('.fp-demo-signup-global .form_signup_global_msg_ST').php("Please enter a valid phone number; only numeric value is expected.");
+                return false;
+            }*/
+
+            $('.fp-demo-signup-global .form_signup_global_msg_ST').php("");
+            /* grecaptcha.execute();
+            console.log("The captcha has been already solved"); */
+            var honeypot = $('#form_signup_global_ST #honeypot_ST').val();
+            if (honeypot != "") {
+                alert('value is - >' + honeypot);
+                return false;
+            } else {
+                function readCookie(name) {
+                    var cookiename = name + "=";
+                    var ca = document.cookie.split(';');
+                    for (var i = 0; i < ca.length; i++) {
+                        var c = ca[i];
+                        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                        if (c.indexOf(cookiename) == 0) return c.substring(cookiename.length, c.length);
+                    }
+                    return null;
+                }
+                var test_mydata = document.getElementById('_mkto_trk_ST').value = readCookie('_mkto_trk');
+                var chk_lang = GetURLParameter('language');
+
+
+                var fpm_affiliate_pcode = "fpm-affiliate-pcode";
+                var fpm_affiliate_utm_source = "fpm-affiliate-utm-source";
+                var fpm_affiliate_utm_campaign = "fpm-affiliate-utm-campaign";
+                var fpm_affiliate_utm_content = "fpm-affiliate-utm-content";
+                var fpm_affiliate_utm_term = "fpm-affiliate-utm-term";
+                var fpm_affiliate_agt = "fpm-affiliate-agt";
+                var bta_chk = $("#form_signup_global_ST #track7_2_ST").val();
+                var bta_fianl_val = "";
+                if (bta_chk === "") {
+                    bta_fianl_val = "0";
+                } else {
+                    bta_fianl_val = $("#form_signup_global_ST #track7_2_ST").val();
+                }
+                var lang_chk = $("#form_signup_global_ST #track_lang_ST").val();
+                var lang_fianl_val = "";
+                console.log(fpm_affiliate_utm_term);
+                if (lang_chk === "") {
+
+                    lang_fianl_val = "en";
+
+                } else {
+
+                    lang_fianl_val = $("#form_signup_global_ST #track_lang_ST").val();
+                }
+
+                var request = $.ajax({
+                    url: "https://portal.firstprudentialmarkets.com/api/demoRegister",
+                    type: "POST",
+                    data: {
+                        first_name: $("#form_signup_global_ST #first_name_ST").val().toString(),
+                        last_name: $("#form_signup_global_ST #last_name_ST").val().toString(),
+                        email: $("#form_signup_global_ST #email_ST").val().toString(),
+                        phone: $("#form_signup_global_ST #phone_ST").val().toString(),
+                        platform: $("#form_signup_global_ST #platform_ST").val().toString(),
+                        country: $("#form_signup_global_ST #country_ST").val().toString(),
+                        nationality: $("#form_signup_global_ST #nationality").val().toString(),
+                        demo_preferred_Language: $("#form_signup_global_ST #demo_preferred_Language").val().toString(),
+                        landing_page: $("#form_signup_global_ST #landing_page").val().toString(),
+                        currency: $("#form_signup_global_ST #currency_ST").val().toString(),
+                        "fpm-affiliate-pcode": $("#form_signup_global_ST #track1_1_ST").val().toString(),
+                        "fpm-affiliate-utm-source": $("#form_signup_global_ST #track2_1_ST").val().toString(),
+                        "fpm-affiliate-utm-campaign": $("#form_signup_global_ST #track3_1_ST").val().toString(),
+                        "fpm-affiliate-utm-content": $("#form_signup_global_ST #track4_1_ST").val().toString(),
+                        "fpm-affiliate-agt": $("#form_signup_global_ST #track5_1_ST").val().toString(),
+                        "fpm-affiliate-utm-term": $("#form_signup_global_ST #track6_1_ST").val().toString(),
+                        "_mkto_trk": $("#form_signup_global_ST #_mkto_trk_ST").val().toString(),
+                        "cxd": $("#form_signup_global_ST #track7_1_ST").val().toString(),
+                        "bta": bta_fianl_val.toString(),
+                        "language": lang_fianl_val.toString(),
+                    },
+                    dataType: 'json',
+                    beforeSend: function (xhr) {
+                        $('#form_signup_global_ST .fp-demo-submit-global input[type=submit]').val('Processing..');
+                        $('#form_signup_global_ST .fp-demo-submit-global input[type=submit]').attr('disabled', 'disabled');
+                    },
+                    success: function (msg) {
+                        $('.fp-demo-signup-global .form_signup_global_msg_ST').php("");
+
+                        if (msg.success == true) {
+                            var first_name = encodeURIComponent($("#first_name_ST").val().toString()),
+                                last_name = encodeURIComponent($("#last_name_ST").val().toString()),
+                                email = encodeURIComponent($("#email_ST").val().toString()),
+                                phone = encodeURIComponent($("#phone_ST").val().toString()),
+                                country = encodeURIComponent($("#country_ST").val().toString());
+                            var fpURLstructure = 'fname=' + first_name + '&lname=' + last_name + '&email=' + email + '&phone=' + phone + '&actype=1&countrycode=' + country;
+
+                            //getting current URL segments
+                            var pathName = window.location.pathname;
+                            var url_segment2 = pathName.split('/');
+                            // console.log('url-segment::'+segments2[1]);
+
+                            var redirect_lang_short_code = "";
+                            var lang_array = ['en', 'ar', 'br', 'ca', 'cz', 'cn', 'de', 'es', 'fr', 'gr', 'id', 'ie', 'it', 'ke', 'ko', 'ms', 'pt', 'pl', 'ru', 'th', 'uk', 'vi', 'za', 'zh', 'zh_tw'];
+
+                            // Check if a value exists in the fruits array
+                            if (lang_array.indexOf(url_segment2[1]) !== -1) {
+                                redirect_lang_short_code = "" + url_segment2[1];
+                            } else {
+                                // console.log("Value does not exists!")
+                                // console.log(url_segment2[1])
+                            }
+
+                            setTimeout(function () {
+                                if (typeof (chk_lang) != "undefined" && chk_lang !== null) {
+
+                                    if (chk_lang == "es") {
+                                        window.location = "thank-you-application/?" + fpURLstructure;
+                                    } else if (chk_lang == "aus") {
+                                        window.location = "thank-you-application/?" + fpURLstructure;
+                                    } else if (chk_lang == "en") {
+                                        window.location = "thank-you-application/?" + fpURLstructure;
+                                    }
+                                } else {
+
+
+
+
+
+
+                                    window.location = redirect_lang_short_code + "thank-you-application/?" + fpURLstructure;
+                                }
+                            })
+                        } else {
+                            $('.fp-demo-signup-global .form_signup_global_msg_ST').php("This email address is already registered. Please enter a new email address.");
+                            $('#form_signup_global_ST .fp-demo-submit-global input[type=submit]').val('Register Now');
+                            $('#form_signup_global_ST .fp-demo-submit-global input[type=submit]').removeAttr('disabled');
+                        }
+                    },
+                    error: function (msg, error) {
+                        $('.fp-demo-signup-global .form_signup_global_msg_ST').php("Please enter a valid phone number");
+                        $('#form_signup_global_ST .fp-demo-submit-global input[type=submit]').val('Register Now');
+                        $('#form_signup_global_ST .fp-demo-submit-global input[type=submit]').removeAttr('disabled');
+                    }
+                }).done(function (data) {
+                    /* $('#form_signup_global_ST .fp-demo-submit-global input[type=submit]').val('Register Now');
+                    $('#form_signup_global_ST .fp-demo-submit-global input[type=submit]').removeAttr('disabled'); */
+                });
+                return false;
+            }
+            console.log("finish");
+        }
+    });
+    $(signupFormGlobal_ST + " button[type='submit']").click(function () {
+        setTimeout(function () {
+            $("input.error").first().focus();
+        }, 50)
+    });
+    /* EO SIGN UP FORM 2 VALIDATION - START TRADING IN MINUTES  */
+
+    function parseQueryString() {
+        var parsedParameters = {},
+            uriParameters = location.search.substr(1).split('&');
+        for (var i = 0; i < uriParameters.length; i++) {
+            var parameter = uriParameters[i].split('=');
+            var value = typeof (parameter[1]) !== 'undefined' ? parameter[1] : '';
+            parsedParameters[parameter[0]] = decodeURIComponent(value);
+        }
+        return parsedParameters;
+    }
+
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function convertAffiliateQueryStringToCookies() {
+        console.log("1");
+        var params = parseQueryString();
+        for (var i in params) {
+            if (params.hasOwnProperty(i) && (i.match(/fpm-affiliate/) || i.match(/bta/) || i.match(/cxd/) || i.match(/affiliate-utm-content/) || i.match(/language/))) {
+                if (i.match(/bta/) || i.match(/cxd/)) {
+                    if (getCookie('fpm-affiliate-' + i) === "") {
+                        document.cookie = 'fpm-affiliate-' + i + '=' + params[i] + '; path=/; domain=.' + window.location.host.split('.').slice(1).join('.') + ';max-age=7776000';
+                        document.cookie = i + '=' + params[i] + '; path=/; domain=.' + window.location.host.split('.').slice(1).join('.') + ';max-age=7776000';
+                    }
+                } else
+                    if (getCookie(i) === "") {
+                        document.cookie = i + '=' + params[i] + '; path=/; domain=.' + window.location.host.split('.').slice(1).join('.') + ';max-age=7776000';
+                    }
+            }
+        }
+    }
+
+
+
+    jQuery(document).ready(function () {
+        convertAffiliateQueryStringToCookies();
+        console.log("2");
+
+        //var track1 = GetURLParameter('fpm-affiliate-pcode');
+        var track1 = typeof (GetURLParameter('fpm-affiliate-pcode')) !== 'undefined' ? GetURLParameter('fpm-affiliate-pcode') : '';
+        track1 = getCookie('fpm-affiliate-pcode') !== "" ? getCookie('fpm-affiliate-pcode') : track1;
+
+        //var track2 = GetURLParameter('fpm-affiliate-utm-source');
+        var track2 = typeof (GetURLParameter('fpm-affiliate-utm-source')) !== 'undefined' ? GetURLParameter('fpm-affiliate-utm-source') : 'Website';
+        track2 = getCookie('fpm-affiliate-utm-source') !== "" ? getCookie('fpm-affiliate-utm-source') : track2;
+
+        var track3 = GetURLParameter('fpm-affiliate-utm-campaign');
+        track3 = getCookie('fpm-affiliate-utm-campaign') !== "" ? getCookie('fpm-affiliate-utm-campaign') : track3;
+
+        var track4 = GetURLParameter('fpm-affiliate-utm-content');
+        track4 = getCookie('fpm-affiliate-utm-content') !== "" ? getCookie('fpm-affiliate-utm-content') : track4;
+
+        var track5 = GetURLParameter('fpm-affiliate-agt');
+        track5 = getCookie('fpm-affiliate-agt') !== "" ? getCookie('fpm-affiliate-agt') : track5;
+
+        var trackterm = GetURLParameter('fpm-affiliate-utm-term');
+        trackterm = getCookie('fpm-affiliate-utm-term') !== "" ? getCookie('fpm-affiliate-utm-term') : trackterm;
+
+        var track7_1 = GetURLParameter('cxd');
+        track7_1 = getCookie('fpm-affiliate-cxd') !== "" ? getCookie('fpm-affiliate-cxd') : track7_1;
+
+        var track7_2 = GetURLParameter('bta');
+        track7_2 = getCookie('fpm-affiliate-bta') !== "" ? getCookie('fpm-affiliate-bta') : track7_2;
+
+        var track8_1 = GetURLParameter('language');
+        track8_1 = getCookie('language') !== "" ? getCookie('language') : track8_1;
+
+        console.log(trackterm);
+
+        $("#form_signup_global #track1_1").val(track1);
+        $("#form_signup_global #track2_1").val(track2);
+        $("#form_signup_global #track3_1").val(track3);
+        $("#form_signup_global #track4_1").val(track4);
+        $("#form_signup_global #track5_1").val(track5);
+        $("#form_signup_global #track6_1").val(trackterm);
+        $("#form_signup_global #track7_1").val(track7_1);
+        $("#form_signup_global #track7_2").val(track7_2);
+        $("#form_signup_global #track_lang").val(track8_1);
+
+        $("#form_signup_global_ST #track1_1_ST").val(track1);
+        $("#form_signup_global_ST #track2_1_ST").val(track2);
+        $("#form_signup_global_ST #track3_1_ST").val(track3);
+        $("#form_signup_global_ST #track4_1_ST").val(track4);
+        $("#form_signup_global_ST #track5_1_ST").val(track5);
+        $("#form_signup_global_ST #track6_1_ST").val(trackterm);
+        $("#form_signup_global_ST #track7_1_ST").val(track7_1);
+        $("#form_signup_global_ST #track7_2_ST").val(track7_2);
+        //$("#form_signup_global_ST #track_lang_ST").val(track8_1);
+    });
+</script>
+
+
+<script>
+    jQuery(document).ready(function ($) {
+        $("#form_signup_global #phone").on('keypress blur change keyup', function (e) {
+            var keyCode = (e.which) ? e.which : e.keyCode
+            return !(keyCode > 31 && (keyCode < 48 || keyCode > 57));
+        });
+
+        $("#form_signup_global_ST #phone_ST").on('keypress blur change keyup', function (e) {
+            var keyCode = (e.which) ? e.which : e.keyCode
+            return !(keyCode > 31 && (keyCode < 48 || keyCode > 57));
+        });
+
+        $("#form_signup_global_LP #phone_LP").on('keypress blur change keyup', function (e) {
+            var keyCode = (e.which) ? e.which : e.keyCode
+            return !(keyCode > 31 && (keyCode < 48 || keyCode > 57));
+        });
+
+        $("#form_signup_global_LP2 #phone_LP2").on('keypress blur change keyup', function (e) {
+            var keyCode = (e.which) ? e.which : e.keyCode
+            return !(keyCode > 31 && (keyCode < 48 || keyCode > 57));
+        });
+
+        $("#form_signup_global_LP #countrycode_LP").on('keypress blur change keyup', function (e) {
+            var keyCode = (e.which) ? e.which : e.keyCode
+            return !(keyCode > 31 && (keyCode < 48 || keyCode > 57));
+        });
+
+        $("#form_signup_global_LP2 #countrycode_LP2").on('keypress blur change keyup', function (e) {
+            var keyCode = (e.which) ? e.which : e.keyCode
+            return !(keyCode > 31 && (keyCode < 48 || keyCode > 57));
+        });
+
+        $("#form_signup_global #phone").attr("maxlength", "21");
+        $("#form_signup_global_ST #phone_ST").attr("maxlength", "21");
+        $("#form_signup_global_LP #phone_LP").attr("maxlength", "15");
+        $("#form_signup_global_LP2 #phone_LP2").attr("maxlength", "15");
+
+        $("#form_signup_global_LP #countrycode_LP").attr("maxlength", "6");
+        $("#form_signup_global_LP2 #countrycode_LP2").attr("maxlength", "6");
+
+        $("#form_new #countrycode").attr("maxlength", "6");
+        $("#form_new #phone").attr("maxlength", "15");
+    });
+</script>
+
+
+
+
+
+<!--scripts starts here-->
+<script type="text/javascript" src="../static/globalcityindex-live/files/browser_selector.js"></script>
+<script type="text/javascript" src="../static/globalcityindex-live/files/scripts.js"></script>
+<!--scripts ends here-->
+<script>
+    //Form Validator
+    /*Validation For The Planner Step 1*/
+    //you can create your own Regular expression like we have done for the mobile number and make it true its name.
+    // allow user to enter number of Austrelia format [ if client have this requirement ]
+    //******** Add your form id here********
+    var formDefualt = "#form_new";
+    $(formDefualt).validate({
+
+        //Ignore Field is for the Ignoring display None inputs validation
+        ignore: [],
+        rules: {
+            first_name: {
+                //******this is for the required field
+                required: true,
+                //******This option is for the minimum number of character
+                minlength: 3,
+            },
+            last_name: {
+                required: true,
+            },
+            email: {
+                required: true,
+                //******This option for the email address
+                email: true
+            },
+            phone: {
+                required: true,
+                //******it will allow users to enter number only
+                minlength: 3,
+            },
+            entityTypeId: {
+                required: true,
+            },
+            country: {
+                required: true,
+            }
+        },
+        onfocusout: function (element) {
+            $(element).valid();
+        },
+        errorClass: 'error',
+        validClass: 'valid',
+        errorElement: 'span',
+        highlight: function (element, errorClass, validClass) {
+            $(element).addClass(errorClass).removeClass(validClass);
+        },
+        unhighlight: function (element, errorClass, validClass) {
+            $(element).removeClass(errorClass).addClass(validClass);
+        },
+        /*comment this code if you dont want messages*/
+        messages: {
+            first_name: { required: "This field is required.", },
+            last_name: { required: "This field is required.", },
+            email: {
+                required: "This field is required.",
+                email: "Please enter a valid email address",
+            },
+            phone: { required: "This field is required." },
+            entityTypeId: { required: "This field is required." },
+            country: { required: "This field is required." },
+        },
+        //***********comment this code if you dont want messages*/
+
+        //Add your class instead of .form-msg (after that class error message will show)
+
+        errorPlacement: function (error, element) {
+            if ($(element).is("input")) {
+                error.insertAfter($(element));
+            }
+            else if ($(element).is("select")) {
+                error.insertAfter($(element).closest(".form-msg"));
+            }
+            else {
+                error.insertAfter(element)
+            }
+        },
+        //*******In windows.location you can put your link where you want to redirect your form.
+
+        submitHandler: function (form) {
+
+            //Empty out error messages.
+            $('.email_msg').php("");
+
+
+            //Basics.
+            var honeypot = $('#honeypot').val();
+            var errorMessageContainerHeight = '10px';
+            var remoteErrorMessage = 'Unable to process request at the time. Please try again later.';
+            var messagesSeparator = '<br>';
+
+            if (honeypot != "") {
+                alert('value is - >' + honeypot);
+                return false;
+            } else {
+                /*cookie*/
+                console.log("test");
+                function readCookie(name) {
+                    var cookiename = name + "=";
+                    var ca = document.cookie.split(';');
+                    for (var i = 0; i < ca.length; i++) {
+                        var c = ca[i];
+                        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                        if (c.indexOf(cookiename) == 0) return c.substring(cookiename.length, c.length);
+                    }
+                    return null;
+                }
+                var test_mydata = document.getElementById('_mkto_trk').value = readCookie('_mkto_trk');
+                /* cookie */
+
+                // Get language.
+                var chk_lang = GetURLParameter('language');
+
+                // $('.loader').css('display','block');
+
+                // Change submit button UI.
+                $("#thebutton span").text("Please wait...");
+                $("#thebutton span").addClass("loaderimg");
+                $("#thebutton").prop('disabled', true).addClass('btn-disable');
+
+                var fpm_affiliate_pcode = "fpm-affiliate-pcode";
+                var fpm_affiliate_utm_source = "fpm-affiliate-utm-source";
+                var fpm_affiliate_utm_campaign = "fpm-affiliate-utm-campaign";
+                var fpm_affiliate_utm_content = "fpm-affiliate-utm-content";
+                var fpm_affiliate_agt = "fpm-affiliate-agt";
+
+                var bta_chk = $("#track7_2").val();
+                var bta_fianl_val = "";
+                if (bta_chk === "") {
+                    bta_fianl_val = "0";
+                } else {
+                    bta_fianl_val = $("#track7_2").val();
+                }
+
+                var lang_chk = $("#track_lang").val();
+                var lang_fianl_val = "";
+                if (lang_chk === "") {
+                    lang_fianl_val = "en";
+                } else {
+                    lang_fianl_val = $("#track_lang").val();
+                }
+
+                var request = $.ajax({
+                    url: "[[!portalUrl]]api/register",
+                    type: "POST",
+                    data: {
+                        first_name: $("#first_name").val().toString(),
+                        last_name: $("#last_name").val().toString(),
+                        email: $("#email").val().toString(),
+                        phone: $("#phone").val().toString(),
+                        platform: $("#platform").val().toString(),
+                        country: $("#user_country").val().toString(),
+                        entityTypeId: $("#entity_type_id").val().toString(),
+                        currency: $("#currency").val().toString(),
+                        "fpm-affiliate-pcode": $("#track1_1").val().toString(),
+                        "fpm-affiliate-utm-source": $("#track2_1").val().toString(),
+                        "fpm-affiliate-utm-campaign": $("#track3_1").val().toString(),
+                        "fpm-affiliate-utm-content": $("#track4_1").val().toString(),
+                        "fpm-affiliate-agt": $("#track5_1").val().toString(),
+                        "_mkto_trk": $("#_mkto_trk").val().toString(),
+                        "cxd": $("#track7_1").val().toString(),
+                        "bta": bta_fianl_val.toString(),
+                        "language": lang_fianl_val.toString(),
+                    },
+                    dataType: 'json',
+                    success: function (response) {
+                        $('.email_msg').php("");
+                        $('.loader').css('display', 'none');
+
+                        //Now let's check if it was success?
+                        if (response.success == true) {
+
+                            //If it's a page redirection?
+                            if (response.redirectToUrl != '') {
+                                window.location = response.redirectTo;
+
+                            } else {
+                                //Change form action url and submit it.
+                                $(formDefualt).attr('action', response.redirectTo);
+                                form.submit();
+                            }
+
+                        } else {
+                            //Remove processing from submit button.
+                            var btn_name_get = $('#btn_name_get').val();
+                            $("#thebutton span").text(btn_name_get);
+                            $("#thebutton span").removeClass("loaderimg");
+                            $("#thebutton").prop('disabled', false).removeClass('btn-disable');
+
+                            //If we have messages?
+                            var messages = response.messages;
+                            var messagesLength = messages.length;
+                            if (messagesLength > 0) {
+
+                                //Add margin bottom to email_msg div.
+                                $(".email_msg").css('margin-bottom', errorMessageContainerHeight);
+
+                                //Iteration.
+                                for (var i = 0; i < messagesLength; i++) {
+                                    $('.email_msg').append(messages[i] + messagesSeparator);
+                                }
+                            } else {
+                                $('.email_msg').append(remoteErrorMessage + messagesSeparator);
+                            }
+                        }
+
+                    },
+                    error: function (response) {
+                        $('.email_msg').php("");
+                        $('.loader').css('display', 'none');
+
+                        var btn_name_get = $('#btn_name_get').val();
+                        $("#thebutton span").text(btn_name_get);
+                        $("#thebutton span").removeClass("loaderimg");
+                        $("#thebutton").prop('disabled', false).removeClass('btn-disable');
+
+                        // Add margin bottom to email_msg div.
+                        $(".email_msg").css('margin-bottom', errorMessageContainerHeight);
+
+                        //Response.
+                        var data = response.responseJSON;
+
+                        // Check if we have an object here?
+                        if (response.status == 422 && data !== null && typeof data === 'object') {
+
+                            //Iterate all and append to html errors.
+                            for (var key in data) {
+                                if (data.hasOwnProperty(key)) {
+                                    $('.email_msg').append(data[key][0] + messagesSeparator);
+                                };
+                            }
+                        } else {
+                            $('.email_msg').append(remoteErrorMessage + messagesSeparator);
+                        }
+                    }
+                });
+
+                return false;
+            }
+        }
+    });
+
+    //**********On Submit form will be submit 
+    $(formDefualt + " button[type='submit']").click(function () {
+        setTimeout(function () {
+            $("input.error").first().focus();
+        }, 50)
+    });
+
+
+    //**********GetURLParameter
+    function GetURLParameter(sParam) {
+        var sPageURL = window.location.search.substring(1);
+        var sURLVariables = sPageURL.split('&');
+        for (var i = 0; i < sURLVariables.length; i++) {
+            var sParameterName = sURLVariables[i].split('=');
+            if (sParameterName[0] == sParam) {
+                return sParameterName[1];
+            }
+        }
+    }
+
+    function parseQueryString() {
+        var parsedParameters = {}, uriParameters = location.search.substr(1).split('&');
+        for (var i = 0; i < uriParameters.length; i++) {
+            var parameter = uriParameters[i].split('=');
+            var value = typeof (parameter[1]) !== 'undefined' ? parameter[1] : '';
+            parsedParameters[parameter[0]] = decodeURIComponent(value);
+        }
+        return parsedParameters;
+    }/** Convert query params into cookie params */
+
+
+
+    function convertAffiliateQueryStringToCookies() {
+        console.log("3");
+
+        var params = parseQueryString();
+
+        for (var i in params) {
+            if (params.hasOwnProperty(i) && (i.match(/fpm-affiliate/) || i.match(/bta/) || i.match(/cxd/) || i.match(/affiliate-utm-content/) || i.match(/language/))) {
+                if (i.match(/bta/) || i.match(/cxd/)) {
+                    if (getCookie('fpm-affiliate-' + i) === "") {
+                        console.log("3a");
+                        document.cookie = 'fpm-affiliate-' + i + '=' + params[i] + '; path=/; domain=.' + window.location.host.split('.').slice(1).join('.') + ';max-age=7776000';
+                        document.cookie = i + '=' + params[i] + '; path=/; domain=.' + window.location.host.split('.').slice(1).join('.') + ';max-age=7776000';
+                    }
+                } else
+                    console.log("3b");
+                if (getCookie(i) === "") {
+                    console.log("3c");
+                    document.cookie = i + '=' + params[i] + '; path=/; domain=.' + window.location.host.split('.').slice(1).join('.') + ';max-age=7776000';
+                }
+            }
+        }
+    }
+
+
+
+    $(document).ready(function () {
+        console.log("4");
+        convertAffiliateQueryStringToCookies();
+
+
+        //set default country as AU 
+        $("#user_country").val('AU');
+
+        // Get country from IP.
+        $.get("https://ipinfo.io?token=8113c8e7b3e768", function (response) {
+            $("#user_country").val(response.country);
+        }, "jsonp");
+
+        //set default country as AU 
+        $("#user_country2").val('AU');
+
+        // Get country from IP.
+        $.get("https://ipinfo.io?token=8113c8e7b3e768", function (response) {
+            $("#user_country2").val(response.country);
+        }, "jsonp");
+
+        var track1 = GetURLParameter('fpm-affiliate-pcode');
+        var track2 = GetURLParameter('fpm-affiliate-utm-source');
+        var track3 = GetURLParameter('fpm-affiliate-utm-campaign');
+        var track4 = GetURLParameter('fpm-affiliate-utm-content');
+        var track5 = GetURLParameter('fpm-affiliate-agt');
+        var trackterm = GetURLParameter('fpm-affiliate-utm-term');
+
+        var track7_1 = GetURLParameter('cxd');
+        var track7_2 = GetURLParameter('bta');
+        var track8_1 = GetURLParameter('language');
+
+        $("#track1_1").val(track1);
+        $("#track2_1").val(track2);
+        $("#track3_1").val(track3);
+        $("#track4_1").val(track4);
+        $("#track5_1").val(track5);
+        $("#track6_1").val(trackterm);
+        $("#track7_1").val(track7_1);
+        $("#track7_2").val(track7_2);
+        $("#track_lang").val(track8_1);
+    });
+
+    $(document).ready(function () {
+        $(".anchor").click(function (e) {
+            $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top
+            }, 1000);
+        });
+    });
+
+</script>
+
+
+
+<!-- TR  Survery get currency code -->
+<script type="text/javascript">
+
+    var curObj = [{ 'cur_id': 'AUD', 'cur_code': 36 }, { 'cur_id': 'CAD', 'cur_code': 124 }, { 'cur_id': 'EUR', 'cur_code': 978 }, { 'cur_id': 'GBP', 'cur_code': 826 }, { 'cur_id': 'HKD', 'cur_code': 344 }, { 'cur_id': 'JPY', 'cur_code': 392 }, { 'cur_id': 'NZD', 'cur_code': 554 }, { 'cur_id': 'SGD', 'cur_code': 702 }, { 'cur_id': 'USD', 'cur_code': 840 }, { 'cur_id': 'IDR', 'cur_code': 360 }, { 'cur_id': 'MYR', 'cur_code': 458 }, { 'cur_id': 'VND', 'cur_code': 704 }, { 'cur_id': 'THB', 'cur_code': 764 }];
+    function getCurrency(curId) {
+        return $.grep(curObj, function (obj) {
+            return obj.cur_id === curId;
+        });
+    }
+
+</script>
+
+
+
+
+<style>
+    .chat-with-telegram {
+        display: inline-flex;
+        padding-top: 10px;
+        padding-left: 5px;
+        position: fixed;
+        left: 30px;
+        bottom: 30px;
+        z-index: 99;
+        align-items: center;
+        height: 46px;
+        width: 46px;
+        overflow: hidden;
+        background-color: #00bdff;
+        border-radius: 84px;
+        color: white;
+        text-decoration: none;
+        box-shadow: rgba(0, 0, 0, 0.24) 0 0 18px;
+        transition: all 0.1s ease;
+    }
+
+    .chat-with-telegram .label {
+        padding-right: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 13px;
+        line-height: 14px;
+        transition: all 0.1s ease;
+        opacity: 0;
+        visibility: hidden;
+        float: left;
+    }
+
+    .chat-with-telegram .icon-wrap {
+        float: left;
+        position: absolute;
+        top: 10px;
+    }
+
+    .chat-with-telegram .label span {
+        font-size: 11px;
+        text-transform: none;
+        display: block;
+    }
+
+    .chat-with-telegram:hover .label {
+        visibility: visible;
+        opacity: 1;
+        padding-left: 35px;
+    }
+
+    .chat-with-telegram:hover {
+        width: 185px;
+        padding-top: 6px;
+        justify-content: space-between;
+    }
+
+    .containerrr iframe {
+        height: 41px !important;
+    }
+
+
+    .fa-2x {
+        font-size: 2em !important;
+    }
+
+    .containerrr {
+
+        display: flex;
+        display: -webkit-flex;
+        -webkit-justify-content: center;
+        justify-content: center;
+        align-items: left;
+
+
+    }
+
+    .button {
+        z-index: 99;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 55px;
+        height: 55px;
+        background: #01bdff;
+        border-radius: 50px;
+        color: #fff;
+        bottom: 25px;
+        box-shadow: 0 0 30px rgb(116 116 116 / 33%);
+    }
+
+    .social {
+        opacity: 0;
+        position: fixed;
+        margin: 8px;
+        width: 140px;
+        height: 40px;
+        display: inline-block;
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 20px;
+        margin-bottom: 4px;
+
+    }
+
+
+    .social a {
+        color: #fff;
+    }
+
+    .twitter {
+        background: #00aced;
+        bottom: 280px;
+        border: 1px solid rgb(255 255 255 / 60%);
+    }
+
+    .instagram {
+        background: #00aced;
+        bottom: 235px;
+    }
+
+    .facebook {
+        background: #3b5998;
+        bottom: 190px;
+    }
+
+    .whatsapp {
+        background: #dd4b39;
+        bottom: 145px;
+    }
+
+    .clicked {
+        opacity: 1;
+        transition: 1.2s all ease;
+        transform: translateY(56px);
+    }
+
+    #myAnim {
+        animation: pulse-green 3s infinite;
+    }
+
+    @keyframes  pulse-green {
+        0% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0 rgba(0, 189, 255, 0.7);
+        }
+
+        70% {
+            transform: scale(1);
+            box-shadow: 0 0 0 10px rgba(51, 217, 178, 0);
+        }
+
+        100% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0 rgba(51, 217, 178, 0);
+        }
+    }
+</style>
+
+<script>
+    $(".button").click(function () {
+        $(".social.instagram").toggleClass("clicked");
+        $(".social.facebook").toggleClass("clicked");
+        $(".social.whatsapp").toggleClass("clicked");
+        $(".social.twitter").toggleClass("clicked");
+    })
+</script>
+
+
+ 
+
+
+<script>
+    /* modal script from EU */
+    $(document).ready(function () {
+
+        var entity = document.cookie.indexOf('fpm-entity-pass=');
+        var country = "[[!userIP]]";
+        if (["DE", "AT", "BE", "BG", "HR", "CZ", "DK", "EE", "FI", "FR", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE"].includes(country)) {
+            if (entity < 0) {
+                $('#scModal').modal("show");
+            }
+        }
+        console.log("Footer content loading at - SC");
+
+    });
+
+    function cookieFunction() {
+        var today = new Date();
+        var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        var dateTime = date + ' ' + time;
+        //alert(dateTime);
+
+       
+    }
+</script>
+
+
+
+<!-- Mobile App Box Script 
+<script>
+    $(document).ready(function () {
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        var countryCode = "[[!userIP]]";
+        function mobAppCk() {
+
+            // Check if the country code is 'IT'
+            if (countryCode === 'IT') {
+                console.log('Country code is IT, returning false.');
+                return false;
+            }
+
+            var cookieValue = "; " + document.cookie;
+            var indexOfNi = cookieValue.indexOf("; fpm-mab=NA");
+            if (indexOfNi !== -1) {
+                // Cookie "fpm-mab" exists and has the value "ni"
+                console.log('Cookie "fpm-mab" exists and has the value "ni"');
+                return true;
+            } else {
+                if (/android/i.test(userAgent)) {
+                    // Append 'Android' to the element with id 'output'
+                    $('#mob-app-installer').show();
+                    $('#app-url').attr('href', 'https://play.google.com/store/apps/details?id=com.cityindex-live.mobileapp&pli=1');
+                } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                    // Append 'iOS' to the element with id 'output'
+                    $('#mob-app-installer').show();
+                    $('#app-url').attr('href', 'https://apps.apple.com/au/app/fp-markets-forex-cfd-trading/id1666759328');
+
+                } else {
+                    // Append 'Other Device' to the element with id 'output'
+                    $('#mob-app-installer').hide();
+                }
+                return false;
+            }
+        }
+        mobAppCk();
+
+
+        $('#app-close-btn').on('click', function () {
+            $('#mob-app-installer').hide();
+            document.cookie = 'fpm-mab=NA; expires=' + new Date(new Date().getTime() + 30 * 24 * 60 * 60 * 1000) + '; path=/';
+        });
+        $('#app-url').on('click', function () {
+            $('#mob-app-installer').hide();
+            document.cookie = 'fpm-mab=NA; expires=' + new Date(new Date().getTime() + 180 * 24 * 60 * 60 * 1000) + '; path=/';
+        });
+
+    });
+
+</script>-->
+
+<!-- Mobile App Box Script -->
+<script>
+    $(document).ready(function () {
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        var countryCode = "[[!userIP]]";
+        function mobAppCk() {
+
+            // Get all query parameters from the current URL
+            const currentUrlParams = new URLSearchParams(window.location.search);
+            const queryParams = currentUrlParams.toString(); // Converts to a query string
+
+            // Construct the final URL with dynamic parameters
+            const baseLink = 'https://prpy.adj.st?adj_t=1iv421q0_1iznqq1j&adj_campaign=live_onboarding';
+            const finalLink = queryParams ? `${baseLink}&${queryParams}` : baseLink;
+
+            const cookieValue = "; " + document.cookie;
+            const indexOfNi = cookieValue.indexOf("; fpm-mab=NA");
+            if (indexOfNi !== -1) {
+                console.log('Cookie "fpm-mab" exists and has the value "NA"');
+                return true;
+            } else {
+                // Determine the device type and update the link
+                if (/android/i.test(userAgent)) {
+                    $('#mob-app-installer').show();
+                    $('#app-url').attr('href', finalLink);
+                } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                    $('#mob-app-installer').show();
+                    $('#app-url').attr('href', finalLink);
+                } else {
+                    $('#mob-app-installer').hide();
+                }
+                return false;
+            }
+        }
+        mobAppCk();
+
+
+        $('#app-close-btn').on('click', function () {
+            $('#mob-app-installer').hide();
+            document.cookie = 'fpm-mab=NA; expires=' + new Date(new Date().getTime() + 30 * 24 * 60 * 60 * 1000) + '; path=/';
+        });
+        $('#app-url').on('click', function () {
+            $('#mob-app-installer').hide();
+            document.cookie = 'fpm-mab=NA; expires=' + new Date(new Date().getTime() + 180 * 24 * 60 * 60 * 1000) + '; path=/';
+        });
+
+    });
+
+</script>
+
+
+
+<script type="text/javascript" id="hs-script-loader" async="" defer="defer" src="../static/globalcityindex-live/files/21424556.js"></script>
+
+
+
+
+
+
+
+
+
+</body></html>

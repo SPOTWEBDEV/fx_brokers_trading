@@ -69,7 +69,7 @@ function _initChatPopupController() {
         }, 800);
 
         $('.kr-chat-ulist').find('li.kr-chat-active-room').each(function() {
-            let name = $(this).find('div.kr-chat-ulist-infos').find('span:first-child').html().toLowerCase();
+            let name = $(this).find('div.kr-chat-ulist-infos').find('span:first-child').php().toLowerCase();
             if (name.indexOf(textSearched) >= 0) {
                 $(this).show();
             } else {
@@ -116,11 +116,11 @@ function _createNewRoom(uid) {
 }
 
 function _changeRoomView(roomid) {
-    $('#kr-chat-room-content').html('<div class="spinner"></div>');
+    $('#kr-chat-room-content').php('<div class="spinner"></div>');
     $.get($('body').attr('hrefapp') + '/app/modules/kr-chat/src/actions/loadRoom.php', {
         room: roomid
     }).done(function(data) {
-        $.when($('#kr-chat-room-content').removeClass('kr-chat-room-content-nl').html(data)).then(function() {
+        $.when($('#kr-chat-room-content').removeClass('kr-chat-room-content-nl').php(data)).then(function() {
             $('.kr-chat-right').find('[kr-chat-rid="' + roomid + '"]').removeClass('kr-chat-nmessage');
             initChatRoomController();
             checkScrollDownPop();

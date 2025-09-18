@@ -99,7 +99,7 @@ function processSearch(searchBox, request, searhcfieldcontent = null) {
     SearchServiceRequest = $.get($('body').attr('hrefapp') + '/app/modules/kr-search/src/actions/searchQuery.php', {
         request: request
     }).done(function(data) {
-        searchBox.find('ul').html('');
+        searchBox.find('ul').php('');
         let requestData = jQuery.parseJSON(data);
         if (requestData.error == 0) {
             let fncCallBack = $('#' + searhcfieldcontent).attr('kr-search-callback');

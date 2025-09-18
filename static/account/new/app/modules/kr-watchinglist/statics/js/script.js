@@ -69,7 +69,7 @@ function updateWatchCoinItem(data, symbol, currency, market = "CCCAGG") {
 
     let watchingItem = $("[kr-watchinglistpair='" + market + ":" + symbol + "/" + currency + "']");
     if (watchingItem.length > 0) {
-        watchingItem.find('.kr-watchinglistpair-evolv').html(KRformatNumber(data.CHANGE24HOURPCT, 2) + "%");
+        watchingItem.find('.kr-watchinglistpair-evolv').php(KRformatNumber(data.CHANGE24HOURPCT, 2) + "%");
         _highlightNumber(KRformatNumber(data.PRICE, (data.PRICE > 10 ? 2 : 5)), watchingItem.find('.kr-watchinglistpair-price'));
     }
 

@@ -411,7 +411,7 @@ function changeEMA(container, indicatorID, dataStyle) {
     };
     chartList[container]['option'].series[dataIndicator.serieIndex].name = 'EMA (' + dataStyle.period + ')';
 
-    $('[kr-tid="EMA"][kr-cid="' + indicatorID + '"]').find('span').html('EMA (' + dataStyle.period + ')');
+    $('[kr-tid="EMA"][kr-cid="' + indicatorID + '"]').find('span').php('EMA (' + dataStyle.period + ')');
 
     updateSMA(container, indicatorID);
 
@@ -478,7 +478,7 @@ function changeSMA(container, indicatorID, dataStyle) {
     };
     chartList[container]['option'].series[dataIndicator.serieIndex].name = 'SMA (' + dataStyle.period + ')';
 
-    $('[kr-tid="SMA"][kr-cid="' + indicatorID + '"]').find('span').html('SMA (' + dataStyle.period + ')');
+    $('[kr-tid="SMA"][kr-cid="' + indicatorID + '"]').find('span').php('SMA (' + dataStyle.period + ')');
 
     updateSMA(container, indicatorID);
 
@@ -590,7 +590,7 @@ function changeBBANDS(container, indicatorID, dataStyle) {
     };
     chartList[container]['option'].series[dataIndicator.serieIndex + 2].name = 'BBANDS Lower (' + dataStyle.period + ', ' + dataStyle.deviation + ')';
 
-    $('[kr-tid="BBANDS"][kr-cid="' + indicatorID + '"]').find('span').html('BBANDS (' + dataStyle.period + ', ' + dataStyle.deviation + ')');
+    $('[kr-tid="BBANDS"][kr-cid="' + indicatorID + '"]').find('span').php('BBANDS (' + dataStyle.period + ', ' + dataStyle.deviation + ')');
 
     updateBBANDS(container, indicatorID);
 
@@ -700,7 +700,7 @@ function changeMACD(container, indicatorID, dataStyle) {
     };
     chartList[container]['option'].series[dataIndicator.serieIndex + 2].name = 'DIF (' + dataStyle.fastperiod + ', ' + dataStyle.slowperiod + ', ' + dataStyle.signalperiod + ')';
 
-    $('[kr-tid="MACD"][kr-cid="' + indicatorID + '"]').find('span').html('MACD (' + dataStyle.fastperiod + ', ' + dataStyle.slowperiod + ', ' + dataStyle.signalperiod + ')');
+    $('[kr-tid="MACD"][kr-cid="' + indicatorID + '"]').find('span').php('MACD (' + dataStyle.fastperiod + ', ' + dataStyle.slowperiod + ', ' + dataStyle.signalperiod + ')');
 
     updateMACD(container, indicatorID);
 
@@ -776,7 +776,7 @@ function changeATR(container, indicatorID, dataStyle) {
     };
     chartList[container]['option'].series[dataIndicator.serieIndex].name = 'ATR (' + dataStyle.period + ')';
 
-    $('[kr-tid="ATR"][kr-cid="' + indicatorID + '"]').find('span').html('ATR (' + dataStyle.period + ')');
+    $('[kr-tid="ATR"][kr-cid="' + indicatorID + '"]').find('span').php('ATR (' + dataStyle.period + ')');
 
     updateSMA(container, indicatorID);
 
@@ -900,7 +900,7 @@ function changeSO(container, indicatorID, dataStyle) {
     chartList[container]['option'].series[dataIndicator.serieIndex + 1].markLine.data[1].lineStyle.color = dataStyle.oversold_color;
     chartList[container]['option'].series[dataIndicator.serieIndex + 1].markLine.data[1].yAxis = dataStyle.oversold_value;
 
-    $('[kr-tid="SO"][kr-cid="' + indicatorID + '"]').find('span').html('SO (' + dataStyle.kperiod + ', ' + dataStyle.dperiod + ')');
+    $('[kr-tid="SO"][kr-cid="' + indicatorID + '"]').find('span').php('SO (' + dataStyle.kperiod + ', ' + dataStyle.dperiod + ')');
 
     updateSO(container, indicatorID);
 
@@ -990,7 +990,7 @@ function changeRSI(container, indicatorID, dataStyle) {
     chartList[container]['option'].series[dataIndicator.serieIndex].markLine.data[1].lineStyle.color = dataStyle.under_color;
     chartList[container]['option'].series[dataIndicator.serieIndex].markLine.data[1].yAxis = dataStyle.under_value;
 
-    $('[kr-tid="RSI"][kr-cid="' + indicatorID + '"]').find('span').html('SO (' + dataStyle.period + ')');
+    $('[kr-tid="RSI"][kr-cid="' + indicatorID + '"]').find('span').php('SO (' + dataStyle.period + ')');
 
     updateRSI(container, indicatorID);
 
@@ -1078,7 +1078,7 @@ function changeCCI(container, indicatorID, dataStyle) {
 
     chartList[container]['option'].series[dataIndicator.serieIndex].markLine.data[1].lineStyle.color = dataStyle.colour_trend;
 
-    $('[kr-tid="CCI"][kr-cid="' + indicatorID + '"]').find('span').html('CCI (' + dataStyle.period + ')');
+    $('[kr-tid="CCI"][kr-cid="' + indicatorID + '"]').find('span').php('CCI (' + dataStyle.period + ')');
 
     updateCCI(container, indicatorID);
 
@@ -1148,7 +1148,7 @@ function changeROC(container, indicatorID, dataStyle) {
     };
     chartList[container]['option'].series[dataIndicator.serieIndex].name = 'ROC (' + dataStyle.period + ')';
 
-    $('[kr-tid="ROC"][kr-cid="' + indicatorID + '"]').find('span').html('ROC (' + dataStyle.period + ')');
+    $('[kr-tid="ROC"][kr-cid="' + indicatorID + '"]').find('span').php('ROC (' + dataStyle.period + ')');
 
     updateROC(container, indicatorID);
 
@@ -1259,7 +1259,7 @@ function changeADX(container, indicatorID, dataStyle) {
     };
     chartList[container]['option'].series[dataIndicator.serieIndex + 2].name = 'PDI (' + dataStyle.period + ')';
 
-    $('[kr-tid="ADX"][kr-cid="' + indicatorID + '"]').find('span').html('ADX (' + dataStyle.period + ')');
+    $('[kr-tid="ADX"][kr-cid="' + indicatorID + '"]').find('span').php('ADX (' + dataStyle.period + ')');
 
     updateADX(container, indicatorID);
 

@@ -123,8 +123,8 @@ function initAdmin() {
 
     $('.kr-admin-tggle-coin-status').off('submit').submit(function(e) {
 
-        let cs = $(this).parent().parent().find('.kr-admin-lst-c-status').html();
-        $(this).parent().parent().find('.kr-admin-lst-c-status').html($(this).find('input[type="submit"]').attr('alt-st'));
+        let cs = $(this).parent().parent().find('.kr-admin-lst-c-status').php();
+        $(this).parent().parent().find('.kr-admin-lst-c-status').php($(this).find('input[type="submit"]').attr('alt-st'));
         $(this).parent().parent().find('.kr-admin-lst-c-status').toggleClass('kr-admin-lst-tag-red');
         $(this).find('input[type="submit"]').attr('alt-st', cs);
 

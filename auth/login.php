@@ -29,8 +29,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="canonical" href="login.html">
-    <link rel="alternate" hreflang="en" href="login.html">
+    <link rel="canonical" href="login.php">
+    <link rel="alternate" hreflang="en" href="login.php">
 
     <meta name="description"
         content="cityindex-live is a Financial Organization set up to Provide Source of Passive income for investors on Real Estate Management and Natural Oil & Gas">
@@ -121,7 +121,7 @@
                             <label class="label-checkbox" for="remember">Remember me</label>
                         </div>
 
-                        <a href="password_reset/index.html">
+                        <a href="password_reset/index.php">
                             Forgotten password
                         </a>
                     </div>

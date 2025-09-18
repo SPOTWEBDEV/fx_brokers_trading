@@ -172,11 +172,11 @@ function _wizardTransfertController() {
         let amount = parseFloat($(this).val());
         if (!$.isNumeric(amount)) amount = 0;
         $('.content_bank_transfert_wizard_line_mlc_amount_fe').val(KRformatNumber(amount * parseFloat(fees), 8));
-        $('.content_bank_transfert_wizard_line_mlc_amount_total').html(KRformatNumber(amount - (amount * parseFloat(fees)), 8))
+        $('.content_bank_transfert_wizard_line_mlc_amount_total').php(KRformatNumber(amount - (amount * parseFloat(fees)), 8))
     });
 
     $('[name="bt_vcs_accountreceived"]').off('change').change(function() {
-        $('.content_bank_transfert_wizard_line_mlc_amount_symbol').html($(this).val());
+        $('.content_bank_transfert_wizard_line_mlc_amount_symbol').php($(this).val());
     });
 
     $('.content_bank_transfert_wizard').off('submit').submit(function(e) {

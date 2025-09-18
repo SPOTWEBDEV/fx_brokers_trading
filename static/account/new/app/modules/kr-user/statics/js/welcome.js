@@ -1,4 +1,4 @@
-let numGraphToComplete = parseInt($('.kr-wlcm-overlay-crypt-left').find('i').html());
+let numGraphToComplete = parseInt($('.kr-wlcm-overlay-crypt-left').find('i').php());
 $(document).ready(function() {
     if ($('.kr-wlcm-overlay').length > 0) {
         startWelcome();
@@ -27,7 +27,7 @@ function initWelcomeControllers() {
                     location.reload();
                 }, 6000);
             } else {
-                $('.kr-wlcm-overlay-crypt-left').find('i').html((numGraphToComplete - $('.kr-wlcm-selecteditem').length));
+                $('.kr-wlcm-overlay-crypt-left').find('i').php((numGraphToComplete - $('.kr-wlcm-selecteditem').length));
             }
         });
     });
