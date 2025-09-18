@@ -129,9 +129,7 @@ require_once '../../mailer/mailer.php';
                                                 <th>Gain / P&L</th>
                                                 <th>Status</th>
                                                 <th>Created</th>
-                                                <th>Updated</th>
-                                                <th>#</th>
-                                                <th>#</th>
+
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -186,19 +184,35 @@ require_once '../../mailer/mailer.php';
                                                 echo "<td>{$gain}</td>";
 
                                                 // status color coding
-                                                $color = ($status === 'closed') ? 'green' : (($status === 'pending') ? 'blue' : 'orange');
-                                                echo "<td style='color:{$color};'>{$status}</td>";
+                                                switch (strtolower($status)) {
+                                                    case 'pending':
+                                                        $color = 'blue';      // waiting
+                                                        break;
+                                                    case 'open':
+                                                        $color = 'orange';    // currently active
+                                                        break;
+                                                    case 'closed':
+                                                        $color = 'gray';      // trade ended normally
+                                                        break;
+                                                    case 'executed':
+                                                        $color = 'purple';    // order executed
+                                                        break;
+                                                    case 'loss':
+                                                        $color = 'red';       // trade lost
+                                                        break;
+                                                    case 'win':
+                                                        $color = 'green';     // trade won
+                                                        break;
+                                                    default:
+                                                        $color = 'black';     // fallback
+                                                }
+                                                echo "<td style='color:{$color}; font-weight:bold;'>{$status}</td>";
 
                                                 echo "<td>{$created}</td>";
-                                                echo "<td>{$updated}</td>";
+
 
                                                 // example action buttons – adjust URLs/logic as needed
-                                                echo "<td><button class='btn btn-primary btn-sm'>
-            <a style='color:white;' href='view_trade.php?id={$id}'>View</a>
-          </button></td>";
-                                                echo "<td><button class='btn btn-danger btn-sm'>
-            <a style='color:white;' href='delete_trade.php?id={$id}'>Delete</a>
-          </button></td>";
+
                                                 echo "</tr>";
 
                                                 $sn++;
