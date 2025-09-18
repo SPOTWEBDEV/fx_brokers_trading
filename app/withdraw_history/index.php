@@ -1,21 +1,37 @@
 <?php
-
 include('../../server/connection.php');
 include('../../server/auth/client.php');
 
-
-$query = "SELECT * FROM withdrawals WHERE user_id = ? ORDER BY created_at DESC";
-$stmt = $connection->prepare($query);
-$stmt->bind_param("i", $id);
-$stmt->execute();
-$result = $stmt->get_result();
-
 $withdrawals = [];
-while ($row = $result->fetch_assoc()) {
-    $withdrawals[] = $row;
+$single      = null;
+$error       = null;
+
+// If a specific withdrawal UUID is provided
+if (!empty($_GET['uuid'])) {
+    $uuid  = $_GET['uuid'];
+    $stmt  = $connection->prepare(
+        "SELECT * FROM withdrawals WHERE uuid = ? AND user_id = ? LIMIT 1"
+    );
+    $stmt->bind_param("si", $uuid, $id);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    if ($result->num_rows > 0) {
+        $single = $result->fetch_assoc();
+    } else {
+        $error = "Withdrawal not found or access denied.";
+    }
+} else {
+    // Fetch the list of all withdrawals
+    $stmt = $connection->prepare(
+        "SELECT * FROM withdrawals WHERE user_id = ? ORDER BY created_at DESC"
+    );
+    $stmt->bind_param("i", $id);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    while ($row = $result->fetch_assoc()) {
+        $withdrawals[] = $row;
+    }
 }
-
-
 ?>
 
 <html lang="en" style="--hover: #252b3c;
@@ -236,53 +252,136 @@ height: 100%;">
 
         <main class="container" style="height: 100vh;">
             <div class="fade-appear-done fade-enter-done"><br>
-                <center><a href="<?php echo $domain ?>app/dashboard/" class="btn btn-large">BACK</a><br>
-                    <p class="center"> Withdraw History</p>
-                </center>
                 <div class="container">
-                    <ul class="collection">
-                        <li class="collection-item app-py-2">
-                            <table class="responsive-table striped">
-                                <thead>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>Description</th>
-                                        <th>Date</th>
-                                        <th>Amount</th>
-                                        <th>Status</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php if (count($withdrawals) > 0): ?>
-                                        <?php foreach ($withdrawals as $withdrawal): ?>
+
+                    <?php if ($error): ?>
+                        <p><?= htmlspecialchars($error) ?></p>
+
+                    <?php elseif ($single): ?>
+                        <!-- ================== Single Withdrawal Details ================== -->
+                        <h4>Withdrawal Details</h4>
+                        <ul class="collection">
+                            <li class="collection-item app-py-2">
+
+                                <table class="striped">
+                                    <tbody>
+                                        <tr>
+                                            <th>Amount</th>
+                                            <td>$<?= htmlspecialchars($single['amount']) ?></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Status</th>
+                                            <td><?= htmlspecialchars($single['status']) ?></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Requested At</th>
+                                            <td><?= htmlspecialchars($single['created_at']) ?></td>
+                                        </tr>
+
+                                        <?php if (!empty($single['updated_at'])): ?>
                                             <tr>
-                                                <td><?= count($withdrawals) ?></td>
-                                                <td>Withdrawal to <?= htmlspecialchars($withdrawal['withdraw_to']) ?></td>
-                                                <td><?= htmlspecialchars($withdrawal['created_at']) ?></td>
-                                                <td>$<?= htmlspecialchars($withdrawal['amount']) ?></td>
-                                                <td><?= htmlspecialchars($withdrawal['status']) ?></td>
-                                                <td>
-                                                    <button class="btn-small modal-trigger" data-target="modal<?= $withdrawal['id'] ?>">See More</button>
+                                                <th>Updated At</th>
+                                                <td><?= htmlspecialchars($single['updated_at']) ?></td>
+                                            </tr>
+
+                                        <?php endif; ?>
+
+                                        <?php if (strtolower($single['withdraw_to']) === 'crypto'): ?>
+                                            <!-- Crypto-specific details -->
+                                            <tr>
+                                                <th>Crypto Name</th>
+                                                <td><?= htmlspecialchars($single['crypto_name'] ?? 'N/A') ?></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Wallet Address</th>
+                                                <td><?= htmlspecialchars($single['wallet_address'] ?? 'N/A') ?></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Network</th>
+                                                <td><?= htmlspecialchars($single['network'] ?? 'N/A') ?></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Tx Hash</th>
+                                                <td><?= htmlspecialchars($single['tx_hash'] ?? 'Pending') ?></td>
+                                            </tr>
+
+                                        <?php elseif (strtolower($single['withdraw_to']) === 'bank'): ?>
+                                            <!-- Bank-specific details -->
+                                            <tr>
+                                                <th>Bank Name</th>
+                                                <td><?= htmlspecialchars($single['bank_name'] ?? 'N/A') ?></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Account Name</th>
+                                                <td><?= htmlspecialchars($single['account_name'] ?? 'N/A') ?></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Account Number</th>
+                                                <td><?= htmlspecialchars($single['account_number'] ?? 'N/A') ?></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Swift/IBAN</th>
+                                                <td><?= htmlspecialchars($single['iban'] ?? 'N/A') ?></td>
+                                            </tr>
+                                        <?php endif; ?>
+                                    </tbody>
+                                </table>
+                                <p><a href="?"><button style="height: 30px; margin-top:20px" class="btn">← Back to all withdrawals</button></a></p>
+
+                            </li>
+                        </ul>
+
+
+                    <?php else: ?>
+                        <!-- ================== List of All Withdrawals ================== -->
+                        <ul class="collection">
+                            <li class="collection-item app-py-2">
+                                <table class="responsive-table striped">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Description</th>
+                                            <th>Date</th>
+                                            <th>Amount</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php if (count($withdrawals) > 0): ?>
+                                            <?php foreach ($withdrawals as $index => $w): ?>
+                                                <tr>
+                                                    <td><?= $index + 1 ?></td>
+                                                    <td>Withdrawal to <?= htmlspecialchars($w['withdraw_to']) ?></td>
+                                                    <td><?= htmlspecialchars($w['created_at']) ?></td>
+                                                    <td>$<?= htmlspecialchars($w['amount']) ?></td>
+                                                    <td><?= htmlspecialchars($w['status']) ?></td>
+                                                    <td>
+                                                        <a class="btn-small"
+                                                            href="?uuid=<?= urlencode($w['uuid']) ?>">
+                                                            See Details
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                
+                                            <?php endforeach; ?>
+                                        <?php else: ?>
+                                            <tr>
+                                                <td colspan="6">
+                                                    <center>No records found!</center>
                                                 </td>
                                             </tr>
-                                        <?php endforeach; ?>
-                                    <?php else: ?>
-                                        <tr>
-                                            <td colspan="6">
-                                                <center>No records found!</center>
-                                            </td>
-                                        </tr>
-                                    <?php endif; ?>
-                                </tbody>
-                            </table>
-
-                        </li>
-                    </ul>
+                                        <?php endif; ?>
+                                    </tbody>
+                                </table>
+                                 <p><a href="<?php echo $domain ?>app/dashboard/" ><button style="height: 30px; margin-top:20px" class="btn">← Back to dashboard</button></a></p>
+                            </li>
+                        </ul>
+                    <?php endif; ?>
                 </div>
             </div>
 
-           
+
         </main>
     </div>
 
