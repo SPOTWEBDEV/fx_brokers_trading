@@ -13,21 +13,21 @@ $total_balance = $trading_balance + $bitcoin_balance + $ethereum_balance + $doge
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, user-scalable=no">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title static-title="cityindex-live">Cityindex-live</title>
-  <meta name="description"
-    content="cityindex-live offers low trading fees. You can be up and running quickly as both account opening and deposits are super easy and fast">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title static-title="cityindex-live">Cityindex-live</title>
+    <meta name="description"
+        content="cityindex-live offers low trading fees. You can be up and running quickly as both account opening and deposits are super easy and fast">
 
-  <link rel="apple-touch-icon" sizes="180x180"
-    href="../../static/account/new/assets/img/icons/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32"
-    href="../../static/account/new/assets/img/icons/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16"
-    href="/static/globalcityindex-live/wp-content/themes/vt/favicon-new.png">
-  <link rel="manifest"
-    href="{% static 'account/new/assets/img/icons/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="../../static/account/new/assets/img/icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="../../static/account/new/assets/img/icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="/static/globalcityindex-live/wp-content/themes/vt/favicon-new.png">
+    <link rel="manifest"
+        href="{% static 'account/new/assets/img/icons/favicon/site.webmanifest">
     <link rel="shortcut icon" href="/static/globalcityindex-live/wp-content/themes/vt/favicon-new.png">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="{% static 'account/new/assets/img/icons/favicon/browserconfig.xml">
@@ -2984,13 +2984,43 @@ window.onload = setInterval(() => target.style.opacity = '0', 4000)
         <input type="number" name="entry_price" step="any" class="form-input" placeholder="Set entry price">
       </div>
 
-      <label class="form-label">Symbol:</label>
-      <select name="symbol" class="form-input">
-        <option value="BTCUSD">BTCUSD, Bitcoin vs US Dollar</option>
-        <option value="ETHUSD">ETHUSD, Ethereum vs US Dollar</option>
-        <option value="USDTUSD">USDTUSD, Tether vs US Dollar</option>
-        <!-- Add others as needed -->
-      </select>
+        <label class="form-label">Symbol:</label>
+        <select name="symbol" class="form-input">
+          <!-- 🔷 Crypto -->
+          <option value="BTCUSD">BTCUSD, Bitcoin vs US Dollar</option>
+          <option value="ETHUSD">ETHUSD, Ethereum vs US Dollar</option>
+          <option value="LTCUSD">LTCUSD, Litecoin vs US Dollar</option>
+          <option value="XRPUSD">XRPUSD, Ripple vs US Dollar</option>
+          <option value="USDTUSD">USDTUSD, Tether vs US Dollar</option>
+          <option value="BNBUSD">BNBUSD, Binance Coin vs US Dollar</option>
+          <option value="DOGEUSD">DOGEUSD, Dogecoin vs US Dollar</option>
+
+          <!-- 💱 Major Forex Pairs -->
+          <option value="EURUSD">EURUSD, Euro vs US Dollar</option>
+          <option value="GBPUSD">GBPUSD, British Pound vs US Dollar</option>
+          <option value="USDJPY">USDJPY, US Dollar vs Japanese Yen</option>
+          <option value="USDCHF">USDCHF, US Dollar vs Swiss Franc</option>
+          <option value="AUDUSD">AUDUSD, Australian Dollar vs US Dollar</option>
+          <option value="USDCAD">USDCAD, US Dollar vs Canadian Dollar</option>
+          <option value="NZDUSD">NZDUSD, New Zealand Dollar vs US Dollar</option>
+          <option value="EURGBP">EURGBP, Euro vs British Pound</option>
+
+          <!-- 🥇 Commodities -->
+          <option value="XAUUSD">XAUUSD, Gold vs US Dollar</option>
+          <option value="XAGUSD">XAGUSD, Silver vs US Dollar</option>
+          <option value="WTIUSD">WTIUSD, Crude Oil WTI vs US Dollar</option>
+          <option value="BRENTUSD">BRENTUSD, Brent Oil vs US Dollar</option>
+          <option value="NGUSD">NGUSD, Natural Gas vs US Dollar</option>
+
+          <!-- 📈 Indices -->
+          <option value="US30">US30, Dow Jones Industrial Average</option>
+          <option value="NAS100">NAS100, Nasdaq 100</option>
+          <option value="SPX500">SPX500, S&P 500</option>
+          <option value="GER40">GER40, DAX Germany 40</option>
+          <option value="UK100">UK100, FTSE 100</option>
+          <option value="JPN225">JPN225, Nikkei 225</option>
+        </select>
+
 
       <label class="form-label">Stop Loss:</label>
       <input type="number" name="stop_loss" value="0.0000" step="any" class="form-input">

@@ -99,7 +99,7 @@ if (isset($_POST['url'])) {
                 $userName = $firstname . ' ' . $lastname;
 
                 $body = generateEmailTemplate(
-                    "register",
+                    "Customer Registeration",
                     $userName, 
                     $email,
                 );
