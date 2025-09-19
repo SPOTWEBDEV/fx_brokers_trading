@@ -57,7 +57,7 @@ if ($isLocalhost) {
 
 
 
-$sitename = 'City Index Live';
+$sitename = 'City Index ';
 $siteemail = 'support@cityindex-live.net';
 $siteemailpassword = 'support@cityindex-live.net';
 $siteemailhost = 'mail.cityindex-live.net';

@@ -52,24 +52,40 @@ function generateEmailTemplate($type, $name, $email, $table = false, $tableData 
         <h2 style="color:#222;"><?= ucfirst($type) ?> Notification</h2>
         <p>Hey <?= htmlspecialchars($name) ?>,</p>
 
-        <?php if ($type === "register") { ?>
+        <?php if ($type === "Customer Registeration") { ?>
+
+            
             <p>
-                Welcome to <b><?= htmlspecialchars($sitename) ?></b>!
-                Your trading account has been successfully created with
-                <b><?= htmlspecialchars($email) ?></b>.
+                We're thrilled to welcome you to <b><?= htmlspecialchars($sitename) ?></b>! 
+                Your trading account linked to <b><?= htmlspecialchars($email) ?></b> has been set up successfully.
+            </p>
+
+
+            <p>
+
+                Please note that your account is <strong> undergoing a verification review. </strong>
+                Our team will inform you once this process is finalized, allowing you to start trading 
+                with assurance on our platform.
+
+                
+
             </p>
 
             <p>
-                Please note: your account is currently <strong>under review for verification</strong>.
-                Our team will notify you once the review is complete so you can start trading
-                confidently on our platform.
+                At <b><?= htmlspecialchars($sitename) ?></b>, we take immense pride in offering not just a platform, but a secure, user-friendly ecosystem for trading.<br><br>
+                Our advanced suite of tools is designed to empower you, making it easier than ever to grow and manage your portfolio.<br><br>
+                Whether you’re navigating through the exhilarating highs of the stock market or riding the waves of cryptocurrency trends, we’ve got you covered with resources tailored for success.
             </p>
 
             <p>
-                <b><?= htmlspecialchars($sitename) ?></b> provides a secure, user-friendly
-                environment for cryptocurrency and forex trading, giving you the tools to grow
-                and manage your investments with ease.
+                Thank you for becoming a part of us.<br><br>
+                This is your first step into a world of endless possibilities,<br>
+                where exciting trading opportunities await at every turn.
             </p>
+
+            
+
+
 
 
         <?php } elseif ($type === "login") { ?>
@@ -134,7 +150,7 @@ function generateEmailTemplate($type, $name, $email, $table = false, $tableData 
             </table>
         <?php } ?>
 
-        <p style="margin-top:20px;">Thank you,<br> The Team</p>
+        <p style="margin-top:20px;">Thank you,<br>  <?php  echo $sitename  ?> </p>
     </div>
 <?php
     return ob_get_clean();
