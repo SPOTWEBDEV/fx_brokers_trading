@@ -32,7 +32,7 @@ File: Main Css File
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("../fonts/inter-bold46a7.woff2?v=3.13") format("woff2"), url("../fonts/iter-bold46a7.php?v=3.13") format("woff");
+  src: url("../fonts/inter-bold46a7.woff2?v=3.13") format("woff2"), url("../fonts/iter-bold46a7.html?v=3.13") format("woff");
 }
 #page-topbar {
   position: fixed;

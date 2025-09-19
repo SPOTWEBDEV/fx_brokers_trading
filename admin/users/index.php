@@ -4,35 +4,33 @@
 <html lang="en">
 
 
-<!-- Mirrored from themesdesign.in/upcube/layouts/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Apr 2025 19:11:57 GMT -->
+<!-- Mirrored from themesdesign.in/upcube/layouts/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Apr 2025 19:11:57 GMT -->
 
 <head>
 
-    <meta charset="utf-8" />
-    <title>Dashboard | Upcube - Admin & Dashboard Template</title>
+    <meta charset="utf-8">
+    <title>Data Tables | Upcube - Admin &amp; Dashboard Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
-    <meta content="Themesdesign" name="author" />
+    <meta content="Premium Multipurpose Admin &amp; Dashboard Template" name="description">
+    <meta content="Themesdesign" name="author">
     <!-- App favicon -->
     <link rel="shortcut icon" href="../assets/images/favicon.ico">
 
-    <!-- jquery.vectormap css -->
-    <link href="../assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet"
-        type="text/css" />
-
     <!-- DataTables -->
-    <link href="../assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/libs/datatables.net-select-bs4/css/select.bootstrap4.min.css" rel="stylesheet" type="text/css">
 
     <!-- Responsive datatable examples -->
     <link href="../assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet"
-        type="text/css" />
+        type="text/css">
 
     <!-- Bootstrap Css -->
-    <link href="../assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css">
     <!-- Icons Css -->
-    <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css">
     <!-- App Css-->
-    <link href="../assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -103,15 +101,12 @@
                             <div class="card">
                                 <div class="card-body">
 
-
-                                    <p class="card-title-desc">
-                                    </p>
+                                    <p class="card-title-desc"></p>
 
                                     <table id="datatable" class="table table-bordered dt-responsive nowrap"
                                         style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                         <thead>
                                             <tr>
-
                                                 <th>S/N:</th>
                                                 <th>Full-Name:</th>
                                                 <th>Email:</th>
@@ -124,14 +119,12 @@
                                             </tr>
                                         </thead>
 
-
                                         <tbody>
-
                                             <?php
-
                                             $query = "SELECT * FROM users ORDER BY id DESC";
                                             $select_logs = mysqli_query($connection, $query);
                                             $sn = 1;
+
                                             while ($row = mysqli_fetch_assoc($select_logs)) {
                                                 $id = $row['id'];
                                                 $fullname = $row['firstname'] . " " . $row['lastname'];
@@ -139,83 +132,96 @@
                                                 $phone = $row['phone'];
                                                 $date = $row['created_at'];
                                                 $status = $row['status'];
+
+                                                // Determine status color and label
+                                                $status_label = '';
+                                                $status_color = '';
+                                                switch ($status) {
+                                                    case 'suspended':
+                                                        $status_label = 'Suspended';
+                                                        $status_color = 'red';
+                                                        break;
+                                                    case 'pending':
+                                                        $status_label = 'Pending';
+                                                        $status_color = 'blue';
+                                                        break;
+                                                    default:
+                                                        $status_label = 'Active';
+                                                        $status_color = 'green';
+                                                        break;
+                                                }
+
                                                 echo "<tr>";
                                                 echo "<td>$sn</td>";
                                                 echo "<td>$fullname</td>";
                                                 echo "<td>$email</td>";
                                                 echo "<td>$phone</td>";
                                                 echo "<td>$date</td>";
-                                                if($status == "suspended"){
-                                                    echo "<td style='color: red;'>Suspended</td>";
-                                                } else if ($status == "pending") {
-                                                    echo "<td style='color: blue;'>Pending</td>";
-                                                }else{
+                                                echo "<td style='color: $status_color;'>$status_label</td>";
 
-                                                    echo "<td style='color: green;'>Active</td>";
+                                                // Action button (based on status)
+                                                $action_btn = '';
+                                                if ($status == 'suspended') {
+                                                    $action_btn = "<a class='btn btn-primary btn-sm text-white' href='index.php?activate=$id'>Activate</a>";
+                                                } elseif ($status == 'pending') {
+                                                    $action_btn = "<a class='btn btn-success btn-sm text-white' href='index.php?approve=$id'>Approve</a>";
+                                                } elseif ($status == 'active') {
+                                                    $action_btn = "<a class='btn btn-danger btn-sm text-white' href='index.php?suspend=$id'>Suspend</a>";
+                                                } else {
+                                                    $action_btn = "<span class='text-muted'>—</span>";
                                                 }
 
-                                                if($status == "suspended"){
+                                                echo "<td>$action_btn</td>";
 
-                                                    echo "<td><button class='btn btn-primary btn-sm'><a style='color: white;' href='index.php?activate=$id'>Activate</a></button></td>";
-                                                } 
-                                                 
-                                                if ($status == "pending") {
-                                                    echo "<td><button class='btn btn-success btn-sm'><a style='color: white;' href='index.php?approve=$id'>Approve</a></button></td>";
-                                                }
-                                                
-                                                if ($status == "active") {
-                                                    echo "<td><button class='btn btn-danger btn-sm'><a style='color: white;' href='index.php?suspend=$id'>Suspend</a></button></td>";
-                                                }
-
-                                                echo "<td><button class='btn btn-danger btn-sm'><a style='color: white;' href='index.php?delete=$id'>Delete</a></button></td>";
-
-                                                echo "<td><button class='btn btn-primary btn-sm'><a style='color: white;' href='edit.php?id=$id'>Edit</a></button></td>";
-
-
+                                                // Delete and Edit buttons (always show)
+                                                echo "<td><a class='btn btn-danger btn-sm text-white' href='index.php?delete=$id'>Delete</a></td>";
+                                                echo "<td><a class='btn btn-primary btn-sm text-white' href='edit.php?id=$id'>Edit</a></td>";
 
                                                 echo "</tr>";
                                                 $sn++;
                                             }
 
-
+                                            // Handle actions
                                             if (isset($_GET['delete'])) {
                                                 $the_user_id = $_GET['delete'];
                                                 $query = "DELETE FROM users WHERE id = $the_user_id";
-                                                $delete_query = mysqli_query($connection, $query);
+                                                mysqli_query($connection, $query);
                                                 echo "<script>window.location='index.php'</script>";
                                             }
-
 
                                             if (isset($_GET['activate'])) {
                                                 $the_user_id = $_GET['activate'];
                                                 $query = "UPDATE users SET status = 'active' WHERE id = $the_user_id";
-                                                $activate_query = mysqli_query($connection, $query);
+                                                mysqli_query($connection, $query);
                                                 echo "<script>window.location='index.php'</script>";
                                             }
 
                                             if (isset($_GET['suspend'])) {
                                                 $the_user_id = $_GET['suspend'];
                                                 $query = "UPDATE users SET status = 'suspended' WHERE id = $the_user_id";
-                                                $suspend_query = mysqli_query($connection, $query);
+                                                mysqli_query($connection, $query);
                                                 echo "<script>window.location='index.php'</script>";
                                             }
 
-                                                if (isset($_GET['approve'])) {
-                                                    $the_user_id = $_GET['approve'];
-                                                    $query = "UPDATE users SET status = 'active' WHERE id = $the_user_id";
-                                                    $approve_query = mysqli_query($connection, $query);
-                                                    echo "<script>window.location='index.php'</script>";
-                                                }
-
+                                            if (isset($_GET['approve'])) {
+                                                $the_user_id = $_GET['approve'];
+                                                $query = "UPDATE users SET status = 'active' WHERE id = $the_user_id";
+                                                mysqli_query($connection, $query);
+                                                echo "<script>window.location='index.php'</script>";
+                                            }
                                             ?>
-
                                         </tbody>
                                     </table>
 
                                 </div>
                             </div>
                         </div> <!-- end col -->
-                    </div> <!-- end row -->
+                    </div>
+
+
+
+
+
 
 
 
@@ -284,7 +290,7 @@
     <script src="../assets/libs/jszip/jszip.min.js"></script>
     <script src="../assets/libs/pdfmake/build/pdfmake.min.js"></script>
     <script src="../assets/libs/pdfmake/build/vfs_fonts.js"></script>
-    <script src="../assets/libs/datatables.net-buttons/js/buttons.php5.min.js"></script>
+    <script src="../assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
     <script src="../assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
     <script src="../assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
 
@@ -302,6 +308,6 @@
 </body>
 
 
-<!-- Mirrored from themesdesign.in/upcube/layouts/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Apr 2025 19:15:04 GMT -->
+<!-- Mirrored from themesdesign.in/upcube/layouts/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Apr 2025 19:15:04 GMT -->
 
 </html>
