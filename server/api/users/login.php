@@ -10,7 +10,7 @@ require_once '../../../mailer/mailer.php';
 
 
 if (isset($_POST['email']) && isset($_POST['password'])) {
-    
+
     $email = trim($_POST['email']);
     $password = $_POST['password'];
     $url = $_POST['url'];
@@ -46,11 +46,11 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
                         $body                            // HTML content
                     );
 
-               
-                        // success
-                        echo json_encode(['status' => 'success', 'message' => 'Login successful']);
-                        exit();
-                    
+
+                    // success
+                    echo json_encode(['status' => 'success', 'message' => 'Login successful']);
+                    exit();
+
 
 
                     echo json_encode(['status' => 'success', 'message' => 'Login successful']);
