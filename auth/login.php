@@ -121,7 +121,7 @@
                             <label class="label-checkbox" for="remember">Remember me</label>
                         </div>
 
-                        <a href="password_reset/index.html">
+                        <a href="reset.php">
                             Forgotten password
                         </a>
                     </div>

@@ -47,6 +47,7 @@ if (isset($_POST['verification_btn'])) {
 
     if ($stmt->execute()) {
         echo "✅ Verification submitted successfully!";
+        echo "<script>setTimeout(function(){ location.href = '../dashboard/'; }, 2000);</script>";
     } else {
         echo "❌ DB Error: " . $stmt->error;
     }
