@@ -12256,8 +12256,7 @@
                         <div class="cfd-content">
 
                             <p>
-                                Although trading Forex is a key component of our business, FP
-                                Markets also offer CFD trading in
+                                Although trading Forex is a key component of our business, City Index also offer CFD trading in
                                 <a href="<?php   echo  $domain ?>pages/Forex.php">Forex</a>, <a href="<?php   echo  $domain ?>pages/Indices.php">Indices</a>,
                                 <a href="<?php   echo  $domain ?>pages/Share_CFDs.php">Shares</a>, <a
                                     href="<?php   echo  $domain ?>pages/commodities.php">Commodities</a>,
