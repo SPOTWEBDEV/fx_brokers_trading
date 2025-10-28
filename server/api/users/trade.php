@@ -2,7 +2,7 @@
 
     // Online (Live Server)
     $domain = "https://cityindex-live.net/";
-
+    define("HOST", "localhost");
     define("USER", "cityinde_kingsley");
     define("PASSWORD", "07089611318Kk");
     define("DATABASE", "cityinde_forex");
