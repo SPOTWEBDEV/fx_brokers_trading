@@ -1,4 +1,24 @@
 <?php
+
+    // Online (Live Server)
+    $domain = "https://cityindex-live.net/";
+
+    define("USER", "cityinde_kingsley");
+    define("PASSWORD", "07089611318Kk");
+    define("DATABASE", "cityinde_forex");
+
+    // Database connection
+    $connection = mysqli_connect(HOST, USER, PASSWORD, DATABASE);
+    if (!$connection) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
+
+
+
+
+
+
+
 /**
  * trading_monitor.php
  * Cron/CLI script to update trading positions.
@@ -6,7 +26,6 @@
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-require_once __DIR__ . '/../../connection.php';
 
 
 $apiKey = "8e00e9b9-9402-41f0-8a15-37f9a9b0cdcb";

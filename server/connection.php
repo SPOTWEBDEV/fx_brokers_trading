@@ -1,4 +1,5 @@
 <?php
+session_start();
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
@@ -64,4 +65,4 @@ $siteemailhost = 'mail.cityindex-live.net';
 
 $money = '&#36;';
 
-session_start();
+
