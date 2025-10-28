@@ -137,3 +137,4 @@ function generateEmailTemplate($type, $name, $email, $table = false, $tableData 
     <?php
     return ob_get_clean();
 }
+

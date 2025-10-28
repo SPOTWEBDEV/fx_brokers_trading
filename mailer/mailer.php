@@ -1,7 +1,7 @@
 <?php
+
 include('PHPMailer/PHPMailer/PHPMailerAutoload.php');
-function smtpmailer($to, $subject, $body)
-{
+function smtpmailer($to, $subject, $body){
    global $siteemail , $siteemailpassword , $siteemailhost , $sitename;
     $mail = new PHPMailer();
     $mail->IsSMTP();

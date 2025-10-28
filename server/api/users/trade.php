@@ -6,7 +6,7 @@
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-include("../../connection.php");
+require_once __DIR__ . 'server/connection.php';
 
 $apiKey = "8e00e9b9-9402-41f0-8a15-37f9a9b0cdcb";
 
