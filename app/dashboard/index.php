@@ -1,10 +1,12 @@
 <?php
-include('../../server/connection.php');
-include('../../server/auth/client.php');
-include('../../server/api/users/order.php');
 
 
-$total_balance = $trading_balance + $bitcoin_balance + $ethereum_balance + $dogecoin_balance + $binance_coin_balance + $cosmos_atom_balance + $stablecoin_balance + $usdt_balance + $solana_balance + $cardano_ada_balance;
+  include('../../server/connection.php');
+  include('../../server/auth/client.php');
+  include('../../server/api/users/order.php');
+
+
+  $total_balance = $trading_balance + $bitcoin_balance + $ethereum_balance + $dogecoin_balance + $binance_coin_balance + $cosmos_atom_balance + $stablecoin_balance + $usdt_balance + $solana_balance + $cardano_ada_balance;
 
 
 
@@ -3098,11 +3100,30 @@ window.onload = setInterval(() => target.style.opacity = '0', 4000)
 
 
           
-                      <div class="kr-heeader-btn kr-heeader-btn-identity" style="">                         
-                        <a style="text-decoration: none;" href="<?php echo $domain ?>app/id_verification/">
-                          <input type="button"  class="btn btn-big btn-orange btn-autowidth" name="" value="<?php echo ($verification == 0) ?  'Verify your identiy' : 'Verified' ?>"></a>
+                      <div class="kr-heeader-btn kr-heeader-btn-identity">
+                          <?php if ($verification == 0) { ?>
+                              
+                              <!-- NOT VERIFIED -->
+                              <a href="<?php echo $domain ?>app/id_verification/" style="text-decoration:none;">
+                                  <input type="button"
+                                        class="btn btn-big btn-orange btn-autowidth"
+                                        value="Verify your identity">
+                              </a>
 
-                       </div>
+                          <?php } else { ?>
+                              
+                              <!-- VERIFIED -->
+                              <span>
+                                  <input type="button"
+                                        value="Verified"
+                                        style="background-color:#29c359;color:#fff;border:none;
+                                                padding:12px 24px;border-radius:4px;cursor:default;"
+                                        disabled>
+                              </span>
+
+                          <?php } ?>
+                      </div>
+
                       <div class="kr-wallet-top">
                           <div class="kr-wallet-top-real">
                             <div>
