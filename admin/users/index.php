@@ -1,4 +1,4 @@
-
+<?php  include("../../server/connection.php"); ?>
 <!doctype html>
 <html lang="en">
 
