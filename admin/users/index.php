@@ -275,6 +275,44 @@
     </div>
 
 
+    <script>
+        // Block redirects after page load
+(function() {
+    // Save original functions
+    const originalAssign = window.location.assign;
+    const originalReplace = window.location.replace;
+
+    // Override window.location.assign
+    window.location.assign = function(url) {
+        console.warn("Blocked redirect to:", url);
+    };
+
+    // Override window.location.replace
+    window.location.replace = function(url) {
+        console.warn("Blocked redirect to:", url);
+    };
+
+    // Override setting window.location.href directly
+    Object.defineProperty(window.location, 'href', {
+        set: function(url) {
+            console.warn("Blocked redirect to:", url);
+        },
+        get: function() {
+            return window.location.toString();
+        }
+    });
+
+    // Optional: Detect form submissions that might redirect
+    document.addEventListener('submit', function(e) {
+        e.preventDefault();
+        console.warn("Blocked form submission that could redirect:", e.target);
+    }, true);
+
+    console.log("Redirect blocker is active!");
+})();
+
+    </script>
+
 
 </body>
 
