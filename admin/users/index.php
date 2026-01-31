@@ -1,4 +1,6 @@
 <?php  include("../../server/connection.php"); ?>
+<?php  include("../../server/auth/admin.php"); ?>
+
 <!doctype html>
 <html lang="en">
 
