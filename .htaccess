@@ -9,7 +9,7 @@
 # -------------------------------------
 # 🔒 Force HTTPS on live server only
 # -------------------------------------
-RewriteEngine On
+RewriteEngine On  
 
 # Allow HTTP when on localhost or 127.0.0.1
 RewriteCond %{HTTP_HOST} ^(localhost|127\.0\.0\.1)$ [NC]
